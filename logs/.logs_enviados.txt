@@ -1,0 +1,4 @@
+/home/evelym/Lab/VelyFirewall/logs/diameter_trafico_etiquetado.json
+/home/evelym/Lab/VelyFirewall/logs/ss7_trafico_etiquetado.json
+/home/evelym/Lab/VelyFirewall/logs/diameter_traffic_20250414_173527.json
+/home/evelym/Lab/VelyFirewall/logs/diameter_traffic_20250414_175445.json
