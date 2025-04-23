@@ -58,3 +58,29 @@
 /home/evelym/Lab/VelyFirewall/logs/diameter_traffic_20250417_145439.pcap
 /home/evelym/Lab/VelyFirewall/logs/diameter_traffic_20250417_145439.json
 /home/evelym/Lab/VelyFirewall/logs/diameter_traffic_20250417_145439.csv
+/home/evelym/Lab/VelyFirewall/logs/18328-ccr.pcap
+/home/evelym/Lab/VelyFirewall/logs/18328-cer-hostname.pcap
+/home/evelym/Lab/VelyFirewall/logs/2001_SCAPv2 (1).pcap
+/home/evelym/Lab/VelyFirewall/logs/2001_SCAPv2.pcap
+/home/evelym/Lab/VelyFirewall/logs/4012_SCAPv2 (1).pcap
+/home/evelym/Lab/VelyFirewall/logs/4012_SCAPv2.pcap
+/home/evelym/Lab/VelyFirewall/logs/ccr-money-2001 (1).pcap
+/home/evelym/Lab/VelyFirewall/logs/ccr-money-2001.pcap
+/home/evelym/Lab/VelyFirewall/logs/ccr-money-4012 (1).pcap
+/home/evelym/Lab/VelyFirewall/logs/ccr-money-4012.pcap
+/home/evelym/Lab/VelyFirewall/logs/complete_conf_cer_cea_gmt0 (1).pcap
+/home/evelym/Lab/VelyFirewall/logs/complete_conf_cer_cea_gmt0.pcap
+/home/evelym/Lab/VelyFirewall/logs/complete_conf_cer_cea_gmt1.pcap
+/home/evelym/Lab/VelyFirewall/logs/EsyAndGy-Normal.pcap
+/home/evelym/Lab/VelyFirewall/logs/Esy-Normal-512-256.pcap
+/home/evelym/Lab/VelyFirewall/logs/Gx-Normal-512-256 (1).pcap
+/home/evelym/Lab/VelyFirewall/logs/merge_missing_6_teleservicecode.pcap
+/home/evelym/Lab/VelyFirewall/logs/scapv2-sample.pcap
+/home/evelym/Lab/VelyFirewall/logs/scapv2-time (1).pcap
+/home/evelym/Lab/VelyFirewall/logs/scapv2-time.pcap
+/home/evelym/Lab/VelyFirewall/logs/2001_SCAPv2_etiquetado.csv
+/home/evelym/Lab/VelyFirewall/logs/diameter_traffic_20250423_163643.pcap
+/home/evelym/Lab/VelyFirewall/logs/diameter_traffic_20250423_165701.pcap
+/home/evelym/Lab/VelyFirewall/logs/diameter_traffic_20250423_165701.json
+/home/evelym/Lab/VelyFirewall/logs/diameter_traffic_20250423_165701.csv
+/home/evelym/Lab/VelyFirewall/logs/diameter_traffic_20250423_170945.pcap
