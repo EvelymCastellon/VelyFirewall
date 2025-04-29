@@ -1,2 +1,3 @@
 /home/evelym/Lab/VelyFirewall/logs/diameter_traffic_20250417_142706.json
 /home/evelym/Lab/VelyFirewall/logs/diameter_traffic_20250417_143157.json
+/home/evelym/Lab/VelyFirewall/logs/ss7_traffic_20250425_161623.json
