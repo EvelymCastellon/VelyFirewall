@@ -1,16 +1,22 @@
 #!/bin/bash
 
 # Preguntar al usuario el tipo de tráfico
-echo "¿Qué tipo de tráfico deseas capturar?"
-select PROTOCOLO in "Diameter" "SS7"; do
-    case $PROTOCOLO in
-        Diameter|SS7)
-            break
-            ;;
-        *)
-            echo "Opción inválida. Intenta de nuevo."
-            ;;
-    esac
+while true; do
+    echo "¿Qué tipo de tráfico deseas capturar?"
+    select PROTOCOLO in "Diameter" "SS7" "Salir"; do
+        case $PROTOCOLO in
+            Diameter|SS7)
+                break 2  # salir del select y del while
+                ;;
+            Salir)
+                echo "Saliendo del script."
+                exit 0
+                ;;
+            *)
+                echo "Opción inválida. Intenta de nuevo."
+                ;;
+        esac
+    done
 done
 
 # Preguntar duración de la captura
