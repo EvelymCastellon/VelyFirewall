@@ -1,0 +1,1028 @@
+[1 - Suricata-Main] 2025-05-05 15:51:31 Notice: suricata: This is Suricata version 7.0.10 RELEASE running in SYSTEM mode
+[1 - Suricata-Main] 2025-05-05 15:51:31 Info: cpu: CPUs/cores online: 32
+[1 - Suricata-Main] 2025-05-05 15:51:31 Info: suricata: Setting engine mode to IDS mode by default
+[1 - Suricata-Main] 2025-05-05 15:51:31 Info: suricata: No 'host-mode': suricata is in IDS mode, using default setting 'sniffer-only'
+[1 - Suricata-Main] 2025-05-05 15:51:31 Info: logopenfile: fast output device (regular) initialized: fast.log
+[1 - Suricata-Main] 2025-05-05 15:51:31 Info: logopenfile: eve-log output device (regular) initialized: eve.json
+[1 - Suricata-Main] 2025-05-05 15:51:31 Warning: counters: stats are enabled but no loggers are active
+[1 - Suricata-Main] 2025-05-05 15:51:31 Error: detect-parse: Signature missing required value "sid".
+[1 - Suricata-Main] 2025-05-05 15:51:31 Error: detect: error parsing signature "alert sip any any -> any any (" from file /etc/suricata/rules/custom-sip.rules at line 1
+[1 - Suricata-Main] 2025-05-05 15:51:31 Error: detect-parse: no rule options.
+[1 - Suricata-Main] 2025-05-05 15:51:31 Error: detect: error parsing signature ")" from file /etc/suricata/rules/custom-sip.rules at line 7
+[1 - Suricata-Main] 2025-05-05 15:51:31 Error: detect-parse: Signature missing required value "sid".
+[1 - Suricata-Main] 2025-05-05 15:51:31 Error: detect: error parsing signature "alert sip any any -> any any (" from file /etc/suricata/rules/custom-sip.rules at line 9
+[1 - Suricata-Main] 2025-05-05 15:51:31 Error: detect-parse: no rule options.
+[1 - Suricata-Main] 2025-05-05 15:51:31 Error: detect: error parsing signature ")" from file /etc/suricata/rules/custom-sip.rules at line 15
+[1 - Suricata-Main] 2025-05-05 15:51:31 Error: detect-parse: Signature missing required value "sid".
+[1 - Suricata-Main] 2025-05-05 15:51:31 Error: detect: error parsing signature "alert sip any any -> any any (" from file /etc/suricata/rules/custom-sip.rules at line 17
+[1 - Suricata-Main] 2025-05-05 15:51:31 Error: detect-parse: no rule options.
+[1 - Suricata-Main] 2025-05-05 15:51:31 Error: detect: error parsing signature ")" from file /etc/suricata/rules/custom-sip.rules at line 23
+[1 - Suricata-Main] 2025-05-05 15:51:31 Error: detect-parse: Signature missing required value "sid".
+[1 - Suricata-Main] 2025-05-05 15:51:31 Error: detect: error parsing signature "alert sip any any -> any any (" from file /etc/suricata/rules/custom-sip.rules at line 25
+[1 - Suricata-Main] 2025-05-05 15:51:31 Error: detect-parse: no rule options.
+[1 - Suricata-Main] 2025-05-05 15:51:31 Error: detect: error parsing signature ")" from file /etc/suricata/rules/custom-sip.rules at line 30
+[1 - Suricata-Main] 2025-05-05 15:51:31 Warning: detect: 1 rule files specified, but no rules were loaded!
+[1 - Suricata-Main] 2025-05-05 15:51:31 Info: threshold-config: Threshold config parsed: 0 rule(s) found
+[1 - Suricata-Main] 2025-05-05 15:51:31 Info: detect: 0 signatures processed. 0 are IP-only rules, 0 are inspecting packet payload, 0 inspect application layer, 0 are decoder event only
+[1 - Suricata-Main] 2025-05-05 15:51:31 Warning: af-packet: eno2: AF_PACKET tpacket-v3 is recommended for non-inline operation
+[1 - Suricata-Main] 2025-05-05 15:51:31 Info: runmodes: eno2: creating 32 threads
+[1 - Suricata-Main] 2025-05-05 15:51:32 Notice: threads: Threads created -> W: 32 FM: 1 FR: 1   Engine started.
+[1 - Suricata-Main] 2025-05-05 15:54:50 Notice: suricata: Signal Received.  Stopping engine.
+[1 - Suricata-Main] 2025-05-05 15:54:50 Info: suricata: time elapsed 199.688s
+[1 - Suricata-Main] 2025-05-05 15:54:51 Notice: device: eno2: packets: 161920, drops: 1065 (0.66%), invalid chksum: 0
+[1 - Suricata-Main] 2025-05-05 17:44:55 Notice: suricata: This is Suricata version 7.0.10 RELEASE running in SYSTEM mode
+[1 - Suricata-Main] 2025-05-05 17:44:55 Info: cpu: CPUs/cores online: 32
+[1 - Suricata-Main] 2025-05-05 17:44:55 Info: suricata: Setting engine mode to IDS mode by default
+[1 - Suricata-Main] 2025-05-05 17:44:55 Info: suricata: No 'host-mode': suricata is in IDS mode, using default setting 'sniffer-only'
+[1 - Suricata-Main] 2025-05-05 17:44:55 Info: logopenfile: fast output device (regular) initialized: fast.log
+[1 - Suricata-Main] 2025-05-05 17:44:55 Info: logopenfile: eve-log output device (regular) initialized: eve.json
+[1 - Suricata-Main] 2025-05-05 17:44:55 Warning: counters: stats are enabled but no loggers are active
+[1 - Suricata-Main] 2025-05-05 17:44:55 Error: detect-parse: Signature missing required value "sid".
+[1 - Suricata-Main] 2025-05-05 17:44:55 Error: detect: error parsing signature "alert sip any any -> any any (" from file /etc/suricata/rules/custom-sip.rules at line 1
+[1 - Suricata-Main] 2025-05-05 17:44:55 Error: detect-parse: no rule options.
+[1 - Suricata-Main] 2025-05-05 17:44:55 Error: detect: error parsing signature ")" from file /etc/suricata/rules/custom-sip.rules at line 7
+[1 - Suricata-Main] 2025-05-05 17:44:55 Error: detect-parse: Signature missing required value "sid".
+[1 - Suricata-Main] 2025-05-05 17:44:55 Error: detect: error parsing signature "alert sip any any -> any any (" from file /etc/suricata/rules/custom-sip.rules at line 9
+[1 - Suricata-Main] 2025-05-05 17:44:55 Error: detect-parse: no rule options.
+[1 - Suricata-Main] 2025-05-05 17:44:55 Error: detect: error parsing signature ")" from file /etc/suricata/rules/custom-sip.rules at line 15
+[1 - Suricata-Main] 2025-05-05 17:44:55 Error: detect-parse: Signature missing required value "sid".
+[1 - Suricata-Main] 2025-05-05 17:44:55 Error: detect: error parsing signature "alert sip any any -> any any (" from file /etc/suricata/rules/custom-sip.rules at line 17
+[1 - Suricata-Main] 2025-05-05 17:44:55 Error: detect-parse: no rule options.
+[1 - Suricata-Main] 2025-05-05 17:44:55 Error: detect: error parsing signature ")" from file /etc/suricata/rules/custom-sip.rules at line 23
+[1 - Suricata-Main] 2025-05-05 17:44:55 Error: detect-parse: Signature missing required value "sid".
+[1 - Suricata-Main] 2025-05-05 17:44:55 Error: detect: error parsing signature "alert sip any any -> any any (" from file /etc/suricata/rules/custom-sip.rules at line 25
+[1 - Suricata-Main] 2025-05-05 17:44:55 Error: detect-parse: no rule options.
+[1 - Suricata-Main] 2025-05-05 17:44:55 Error: detect: error parsing signature ")" from file /etc/suricata/rules/custom-sip.rules at line 30
+[1 - Suricata-Main] 2025-05-05 17:44:55 Warning: detect: 1 rule files specified, but no rules were loaded!
+[1 - Suricata-Main] 2025-05-05 17:44:55 Info: threshold-config: Threshold config parsed: 0 rule(s) found
+[1 - Suricata-Main] 2025-05-05 17:44:55 Info: detect: 0 signatures processed. 0 are IP-only rules, 0 are inspecting packet payload, 0 inspect application layer, 0 are decoder event only
+[1 - Suricata-Main] 2025-05-05 17:44:55 Warning: af-packet: eno2: AF_PACKET tpacket-v3 is recommended for non-inline operation
+[1 - Suricata-Main] 2025-05-05 17:44:55 Info: runmodes: eno2: creating 32 threads
+[1 - Suricata-Main] 2025-05-05 17:44:56 Notice: threads: Threads created -> W: 32 FM: 1 FR: 1   Engine started.
+[1 - Suricata-Main] 2025-05-05 17:52:09 Notice: suricata: Signal Received.  Stopping engine.
+[1 - Suricata-Main] 2025-05-05 17:52:10 Info: suricata: time elapsed 435.374s
+[1 - Suricata-Main] 2025-05-05 17:52:11 Notice: device: eno2: packets: 211996, drops: 600 (0.28%), invalid chksum: 0
+[1 - Suricata-Main] 2025-05-05 17:52:13 Notice: suricata: This is Suricata version 7.0.10 RELEASE running in SYSTEM mode
+[1 - Suricata-Main] 2025-05-05 17:52:13 Info: cpu: CPUs/cores online: 32
+[1 - Suricata-Main] 2025-05-05 17:52:13 Info: suricata: Setting engine mode to IDS mode by default
+[1 - Suricata-Main] 2025-05-05 17:52:13 Info: suricata: No 'host-mode': suricata is in IDS mode, using default setting 'sniffer-only'
+[1 - Suricata-Main] 2025-05-05 17:52:13 Info: logopenfile: fast output device (regular) initialized: fast.log
+[1 - Suricata-Main] 2025-05-05 17:52:13 Info: logopenfile: eve-log output device (regular) initialized: eve.json
+[1 - Suricata-Main] 2025-05-05 17:52:13 Warning: counters: stats are enabled but no loggers are active
+[1 - Suricata-Main] 2025-05-05 17:52:13 Error: detect-parse: Signature missing required value "sid".
+[1 - Suricata-Main] 2025-05-05 17:52:13 Error: detect: error parsing signature "alert sip any any -> any any (" from file /etc/suricata/rules/custom-sip.rules at line 1
+[1 - Suricata-Main] 2025-05-05 17:52:13 Error: detect-parse: no rule options.
+[1 - Suricata-Main] 2025-05-05 17:52:13 Error: detect: error parsing signature ")" from file /etc/suricata/rules/custom-sip.rules at line 7
+[1 - Suricata-Main] 2025-05-05 17:52:13 Error: detect-parse: Signature missing required value "sid".
+[1 - Suricata-Main] 2025-05-05 17:52:13 Error: detect: error parsing signature "alert sip any any -> any any (" from file /etc/suricata/rules/custom-sip.rules at line 9
+[1 - Suricata-Main] 2025-05-05 17:52:13 Error: detect-parse: no rule options.
+[1 - Suricata-Main] 2025-05-05 17:52:13 Error: detect: error parsing signature ")" from file /etc/suricata/rules/custom-sip.rules at line 15
+[1 - Suricata-Main] 2025-05-05 17:52:13 Error: detect-parse: Signature missing required value "sid".
+[1 - Suricata-Main] 2025-05-05 17:52:13 Error: detect: error parsing signature "alert sip any any -> any any (" from file /etc/suricata/rules/custom-sip.rules at line 17
+[1 - Suricata-Main] 2025-05-05 17:52:13 Error: detect-parse: no rule options.
+[1 - Suricata-Main] 2025-05-05 17:52:13 Error: detect: error parsing signature ")" from file /etc/suricata/rules/custom-sip.rules at line 23
+[1 - Suricata-Main] 2025-05-05 17:52:13 Error: detect-parse: Signature missing required value "sid".
+[1 - Suricata-Main] 2025-05-05 17:52:13 Error: detect: error parsing signature "alert sip any any -> any any (" from file /etc/suricata/rules/custom-sip.rules at line 25
+[1 - Suricata-Main] 2025-05-05 17:52:13 Error: detect-parse: no rule options.
+[1 - Suricata-Main] 2025-05-05 17:52:13 Error: detect: error parsing signature ")" from file /etc/suricata/rules/custom-sip.rules at line 30
+[1 - Suricata-Main] 2025-05-05 17:52:13 Warning: detect: 1 rule files specified, but no rules were loaded!
+[1 - Suricata-Main] 2025-05-05 17:52:13 Info: threshold-config: Threshold config parsed: 0 rule(s) found
+[1 - Suricata-Main] 2025-05-05 17:52:13 Info: detect: 0 signatures processed. 0 are IP-only rules, 0 are inspecting packet payload, 0 inspect application layer, 0 are decoder event only
+[1 - Suricata-Main] 2025-05-05 17:52:13 Warning: af-packet: eno2: AF_PACKET tpacket-v3 is recommended for non-inline operation
+[1 - Suricata-Main] 2025-05-05 17:52:13 Info: runmodes: eno2: creating 32 threads
+[1 - Suricata-Main] 2025-05-05 17:52:14 Notice: threads: Threads created -> W: 32 FM: 1 FR: 1   Engine started.
+[1 - Suricata-Main] 2025-05-05 18:00:00 Notice: suricata: Signal Received.  Stopping engine.
+[1 - Suricata-Main] 2025-05-05 18:00:00 Info: suricata: time elapsed 466.788s
+[1 - Suricata-Main] 2025-05-05 18:00:01 Notice: device: eno2: packets: 262726, drops: 459 (0.17%), invalid chksum: 0
+[1 - Suricata-Main] 2025-05-05 18:27:09 Notice: suricata: This is Suricata version 7.0.10 RELEASE running in SYSTEM mode
+[1 - Suricata-Main] 2025-05-05 18:27:09 Info: cpu: CPUs/cores online: 32
+[1 - Suricata-Main] 2025-05-05 18:27:09 Info: suricata: Setting engine mode to IDS mode by default
+[1 - Suricata-Main] 2025-05-05 18:27:09 Info: suricata: No 'host-mode': suricata is in IDS mode, using default setting 'sniffer-only'
+[1 - Suricata-Main] 2025-05-05 18:27:09 Info: logopenfile: fast output device (regular) initialized: fast.log
+[1 - Suricata-Main] 2025-05-05 18:27:09 Info: logopenfile: eve-log output device (regular) initialized: eve.json
+[1 - Suricata-Main] 2025-05-05 18:27:09 Warning: counters: stats are enabled but no loggers are active
+[1 - Suricata-Main] 2025-05-05 18:27:09 Error: detect-parse: Signature missing required value "sid".
+[1 - Suricata-Main] 2025-05-05 18:27:09 Error: detect: error parsing signature "alert sip any any -> any any (" from file /etc/suricata/rules/custom-sip.rules at line 1
+[1 - Suricata-Main] 2025-05-05 18:27:09 Error: detect-parse: no rule options.
+[1 - Suricata-Main] 2025-05-05 18:27:09 Error: detect: error parsing signature ")" from file /etc/suricata/rules/custom-sip.rules at line 7
+[1 - Suricata-Main] 2025-05-05 18:27:09 Error: detect-parse: Signature missing required value "sid".
+[1 - Suricata-Main] 2025-05-05 18:27:09 Error: detect: error parsing signature "alert sip any any -> any any (" from file /etc/suricata/rules/custom-sip.rules at line 9
+[1 - Suricata-Main] 2025-05-05 18:27:09 Error: detect-parse: no rule options.
+[1 - Suricata-Main] 2025-05-05 18:27:09 Error: detect: error parsing signature ")" from file /etc/suricata/rules/custom-sip.rules at line 15
+[1 - Suricata-Main] 2025-05-05 18:27:09 Error: detect-parse: Signature missing required value "sid".
+[1 - Suricata-Main] 2025-05-05 18:27:09 Error: detect: error parsing signature "alert sip any any -> any any (" from file /etc/suricata/rules/custom-sip.rules at line 17
+[1 - Suricata-Main] 2025-05-05 18:27:09 Error: detect-parse: no rule options.
+[1 - Suricata-Main] 2025-05-05 18:27:09 Error: detect: error parsing signature ")" from file /etc/suricata/rules/custom-sip.rules at line 23
+[1 - Suricata-Main] 2025-05-05 18:27:09 Error: detect-parse: Signature missing required value "sid".
+[1 - Suricata-Main] 2025-05-05 18:27:09 Error: detect: error parsing signature "alert sip any any -> any any (" from file /etc/suricata/rules/custom-sip.rules at line 25
+[1 - Suricata-Main] 2025-05-05 18:27:09 Error: detect-parse: no rule options.
+[1 - Suricata-Main] 2025-05-05 18:27:09 Error: detect: error parsing signature ")" from file /etc/suricata/rules/custom-sip.rules at line 30
+[1 - Suricata-Main] 2025-05-05 18:27:09 Warning: detect: 1 rule files specified, but no rules were loaded!
+[1 - Suricata-Main] 2025-05-05 18:27:09 Info: threshold-config: Threshold config parsed: 0 rule(s) found
+[1 - Suricata-Main] 2025-05-05 18:27:09 Info: detect: 0 signatures processed. 0 are IP-only rules, 0 are inspecting packet payload, 0 inspect application layer, 0 are decoder event only
+[1 - Suricata-Main] 2025-05-05 18:27:09 Warning: af-packet: eno2: AF_PACKET tpacket-v3 is recommended for non-inline operation
+[1 - Suricata-Main] 2025-05-05 18:27:09 Info: runmodes: eno2: creating 32 threads
+[1 - Suricata-Main] 2025-05-05 18:27:11 Notice: threads: Threads created -> W: 32 FM: 1 FR: 1   Engine started.
+[1 - Suricata-Main] 2025-05-05 18:35:32 Notice: suricata: Signal Received.  Stopping engine.
+[1 - Suricata-Main] 2025-05-05 18:35:33 Info: suricata: time elapsed 503.190s
+[1 - Suricata-Main] 2025-05-05 18:35:34 Notice: device: eno2: packets: 236662, drops: 218 (0.09%), invalid chksum: 0
+[1 - Suricata-Main] 2025-05-05 18:35:35 Notice: suricata: This is Suricata version 7.0.10 RELEASE running in SYSTEM mode
+[1 - Suricata-Main] 2025-05-05 18:35:35 Info: cpu: CPUs/cores online: 32
+[1 - Suricata-Main] 2025-05-05 18:35:35 Info: suricata: Setting engine mode to IDS mode by default
+[1 - Suricata-Main] 2025-05-05 18:35:35 Info: suricata: No 'host-mode': suricata is in IDS mode, using default setting 'sniffer-only'
+[1 - Suricata-Main] 2025-05-05 18:35:35 Info: logopenfile: fast output device (regular) initialized: fast.log
+[1 - Suricata-Main] 2025-05-05 18:35:35 Info: logopenfile: eve-log output device (regular) initialized: eve.json
+[1 - Suricata-Main] 2025-05-05 18:35:35 Warning: counters: stats are enabled but no loggers are active
+[1 - Suricata-Main] 2025-05-05 18:35:35 Error: detect-parse: Signature missing required value "sid".
+[1 - Suricata-Main] 2025-05-05 18:35:35 Error: detect: error parsing signature "alert sip any any -> any any (" from file /etc/suricata/rules/custom-sip.rules at line 1
+[1 - Suricata-Main] 2025-05-05 18:35:35 Error: detect-parse: no rule options.
+[1 - Suricata-Main] 2025-05-05 18:35:35 Error: detect: error parsing signature ")" from file /etc/suricata/rules/custom-sip.rules at line 7
+[1 - Suricata-Main] 2025-05-05 18:35:35 Error: detect-parse: Signature missing required value "sid".
+[1 - Suricata-Main] 2025-05-05 18:35:35 Error: detect: error parsing signature "alert sip any any -> any any (" from file /etc/suricata/rules/custom-sip.rules at line 9
+[1 - Suricata-Main] 2025-05-05 18:35:35 Error: detect-parse: no rule options.
+[1 - Suricata-Main] 2025-05-05 18:35:35 Error: detect: error parsing signature ")" from file /etc/suricata/rules/custom-sip.rules at line 15
+[1 - Suricata-Main] 2025-05-05 18:35:35 Error: detect-parse: Signature missing required value "sid".
+[1 - Suricata-Main] 2025-05-05 18:35:35 Error: detect: error parsing signature "alert sip any any -> any any (" from file /etc/suricata/rules/custom-sip.rules at line 17
+[1 - Suricata-Main] 2025-05-05 18:35:35 Error: detect-parse: no rule options.
+[1 - Suricata-Main] 2025-05-05 18:35:35 Error: detect: error parsing signature ")" from file /etc/suricata/rules/custom-sip.rules at line 23
+[1 - Suricata-Main] 2025-05-05 18:35:35 Error: detect-parse: Signature missing required value "sid".
+[1 - Suricata-Main] 2025-05-05 18:35:35 Error: detect: error parsing signature "alert sip any any -> any any (" from file /etc/suricata/rules/custom-sip.rules at line 25
+[1 - Suricata-Main] 2025-05-05 18:35:35 Error: detect-parse: no rule options.
+[1 - Suricata-Main] 2025-05-05 18:35:35 Error: detect: error parsing signature ")" from file /etc/suricata/rules/custom-sip.rules at line 30
+[1 - Suricata-Main] 2025-05-05 18:35:35 Warning: detect: 1 rule files specified, but no rules were loaded!
+[1 - Suricata-Main] 2025-05-05 18:35:35 Info: threshold-config: Threshold config parsed: 0 rule(s) found
+[1 - Suricata-Main] 2025-05-05 18:35:35 Info: detect: 0 signatures processed. 0 are IP-only rules, 0 are inspecting packet payload, 0 inspect application layer, 0 are decoder event only
+[1 - Suricata-Main] 2025-05-05 18:35:35 Warning: af-packet: eno2: AF_PACKET tpacket-v3 is recommended for non-inline operation
+[1 - Suricata-Main] 2025-05-05 18:35:35 Info: runmodes: eno2: creating 32 threads
+[1 - Suricata-Main] 2025-05-05 18:35:36 Notice: threads: Threads created -> W: 32 FM: 1 FR: 1   Engine started.
+[1 - Suricata-Main] 2025-05-05 18:40:47 Notice: suricata: Signal Received.  Stopping engine.
+[1 - Suricata-Main] 2025-05-05 18:40:48 Info: suricata: time elapsed 312.615s
+[1 - Suricata-Main] 2025-05-05 18:40:49 Notice: device: eno2: packets: 228668, drops: 7123 (3.11%), invalid chksum: 0
+[1 - Suricata-Main] 2025-05-05 18:40:50 Notice: suricata: This is Suricata version 7.0.10 RELEASE running in SYSTEM mode
+[1 - Suricata-Main] 2025-05-05 18:40:50 Info: cpu: CPUs/cores online: 32
+[1 - Suricata-Main] 2025-05-05 18:40:50 Info: suricata: Setting engine mode to IDS mode by default
+[1 - Suricata-Main] 2025-05-05 18:40:50 Info: suricata: No 'host-mode': suricata is in IDS mode, using default setting 'sniffer-only'
+[1 - Suricata-Main] 2025-05-05 18:40:50 Info: logopenfile: fast output device (regular) initialized: fast.log
+[1 - Suricata-Main] 2025-05-05 18:40:50 Info: logopenfile: eve-log output device (regular) initialized: eve.json
+[1 - Suricata-Main] 2025-05-05 18:40:50 Warning: counters: stats are enabled but no loggers are active
+[1 - Suricata-Main] 2025-05-05 18:40:50 Error: detect-parse: Signature missing required value "sid".
+[1 - Suricata-Main] 2025-05-05 18:40:50 Error: detect: error parsing signature "alert sip any any -> any any (" from file /etc/suricata/rules/custom-sip.rules at line 1
+[1 - Suricata-Main] 2025-05-05 18:40:50 Error: detect-parse: no rule options.
+[1 - Suricata-Main] 2025-05-05 18:40:50 Error: detect: error parsing signature ")" from file /etc/suricata/rules/custom-sip.rules at line 7
+[1 - Suricata-Main] 2025-05-05 18:40:50 Error: detect-parse: Signature missing required value "sid".
+[1 - Suricata-Main] 2025-05-05 18:40:50 Error: detect: error parsing signature "alert sip any any -> any any (" from file /etc/suricata/rules/custom-sip.rules at line 9
+[1 - Suricata-Main] 2025-05-05 18:40:50 Error: detect-parse: no rule options.
+[1 - Suricata-Main] 2025-05-05 18:40:50 Error: detect: error parsing signature ")" from file /etc/suricata/rules/custom-sip.rules at line 15
+[1 - Suricata-Main] 2025-05-05 18:40:50 Error: detect-parse: Signature missing required value "sid".
+[1 - Suricata-Main] 2025-05-05 18:40:50 Error: detect: error parsing signature "alert sip any any -> any any (" from file /etc/suricata/rules/custom-sip.rules at line 17
+[1 - Suricata-Main] 2025-05-05 18:40:50 Error: detect-parse: no rule options.
+[1 - Suricata-Main] 2025-05-05 18:40:50 Error: detect: error parsing signature ")" from file /etc/suricata/rules/custom-sip.rules at line 23
+[1 - Suricata-Main] 2025-05-05 18:40:50 Error: detect-parse: Signature missing required value "sid".
+[1 - Suricata-Main] 2025-05-05 18:40:50 Error: detect: error parsing signature "alert sip any any -> any any (" from file /etc/suricata/rules/custom-sip.rules at line 25
+[1 - Suricata-Main] 2025-05-05 18:40:50 Error: detect-parse: no rule options.
+[1 - Suricata-Main] 2025-05-05 18:40:50 Error: detect: error parsing signature ")" from file /etc/suricata/rules/custom-sip.rules at line 30
+[1 - Suricata-Main] 2025-05-05 18:40:50 Warning: detect: 1 rule files specified, but no rules were loaded!
+[1 - Suricata-Main] 2025-05-05 18:40:50 Info: threshold-config: Threshold config parsed: 0 rule(s) found
+[1 - Suricata-Main] 2025-05-05 18:40:50 Info: detect: 0 signatures processed. 0 are IP-only rules, 0 are inspecting packet payload, 0 inspect application layer, 0 are decoder event only
+[1 - Suricata-Main] 2025-05-05 18:40:50 Warning: af-packet: eno2: AF_PACKET tpacket-v3 is recommended for non-inline operation
+[1 - Suricata-Main] 2025-05-05 18:40:50 Info: runmodes: eno2: creating 32 threads
+[1 - Suricata-Main] 2025-05-05 18:40:51 Notice: threads: Threads created -> W: 32 FM: 1 FR: 1   Engine started.
+[1 - Suricata-Main] 2025-05-05 18:44:57 Notice: suricata: Signal Received.  Stopping engine.
+[1 - Suricata-Main] 2025-05-05 18:44:58 Info: suricata: time elapsed 247.769s
+[1 - Suricata-Main] 2025-05-05 18:44:59 Notice: device: eno2: packets: 221118, drops: 390 (0.18%), invalid chksum: 0
+[1 - Suricata-Main] 2025-05-05 18:45:00 Notice: suricata: This is Suricata version 7.0.10 RELEASE running in SYSTEM mode
+[1 - Suricata-Main] 2025-05-05 18:45:00 Info: cpu: CPUs/cores online: 32
+[1 - Suricata-Main] 2025-05-05 18:45:00 Info: suricata: Setting engine mode to IDS mode by default
+[1 - Suricata-Main] 2025-05-05 18:45:00 Info: suricata: No 'host-mode': suricata is in IDS mode, using default setting 'sniffer-only'
+[1 - Suricata-Main] 2025-05-05 18:45:00 Info: logopenfile: fast output device (regular) initialized: fast.log
+[1 - Suricata-Main] 2025-05-05 18:45:00 Info: logopenfile: eve-log output device (regular) initialized: eve.json
+[1 - Suricata-Main] 2025-05-05 18:45:00 Warning: counters: stats are enabled but no loggers are active
+[1 - Suricata-Main] 2025-05-05 18:45:00 Error: detect-parse: Signature missing required value "sid".
+[1 - Suricata-Main] 2025-05-05 18:45:00 Error: detect: error parsing signature "alert sip any any -> any any (" from file /etc/suricata/rules/custom-sip.rules at line 1
+[1 - Suricata-Main] 2025-05-05 18:45:00 Error: detect-parse: no rule options.
+[1 - Suricata-Main] 2025-05-05 18:45:00 Error: detect: error parsing signature ")" from file /etc/suricata/rules/custom-sip.rules at line 7
+[1 - Suricata-Main] 2025-05-05 18:45:00 Error: detect-parse: Signature missing required value "sid".
+[1 - Suricata-Main] 2025-05-05 18:45:00 Error: detect: error parsing signature "alert sip any any -> any any (" from file /etc/suricata/rules/custom-sip.rules at line 9
+[1 - Suricata-Main] 2025-05-05 18:45:00 Error: detect-parse: no rule options.
+[1 - Suricata-Main] 2025-05-05 18:45:00 Error: detect: error parsing signature ")" from file /etc/suricata/rules/custom-sip.rules at line 15
+[1 - Suricata-Main] 2025-05-05 18:45:00 Error: detect-parse: Signature missing required value "sid".
+[1 - Suricata-Main] 2025-05-05 18:45:00 Error: detect: error parsing signature "alert sip any any -> any any (" from file /etc/suricata/rules/custom-sip.rules at line 17
+[1 - Suricata-Main] 2025-05-05 18:45:00 Error: detect-parse: no rule options.
+[1 - Suricata-Main] 2025-05-05 18:45:00 Error: detect: error parsing signature ")" from file /etc/suricata/rules/custom-sip.rules at line 23
+[1 - Suricata-Main] 2025-05-05 18:45:00 Error: detect-parse: Signature missing required value "sid".
+[1 - Suricata-Main] 2025-05-05 18:45:00 Error: detect: error parsing signature "alert sip any any -> any any (" from file /etc/suricata/rules/custom-sip.rules at line 25
+[1 - Suricata-Main] 2025-05-05 18:45:00 Error: detect-parse: no rule options.
+[1 - Suricata-Main] 2025-05-05 18:45:00 Error: detect: error parsing signature ")" from file /etc/suricata/rules/custom-sip.rules at line 30
+[1 - Suricata-Main] 2025-05-05 18:45:00 Warning: detect: 1 rule files specified, but no rules were loaded!
+[1 - Suricata-Main] 2025-05-05 18:45:00 Info: threshold-config: Threshold config parsed: 0 rule(s) found
+[1 - Suricata-Main] 2025-05-05 18:45:00 Info: detect: 0 signatures processed. 0 are IP-only rules, 0 are inspecting packet payload, 0 inspect application layer, 0 are decoder event only
+[1 - Suricata-Main] 2025-05-05 18:45:00 Warning: af-packet: eno2: AF_PACKET tpacket-v3 is recommended for non-inline operation
+[1 - Suricata-Main] 2025-05-05 18:45:00 Info: runmodes: eno2: creating 32 threads
+[1 - Suricata-Main] 2025-05-05 18:45:02 Notice: threads: Threads created -> W: 32 FM: 1 FR: 1   Engine started.
+[1 - Suricata-Main] 2025-05-05 18:45:10 Notice: suricata: Signal Received.  Stopping engine.
+[1 - Suricata-Main] 2025-05-05 18:45:10 Info: suricata: time elapsed 10.091s
+[1 - Suricata-Main] 2025-05-05 18:45:12 Notice: device: eno2: packets: 3617, drops: 599 (16.56%), invalid chksum: 0
+[1 - Suricata-Main] 2025-05-05 18:45:13 Notice: suricata: This is Suricata version 7.0.10 RELEASE running in SYSTEM mode
+[1 - Suricata-Main] 2025-05-05 18:45:13 Info: cpu: CPUs/cores online: 32
+[1 - Suricata-Main] 2025-05-05 18:45:13 Info: suricata: Setting engine mode to IDS mode by default
+[1 - Suricata-Main] 2025-05-05 18:45:13 Info: suricata: No 'host-mode': suricata is in IDS mode, using default setting 'sniffer-only'
+[1 - Suricata-Main] 2025-05-05 18:45:13 Info: logopenfile: fast output device (regular) initialized: fast.log
+[1 - Suricata-Main] 2025-05-05 18:45:13 Info: logopenfile: eve-log output device (regular) initialized: eve.json
+[1 - Suricata-Main] 2025-05-05 18:45:13 Warning: counters: stats are enabled but no loggers are active
+[1 - Suricata-Main] 2025-05-05 18:45:13 Error: detect-parse: Signature missing required value "sid".
+[1 - Suricata-Main] 2025-05-05 18:45:13 Error: detect: error parsing signature "alert sip any any -> any any (" from file /etc/suricata/rules/custom-sip.rules at line 1
+[1 - Suricata-Main] 2025-05-05 18:45:13 Error: detect-parse: no rule options.
+[1 - Suricata-Main] 2025-05-05 18:45:13 Error: detect: error parsing signature ")" from file /etc/suricata/rules/custom-sip.rules at line 7
+[1 - Suricata-Main] 2025-05-05 18:45:13 Error: detect-parse: Signature missing required value "sid".
+[1 - Suricata-Main] 2025-05-05 18:45:13 Error: detect: error parsing signature "alert sip any any -> any any (" from file /etc/suricata/rules/custom-sip.rules at line 9
+[1 - Suricata-Main] 2025-05-05 18:45:13 Error: detect-parse: no rule options.
+[1 - Suricata-Main] 2025-05-05 18:45:13 Error: detect: error parsing signature ")" from file /etc/suricata/rules/custom-sip.rules at line 15
+[1 - Suricata-Main] 2025-05-05 18:45:13 Error: detect-parse: Signature missing required value "sid".
+[1 - Suricata-Main] 2025-05-05 18:45:13 Error: detect: error parsing signature "alert sip any any -> any any (" from file /etc/suricata/rules/custom-sip.rules at line 17
+[1 - Suricata-Main] 2025-05-05 18:45:13 Error: detect-parse: no rule options.
+[1 - Suricata-Main] 2025-05-05 18:45:13 Error: detect: error parsing signature ")" from file /etc/suricata/rules/custom-sip.rules at line 23
+[1 - Suricata-Main] 2025-05-05 18:45:13 Error: detect-parse: Signature missing required value "sid".
+[1 - Suricata-Main] 2025-05-05 18:45:13 Error: detect: error parsing signature "alert sip any any -> any any (" from file /etc/suricata/rules/custom-sip.rules at line 25
+[1 - Suricata-Main] 2025-05-05 18:45:13 Error: detect-parse: no rule options.
+[1 - Suricata-Main] 2025-05-05 18:45:13 Error: detect: error parsing signature ")" from file /etc/suricata/rules/custom-sip.rules at line 30
+[1 - Suricata-Main] 2025-05-05 18:45:13 Warning: detect: 1 rule files specified, but no rules were loaded!
+[1 - Suricata-Main] 2025-05-05 18:45:13 Info: threshold-config: Threshold config parsed: 0 rule(s) found
+[1 - Suricata-Main] 2025-05-05 18:45:13 Info: detect: 0 signatures processed. 0 are IP-only rules, 0 are inspecting packet payload, 0 inspect application layer, 0 are decoder event only
+[1 - Suricata-Main] 2025-05-05 18:45:13 Warning: af-packet: eno2: AF_PACKET tpacket-v3 is recommended for non-inline operation
+[1 - Suricata-Main] 2025-05-05 18:45:13 Info: runmodes: eno2: creating 32 threads
+[1 - Suricata-Main] 2025-05-05 18:45:14 Notice: threads: Threads created -> W: 32 FM: 1 FR: 1   Engine started.
+[1 - Suricata-Main] 2025-05-05 18:49:09 Notice: suricata: Signal Received.  Stopping engine.
+[1 - Suricata-Main] 2025-05-05 18:49:09 Info: suricata: time elapsed 236.028s
+[1 - Suricata-Main] 2025-05-05 18:49:10 Notice: device: eno2: packets: 124023, drops: 1935 (1.56%), invalid chksum: 0
+[1 - Suricata-Main] 2025-05-05 18:49:11 Notice: suricata: This is Suricata version 7.0.10 RELEASE running in SYSTEM mode
+[1 - Suricata-Main] 2025-05-05 18:49:11 Info: cpu: CPUs/cores online: 32
+[1 - Suricata-Main] 2025-05-05 18:49:11 Info: suricata: Setting engine mode to IDS mode by default
+[1 - Suricata-Main] 2025-05-05 18:49:11 Info: suricata: No 'host-mode': suricata is in IDS mode, using default setting 'sniffer-only'
+[1 - Suricata-Main] 2025-05-05 18:49:11 Info: logopenfile: fast output device (regular) initialized: fast.log
+[1 - Suricata-Main] 2025-05-05 18:49:11 Info: logopenfile: eve-log output device (regular) initialized: eve.json
+[1 - Suricata-Main] 2025-05-05 18:49:11 Warning: counters: stats are enabled but no loggers are active
+[1 - Suricata-Main] 2025-05-05 18:49:11 Error: detect-parse: Signature missing required value "sid".
+[1 - Suricata-Main] 2025-05-05 18:49:11 Error: detect: error parsing signature "alert sip any any -> any any (" from file /etc/suricata/rules/custom-sip.rules at line 1
+[1 - Suricata-Main] 2025-05-05 18:49:11 Error: detect-parse: no rule options.
+[1 - Suricata-Main] 2025-05-05 18:49:11 Error: detect: error parsing signature ")" from file /etc/suricata/rules/custom-sip.rules at line 7
+[1 - Suricata-Main] 2025-05-05 18:49:11 Error: detect-parse: Signature missing required value "sid".
+[1 - Suricata-Main] 2025-05-05 18:49:11 Error: detect: error parsing signature "alert sip any any -> any any (" from file /etc/suricata/rules/custom-sip.rules at line 9
+[1 - Suricata-Main] 2025-05-05 18:49:11 Error: detect-parse: no rule options.
+[1 - Suricata-Main] 2025-05-05 18:49:11 Error: detect: error parsing signature ")" from file /etc/suricata/rules/custom-sip.rules at line 15
+[1 - Suricata-Main] 2025-05-05 18:49:11 Error: detect-parse: Signature missing required value "sid".
+[1 - Suricata-Main] 2025-05-05 18:49:11 Error: detect: error parsing signature "alert sip any any -> any any (" from file /etc/suricata/rules/custom-sip.rules at line 17
+[1 - Suricata-Main] 2025-05-05 18:49:11 Error: detect-parse: no rule options.
+[1 - Suricata-Main] 2025-05-05 18:49:11 Error: detect: error parsing signature ")" from file /etc/suricata/rules/custom-sip.rules at line 23
+[1 - Suricata-Main] 2025-05-05 18:49:11 Error: detect-parse: Signature missing required value "sid".
+[1 - Suricata-Main] 2025-05-05 18:49:11 Error: detect: error parsing signature "alert sip any any -> any any (" from file /etc/suricata/rules/custom-sip.rules at line 25
+[1 - Suricata-Main] 2025-05-05 18:49:11 Error: detect-parse: no rule options.
+[1 - Suricata-Main] 2025-05-05 18:49:11 Error: detect: error parsing signature ")" from file /etc/suricata/rules/custom-sip.rules at line 30
+[1 - Suricata-Main] 2025-05-05 18:49:11 Warning: detect: 1 rule files specified, but no rules were loaded!
+[1 - Suricata-Main] 2025-05-05 18:49:11 Info: threshold-config: Threshold config parsed: 0 rule(s) found
+[1 - Suricata-Main] 2025-05-05 18:49:11 Info: detect: 0 signatures processed. 0 are IP-only rules, 0 are inspecting packet payload, 0 inspect application layer, 0 are decoder event only
+[1 - Suricata-Main] 2025-05-05 18:49:11 Warning: af-packet: eno2: AF_PACKET tpacket-v3 is recommended for non-inline operation
+[1 - Suricata-Main] 2025-05-05 18:49:11 Info: runmodes: eno2: creating 32 threads
+[1 - Suricata-Main] 2025-05-05 18:49:12 Notice: threads: Threads created -> W: 32 FM: 1 FR: 1   Engine started.
+[1 - Suricata-Main] 2025-05-05 18:55:34 Notice: suricata: Signal Received.  Stopping engine.
+[1 - Suricata-Main] 2025-05-05 18:55:34 Info: suricata: time elapsed 382.384s
+[1 - Suricata-Main] 2025-05-05 18:55:35 Notice: device: eno2: packets: 152168, drops: 376 (0.25%), invalid chksum: 0
+[1 - Suricata-Main] 2025-05-05 18:55:36 Notice: suricata: This is Suricata version 7.0.10 RELEASE running in SYSTEM mode
+[1 - Suricata-Main] 2025-05-05 18:55:36 Info: cpu: CPUs/cores online: 32
+[1 - Suricata-Main] 2025-05-05 18:55:36 Info: suricata: Setting engine mode to IDS mode by default
+[1 - Suricata-Main] 2025-05-05 18:55:36 Info: suricata: No 'host-mode': suricata is in IDS mode, using default setting 'sniffer-only'
+[1 - Suricata-Main] 2025-05-05 18:55:36 Info: logopenfile: fast output device (regular) initialized: fast.log
+[1 - Suricata-Main] 2025-05-05 18:55:36 Info: logopenfile: eve-log output device (regular) initialized: eve.json
+[1 - Suricata-Main] 2025-05-05 18:55:36 Warning: counters: stats are enabled but no loggers are active
+[1 - Suricata-Main] 2025-05-05 18:55:36 Error: detect-parse: Signature missing required value "sid".
+[1 - Suricata-Main] 2025-05-05 18:55:36 Error: detect: error parsing signature "alert sip any any -> any any (" from file /etc/suricata/rules/custom-sip.rules at line 1
+[1 - Suricata-Main] 2025-05-05 18:55:36 Error: detect-parse: no rule options.
+[1 - Suricata-Main] 2025-05-05 18:55:36 Error: detect: error parsing signature ")" from file /etc/suricata/rules/custom-sip.rules at line 7
+[1 - Suricata-Main] 2025-05-05 18:55:36 Error: detect-parse: Signature missing required value "sid".
+[1 - Suricata-Main] 2025-05-05 18:55:36 Error: detect: error parsing signature "alert sip any any -> any any (" from file /etc/suricata/rules/custom-sip.rules at line 9
+[1 - Suricata-Main] 2025-05-05 18:55:36 Error: detect-parse: no rule options.
+[1 - Suricata-Main] 2025-05-05 18:55:36 Error: detect: error parsing signature ")" from file /etc/suricata/rules/custom-sip.rules at line 15
+[1 - Suricata-Main] 2025-05-05 18:55:36 Error: detect-parse: Signature missing required value "sid".
+[1 - Suricata-Main] 2025-05-05 18:55:36 Error: detect: error parsing signature "alert sip any any -> any any (" from file /etc/suricata/rules/custom-sip.rules at line 17
+[1 - Suricata-Main] 2025-05-05 18:55:36 Error: detect-parse: no rule options.
+[1 - Suricata-Main] 2025-05-05 18:55:36 Error: detect: error parsing signature ")" from file /etc/suricata/rules/custom-sip.rules at line 23
+[1 - Suricata-Main] 2025-05-05 18:55:36 Error: detect-parse: Signature missing required value "sid".
+[1 - Suricata-Main] 2025-05-05 18:55:36 Error: detect: error parsing signature "alert sip any any -> any any (" from file /etc/suricata/rules/custom-sip.rules at line 25
+[1 - Suricata-Main] 2025-05-05 18:55:36 Error: detect-parse: no rule options.
+[1 - Suricata-Main] 2025-05-05 18:55:36 Error: detect: error parsing signature ")" from file /etc/suricata/rules/custom-sip.rules at line 30
+[1 - Suricata-Main] 2025-05-05 18:55:36 Warning: detect: 1 rule files specified, but no rules were loaded!
+[1 - Suricata-Main] 2025-05-05 18:55:36 Info: threshold-config: Threshold config parsed: 0 rule(s) found
+[1 - Suricata-Main] 2025-05-05 18:55:36 Info: detect: 0 signatures processed. 0 are IP-only rules, 0 are inspecting packet payload, 0 inspect application layer, 0 are decoder event only
+[1 - Suricata-Main] 2025-05-05 18:55:36 Warning: af-packet: eno2: AF_PACKET tpacket-v3 is recommended for non-inline operation
+[1 - Suricata-Main] 2025-05-05 18:55:36 Info: runmodes: eno2: creating 32 threads
+[1 - Suricata-Main] 2025-05-05 18:55:37 Notice: threads: Threads created -> W: 32 FM: 1 FR: 1   Engine started.
+[1 - Suricata-Main] 2025-05-05 19:26:18 Notice: suricata: Signal Received.  Stopping engine.
+[1 - Suricata-Main] 2025-05-05 19:26:18 Info: suricata: time elapsed 1841.677s
+[1 - Suricata-Main] 2025-05-05 19:26:19 Notice: device: eno2: packets: 1167610, drops: 1483 (0.13%), invalid chksum: 0
+[1 - Suricata-Main] 2025-05-05 19:26:20 Notice: suricata: This is Suricata version 7.0.10 RELEASE running in SYSTEM mode
+[1 - Suricata-Main] 2025-05-05 19:26:20 Info: cpu: CPUs/cores online: 32
+[1 - Suricata-Main] 2025-05-05 19:26:20 Info: suricata: Setting engine mode to IDS mode by default
+[1 - Suricata-Main] 2025-05-05 19:26:20 Info: suricata: No 'host-mode': suricata is in IDS mode, using default setting 'sniffer-only'
+[1 - Suricata-Main] 2025-05-05 19:26:20 Info: logopenfile: fast output device (regular) initialized: fast.log
+[1 - Suricata-Main] 2025-05-05 19:26:20 Info: logopenfile: eve-log output device (regular) initialized: eve.json
+[1 - Suricata-Main] 2025-05-05 19:26:20 Warning: counters: stats are enabled but no loggers are active
+[1 - Suricata-Main] 2025-05-05 19:26:20 Info: detect: 1 rule files processed. 4 rules successfully loaded, 0 rules failed, 0
+[1 - Suricata-Main] 2025-05-05 19:26:20 Info: threshold-config: Threshold config parsed: 0 rule(s) found
+[1 - Suricata-Main] 2025-05-05 19:26:20 Info: detect: 4 signatures processed. 0 are IP-only rules, 4 are inspecting packet payload, 0 inspect application layer, 0 are decoder event only
+[1 - Suricata-Main] 2025-05-05 19:26:21 Warning: af-packet: eno2: AF_PACKET tpacket-v3 is recommended for non-inline operation
+[1 - Suricata-Main] 2025-05-05 19:26:21 Info: runmodes: eno2: creating 32 threads
+[1 - Suricata-Main] 2025-05-05 19:26:22 Notice: threads: Threads created -> W: 32 FM: 1 FR: 1   Engine started.
+[1 - Suricata-Main] 2025-05-05 19:31:51 Notice: suricata: Signal Received.  Stopping engine.
+[1 - Suricata-Main] 2025-05-05 19:31:52 Info: suricata: time elapsed 331.287s
+[1 - Suricata-Main] 2025-05-05 19:31:53 Notice: device: eno2: packets: 144417, drops: 506 (0.35%), invalid chksum: 0
+[1 - Suricata-Main] 2025-05-05 19:32:19 Notice: suricata: This is Suricata version 7.0.10 RELEASE running in SYSTEM mode
+[1 - Suricata-Main] 2025-05-05 19:32:19 Info: cpu: CPUs/cores online: 32
+[1 - Suricata-Main] 2025-05-05 19:32:19 Info: suricata: Setting engine mode to IDS mode by default
+[1 - Suricata-Main] 2025-05-05 19:32:19 Info: suricata: No 'host-mode': suricata is in IDS mode, using default setting 'sniffer-only'
+[1 - Suricata-Main] 2025-05-05 19:32:19 Info: logopenfile: fast output device (regular) initialized: fast.log
+[1 - Suricata-Main] 2025-05-05 19:32:19 Info: logopenfile: eve-log output device (regular) initialized: eve.json
+[1 - Suricata-Main] 2025-05-05 19:32:19 Warning: counters: stats are enabled but no loggers are active
+[1 - Suricata-Main] 2025-05-05 19:32:19 Info: detect: 1 rule files processed. 4 rules successfully loaded, 0 rules failed, 0
+[1 - Suricata-Main] 2025-05-05 19:32:19 Info: threshold-config: Threshold config parsed: 0 rule(s) found
+[1 - Suricata-Main] 2025-05-05 19:32:19 Info: detect: 4 signatures processed. 0 are IP-only rules, 4 are inspecting packet payload, 0 inspect application layer, 0 are decoder event only
+[1 - Suricata-Main] 2025-05-05 19:32:19 Warning: af-packet: eno2: AF_PACKET tpacket-v3 is recommended for non-inline operation
+[1 - Suricata-Main] 2025-05-05 19:32:19 Info: runmodes: eno2: creating 32 threads
+[1 - Suricata-Main] 2025-05-05 19:32:20 Notice: threads: Threads created -> W: 32 FM: 1 FR: 1   Engine started.
+[1 - Suricata-Main] 2025-05-05 19:39:55 Notice: suricata: Signal Received.  Stopping engine.
+[1 - Suricata-Main] 2025-05-05 19:39:56 Info: suricata: time elapsed 456.940s
+[1 - Suricata-Main] 2025-05-05 19:39:57 Notice: device: eno2: packets: 253926, drops: 568 (0.22%), invalid chksum: 0
+[1 - Suricata-Main] 2025-05-05 19:45:14 Notice: suricata: This is Suricata version 7.0.10 RELEASE running in SYSTEM mode
+[1 - Suricata-Main] 2025-05-05 19:45:14 Info: cpu: CPUs/cores online: 32
+[1 - Suricata-Main] 2025-05-05 19:45:14 Info: suricata: Setting engine mode to IDS mode by default
+[1 - Suricata-Main] 2025-05-05 19:45:14 Info: suricata: No 'host-mode': suricata is in IDS mode, using default setting 'sniffer-only'
+[1 - Suricata-Main] 2025-05-05 19:45:14 Info: logopenfile: fast output device (regular) initialized: fast.log
+[1 - Suricata-Main] 2025-05-05 19:45:14 Info: logopenfile: eve-log output device (regular) initialized: eve.json
+[1 - Suricata-Main] 2025-05-05 19:45:14 Warning: counters: stats are enabled but no loggers are active
+[1 - Suricata-Main] 2025-05-05 19:45:14 Info: detect: 1 rule files processed. 4 rules successfully loaded, 0 rules failed, 0
+[1 - Suricata-Main] 2025-05-05 19:45:14 Info: threshold-config: Threshold config parsed: 0 rule(s) found
+[1 - Suricata-Main] 2025-05-05 19:45:14 Info: detect: 4 signatures processed. 0 are IP-only rules, 4 are inspecting packet payload, 0 inspect application layer, 0 are decoder event only
+[1 - Suricata-Main] 2025-05-05 19:45:14 Warning: af-packet: eno2: AF_PACKET tpacket-v3 is recommended for non-inline operation
+[1 - Suricata-Main] 2025-05-05 19:45:14 Info: runmodes: eno2: creating 32 threads
+[1 - Suricata-Main] 2025-05-05 19:45:15 Notice: threads: Threads created -> W: 32 FM: 1 FR: 1   Engine started.
+[1 - Suricata-Main] 2025-05-05 19:46:37 Notice: suricata: Signal Received.  Stopping engine.
+[1 - Suricata-Main] 2025-05-05 19:46:38 Info: suricata: time elapsed 83.769s
+[1 - Suricata-Main] 2025-05-05 19:46:39 Notice: device: eno2: packets: 36309, drops: 422 (1.16%), invalid chksum: 0
+[1 - Suricata-Main] 2025-05-05 19:46:55 Notice: suricata: This is Suricata version 7.0.10 RELEASE running in SYSTEM mode
+[1 - Suricata-Main] 2025-05-05 19:46:55 Info: cpu: CPUs/cores online: 32
+[1 - Suricata-Main] 2025-05-05 19:46:55 Info: suricata: Setting engine mode to IDS mode by default
+[1 - Suricata-Main] 2025-05-05 19:46:55 Info: suricata: No 'host-mode': suricata is in IDS mode, using default setting 'sniffer-only'
+[1 - Suricata-Main] 2025-05-05 19:46:55 Info: logopenfile: fast output device (regular) initialized: fast.log
+[1 - Suricata-Main] 2025-05-05 19:46:55 Info: logopenfile: eve-log output device (regular) initialized: eve.json
+[1 - Suricata-Main] 2025-05-05 19:46:55 Warning: counters: stats are enabled but no loggers are active
+[1 - Suricata-Main] 2025-05-05 19:46:55 Info: detect: 1 rule files processed. 4 rules successfully loaded, 0 rules failed, 0
+[1 - Suricata-Main] 2025-05-05 19:46:55 Info: threshold-config: Threshold config parsed: 0 rule(s) found
+[1 - Suricata-Main] 2025-05-05 19:46:55 Info: detect: 4 signatures processed. 0 are IP-only rules, 4 are inspecting packet payload, 0 inspect application layer, 0 are decoder event only
+[1 - Suricata-Main] 2025-05-05 19:46:55 Warning: af-packet: eno2: AF_PACKET tpacket-v3 is recommended for non-inline operation
+[1 - Suricata-Main] 2025-05-05 19:46:55 Info: runmodes: eno2: creating 32 threads
+[1 - Suricata-Main] 2025-05-05 19:46:56 Notice: threads: Threads created -> W: 32 FM: 1 FR: 1   Engine started.
+[1 - Suricata-Main] 2025-05-06 18:17:27 Notice: suricata: Signal Received.  Stopping engine.
+[1 - Suricata-Main] 2025-05-06 18:17:27 Info: suricata: time elapsed 81032.195s
+[1 - Suricata-Main] 2025-05-06 18:17:29 Notice: device: eno2: packets: 33895975, drops: 3454 (0.01%), invalid chksum: 0
+[1 - Suricata-Main] 2025-05-06 18:17:33 Notice: suricata: This is Suricata version 7.0.10 RELEASE running in SYSTEM mode
+[1 - Suricata-Main] 2025-05-06 18:17:33 Info: cpu: CPUs/cores online: 32
+[1 - Suricata-Main] 2025-05-06 18:17:33 Info: suricata: Setting engine mode to IDS mode by default
+[1 - Suricata-Main] 2025-05-06 18:17:33 Info: suricata: No 'host-mode': suricata is in IDS mode, using default setting 'sniffer-only'
+[1 - Suricata-Main] 2025-05-06 18:17:33 Info: logopenfile: fast output device (regular) initialized: fast.log
+[1 - Suricata-Main] 2025-05-06 18:17:33 Info: logopenfile: eve-log output device (regular) initialized: eve.json
+[1 - Suricata-Main] 2025-05-06 18:17:33 Warning: counters: stats are enabled but no loggers are active
+[1 - Suricata-Main] 2025-05-06 18:17:33 Info: detect: 1 rule files processed. 4 rules successfully loaded, 0 rules failed, 0
+[1 - Suricata-Main] 2025-05-06 18:17:33 Info: threshold-config: Threshold config parsed: 0 rule(s) found
+[1 - Suricata-Main] 2025-05-06 18:17:33 Info: detect: 4 signatures processed. 0 are IP-only rules, 4 are inspecting packet payload, 0 inspect application layer, 0 are decoder event only
+[1 - Suricata-Main] 2025-05-06 18:17:33 Warning: af-packet: eno2: AF_PACKET tpacket-v3 is recommended for non-inline operation
+[1 - Suricata-Main] 2025-05-06 18:17:33 Info: runmodes: eno2: creating 32 threads
+[1 - Suricata-Main] 2025-05-06 18:17:34 Notice: threads: Threads created -> W: 32 FM: 1 FR: 1   Engine started.
+[1 - Suricata-Main] 2025-05-06 18:23:51 Notice: suricata: Signal Received.  Stopping engine.
+[1 - Suricata-Main] 2025-05-06 18:23:52 Info: suricata: time elapsed 379.375s
+[1 - Suricata-Main] 2025-05-06 18:23:53 Notice: device: eno2: packets: 13614, drops: 0 (0.00%), invalid chksum: 0
+[1 - Suricata-Main] 2025-05-06 18:24:15 Notice: suricata: This is Suricata version 7.0.10 RELEASE running in SYSTEM mode
+[1 - Suricata-Main] 2025-05-06 18:24:15 Info: cpu: CPUs/cores online: 32
+[1 - Suricata-Main] 2025-05-06 18:24:15 Info: suricata: Setting engine mode to IDS mode by default
+[1 - Suricata-Main] 2025-05-06 18:24:15 Info: suricata: No 'host-mode': suricata is in IDS mode, using default setting 'sniffer-only'
+[1 - Suricata-Main] 2025-05-06 18:24:15 Info: logopenfile: fast output device (regular) initialized: fast.log
+[1 - Suricata-Main] 2025-05-06 18:24:15 Info: logopenfile: eve-log output device (regular) initialized: eve.json
+[1 - Suricata-Main] 2025-05-06 18:24:15 Warning: counters: stats are enabled but no loggers are active
+[1 - Suricata-Main] 2025-05-06 18:24:15 Info: detect: 1 rule files processed. 4 rules successfully loaded, 0 rules failed, 0
+[1 - Suricata-Main] 2025-05-06 18:24:15 Info: threshold-config: Threshold config parsed: 0 rule(s) found
+[1 - Suricata-Main] 2025-05-06 18:24:15 Info: detect: 4 signatures processed. 0 are IP-only rules, 4 are inspecting packet payload, 0 inspect application layer, 0 are decoder event only
+[1 - Suricata-Main] 2025-05-06 18:24:15 Warning: af-packet: eno2: AF_PACKET tpacket-v3 is recommended for non-inline operation
+[1 - Suricata-Main] 2025-05-06 18:24:15 Info: runmodes: eno2: creating 32 threads
+[1 - Suricata-Main] 2025-05-06 18:24:17 Notice: threads: Threads created -> W: 32 FM: 1 FR: 1   Engine started.
+[1 - Suricata-Main] 2025-05-06 18:26:40 Notice: suricata: Signal Received.  Stopping engine.
+[1 - Suricata-Main] 2025-05-06 18:26:40 Info: suricata: time elapsed 144.643s
+[1 - Suricata-Main] 2025-05-06 18:26:41 Notice: device: eno2: packets: 6481, drops: 0 (0.00%), invalid chksum: 0
+[1 - Suricata-Main] 2025-05-06 18:27:30 Notice: suricata: This is Suricata version 7.0.10 RELEASE running in SYSTEM mode
+[1 - Suricata-Main] 2025-05-06 18:27:30 Info: cpu: CPUs/cores online: 32
+[1 - Suricata-Main] 2025-05-06 18:27:30 Info: suricata: Setting engine mode to IDS mode by default
+[1 - Suricata-Main] 2025-05-06 18:27:30 Info: suricata: No 'host-mode': suricata is in IDS mode, using default setting 'sniffer-only'
+[1 - Suricata-Main] 2025-05-06 18:27:30 Info: logopenfile: fast output device (regular) initialized: fast.log
+[1 - Suricata-Main] 2025-05-06 18:27:30 Info: logopenfile: eve-log output device (regular) initialized: eve.json
+[1 - Suricata-Main] 2025-05-06 18:27:30 Warning: counters: stats are enabled but no loggers are active
+[1 - Suricata-Main] 2025-05-06 18:27:30 Info: detect: 1 rule files processed. 4 rules successfully loaded, 0 rules failed, 0
+[1 - Suricata-Main] 2025-05-06 18:27:30 Info: threshold-config: Threshold config parsed: 0 rule(s) found
+[1 - Suricata-Main] 2025-05-06 18:27:30 Info: detect: 4 signatures processed. 0 are IP-only rules, 4 are inspecting packet payload, 0 inspect application layer, 0 are decoder event only
+[1 - Suricata-Main] 2025-05-06 18:27:30 Warning: af-packet: eno2: AF_PACKET tpacket-v3 is recommended for non-inline operation
+[1 - Suricata-Main] 2025-05-06 18:27:30 Info: runmodes: eno2: creating 32 threads
+[1 - Suricata-Main] 2025-05-06 18:27:31 Notice: threads: Threads created -> W: 32 FM: 1 FR: 1   Engine started.
+[56 - Suricata-Main] 2025-05-06 19:10:30 Notice: suricata: This is Suricata version 7.0.10 RELEASE running in SYSTEM mode
+[56 - Suricata-Main] 2025-05-06 19:10:30 Info: cpu: CPUs/cores online: 32
+[56 - Suricata-Main] 2025-05-06 19:10:30 Info: suricata: Setting engine mode to IDS mode by default
+[56 - Suricata-Main] 2025-05-06 19:10:30 Info: suricata: No 'host-mode': suricata is in IDS mode, using default setting 'sniffer-only'
+[56 - Suricata-Main] 2025-05-06 19:10:30 Info: logopenfile: fast output device (regular) initialized: fast.log
+[56 - Suricata-Main] 2025-05-06 19:10:30 Info: logopenfile: eve-log output device (regular) initialized: eve.json
+[56 - Suricata-Main] 2025-05-06 19:10:30 Warning: counters: stats are enabled but no loggers are active
+[56 - Suricata-Main] 2025-05-06 19:10:30 Info: detect: 1 rule files processed. 4 rules successfully loaded, 0 rules failed, 0
+[56 - Suricata-Main] 2025-05-06 19:10:30 Info: threshold-config: Threshold config parsed: 0 rule(s) found
+[56 - Suricata-Main] 2025-05-06 19:10:30 Info: detect: 4 signatures processed. 0 are IP-only rules, 4 are inspecting packet payload, 0 inspect application layer, 0 are decoder event only
+[56 - Suricata-Main] 2025-05-06 19:10:30 Error: af-packet: fanout not supported by kernel: Kernel too old or cluster-id 99 already in use.
+[56 - Suricata-Main] 2025-05-06 19:10:30 Warning: af-packet: eno2: AF_PACKET tpacket-v3 is recommended for non-inline operation
+[56 - Suricata-Main] 2025-05-06 19:10:30 Info: runmodes: eno2: creating 1 thread
+[57 - W#01-eno2] 2025-05-06 19:10:30 Info: ioctl: eno2: MTU 1500
+[56 - Suricata-Main] 2025-05-06 19:10:30 Notice: threads: Threads created -> W: 1 FM: 1 FR: 1   Engine started.
+[56 - Suricata-Main] 2025-05-06 19:11:29 Notice: suricata: Signal Received.  Stopping engine.
+[56 - Suricata-Main] 2025-05-06 19:11:30 Info: suricata: time elapsed 60.311s
+[56 - Suricata-Main] 2025-05-06 19:11:31 Notice: device: eno2: packets: 2066, drops: 0 (0.00%), invalid chksum: 0
+[66 - Suricata-Main] 2025-05-06 19:13:22 Notice: suricata: This is Suricata version 7.0.10 RELEASE running in SYSTEM mode
+[66 - Suricata-Main] 2025-05-06 19:13:22 Info: cpu: CPUs/cores online: 32
+[66 - Suricata-Main] 2025-05-06 19:13:22 Info: suricata: Setting engine mode to IDS mode by default
+[66 - Suricata-Main] 2025-05-06 19:13:22 Info: suricata: No 'host-mode': suricata is in IDS mode, using default setting 'sniffer-only'
+[66 - Suricata-Main] 2025-05-06 19:13:22 Info: logopenfile: fast output device (regular) initialized: fast.log
+[66 - Suricata-Main] 2025-05-06 19:13:22 Info: logopenfile: eve-log output device (regular) initialized: eve.json
+[66 - Suricata-Main] 2025-05-06 19:13:22 Warning: counters: stats are enabled but no loggers are active
+[66 - Suricata-Main] 2025-05-06 19:13:22 Info: detect: 1 rule files processed. 4 rules successfully loaded, 0 rules failed, 0
+[66 - Suricata-Main] 2025-05-06 19:13:22 Info: threshold-config: Threshold config parsed: 0 rule(s) found
+[66 - Suricata-Main] 2025-05-06 19:13:22 Info: detect: 4 signatures processed. 0 are IP-only rules, 4 are inspecting packet payload, 0 inspect application layer, 0 are decoder event only
+[66 - Suricata-Main] 2025-05-06 19:13:22 Error: af-packet: fanout not supported by kernel: Kernel too old or cluster-id 99 already in use.
+[66 - Suricata-Main] 2025-05-06 19:13:22 Warning: af-packet: eno2: AF_PACKET tpacket-v3 is recommended for non-inline operation
+[66 - Suricata-Main] 2025-05-06 19:13:22 Info: runmodes: eno2: creating 1 thread
+[67 - W#01-eno2] 2025-05-06 19:13:22 Info: ioctl: eno2: MTU 1500
+[66 - Suricata-Main] 2025-05-06 19:13:22 Notice: threads: Threads created -> W: 1 FM: 1 FR: 1   Engine started.
+[66 - Suricata-Main] 2025-05-06 19:13:42 Notice: suricata: Signal Received.  Stopping engine.
+[66 - Suricata-Main] 2025-05-06 19:13:42 Info: suricata: time elapsed 20.787s
+[66 - Suricata-Main] 2025-05-06 19:13:43 Notice: device: eno2: packets: 286, drops: 0 (0.00%), invalid chksum: 0
+[77 - Suricata-Main] 2025-05-06 19:15:25 Notice: suricata: This is Suricata version 7.0.10 RELEASE running in SYSTEM mode
+[77 - Suricata-Main] 2025-05-06 19:15:25 Info: cpu: CPUs/cores online: 32
+[77 - Suricata-Main] 2025-05-06 19:15:25 Info: suricata: Setting engine mode to IDS mode by default
+[77 - Suricata-Main] 2025-05-06 19:15:25 Info: suricata: No 'host-mode': suricata is in IDS mode, using default setting 'sniffer-only'
+[77 - Suricata-Main] 2025-05-06 19:15:25 Info: logopenfile: fast output device (regular) initialized: fast.log
+[77 - Suricata-Main] 2025-05-06 19:15:25 Info: logopenfile: eve-log output device (regular) initialized: eve.json
+[77 - Suricata-Main] 2025-05-06 19:15:25 Warning: counters: stats are enabled but no loggers are active
+[77 - Suricata-Main] 2025-05-06 19:15:25 Info: detect: 1 rule files processed. 4 rules successfully loaded, 0 rules failed, 0
+[77 - Suricata-Main] 2025-05-06 19:15:25 Info: threshold-config: Threshold config parsed: 0 rule(s) found
+[77 - Suricata-Main] 2025-05-06 19:15:25 Info: detect: 4 signatures processed. 0 are IP-only rules, 4 are inspecting packet payload, 0 inspect application layer, 0 are decoder event only
+[77 - Suricata-Main] 2025-05-06 19:15:25 Error: af-packet: fanout not supported by kernel: Kernel too old or cluster-id 99 already in use.
+[77 - Suricata-Main] 2025-05-06 19:15:25 Warning: af-packet: eno2: AF_PACKET tpacket-v3 is recommended for non-inline operation
+[77 - Suricata-Main] 2025-05-06 19:15:25 Info: runmodes: eno2: creating 1 thread
+[78 - W#01-eno2] 2025-05-06 19:15:25 Info: ioctl: eno2: MTU 1500
+[77 - Suricata-Main] 2025-05-06 19:15:26 Notice: threads: Threads created -> W: 1 FM: 1 FR: 1   Engine started.
+[77 - Suricata-Main] 2025-05-06 19:15:30 Notice: suricata: Signal Received.  Stopping engine.
+[77 - Suricata-Main] 2025-05-06 19:15:30 Info: suricata: time elapsed 4.975s
+[77 - Suricata-Main] 2025-05-06 19:15:31 Notice: device: eno2: packets: 71, drops: 0 (0.00%), invalid chksum: 0
+[87 - Suricata-Main] 2025-05-06 19:16:41 Notice: suricata: This is Suricata version 7.0.10 RELEASE running in SYSTEM mode
+[87 - Suricata-Main] 2025-05-06 19:16:41 Info: cpu: CPUs/cores online: 32
+[87 - Suricata-Main] 2025-05-06 19:16:41 Info: suricata: Setting engine mode to IDS mode by default
+[87 - Suricata-Main] 2025-05-06 19:16:41 Info: suricata: No 'host-mode': suricata is in IDS mode, using default setting 'sniffer-only'
+[87 - Suricata-Main] 2025-05-06 19:16:41 Info: logopenfile: fast output device (regular) initialized: fast.log
+[87 - Suricata-Main] 2025-05-06 19:16:41 Info: logopenfile: eve-log output device (regular) initialized: eve.json
+[87 - Suricata-Main] 2025-05-06 19:16:41 Warning: counters: stats are enabled but no loggers are active
+[87 - Suricata-Main] 2025-05-06 19:16:41 Info: detect: 1 rule files processed. 4 rules successfully loaded, 0 rules failed, 0
+[87 - Suricata-Main] 2025-05-06 19:16:41 Info: threshold-config: Threshold config parsed: 0 rule(s) found
+[87 - Suricata-Main] 2025-05-06 19:16:41 Info: detect: 4 signatures processed. 0 are IP-only rules, 4 are inspecting packet payload, 0 inspect application layer, 0 are decoder event only
+[87 - Suricata-Main] 2025-05-06 19:16:41 Error: af-packet: fanout not supported by kernel: Kernel too old or cluster-id 99 already in use.
+[87 - Suricata-Main] 2025-05-06 19:16:41 Warning: af-packet: eno2: AF_PACKET tpacket-v3 is recommended for non-inline operation
+[87 - Suricata-Main] 2025-05-06 19:16:41 Info: runmodes: eno2: creating 1 thread
+[88 - W#01-eno2] 2025-05-06 19:16:41 Info: ioctl: eno2: MTU 1500
+[87 - Suricata-Main] 2025-05-06 19:16:41 Notice: threads: Threads created -> W: 1 FM: 1 FR: 1   Engine started.
+[87 - Suricata-Main] 2025-05-06 19:16:46 Notice: suricata: Signal Received.  Stopping engine.
+[87 - Suricata-Main] 2025-05-06 19:16:46 Info: suricata: time elapsed 4.980s
+[87 - Suricata-Main] 2025-05-06 19:16:47 Notice: device: eno2: packets: 106, drops: 0 (0.00%), invalid chksum: 0
+[97 - Suricata-Main] 2025-05-06 19:31:54 Notice: suricata: This is Suricata version 7.0.10 RELEASE running in SYSTEM mode
+[97 - Suricata-Main] 2025-05-06 19:31:54 Info: cpu: CPUs/cores online: 32
+[97 - Suricata-Main] 2025-05-06 19:31:54 Info: suricata: Setting engine mode to IDS mode by default
+[97 - Suricata-Main] 2025-05-06 19:31:54 Info: suricata: No 'host-mode': suricata is in IDS mode, using default setting 'sniffer-only'
+[97 - Suricata-Main] 2025-05-06 19:31:54 Info: logopenfile: fast output device (regular) initialized: fast.log
+[97 - Suricata-Main] 2025-05-06 19:31:54 Info: logopenfile: eve-log output device (regular) initialized: eve.json
+[97 - Suricata-Main] 2025-05-06 19:31:54 Warning: counters: stats are enabled but no loggers are active
+[97 - Suricata-Main] 2025-05-06 19:31:54 Info: detect: 1 rule files processed. 4 rules successfully loaded, 0 rules failed, 0
+[97 - Suricata-Main] 2025-05-06 19:31:54 Info: threshold-config: Threshold config parsed: 0 rule(s) found
+[97 - Suricata-Main] 2025-05-06 19:31:54 Info: detect: 4 signatures processed. 0 are IP-only rules, 4 are inspecting packet payload, 0 inspect application layer, 0 are decoder event only
+[97 - Suricata-Main] 2025-05-06 19:31:54 Error: af-packet: fanout not supported by kernel: Kernel too old or cluster-id 99 already in use.
+[97 - Suricata-Main] 2025-05-06 19:31:54 Warning: af-packet: eno2: AF_PACKET tpacket-v3 is recommended for non-inline operation
+[97 - Suricata-Main] 2025-05-06 19:31:54 Info: runmodes: eno2: creating 1 thread
+[98 - W#01-eno2] 2025-05-06 19:31:54 Info: ioctl: eno2: MTU 1500
+[97 - Suricata-Main] 2025-05-06 19:31:54 Notice: threads: Threads created -> W: 1 FM: 1 FR: 1   Engine started.
+[97 - Suricata-Main] 2025-05-06 19:31:59 Notice: suricata: Signal Received.  Stopping engine.
+[97 - Suricata-Main] 2025-05-06 19:31:59 Info: suricata: time elapsed 4.990s
+[97 - Suricata-Main] 2025-05-06 19:32:00 Notice: device: eno2: packets: 91, drops: 0 (0.00%), invalid chksum: 0
+[107 - Suricata-Main] 2025-05-06 19:33:37 Notice: suricata: This is Suricata version 7.0.10 RELEASE running in SYSTEM mode
+[107 - Suricata-Main] 2025-05-06 19:33:37 Info: cpu: CPUs/cores online: 32
+[107 - Suricata-Main] 2025-05-06 19:33:37 Info: suricata: Setting engine mode to IDS mode by default
+[107 - Suricata-Main] 2025-05-06 19:33:37 Info: suricata: No 'host-mode': suricata is in IDS mode, using default setting 'sniffer-only'
+[107 - Suricata-Main] 2025-05-06 19:33:37 Info: logopenfile: fast output device (regular) initialized: fast.log
+[107 - Suricata-Main] 2025-05-06 19:33:37 Info: logopenfile: eve-log output device (regular) initialized: eve.json
+[107 - Suricata-Main] 2025-05-06 19:33:37 Warning: counters: stats are enabled but no loggers are active
+[107 - Suricata-Main] 2025-05-06 19:33:37 Info: detect: 1 rule files processed. 4 rules successfully loaded, 0 rules failed, 0
+[107 - Suricata-Main] 2025-05-06 19:33:37 Info: threshold-config: Threshold config parsed: 0 rule(s) found
+[107 - Suricata-Main] 2025-05-06 19:33:37 Info: detect: 4 signatures processed. 0 are IP-only rules, 4 are inspecting packet payload, 0 inspect application layer, 0 are decoder event only
+[107 - Suricata-Main] 2025-05-06 19:33:37 Error: af-packet: fanout not supported by kernel: Kernel too old or cluster-id 99 already in use.
+[107 - Suricata-Main] 2025-05-06 19:33:37 Warning: af-packet: eno2: AF_PACKET tpacket-v3 is recommended for non-inline operation
+[107 - Suricata-Main] 2025-05-06 19:33:37 Info: runmodes: eno2: creating 1 thread
+[108 - W#01-eno2] 2025-05-06 19:33:37 Info: ioctl: eno2: MTU 1500
+[107 - Suricata-Main] 2025-05-06 19:33:37 Notice: threads: Threads created -> W: 1 FM: 1 FR: 1   Engine started.
+[107 - Suricata-Main] 2025-05-06 19:33:40 Notice: suricata: Signal Received.  Stopping engine.
+[107 - Suricata-Main] 2025-05-06 19:33:40 Info: suricata: time elapsed 3.030s
+[107 - Suricata-Main] 2025-05-06 19:33:40 Notice: device: eno2: packets: 38, drops: 0 (0.00%), invalid chksum: 0
+[117 - Suricata-Main] 2025-05-06 19:35:09 Notice: suricata: This is Suricata version 7.0.10 RELEASE running in SYSTEM mode
+[117 - Suricata-Main] 2025-05-06 19:35:09 Info: cpu: CPUs/cores online: 32
+[117 - Suricata-Main] 2025-05-06 19:35:09 Info: suricata: Setting engine mode to IDS mode by default
+[117 - Suricata-Main] 2025-05-06 19:35:09 Info: suricata: No 'host-mode': suricata is in IDS mode, using default setting 'sniffer-only'
+[117 - Suricata-Main] 2025-05-06 19:35:09 Info: logopenfile: fast output device (regular) initialized: fast.log
+[117 - Suricata-Main] 2025-05-06 19:35:09 Info: logopenfile: eve-log output device (regular) initialized: eve.json
+[117 - Suricata-Main] 2025-05-06 19:35:09 Warning: counters: stats are enabled but no loggers are active
+[117 - Suricata-Main] 2025-05-06 19:35:09 Info: detect: 1 rule files processed. 4 rules successfully loaded, 0 rules failed, 0
+[117 - Suricata-Main] 2025-05-06 19:35:09 Info: threshold-config: Threshold config parsed: 0 rule(s) found
+[117 - Suricata-Main] 2025-05-06 19:35:09 Info: detect: 4 signatures processed. 0 are IP-only rules, 4 are inspecting packet payload, 0 inspect application layer, 0 are decoder event only
+[117 - Suricata-Main] 2025-05-06 19:35:09 Error: af-packet: fanout not supported by kernel: Kernel too old or cluster-id 99 already in use.
+[117 - Suricata-Main] 2025-05-06 19:35:09 Warning: af-packet: eno2: AF_PACKET tpacket-v3 is recommended for non-inline operation
+[117 - Suricata-Main] 2025-05-06 19:35:09 Info: runmodes: eno2: creating 1 thread
+[118 - W#01-eno2] 2025-05-06 19:35:09 Info: ioctl: eno2: MTU 1500
+[117 - Suricata-Main] 2025-05-06 19:35:09 Notice: threads: Threads created -> W: 1 FM: 1 FR: 1   Engine started.
+[117 - Suricata-Main] 2025-05-06 19:35:19 Notice: suricata: Signal Received.  Stopping engine.
+[117 - Suricata-Main] 2025-05-06 19:35:20 Info: suricata: time elapsed 10.907s
+[117 - Suricata-Main] 2025-05-06 19:35:21 Notice: device: eno2: packets: 152, drops: 0 (0.00%), invalid chksum: 0
+[127 - Suricata-Main] 2025-05-06 19:42:37 Notice: suricata: This is Suricata version 7.0.10 RELEASE running in SYSTEM mode
+[127 - Suricata-Main] 2025-05-06 19:42:37 Info: cpu: CPUs/cores online: 32
+[127 - Suricata-Main] 2025-05-06 19:42:37 Info: suricata: Setting engine mode to IDS mode by default
+[127 - Suricata-Main] 2025-05-06 19:42:37 Info: suricata: No 'host-mode': suricata is in IDS mode, using default setting 'sniffer-only'
+[127 - Suricata-Main] 2025-05-06 19:42:37 Info: logopenfile: fast output device (regular) initialized: fast.log
+[127 - Suricata-Main] 2025-05-06 19:42:37 Info: logopenfile: eve-log output device (regular) initialized: eve.json
+[127 - Suricata-Main] 2025-05-06 19:42:37 Warning: counters: stats are enabled but no loggers are active
+[127 - Suricata-Main] 2025-05-06 19:42:37 Info: detect: 1 rule files processed. 4 rules successfully loaded, 0 rules failed, 0
+[127 - Suricata-Main] 2025-05-06 19:42:37 Info: threshold-config: Threshold config parsed: 0 rule(s) found
+[127 - Suricata-Main] 2025-05-06 19:42:37 Info: detect: 4 signatures processed. 0 are IP-only rules, 4 are inspecting packet payload, 0 inspect application layer, 0 are decoder event only
+[127 - Suricata-Main] 2025-05-06 19:42:37 Error: af-packet: fanout not supported by kernel: Kernel too old or cluster-id 99 already in use.
+[127 - Suricata-Main] 2025-05-06 19:42:37 Warning: af-packet: eno2: AF_PACKET tpacket-v3 is recommended for non-inline operation
+[127 - Suricata-Main] 2025-05-06 19:42:38 Info: runmodes: eno2: creating 1 thread
+[128 - W#01-eno2] 2025-05-06 19:42:38 Info: ioctl: eno2: MTU 1500
+[127 - Suricata-Main] 2025-05-06 19:42:38 Notice: threads: Threads created -> W: 1 FM: 1 FR: 1   Engine started.
+[127 - Suricata-Main] 2025-05-06 19:42:42 Notice: suricata: Signal Received.  Stopping engine.
+[127 - Suricata-Main] 2025-05-06 19:42:42 Info: suricata: time elapsed 5.023s
+[127 - Suricata-Main] 2025-05-06 19:42:44 Notice: device: eno2: packets: 68, drops: 0 (0.00%), invalid chksum: 0
+[137 - Suricata-Main] 2025-05-06 19:44:51 Notice: suricata: This is Suricata version 7.0.10 RELEASE running in SYSTEM mode
+[137 - Suricata-Main] 2025-05-06 19:44:51 Info: cpu: CPUs/cores online: 32
+[137 - Suricata-Main] 2025-05-06 19:44:51 Info: suricata: Setting engine mode to IDS mode by default
+[137 - Suricata-Main] 2025-05-06 19:44:51 Info: suricata: No 'host-mode': suricata is in IDS mode, using default setting 'sniffer-only'
+[137 - Suricata-Main] 2025-05-06 19:44:51 Info: logopenfile: fast output device (regular) initialized: fast.log
+[137 - Suricata-Main] 2025-05-06 19:44:51 Info: logopenfile: eve-log output device (regular) initialized: eve.json
+[137 - Suricata-Main] 2025-05-06 19:44:51 Warning: counters: stats are enabled but no loggers are active
+[137 - Suricata-Main] 2025-05-06 19:44:51 Info: detect: 1 rule files processed. 4 rules successfully loaded, 0 rules failed, 0
+[137 - Suricata-Main] 2025-05-06 19:44:51 Info: threshold-config: Threshold config parsed: 0 rule(s) found
+[137 - Suricata-Main] 2025-05-06 19:44:51 Info: detect: 4 signatures processed. 0 are IP-only rules, 4 are inspecting packet payload, 0 inspect application layer, 0 are decoder event only
+[137 - Suricata-Main] 2025-05-06 19:44:51 Error: af-packet: fanout not supported by kernel: Kernel too old or cluster-id 99 already in use.
+[137 - Suricata-Main] 2025-05-06 19:44:51 Warning: af-packet: eno2: AF_PACKET tpacket-v3 is recommended for non-inline operation
+[137 - Suricata-Main] 2025-05-06 19:44:51 Info: runmodes: eno2: creating 1 thread
+[138 - W#01-eno2] 2025-05-06 19:44:51 Info: ioctl: eno2: MTU 1500
+[137 - Suricata-Main] 2025-05-06 19:44:51 Notice: threads: Threads created -> W: 1 FM: 1 FR: 1   Engine started.
+[137 - Suricata-Main] 2025-05-06 19:45:11 Notice: suricata: Signal Received.  Stopping engine.
+[137 - Suricata-Main] 2025-05-06 19:45:12 Info: suricata: time elapsed 20.782s
+[137 - Suricata-Main] 2025-05-06 19:45:13 Notice: device: eno2: packets: 418, drops: 0 (0.00%), invalid chksum: 0
+[147 - Suricata-Main] 2025-05-06 19:53:33 Notice: suricata: This is Suricata version 7.0.10 RELEASE running in SYSTEM mode
+[147 - Suricata-Main] 2025-05-06 19:53:33 Info: cpu: CPUs/cores online: 32
+[147 - Suricata-Main] 2025-05-06 19:53:33 Info: suricata: Setting engine mode to IDS mode by default
+[147 - Suricata-Main] 2025-05-06 19:53:34 Info: suricata: No 'host-mode': suricata is in IDS mode, using default setting 'sniffer-only'
+[147 - Suricata-Main] 2025-05-06 19:53:34 Info: logopenfile: fast output device (regular) initialized: fast.log
+[147 - Suricata-Main] 2025-05-06 19:53:34 Info: logopenfile: eve-log output device (regular) initialized: eve.json
+[147 - Suricata-Main] 2025-05-06 19:53:34 Warning: counters: stats are enabled but no loggers are active
+[147 - Suricata-Main] 2025-05-06 19:53:34 Info: detect: 1 rule files processed. 4 rules successfully loaded, 0 rules failed, 0
+[147 - Suricata-Main] 2025-05-06 19:53:34 Info: threshold-config: Threshold config parsed: 0 rule(s) found
+[147 - Suricata-Main] 2025-05-06 19:53:34 Info: detect: 4 signatures processed. 0 are IP-only rules, 4 are inspecting packet payload, 0 inspect application layer, 0 are decoder event only
+[147 - Suricata-Main] 2025-05-06 19:53:34 Error: af-packet: fanout not supported by kernel: Kernel too old or cluster-id 99 already in use.
+[147 - Suricata-Main] 2025-05-06 19:53:34 Warning: af-packet: eno2: AF_PACKET tpacket-v3 is recommended for non-inline operation
+[147 - Suricata-Main] 2025-05-06 19:53:34 Info: runmodes: eno2: creating 1 thread
+[148 - W#01-eno2] 2025-05-06 19:53:34 Info: ioctl: eno2: MTU 1500
+[147 - Suricata-Main] 2025-05-06 19:53:34 Notice: threads: Threads created -> W: 1 FM: 1 FR: 1   Engine started.
+[147 - Suricata-Main] 2025-05-06 19:53:38 Notice: suricata: Signal Received.  Stopping engine.
+[147 - Suricata-Main] 2025-05-06 19:53:39 Info: suricata: time elapsed 4.990s
+[147 - Suricata-Main] 2025-05-06 19:53:40 Notice: device: eno2: packets: 65, drops: 0 (0.00%), invalid chksum: 0
+[157 - Suricata-Main] 2025-05-06 19:54:56 Notice: suricata: This is Suricata version 7.0.10 RELEASE running in SYSTEM mode
+[157 - Suricata-Main] 2025-05-06 19:54:56 Info: cpu: CPUs/cores online: 32
+[157 - Suricata-Main] 2025-05-06 19:54:56 Info: suricata: Setting engine mode to IDS mode by default
+[157 - Suricata-Main] 2025-05-06 19:54:56 Info: suricata: No 'host-mode': suricata is in IDS mode, using default setting 'sniffer-only'
+[157 - Suricata-Main] 2025-05-06 19:54:56 Info: logopenfile: fast output device (regular) initialized: fast.log
+[157 - Suricata-Main] 2025-05-06 19:54:56 Info: logopenfile: eve-log output device (regular) initialized: eve.json
+[157 - Suricata-Main] 2025-05-06 19:54:56 Warning: counters: stats are enabled but no loggers are active
+[157 - Suricata-Main] 2025-05-06 19:54:56 Info: detect: 1 rule files processed. 4 rules successfully loaded, 0 rules failed, 0
+[157 - Suricata-Main] 2025-05-06 19:54:56 Info: threshold-config: Threshold config parsed: 0 rule(s) found
+[157 - Suricata-Main] 2025-05-06 19:54:56 Info: detect: 4 signatures processed. 0 are IP-only rules, 4 are inspecting packet payload, 0 inspect application layer, 0 are decoder event only
+[157 - Suricata-Main] 2025-05-06 19:54:56 Error: af-packet: fanout not supported by kernel: Kernel too old or cluster-id 99 already in use.
+[157 - Suricata-Main] 2025-05-06 19:54:56 Warning: af-packet: eno2: AF_PACKET tpacket-v3 is recommended for non-inline operation
+[157 - Suricata-Main] 2025-05-06 19:54:56 Info: runmodes: eno2: creating 1 thread
+[158 - W#01-eno2] 2025-05-06 19:54:56 Info: ioctl: eno2: MTU 1500
+[157 - Suricata-Main] 2025-05-06 19:54:56 Notice: threads: Threads created -> W: 1 FM: 1 FR: 1   Engine started.
+[157 - Suricata-Main] 2025-05-06 19:55:00 Notice: suricata: Signal Received.  Stopping engine.
+[157 - Suricata-Main] 2025-05-06 19:55:00 Info: suricata: time elapsed 3.997s
+[157 - Suricata-Main] 2025-05-06 19:55:01 Notice: device: eno2: packets: 78, drops: 0 (0.00%), invalid chksum: 0
+[167 - Suricata-Main] 2025-05-06 19:55:50 Notice: suricata: This is Suricata version 7.0.10 RELEASE running in SYSTEM mode
+[167 - Suricata-Main] 2025-05-06 19:55:50 Info: cpu: CPUs/cores online: 32
+[167 - Suricata-Main] 2025-05-06 19:55:50 Info: suricata: Setting engine mode to IDS mode by default
+[167 - Suricata-Main] 2025-05-06 19:55:50 Info: suricata: No 'host-mode': suricata is in IDS mode, using default setting 'sniffer-only'
+[167 - Suricata-Main] 2025-05-06 19:55:50 Info: logopenfile: fast output device (regular) initialized: fast.log
+[167 - Suricata-Main] 2025-05-06 19:55:50 Info: logopenfile: eve-log output device (regular) initialized: eve.json
+[167 - Suricata-Main] 2025-05-06 19:55:50 Warning: counters: stats are enabled but no loggers are active
+[167 - Suricata-Main] 2025-05-06 19:55:50 Info: detect: 1 rule files processed. 4 rules successfully loaded, 0 rules failed, 0
+[167 - Suricata-Main] 2025-05-06 19:55:50 Info: threshold-config: Threshold config parsed: 0 rule(s) found
+[167 - Suricata-Main] 2025-05-06 19:55:50 Info: detect: 4 signatures processed. 0 are IP-only rules, 4 are inspecting packet payload, 0 inspect application layer, 0 are decoder event only
+[167 - Suricata-Main] 2025-05-06 19:55:50 Error: af-packet: fanout not supported by kernel: Kernel too old or cluster-id 99 already in use.
+[167 - Suricata-Main] 2025-05-06 19:55:50 Warning: af-packet: eno2: AF_PACKET tpacket-v3 is recommended for non-inline operation
+[167 - Suricata-Main] 2025-05-06 19:55:50 Info: runmodes: eno2: creating 1 thread
+[168 - W#01-eno2] 2025-05-06 19:55:50 Info: ioctl: eno2: MTU 1500
+[167 - Suricata-Main] 2025-05-06 19:55:51 Notice: threads: Threads created -> W: 1 FM: 1 FR: 1   Engine started.
+[167 - Suricata-Main] 2025-05-06 19:56:00 Notice: suricata: Signal Received.  Stopping engine.
+[167 - Suricata-Main] 2025-05-06 19:56:01 Info: suricata: time elapsed 10.917s
+[167 - Suricata-Main] 2025-05-06 19:56:02 Notice: device: eno2: packets: 144, drops: 0 (0.00%), invalid chksum: 0
+[177 - Suricata-Main] 2025-05-06 19:56:48 Notice: suricata: This is Suricata version 7.0.10 RELEASE running in SYSTEM mode
+[177 - Suricata-Main] 2025-05-06 19:56:48 Info: cpu: CPUs/cores online: 32
+[177 - Suricata-Main] 2025-05-06 19:56:48 Info: suricata: Setting engine mode to IDS mode by default
+[177 - Suricata-Main] 2025-05-06 19:56:48 Info: suricata: No 'host-mode': suricata is in IDS mode, using default setting 'sniffer-only'
+[177 - Suricata-Main] 2025-05-06 19:56:48 Info: logopenfile: fast output device (regular) initialized: fast.log
+[177 - Suricata-Main] 2025-05-06 19:56:48 Info: logopenfile: eve-log output device (regular) initialized: eve.json
+[177 - Suricata-Main] 2025-05-06 19:56:48 Warning: counters: stats are enabled but no loggers are active
+[177 - Suricata-Main] 2025-05-06 19:56:48 Info: detect: 1 rule files processed. 4 rules successfully loaded, 0 rules failed, 0
+[177 - Suricata-Main] 2025-05-06 19:56:48 Info: threshold-config: Threshold config parsed: 0 rule(s) found
+[177 - Suricata-Main] 2025-05-06 19:56:48 Info: detect: 4 signatures processed. 0 are IP-only rules, 4 are inspecting packet payload, 0 inspect application layer, 0 are decoder event only
+[177 - Suricata-Main] 2025-05-06 19:56:48 Error: af-packet: fanout not supported by kernel: Kernel too old or cluster-id 99 already in use.
+[177 - Suricata-Main] 2025-05-06 19:56:48 Warning: af-packet: eno2: AF_PACKET tpacket-v3 is recommended for non-inline operation
+[177 - Suricata-Main] 2025-05-06 19:56:48 Info: runmodes: eno2: creating 1 thread
+[178 - W#01-eno2] 2025-05-06 19:56:48 Info: ioctl: eno2: MTU 1500
+[177 - Suricata-Main] 2025-05-06 19:56:48 Notice: threads: Threads created -> W: 1 FM: 1 FR: 1   Engine started.
+[177 - Suricata-Main] 2025-05-06 19:56:58 Notice: suricata: Signal Received.  Stopping engine.
+[177 - Suricata-Main] 2025-05-06 19:56:59 Info: suricata: time elapsed 10.920s
+[177 - Suricata-Main] 2025-05-06 19:57:00 Notice: device: eno2: packets: 144, drops: 0 (0.00%), invalid chksum: 0
+[187 - Suricata-Main] 2025-05-06 20:00:35 Notice: suricata: This is Suricata version 7.0.10 RELEASE running in SYSTEM mode
+[187 - Suricata-Main] 2025-05-06 20:00:35 Info: cpu: CPUs/cores online: 32
+[187 - Suricata-Main] 2025-05-06 20:00:35 Info: suricata: Setting engine mode to IDS mode by default
+[187 - Suricata-Main] 2025-05-06 20:00:35 Info: suricata: No 'host-mode': suricata is in IDS mode, using default setting 'sniffer-only'
+[187 - Suricata-Main] 2025-05-06 20:00:35 Info: logopenfile: fast output device (regular) initialized: fast.log
+[187 - Suricata-Main] 2025-05-06 20:00:35 Info: logopenfile: eve-log output device (regular) initialized: eve.json
+[187 - Suricata-Main] 2025-05-06 20:00:35 Warning: counters: stats are enabled but no loggers are active
+[187 - Suricata-Main] 2025-05-06 20:00:35 Info: detect: 1 rule files processed. 4 rules successfully loaded, 0 rules failed, 0
+[187 - Suricata-Main] 2025-05-06 20:00:35 Info: threshold-config: Threshold config parsed: 0 rule(s) found
+[187 - Suricata-Main] 2025-05-06 20:00:35 Info: detect: 4 signatures processed. 0 are IP-only rules, 4 are inspecting packet payload, 0 inspect application layer, 0 are decoder event only
+[187 - Suricata-Main] 2025-05-06 20:00:35 Error: af-packet: fanout not supported by kernel: Kernel too old or cluster-id 99 already in use.
+[187 - Suricata-Main] 2025-05-06 20:00:35 Warning: af-packet: eno2: AF_PACKET tpacket-v3 is recommended for non-inline operation
+[187 - Suricata-Main] 2025-05-06 20:00:35 Info: runmodes: eno2: creating 1 thread
+[188 - W#01-eno2] 2025-05-06 20:00:35 Info: ioctl: eno2: MTU 1500
+[187 - Suricata-Main] 2025-05-06 20:00:36 Notice: threads: Threads created -> W: 1 FM: 1 FR: 1   Engine started.
+[187 - Suricata-Main] 2025-05-06 20:01:05 Notice: suricata: Signal Received.  Stopping engine.
+[187 - Suricata-Main] 2025-05-06 20:01:06 Info: suricata: time elapsed 30.669s
+[187 - Suricata-Main] 2025-05-06 20:01:07 Notice: device: eno2: packets: 400, drops: 0 (0.00%), invalid chksum: 0
+[197 - Suricata-Main] 2025-05-06 20:04:37 Notice: suricata: This is Suricata version 7.0.10 RELEASE running in SYSTEM mode
+[197 - Suricata-Main] 2025-05-06 20:04:37 Info: cpu: CPUs/cores online: 32
+[197 - Suricata-Main] 2025-05-06 20:04:37 Info: suricata: Setting engine mode to IDS mode by default
+[197 - Suricata-Main] 2025-05-06 20:04:37 Info: suricata: No 'host-mode': suricata is in IDS mode, using default setting 'sniffer-only'
+[197 - Suricata-Main] 2025-05-06 20:04:37 Info: logopenfile: fast output device (regular) initialized: fast.log
+[197 - Suricata-Main] 2025-05-06 20:04:37 Info: logopenfile: eve-log output device (regular) initialized: eve.json
+[197 - Suricata-Main] 2025-05-06 20:04:37 Warning: counters: stats are enabled but no loggers are active
+[197 - Suricata-Main] 2025-05-06 20:04:37 Info: detect: 1 rule files processed. 4 rules successfully loaded, 0 rules failed, 0
+[197 - Suricata-Main] 2025-05-06 20:04:37 Info: threshold-config: Threshold config parsed: 0 rule(s) found
+[197 - Suricata-Main] 2025-05-06 20:04:37 Info: detect: 4 signatures processed. 0 are IP-only rules, 4 are inspecting packet payload, 0 inspect application layer, 0 are decoder event only
+[197 - Suricata-Main] 2025-05-06 20:04:37 Error: af-packet: fanout not supported by kernel: Kernel too old or cluster-id 99 already in use.
+[197 - Suricata-Main] 2025-05-06 20:04:37 Warning: af-packet: eno2: AF_PACKET tpacket-v3 is recommended for non-inline operation
+[197 - Suricata-Main] 2025-05-06 20:04:37 Info: runmodes: eno2: creating 1 thread
+[198 - W#01-eno2] 2025-05-06 20:04:37 Info: ioctl: eno2: MTU 1500
+[197 - Suricata-Main] 2025-05-06 20:04:37 Notice: threads: Threads created -> W: 1 FM: 1 FR: 1   Engine started.
+[197 - Suricata-Main] 2025-05-06 20:04:42 Notice: suricata: Signal Received.  Stopping engine.
+[197 - Suricata-Main] 2025-05-06 20:04:42 Info: suricata: time elapsed 5.007s
+[197 - Suricata-Main] 2025-05-06 20:04:43 Notice: device: eno2: packets: 64, drops: 0 (0.00%), invalid chksum: 0
+[207 - Suricata-Main] 2025-05-06 20:06:33 Notice: suricata: This is Suricata version 7.0.10 RELEASE running in SYSTEM mode
+[207 - Suricata-Main] 2025-05-06 20:06:33 Info: cpu: CPUs/cores online: 32
+[207 - Suricata-Main] 2025-05-06 20:06:33 Info: suricata: Setting engine mode to IDS mode by default
+[207 - Suricata-Main] 2025-05-06 20:06:33 Info: suricata: No 'host-mode': suricata is in IDS mode, using default setting 'sniffer-only'
+[207 - Suricata-Main] 2025-05-06 20:06:33 Info: logopenfile: fast output device (regular) initialized: fast.log
+[207 - Suricata-Main] 2025-05-06 20:06:33 Info: logopenfile: eve-log output device (regular) initialized: eve.json
+[207 - Suricata-Main] 2025-05-06 20:06:33 Warning: counters: stats are enabled but no loggers are active
+[207 - Suricata-Main] 2025-05-06 20:06:33 Info: detect: 1 rule files processed. 4 rules successfully loaded, 0 rules failed, 0
+[207 - Suricata-Main] 2025-05-06 20:06:33 Info: threshold-config: Threshold config parsed: 0 rule(s) found
+[207 - Suricata-Main] 2025-05-06 20:06:33 Info: detect: 4 signatures processed. 0 are IP-only rules, 4 are inspecting packet payload, 0 inspect application layer, 0 are decoder event only
+[207 - Suricata-Main] 2025-05-06 20:06:33 Error: af-packet: fanout not supported by kernel: Kernel too old or cluster-id 99 already in use.
+[207 - Suricata-Main] 2025-05-06 20:06:33 Warning: af-packet: eno2: AF_PACKET tpacket-v3 is recommended for non-inline operation
+[207 - Suricata-Main] 2025-05-06 20:06:33 Info: runmodes: eno2: creating 1 thread
+[208 - W#01-eno2] 2025-05-06 20:06:33 Info: ioctl: eno2: MTU 1500
+[207 - Suricata-Main] 2025-05-06 20:06:33 Notice: threads: Threads created -> W: 1 FM: 1 FR: 1   Engine started.
+[207 - Suricata-Main] 2025-05-06 20:06:43 Notice: suricata: Signal Received.  Stopping engine.
+[207 - Suricata-Main] 2025-05-06 20:06:44 Info: suricata: time elapsed 10.907s
+[207 - Suricata-Main] 2025-05-06 20:06:45 Notice: device: eno2: packets: 129, drops: 0 (0.00%), invalid chksum: 0
+[1 - Suricata-Main] 2025-05-06 20:14:47 Notice: suricata: Signal Received.  Stopping engine.
+[1 - Suricata-Main] 2025-05-06 20:14:47 Info: suricata: time elapsed 6437.685s
+[1 - Suricata-Main] 2025-05-06 20:14:49 Notice: device: eno2: packets: 168695, drops: 0 (0.00%), invalid chksum: 0
+[1 - Suricata-Main] 2025-05-06 20:14:50 Notice: suricata: This is Suricata version 7.0.10 RELEASE running in SYSTEM mode
+[1 - Suricata-Main] 2025-05-06 20:14:50 Info: cpu: CPUs/cores online: 32
+[1 - Suricata-Main] 2025-05-06 20:14:50 Info: suricata: Setting engine mode to IDS mode by default
+[1 - Suricata-Main] 2025-05-06 20:14:50 Info: suricata: No 'host-mode': suricata is in IDS mode, using default setting 'sniffer-only'
+[1 - Suricata-Main] 2025-05-06 20:14:50 Info: logopenfile: fast output device (regular) initialized: fast.log
+[1 - Suricata-Main] 2025-05-06 20:14:50 Info: logopenfile: eve-log output device (regular) initialized: eve.json
+[1 - Suricata-Main] 2025-05-06 20:14:50 Warning: counters: stats are enabled but no loggers are active
+[1 - Suricata-Main] 2025-05-06 20:14:50 Info: detect: 1 rule files processed. 4 rules successfully loaded, 0 rules failed, 0
+[1 - Suricata-Main] 2025-05-06 20:14:50 Info: threshold-config: Threshold config parsed: 0 rule(s) found
+[1 - Suricata-Main] 2025-05-06 20:14:50 Info: detect: 4 signatures processed. 0 are IP-only rules, 4 are inspecting packet payload, 0 inspect application layer, 0 are decoder event only
+[1 - Suricata-Main] 2025-05-06 20:14:50 Warning: af-packet: eno2: AF_PACKET tpacket-v3 is recommended for non-inline operation
+[1 - Suricata-Main] 2025-05-06 20:14:50 Info: runmodes: eno2: creating 32 threads
+[1 - Suricata-Main] 2025-05-06 20:14:51 Notice: threads: Threads created -> W: 32 FM: 1 FR: 1   Engine started.
+[56 - Suricata-Main] 2025-05-06 20:15:27 Notice: suricata: This is Suricata version 7.0.10 RELEASE running in SYSTEM mode
+[56 - Suricata-Main] 2025-05-06 20:15:27 Info: cpu: CPUs/cores online: 32
+[56 - Suricata-Main] 2025-05-06 20:15:27 Info: suricata: Setting engine mode to IDS mode by default
+[56 - Suricata-Main] 2025-05-06 20:15:27 Info: suricata: No 'host-mode': suricata is in IDS mode, using default setting 'sniffer-only'
+[56 - Suricata-Main] 2025-05-06 20:15:27 Info: logopenfile: fast output device (regular) initialized: fast.log
+[56 - Suricata-Main] 2025-05-06 20:15:27 Info: logopenfile: eve-log output device (regular) initialized: eve.json
+[56 - Suricata-Main] 2025-05-06 20:15:27 Warning: counters: stats are enabled but no loggers are active
+[56 - Suricata-Main] 2025-05-06 20:15:27 Info: detect: 1 rule files processed. 4 rules successfully loaded, 0 rules failed, 0
+[56 - Suricata-Main] 2025-05-06 20:15:27 Info: threshold-config: Threshold config parsed: 0 rule(s) found
+[56 - Suricata-Main] 2025-05-06 20:15:27 Info: detect: 4 signatures processed. 0 are IP-only rules, 4 are inspecting packet payload, 0 inspect application layer, 0 are decoder event only
+[56 - Suricata-Main] 2025-05-06 20:15:27 Error: af-packet: fanout not supported by kernel: Kernel too old or cluster-id 99 already in use.
+[56 - Suricata-Main] 2025-05-06 20:15:27 Warning: af-packet: eno2: AF_PACKET tpacket-v3 is recommended for non-inline operation
+[56 - Suricata-Main] 2025-05-06 20:15:27 Info: runmodes: eno2: creating 1 thread
+[57 - W#01-eno2] 2025-05-06 20:15:27 Info: ioctl: eno2: MTU 1500
+[56 - Suricata-Main] 2025-05-06 20:15:27 Notice: threads: Threads created -> W: 1 FM: 1 FR: 1   Engine started.
+[56 - Suricata-Main] 2025-05-06 20:15:32 Notice: suricata: Signal Received.  Stopping engine.
+[56 - Suricata-Main] 2025-05-06 20:15:32 Info: suricata: time elapsed 5.054s
+[56 - Suricata-Main] 2025-05-06 20:15:33 Notice: device: eno2: packets: 70, drops: 0 (0.00%), invalid chksum: 0
+[66 - Suricata-Main] 2025-05-06 20:18:03 Notice: suricata: This is Suricata version 7.0.10 RELEASE running in SYSTEM mode
+[66 - Suricata-Main] 2025-05-06 20:18:03 Info: cpu: CPUs/cores online: 32
+[66 - Suricata-Main] 2025-05-06 20:18:03 Info: suricata: Setting engine mode to IDS mode by default
+[66 - Suricata-Main] 2025-05-06 20:18:03 Info: suricata: No 'host-mode': suricata is in IDS mode, using default setting 'sniffer-only'
+[66 - Suricata-Main] 2025-05-06 20:18:03 Info: logopenfile: fast output device (regular) initialized: fast.log
+[66 - Suricata-Main] 2025-05-06 20:18:03 Info: logopenfile: eve-log output device (regular) initialized: eve.json
+[66 - Suricata-Main] 2025-05-06 20:18:03 Warning: counters: stats are enabled but no loggers are active
+[66 - Suricata-Main] 2025-05-06 20:18:03 Info: detect: 1 rule files processed. 4 rules successfully loaded, 0 rules failed, 0
+[66 - Suricata-Main] 2025-05-06 20:18:03 Info: threshold-config: Threshold config parsed: 0 rule(s) found
+[66 - Suricata-Main] 2025-05-06 20:18:03 Info: detect: 4 signatures processed. 0 are IP-only rules, 4 are inspecting packet payload, 0 inspect application layer, 0 are decoder event only
+[66 - Suricata-Main] 2025-05-06 20:18:03 Error: af-packet: fanout not supported by kernel: Kernel too old or cluster-id 99 already in use.
+[66 - Suricata-Main] 2025-05-06 20:18:03 Warning: af-packet: eno2: AF_PACKET tpacket-v3 is recommended for non-inline operation
+[66 - Suricata-Main] 2025-05-06 20:18:03 Info: runmodes: eno2: creating 1 thread
+[67 - W#01-eno2] 2025-05-06 20:18:03 Info: ioctl: eno2: MTU 1500
+[66 - Suricata-Main] 2025-05-06 20:18:03 Notice: threads: Threads created -> W: 1 FM: 1 FR: 1   Engine started.
+[66 - Suricata-Main] 2025-05-06 20:18:08 Notice: suricata: Signal Received.  Stopping engine.
+[66 - Suricata-Main] 2025-05-06 20:18:08 Info: suricata: time elapsed 4.990s
+[66 - Suricata-Main] 2025-05-06 20:18:08 Notice: device: eno2: packets: 42, drops: 0 (0.00%), invalid chksum: 0
+[76 - Suricata-Main] 2025-05-06 20:18:45 Notice: suricata: This is Suricata version 7.0.10 RELEASE running in SYSTEM mode
+[76 - Suricata-Main] 2025-05-06 20:18:45 Info: cpu: CPUs/cores online: 32
+[76 - Suricata-Main] 2025-05-06 20:18:45 Info: suricata: Setting engine mode to IDS mode by default
+[76 - Suricata-Main] 2025-05-06 20:18:45 Info: suricata: No 'host-mode': suricata is in IDS mode, using default setting 'sniffer-only'
+[76 - Suricata-Main] 2025-05-06 20:18:45 Info: logopenfile: fast output device (regular) initialized: fast.log
+[76 - Suricata-Main] 2025-05-06 20:18:45 Info: logopenfile: eve-log output device (regular) initialized: eve.json
+[76 - Suricata-Main] 2025-05-06 20:18:45 Warning: counters: stats are enabled but no loggers are active
+[76 - Suricata-Main] 2025-05-06 20:18:45 Info: detect: 1 rule files processed. 4 rules successfully loaded, 0 rules failed, 0
+[76 - Suricata-Main] 2025-05-06 20:18:45 Info: threshold-config: Threshold config parsed: 0 rule(s) found
+[76 - Suricata-Main] 2025-05-06 20:18:45 Info: detect: 4 signatures processed. 0 are IP-only rules, 4 are inspecting packet payload, 0 inspect application layer, 0 are decoder event only
+[76 - Suricata-Main] 2025-05-06 20:18:45 Error: af-packet: fanout not supported by kernel: Kernel too old or cluster-id 99 already in use.
+[76 - Suricata-Main] 2025-05-06 20:18:45 Warning: af-packet: eno2: AF_PACKET tpacket-v3 is recommended for non-inline operation
+[76 - Suricata-Main] 2025-05-06 20:18:45 Info: runmodes: eno2: creating 1 thread
+[77 - W#01-eno2] 2025-05-06 20:18:45 Info: ioctl: eno2: MTU 1500
+[76 - Suricata-Main] 2025-05-06 20:18:45 Notice: threads: Threads created -> W: 1 FM: 1 FR: 1   Engine started.
+[76 - Suricata-Main] 2025-05-06 20:18:49 Notice: suricata: Signal Received.  Stopping engine.
+[76 - Suricata-Main] 2025-05-06 20:18:49 Info: suricata: time elapsed 4.046s
+[76 - Suricata-Main] 2025-05-06 20:18:50 Notice: device: eno2: packets: 51, drops: 0 (0.00%), invalid chksum: 0
+[86 - Suricata-Main] 2025-05-06 20:19:26 Notice: suricata: This is Suricata version 7.0.10 RELEASE running in SYSTEM mode
+[86 - Suricata-Main] 2025-05-06 20:19:26 Info: cpu: CPUs/cores online: 32
+[86 - Suricata-Main] 2025-05-06 20:19:26 Info: suricata: Setting engine mode to IDS mode by default
+[86 - Suricata-Main] 2025-05-06 20:19:26 Info: suricata: No 'host-mode': suricata is in IDS mode, using default setting 'sniffer-only'
+[86 - Suricata-Main] 2025-05-06 20:19:26 Info: logopenfile: fast output device (regular) initialized: fast.log
+[86 - Suricata-Main] 2025-05-06 20:19:26 Info: logopenfile: eve-log output device (regular) initialized: eve.json
+[86 - Suricata-Main] 2025-05-06 20:19:26 Warning: counters: stats are enabled but no loggers are active
+[86 - Suricata-Main] 2025-05-06 20:19:26 Info: detect: 1 rule files processed. 4 rules successfully loaded, 0 rules failed, 0
+[86 - Suricata-Main] 2025-05-06 20:19:26 Info: threshold-config: Threshold config parsed: 0 rule(s) found
+[86 - Suricata-Main] 2025-05-06 20:19:26 Info: detect: 4 signatures processed. 0 are IP-only rules, 4 are inspecting packet payload, 0 inspect application layer, 0 are decoder event only
+[86 - Suricata-Main] 2025-05-06 20:19:26 Error: af-packet: fanout not supported by kernel: Kernel too old or cluster-id 99 already in use.
+[86 - Suricata-Main] 2025-05-06 20:19:26 Warning: af-packet: eno2: AF_PACKET tpacket-v3 is recommended for non-inline operation
+[86 - Suricata-Main] 2025-05-06 20:19:26 Info: runmodes: eno2: creating 1 thread
+[87 - W#01-eno2] 2025-05-06 20:19:26 Info: ioctl: eno2: MTU 1500
+[86 - Suricata-Main] 2025-05-06 20:19:26 Notice: threads: Threads created -> W: 1 FM: 1 FR: 1   Engine started.
+[86 - Suricata-Main] 2025-05-06 20:19:34 Notice: suricata: Signal Received.  Stopping engine.
+[86 - Suricata-Main] 2025-05-06 20:19:35 Info: suricata: time elapsed 8.931s
+[86 - Suricata-Main] 2025-05-06 20:19:35 Notice: device: eno2: packets: 85, drops: 0 (0.00%), invalid chksum: 0
+[96 - Suricata-Main] 2025-05-06 20:20:08 Notice: suricata: This is Suricata version 7.0.10 RELEASE running in SYSTEM mode
+[96 - Suricata-Main] 2025-05-06 20:20:08 Info: cpu: CPUs/cores online: 32
+[96 - Suricata-Main] 2025-05-06 20:20:08 Info: suricata: Setting engine mode to IDS mode by default
+[96 - Suricata-Main] 2025-05-06 20:20:08 Info: suricata: No 'host-mode': suricata is in IDS mode, using default setting 'sniffer-only'
+[96 - Suricata-Main] 2025-05-06 20:20:08 Info: logopenfile: fast output device (regular) initialized: fast.log
+[96 - Suricata-Main] 2025-05-06 20:20:08 Info: logopenfile: eve-log output device (regular) initialized: eve.json
+[96 - Suricata-Main] 2025-05-06 20:20:08 Warning: counters: stats are enabled but no loggers are active
+[96 - Suricata-Main] 2025-05-06 20:20:08 Info: detect: 1 rule files processed. 4 rules successfully loaded, 0 rules failed, 0
+[96 - Suricata-Main] 2025-05-06 20:20:08 Info: threshold-config: Threshold config parsed: 0 rule(s) found
+[96 - Suricata-Main] 2025-05-06 20:20:08 Info: detect: 4 signatures processed. 0 are IP-only rules, 4 are inspecting packet payload, 0 inspect application layer, 0 are decoder event only
+[96 - Suricata-Main] 2025-05-06 20:20:08 Error: af-packet: fanout not supported by kernel: Kernel too old or cluster-id 99 already in use.
+[96 - Suricata-Main] 2025-05-06 20:20:08 Warning: af-packet: eno2: AF_PACKET tpacket-v3 is recommended for non-inline operation
+[96 - Suricata-Main] 2025-05-06 20:20:08 Info: runmodes: eno2: creating 1 thread
+[97 - W#01-eno2] 2025-05-06 20:20:08 Info: ioctl: eno2: MTU 1500
+[96 - Suricata-Main] 2025-05-06 20:20:08 Notice: threads: Threads created -> W: 1 FM: 1 FR: 1   Engine started.
+[96 - Suricata-Main] 2025-05-06 20:20:13 Notice: suricata: Signal Received.  Stopping engine.
+[96 - Suricata-Main] 2025-05-06 20:20:13 Info: suricata: time elapsed 5.002s
+[96 - Suricata-Main] 2025-05-06 20:20:14 Notice: device: eno2: packets: 68, drops: 0 (0.00%), invalid chksum: 0
+[106 - Suricata-Main] 2025-05-06 20:21:16 Notice: suricata: This is Suricata version 7.0.10 RELEASE running in SYSTEM mode
+[106 - Suricata-Main] 2025-05-06 20:21:16 Info: cpu: CPUs/cores online: 32
+[106 - Suricata-Main] 2025-05-06 20:21:16 Info: suricata: Setting engine mode to IDS mode by default
+[106 - Suricata-Main] 2025-05-06 20:21:16 Info: suricata: No 'host-mode': suricata is in IDS mode, using default setting 'sniffer-only'
+[106 - Suricata-Main] 2025-05-06 20:21:16 Info: logopenfile: fast output device (regular) initialized: fast.log
+[106 - Suricata-Main] 2025-05-06 20:21:16 Info: logopenfile: eve-log output device (regular) initialized: eve.json
+[106 - Suricata-Main] 2025-05-06 20:21:16 Warning: counters: stats are enabled but no loggers are active
+[106 - Suricata-Main] 2025-05-06 20:21:16 Info: detect: 1 rule files processed. 4 rules successfully loaded, 0 rules failed, 0
+[106 - Suricata-Main] 2025-05-06 20:21:16 Info: threshold-config: Threshold config parsed: 0 rule(s) found
+[106 - Suricata-Main] 2025-05-06 20:21:16 Info: detect: 4 signatures processed. 0 are IP-only rules, 4 are inspecting packet payload, 0 inspect application layer, 0 are decoder event only
+[106 - Suricata-Main] 2025-05-06 20:21:16 Error: af-packet: fanout not supported by kernel: Kernel too old or cluster-id 99 already in use.
+[106 - Suricata-Main] 2025-05-06 20:21:16 Warning: af-packet: eno2: AF_PACKET tpacket-v3 is recommended for non-inline operation
+[106 - Suricata-Main] 2025-05-06 20:21:16 Info: runmodes: eno2: creating 1 thread
+[107 - W#01-eno2] 2025-05-06 20:21:16 Info: ioctl: eno2: MTU 1500
+[106 - Suricata-Main] 2025-05-06 20:21:16 Notice: threads: Threads created -> W: 1 FM: 1 FR: 1   Engine started.
+[106 - Suricata-Main] 2025-05-06 20:21:26 Notice: suricata: Signal Received.  Stopping engine.
+[106 - Suricata-Main] 2025-05-06 20:21:27 Info: suricata: time elapsed 10.908s
+[106 - Suricata-Main] 2025-05-06 20:21:28 Notice: device: eno2: packets: 369, drops: 0 (0.00%), invalid chksum: 0
+[116 - Suricata-Main] 2025-05-06 20:22:06 Notice: suricata: This is Suricata version 7.0.10 RELEASE running in SYSTEM mode
+[116 - Suricata-Main] 2025-05-06 20:22:06 Info: cpu: CPUs/cores online: 32
+[116 - Suricata-Main] 2025-05-06 20:22:06 Info: suricata: Setting engine mode to IDS mode by default
+[116 - Suricata-Main] 2025-05-06 20:22:06 Info: suricata: No 'host-mode': suricata is in IDS mode, using default setting 'sniffer-only'
+[116 - Suricata-Main] 2025-05-06 20:22:06 Info: logopenfile: fast output device (regular) initialized: fast.log
+[116 - Suricata-Main] 2025-05-06 20:22:06 Info: logopenfile: eve-log output device (regular) initialized: eve.json
+[116 - Suricata-Main] 2025-05-06 20:22:06 Warning: counters: stats are enabled but no loggers are active
+[116 - Suricata-Main] 2025-05-06 20:22:06 Info: detect: 1 rule files processed. 4 rules successfully loaded, 0 rules failed, 0
+[116 - Suricata-Main] 2025-05-06 20:22:06 Info: threshold-config: Threshold config parsed: 0 rule(s) found
+[116 - Suricata-Main] 2025-05-06 20:22:06 Info: detect: 4 signatures processed. 0 are IP-only rules, 4 are inspecting packet payload, 0 inspect application layer, 0 are decoder event only
+[116 - Suricata-Main] 2025-05-06 20:22:06 Error: af-packet: fanout not supported by kernel: Kernel too old or cluster-id 99 already in use.
+[116 - Suricata-Main] 2025-05-06 20:22:06 Warning: af-packet: eno2: AF_PACKET tpacket-v3 is recommended for non-inline operation
+[116 - Suricata-Main] 2025-05-06 20:22:06 Info: runmodes: eno2: creating 1 thread
+[117 - W#01-eno2] 2025-05-06 20:22:06 Info: ioctl: eno2: MTU 1500
+[116 - Suricata-Main] 2025-05-06 20:22:06 Notice: threads: Threads created -> W: 1 FM: 1 FR: 1   Engine started.
+[116 - Suricata-Main] 2025-05-06 20:22:11 Notice: suricata: Signal Received.  Stopping engine.
+[116 - Suricata-Main] 2025-05-06 20:22:11 Info: suricata: time elapsed 5.006s
+[116 - Suricata-Main] 2025-05-06 20:22:12 Notice: device: eno2: packets: 61, drops: 0 (0.00%), invalid chksum: 0
+[126 - Suricata-Main] 2025-05-06 20:22:55 Notice: suricata: This is Suricata version 7.0.10 RELEASE running in SYSTEM mode
+[126 - Suricata-Main] 2025-05-06 20:22:55 Info: cpu: CPUs/cores online: 32
+[126 - Suricata-Main] 2025-05-06 20:22:55 Info: suricata: Setting engine mode to IDS mode by default
+[126 - Suricata-Main] 2025-05-06 20:22:55 Info: suricata: No 'host-mode': suricata is in IDS mode, using default setting 'sniffer-only'
+[126 - Suricata-Main] 2025-05-06 20:22:55 Info: logopenfile: fast output device (regular) initialized: fast.log
+[126 - Suricata-Main] 2025-05-06 20:22:55 Info: logopenfile: eve-log output device (regular) initialized: eve.json
+[126 - Suricata-Main] 2025-05-06 20:22:55 Warning: counters: stats are enabled but no loggers are active
+[126 - Suricata-Main] 2025-05-06 20:22:55 Info: detect: 1 rule files processed. 4 rules successfully loaded, 0 rules failed, 0
+[126 - Suricata-Main] 2025-05-06 20:22:55 Info: threshold-config: Threshold config parsed: 0 rule(s) found
+[126 - Suricata-Main] 2025-05-06 20:22:55 Info: detect: 4 signatures processed. 0 are IP-only rules, 4 are inspecting packet payload, 0 inspect application layer, 0 are decoder event only
+[126 - Suricata-Main] 2025-05-06 20:22:56 Error: af-packet: fanout not supported by kernel: Kernel too old or cluster-id 99 already in use.
+[126 - Suricata-Main] 2025-05-06 20:22:56 Warning: af-packet: eno2: AF_PACKET tpacket-v3 is recommended for non-inline operation
+[126 - Suricata-Main] 2025-05-06 20:22:56 Info: runmodes: eno2: creating 1 thread
+[127 - W#01-eno2] 2025-05-06 20:22:56 Info: ioctl: eno2: MTU 1500
+[126 - Suricata-Main] 2025-05-06 20:22:56 Notice: threads: Threads created -> W: 1 FM: 1 FR: 1   Engine started.
+[126 - Suricata-Main] 2025-05-06 20:22:59 Notice: suricata: Signal Received.  Stopping engine.
+[126 - Suricata-Main] 2025-05-06 20:23:00 Info: suricata: time elapsed 4.000s
+[126 - Suricata-Main] 2025-05-06 20:23:01 Notice: device: eno2: packets: 49, drops: 0 (0.00%), invalid chksum: 0
+[1 - Suricata-Main] 2025-05-08 16:58:12 Notice: suricata: This is Suricata version 7.0.10 RELEASE running in SYSTEM mode
+[1 - Suricata-Main] 2025-05-08 16:58:12 Info: cpu: CPUs/cores online: 32
+[1 - Suricata-Main] 2025-05-08 16:58:12 Info: suricata: Setting engine mode to IDS mode by default
+[1 - Suricata-Main] 2025-05-08 16:58:12 Info: suricata: No 'host-mode': suricata is in IDS mode, using default setting 'sniffer-only'
+[1 - Suricata-Main] 2025-05-08 16:58:12 Info: logopenfile: fast output device (regular) initialized: fast.log
+[1 - Suricata-Main] 2025-05-08 16:58:12 Info: logopenfile: eve-log output device (regular) initialized: eve.json
+[1 - Suricata-Main] 2025-05-08 16:58:12 Warning: counters: stats are enabled but no loggers are active
+[1 - Suricata-Main] 2025-05-08 16:58:12 Info: detect: 1 rule files processed. 4 rules successfully loaded, 0 rules failed, 0
+[1 - Suricata-Main] 2025-05-08 16:58:12 Info: threshold-config: Threshold config parsed: 0 rule(s) found
+[1 - Suricata-Main] 2025-05-08 16:58:12 Info: detect: 4 signatures processed. 0 are IP-only rules, 4 are inspecting packet payload, 0 inspect application layer, 0 are decoder event only
+[1 - Suricata-Main] 2025-05-08 16:58:12 Warning: af-packet: eno2: AF_PACKET tpacket-v3 is recommended for non-inline operation
+[1 - Suricata-Main] 2025-05-08 16:58:12 Info: runmodes: eno2: creating 32 threads
+[1 - Suricata-Main] 2025-05-08 16:58:13 Notice: threads: Threads created -> W: 32 FM: 1 FR: 1   Engine started.
+[1 - Suricata-Main] 2025-05-08 18:22:24 Notice: suricata: Signal Received.  Stopping engine.
+[1 - Suricata-Main] 2025-05-08 18:22:24 Info: suricata: time elapsed 5052.263s
+[1 - Suricata-Main] 2025-05-08 18:22:25 Notice: device: eno2: packets: 99911, drops: 0 (0.00%), invalid chksum: 279
+[1 - Suricata-Main] 2025-05-08 18:22:46 Notice: suricata: This is Suricata version 7.0.10 RELEASE running in SYSTEM mode
+[1 - Suricata-Main] 2025-05-08 18:22:46 Info: cpu: CPUs/cores online: 32
+[1 - Suricata-Main] 2025-05-08 18:22:46 Info: suricata: Setting engine mode to IDS mode by default
+[1 - Suricata-Main] 2025-05-08 18:22:46 Info: suricata: No 'host-mode': suricata is in IDS mode, using default setting 'sniffer-only'
+[1 - Suricata-Main] 2025-05-08 18:22:46 Info: logopenfile: fast output device (regular) initialized: fast.log
+[1 - Suricata-Main] 2025-05-08 18:22:46 Info: logopenfile: eve-log output device (regular) initialized: eve.json
+[1 - Suricata-Main] 2025-05-08 18:22:46 Warning: counters: stats are enabled but no loggers are active
+[1 - Suricata-Main] 2025-05-08 18:22:46 Info: detect: 1 rule files processed. 4 rules successfully loaded, 0 rules failed, 0
+[1 - Suricata-Main] 2025-05-08 18:22:46 Info: threshold-config: Threshold config parsed: 0 rule(s) found
+[1 - Suricata-Main] 2025-05-08 18:22:46 Info: detect: 4 signatures processed. 0 are IP-only rules, 4 are inspecting packet payload, 0 inspect application layer, 0 are decoder event only
+[1 - Suricata-Main] 2025-05-08 18:22:46 Warning: af-packet: eno2: AF_PACKET tpacket-v3 is recommended for non-inline operation
+[1 - Suricata-Main] 2025-05-08 18:22:46 Info: runmodes: eno2: creating 32 threads
+[1 - Suricata-Main] 2025-05-08 18:22:47 Notice: threads: Threads created -> W: 32 FM: 1 FR: 1   Engine started.
+[1 - Suricata-Main] 2025-05-08 18:52:34 Notice: suricata: Signal Received.  Stopping engine.
+[1 - Suricata-Main] 2025-05-08 18:52:35 Info: suricata: time elapsed 1788.637s
+[1 - Suricata-Main] 2025-05-08 18:52:36 Notice: device: eno2: packets: 55343, drops: 0 (0.00%), invalid chksum: 0
+[1 - Suricata-Main] 2025-05-08 18:52:57 Notice: suricata: This is Suricata version 7.0.10 RELEASE running in SYSTEM mode
+[1 - Suricata-Main] 2025-05-08 18:52:57 Info: cpu: CPUs/cores online: 32
+[1 - Suricata-Main] 2025-05-08 18:52:57 Info: suricata: Setting engine mode to IDS mode by default
+[1 - Suricata-Main] 2025-05-08 18:52:57 Info: suricata: No 'host-mode': suricata is in IDS mode, using default setting 'sniffer-only'
+[1 - Suricata-Main] 2025-05-08 18:52:57 Info: logopenfile: fast output device (regular) initialized: fast.log
+[1 - Suricata-Main] 2025-05-08 18:52:57 Info: logopenfile: eve-log output device (regular) initialized: eve.json
+[1 - Suricata-Main] 2025-05-08 18:52:57 Warning: counters: stats are enabled but no loggers are active
+[1 - Suricata-Main] 2025-05-08 18:52:57 Info: detect: 1 rule files processed. 4 rules successfully loaded, 0 rules failed, 0
+[1 - Suricata-Main] 2025-05-08 18:52:57 Info: threshold-config: Threshold config parsed: 0 rule(s) found
+[1 - Suricata-Main] 2025-05-08 18:52:57 Info: detect: 4 signatures processed. 0 are IP-only rules, 4 are inspecting packet payload, 0 inspect application layer, 0 are decoder event only
+[1 - Suricata-Main] 2025-05-08 18:52:57 Warning: af-packet: eno2: AF_PACKET tpacket-v3 is recommended for non-inline operation
+[1 - Suricata-Main] 2025-05-08 18:52:57 Info: runmodes: eno2: creating 32 threads
+[1 - Suricata-Main] 2025-05-08 18:52:58 Notice: threads: Threads created -> W: 32 FM: 1 FR: 1   Engine started.
+[1 - Suricata-Main] 2025-05-08 18:53:29 Notice: suricata: Signal Received.  Stopping engine.
+[1 - Suricata-Main] 2025-05-08 18:53:29 Info: suricata: time elapsed 31.727s
+[1 - Suricata-Main] 2025-05-08 18:53:30 Notice: device: eno2: packets: 1703, drops: 0 (0.00%), invalid chksum: 0
+[1 - Suricata-Main] 2025-05-08 18:53:42 Notice: suricata: This is Suricata version 7.0.10 RELEASE running in SYSTEM mode
+[1 - Suricata-Main] 2025-05-08 18:53:42 Info: cpu: CPUs/cores online: 32
+[1 - Suricata-Main] 2025-05-08 18:53:42 Info: suricata: Setting engine mode to IDS mode by default
+[1 - Suricata-Main] 2025-05-08 18:53:42 Info: suricata: No 'host-mode': suricata is in IDS mode, using default setting 'sniffer-only'
+[1 - Suricata-Main] 2025-05-08 18:53:42 Info: logopenfile: fast output device (regular) initialized: fast.log
+[1 - Suricata-Main] 2025-05-08 18:53:42 Info: logopenfile: eve-log output device (regular) initialized: eve.json
+[1 - Suricata-Main] 2025-05-08 18:53:42 Warning: counters: stats are enabled but no loggers are active
+[1 - Suricata-Main] 2025-05-08 18:53:42 Info: detect: 1 rule files processed. 4 rules successfully loaded, 0 rules failed, 0
+[1 - Suricata-Main] 2025-05-08 18:53:42 Info: threshold-config: Threshold config parsed: 0 rule(s) found
+[1 - Suricata-Main] 2025-05-08 18:53:42 Info: detect: 4 signatures processed. 0 are IP-only rules, 4 are inspecting packet payload, 0 inspect application layer, 0 are decoder event only
+[1 - Suricata-Main] 2025-05-08 18:53:42 Warning: af-packet: eno2: AF_PACKET tpacket-v3 is recommended for non-inline operation
+[1 - Suricata-Main] 2025-05-08 18:53:42 Info: runmodes: eno2: creating 32 threads
+[1 - Suricata-Main] 2025-05-08 18:53:43 Notice: threads: Threads created -> W: 32 FM: 1 FR: 1   Engine started.
+[56 - Suricata-Main] 2025-05-08 18:53:55 Notice: suricata: This is Suricata version 7.0.10 RELEASE running in SYSTEM mode
+[56 - Suricata-Main] 2025-05-08 18:53:55 Info: cpu: CPUs/cores online: 32
+[56 - Suricata-Main] 2025-05-08 18:53:55 Info: suricata: Setting engine mode to IDS mode by default
+[56 - Suricata-Main] 2025-05-08 18:53:55 Info: suricata: No 'host-mode': suricata is in IDS mode, using default setting 'sniffer-only'
+[56 - Suricata-Main] 2025-05-08 18:53:55 Info: logopenfile: fast output device (regular) initialized: fast.log
+[56 - Suricata-Main] 2025-05-08 18:53:55 Info: logopenfile: eve-log output device (regular) initialized: eve.json
+[56 - Suricata-Main] 2025-05-08 18:53:55 Warning: counters: stats are enabled but no loggers are active
+[56 - Suricata-Main] 2025-05-08 18:53:55 Info: detect: 1 rule files processed. 4 rules successfully loaded, 0 rules failed, 0
+[56 - Suricata-Main] 2025-05-08 18:53:55 Info: threshold-config: Threshold config parsed: 0 rule(s) found
+[56 - Suricata-Main] 2025-05-08 18:53:55 Info: detect: 4 signatures processed. 0 are IP-only rules, 4 are inspecting packet payload, 0 inspect application layer, 0 are decoder event only
+[56 - Suricata-Main] 2025-05-08 18:53:55 Error: af-packet: fanout not supported by kernel: Kernel too old or cluster-id 99 already in use.
+[56 - Suricata-Main] 2025-05-08 18:53:55 Warning: af-packet: eno2: AF_PACKET tpacket-v3 is recommended for non-inline operation
+[56 - Suricata-Main] 2025-05-08 18:53:55 Info: runmodes: eno2: creating 1 thread
+[57 - W#01-eno2] 2025-05-08 18:53:55 Info: ioctl: eno2: MTU 1500
+[56 - Suricata-Main] 2025-05-08 18:53:56 Notice: threads: Threads created -> W: 1 FM: 1 FR: 1   Engine started.
+[56 - Suricata-Main] 2025-05-08 18:54:05 Notice: suricata: Signal Received.  Stopping engine.
+[56 - Suricata-Main] 2025-05-08 18:54:06 Info: suricata: time elapsed 10.914s
+[56 - Suricata-Main] 2025-05-08 18:54:07 Notice: device: eno2: packets: 113, drops: 0 (0.00%), invalid chksum: 0
+[66 - Suricata-Main] 2025-05-08 19:12:18 Notice: suricata: This is Suricata version 7.0.10 RELEASE running in SYSTEM mode
+[66 - Suricata-Main] 2025-05-08 19:12:18 Info: cpu: CPUs/cores online: 32
+[66 - Suricata-Main] 2025-05-08 19:12:18 Info: suricata: Setting engine mode to IDS mode by default
+[66 - Suricata-Main] 2025-05-08 19:12:18 Info: suricata: No 'host-mode': suricata is in IDS mode, using default setting 'sniffer-only'
+[66 - Suricata-Main] 2025-05-08 19:12:18 Info: logopenfile: fast output device (regular) initialized: fast.log
+[66 - Suricata-Main] 2025-05-08 19:12:18 Info: logopenfile: eve-log output device (regular) initialized: eve.json
+[66 - Suricata-Main] 2025-05-08 19:12:18 Warning: counters: stats are enabled but no loggers are active
+[66 - Suricata-Main] 2025-05-08 19:12:18 Info: detect: 1 rule files processed. 4 rules successfully loaded, 0 rules failed, 0
+[66 - Suricata-Main] 2025-05-08 19:12:18 Info: threshold-config: Threshold config parsed: 0 rule(s) found
+[66 - Suricata-Main] 2025-05-08 19:12:18 Info: detect: 4 signatures processed. 0 are IP-only rules, 4 are inspecting packet payload, 0 inspect application layer, 0 are decoder event only
+[66 - Suricata-Main] 2025-05-08 19:12:18 Error: af-packet: fanout not supported by kernel: Kernel too old or cluster-id 99 already in use.
+[66 - Suricata-Main] 2025-05-08 19:12:18 Warning: af-packet: eno2: AF_PACKET tpacket-v3 is recommended for non-inline operation
+[66 - Suricata-Main] 2025-05-08 19:12:18 Info: runmodes: eno2: creating 1 thread
+[67 - W#01-eno2] 2025-05-08 19:12:18 Info: ioctl: eno2: MTU 1500
+[66 - Suricata-Main] 2025-05-08 19:12:18 Notice: threads: Threads created -> W: 1 FM: 1 FR: 1   Engine started.
+[66 - Suricata-Main] 2025-05-08 19:12:23 Notice: suricata: Signal Received.  Stopping engine.
+[66 - Suricata-Main] 2025-05-08 19:12:23 Info: suricata: time elapsed 4.982s
+[66 - Suricata-Main] 2025-05-08 19:12:23 Notice: device: eno2: packets: 42, drops: 0 (0.00%), invalid chksum: 0
+[76 - Suricata-Main] 2025-05-08 19:17:38 Notice: suricata: This is Suricata version 7.0.10 RELEASE running in SYSTEM mode
+[76 - Suricata-Main] 2025-05-08 19:17:38 Info: cpu: CPUs/cores online: 32
+[76 - Suricata-Main] 2025-05-08 19:17:38 Info: suricata: Setting engine mode to IDS mode by default
+[76 - Suricata-Main] 2025-05-08 19:17:38 Info: suricata: No 'host-mode': suricata is in IDS mode, using default setting 'sniffer-only'
+[76 - Suricata-Main] 2025-05-08 19:17:38 Info: logopenfile: fast output device (regular) initialized: fast.log
+[76 - Suricata-Main] 2025-05-08 19:17:38 Info: logopenfile: eve-log output device (regular) initialized: eve.json
+[76 - Suricata-Main] 2025-05-08 19:17:38 Warning: counters: stats are enabled but no loggers are active
+[76 - Suricata-Main] 2025-05-08 19:17:38 Info: detect: 1 rule files processed. 4 rules successfully loaded, 0 rules failed, 0
+[76 - Suricata-Main] 2025-05-08 19:17:38 Info: threshold-config: Threshold config parsed: 0 rule(s) found
+[76 - Suricata-Main] 2025-05-08 19:17:38 Info: detect: 4 signatures processed. 0 are IP-only rules, 4 are inspecting packet payload, 0 inspect application layer, 0 are decoder event only
+[76 - Suricata-Main] 2025-05-08 19:17:38 Error: af-packet: fanout not supported by kernel: Kernel too old or cluster-id 99 already in use.
+[76 - Suricata-Main] 2025-05-08 19:17:38 Warning: af-packet: eno2: AF_PACKET tpacket-v3 is recommended for non-inline operation
+[76 - Suricata-Main] 2025-05-08 19:17:38 Info: runmodes: eno2: creating 1 thread
+[77 - W#01-eno2] 2025-05-08 19:17:38 Info: ioctl: eno2: MTU 1500
+[76 - Suricata-Main] 2025-05-08 19:17:38 Notice: threads: Threads created -> W: 1 FM: 1 FR: 1   Engine started.
+[76 - Suricata-Main] 2025-05-08 19:17:48 Notice: suricata: Signal Received.  Stopping engine.
+[76 - Suricata-Main] 2025-05-08 19:17:49 Info: suricata: time elapsed 10.910s
+[76 - Suricata-Main] 2025-05-08 19:17:50 Notice: device: eno2: packets: 195, drops: 0 (0.00%), invalid chksum: 0
+[86 - Suricata-Main] 2025-05-08 19:19:44 Notice: suricata: This is Suricata version 7.0.10 RELEASE running in SYSTEM mode
+[86 - Suricata-Main] 2025-05-08 19:19:44 Info: cpu: CPUs/cores online: 32
+[86 - Suricata-Main] 2025-05-08 19:19:44 Info: suricata: Setting engine mode to IDS mode by default
+[86 - Suricata-Main] 2025-05-08 19:19:44 Info: suricata: No 'host-mode': suricata is in IDS mode, using default setting 'sniffer-only'
+[86 - Suricata-Main] 2025-05-08 19:19:44 Info: logopenfile: fast output device (regular) initialized: fast.log
+[86 - Suricata-Main] 2025-05-08 19:19:44 Info: logopenfile: eve-log output device (regular) initialized: eve.json
+[86 - Suricata-Main] 2025-05-08 19:19:44 Warning: counters: stats are enabled but no loggers are active
+[86 - Suricata-Main] 2025-05-08 19:19:44 Info: detect: 1 rule files processed. 4 rules successfully loaded, 0 rules failed, 0
+[86 - Suricata-Main] 2025-05-08 19:19:44 Info: threshold-config: Threshold config parsed: 0 rule(s) found
+[86 - Suricata-Main] 2025-05-08 19:19:44 Info: detect: 4 signatures processed. 0 are IP-only rules, 4 are inspecting packet payload, 0 inspect application layer, 0 are decoder event only
+[86 - Suricata-Main] 2025-05-08 19:19:44 Error: af-packet: fanout not supported by kernel: Kernel too old or cluster-id 99 already in use.
+[86 - Suricata-Main] 2025-05-08 19:19:44 Warning: af-packet: eno2: AF_PACKET tpacket-v3 is recommended for non-inline operation
+[86 - Suricata-Main] 2025-05-08 19:19:44 Info: runmodes: eno2: creating 1 thread
+[87 - W#01-eno2] 2025-05-08 19:19:44 Info: ioctl: eno2: MTU 1500
+[86 - Suricata-Main] 2025-05-08 19:19:44 Notice: threads: Threads created -> W: 1 FM: 1 FR: 1   Engine started.
+[86 - Suricata-Main] 2025-05-08 19:19:49 Notice: suricata: Signal Received.  Stopping engine.
+[86 - Suricata-Main] 2025-05-08 19:19:49 Info: suricata: time elapsed 4.979s
+[86 - Suricata-Main] 2025-05-08 19:19:50 Notice: device: eno2: packets: 518, drops: 0 (0.00%), invalid chksum: 0
+[96 - Suricata-Main] 2025-05-08 20:03:24 Notice: suricata: This is Suricata version 7.0.10 RELEASE running in SYSTEM mode
+[96 - Suricata-Main] 2025-05-08 20:03:24 Info: cpu: CPUs/cores online: 32
+[96 - Suricata-Main] 2025-05-08 20:03:24 Info: suricata: Setting engine mode to IDS mode by default
+[96 - Suricata-Main] 2025-05-08 20:03:24 Info: suricata: No 'host-mode': suricata is in IDS mode, using default setting 'sniffer-only'
+[96 - Suricata-Main] 2025-05-08 20:03:24 Info: logopenfile: fast output device (regular) initialized: fast.log
+[96 - Suricata-Main] 2025-05-08 20:03:24 Info: logopenfile: eve-log output device (regular) initialized: eve.json
+[96 - Suricata-Main] 2025-05-08 20:03:24 Warning: counters: stats are enabled but no loggers are active
+[96 - Suricata-Main] 2025-05-08 20:03:24 Info: detect: 1 rule files processed. 4 rules successfully loaded, 0 rules failed, 0
+[96 - Suricata-Main] 2025-05-08 20:03:24 Info: threshold-config: Threshold config parsed: 0 rule(s) found
+[96 - Suricata-Main] 2025-05-08 20:03:24 Info: detect: 4 signatures processed. 0 are IP-only rules, 4 are inspecting packet payload, 0 inspect application layer, 0 are decoder event only
+[96 - Suricata-Main] 2025-05-08 20:03:24 Error: af-packet: fanout not supported by kernel: Kernel too old or cluster-id 99 already in use.
+[96 - Suricata-Main] 2025-05-08 20:03:24 Warning: af-packet: eno2: AF_PACKET tpacket-v3 is recommended for non-inline operation
+[96 - Suricata-Main] 2025-05-08 20:03:24 Info: runmodes: eno2: creating 1 thread
+[97 - W#01-eno2] 2025-05-08 20:03:24 Info: ioctl: eno2: MTU 1500
+[96 - Suricata-Main] 2025-05-08 20:03:24 Notice: threads: Threads created -> W: 1 FM: 1 FR: 1   Engine started.
+[96 - Suricata-Main] 2025-05-08 20:03:34 Notice: suricata: Signal Received.  Stopping engine.
+[96 - Suricata-Main] 2025-05-08 20:03:35 Info: suricata: time elapsed 10.916s
+[96 - Suricata-Main] 2025-05-08 20:03:36 Notice: device: eno2: packets: 207, drops: 0 (0.00%), invalid chksum: 0

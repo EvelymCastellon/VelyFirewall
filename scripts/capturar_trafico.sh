@@ -1,54 +1,38 @@
 #!/bin/bash
 
-# Preguntar al usuario el tipo de tráfico
-while true; do
-    echo "¿Qué tipo de tráfico deseas capturar?"
-    select PROTOCOLO in "Diameter" "SS7" "Salir"; do
-        case $PROTOCOLO in
-            Diameter|SS7)
-                break 2  # salir del select y del while
-                ;;
-            Salir)
-                echo "Saliendo del script."
-                exit 0
-                ;;
-            *)
-                echo "Opción inválida. Intenta de nuevo."
-                ;;
-        esac
-    done
-done
+# --- Configuración ---
+LOGS_DIR="/home/evelym/Lab/VelyFirewall/logs"
+INTERFAZ="eno2"
 
-# Preguntar duración de la captura
+# --- Validar parámetro ---
+if [ -z "$1" ]; then
+    echo "Error: Especifica el protocolo (Diameter/SS7)"
+    exit 1
+fi
+
+PROTOCOLO=$1
+mkdir -p "$LOGS_DIR"
+cd "$LOGS_DIR" || exit 1
+
+# --- Capturar duración ---
 read -p "¿Cuántos segundos deseas capturar? " DURACION
 if ! [[ "$DURACION" =~ ^[0-9]+$ ]]; then
     echo "Duración no válida. Usa solo números."
     exit 1
 fi
 
-# Interfaz de red
-INTERFAZ="eno2"
-
-# Archivos
+# --- Generar nombres de archivo ---
 BASE_NAME="${PROTOCOLO,,}_traffic_$(date +%Y%m%d_%H%M%S)"
 PCAP_FILE="${BASE_NAME}.pcap"
-JSON_FILE="${BASE_NAME}.json"
 
-# Captura y conversión automática
-echo "Capturando tráfico $PROTOCOLO en $INTERFAZ por $DURACION segundos..."
+# --- Ejecutar captura ---
+echo "Capturando tráfico $PROTOCOLO..."
 if [[ "$PROTOCOLO" == "Diameter" ]]; then
     timeout "$DURACION" tshark -i "$INTERFAZ" -f "tcp port 3868 or sctp port 3868" -w "$PCAP_FILE"
 else
     timeout "$DURACION" tshark -i "$INTERFAZ" -f "sctp" -w "$PCAP_FILE"
 fi
 
-echo "Convirtiendo PCAP a JSON..."
-if [[ "$PROTOCOLO" == "Diameter" ]]; then
-    tshark -r "$PCAP_FILE" -Y "diameter" -T json > "$JSON_FILE" 2>/dev/null
-else
-    tshark -r "$PCAP_FILE" -Y "sctp || mtp3 || sccp || tcap || gsm_map" -T json > "$JSON_FILE" 2>/dev/null
-fi
-
-echo "Capturas guardadas en:"
-echo " - PCAP: $PCAP_FILE"
-echo " - JSON: $JSON_FILE"
+# --- Ajustar permisos ---
+chmod 644 "$PCAP_FILE"
+echo "PCAP guardado en: $LOGS_DIR/$PCAP_FILE"

@@ -16,7 +16,7 @@ services:
     environment:
       KAFKA_BROKER_ID: 1
       KAFKA_ZOOKEEPER_CONNECT: zookeeper:2181
-      KAFKA_ADVERTISED_LISTENERS: PLAINTEXT://localhost:9092
+      KAFKA_ADVERTISED_LISTENERS: PLAINTEXT://kafka:9092  # Usar nombre del servicio
       KAFKA_OFFSETS_TOPIC_REPLICATION_FACTOR: 1
 
   redis:
@@ -25,6 +25,29 @@ services:
       - "6379:6379"
     volumes:
       - redis_data:/data
+
+  suricata:
+    image: jasonish/suricata:latest
+    command: -i eno2 -c /etc/suricata/suricata.yaml -v
+    volumes:
+      - ./suricata-config/suricata.yaml:/etc/suricata/suricata.yaml:ro
+      - ./suricata-rules:/etc/suricata/rules:ro  # Mapea la carpeta de reglas
+      - ./logs:/var/log/suricata
+    network_mode: host
+    cap_add:
+      - NET_ADMIN
+      - NET_RAW
+
+  suricata-redis-anomaly:
+    image: python:3.9-slim
+    volumes:
+      - ./suricata-config:/app
+      - ./logs:/logs
+    working_dir: /app
+    command: python3 suricata_redis_anomaly.py
+    depends_on:
+      - redis
+      - suricata
 
 volumes:
   redis_data:
