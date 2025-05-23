@@ -1,0 +1,1038 @@
+2025-05-19 14:41:55 - INFO - [train.py:1195] - === Inicio del script de entrenamiento (5.8.9 - Corregido NameError en preprocess) ===
+2025-05-19 14:41:55 - WARNING - [train.py:1205] - La ruta base para MLflow URI no existe: C:/Users/RayRay/mlruns. MLflow intentará crearla.
+2025-05-19 14:41:55 - INFO - [train.py:1209] - MLflow tracking URI establecida en: file:///C:/Users/RayRay/mlruns
+2025-05-19 14:41:55 - CRITICAL - [train.py:346] - Error procesando config.ini: XGBoost seleccionado (xgb) pero no parece estar instalado.
+2025-05-19 14:49:03 - INFO - [train.py:1195] - === Inicio del script de entrenamiento (5.8.9 - Corregido NameError en preprocess) ===
+2025-05-19 14:49:03 - WARNING - [train.py:1205] - La ruta base para MLflow URI no existe: C:/Users/RayRay/mlruns. MLflow intentará crearla.
+2025-05-19 14:49:03 - INFO - [train.py:1209] - MLflow tracking URI establecida en: file:///C:/Users/RayRay/mlruns
+2025-05-19 14:49:03 - INFO - [train.py:237] - Parámetros comunes cargados: {'random_state': 42, 'cv_folds': 3, 'n_jobs': -1, 'use_smote': True, 'use_gridsearch': False, 'use_randomsearch': True, 'n_iter': 20, 'classification_threshold': 0.5, 'target_col': 'label'}
+2025-05-19 14:49:03 - INFO - [train.py:244] - Parámetros específicos para 'xgb' cargados: {'n_estimators': 150, 'learning_rate': 0.1, 'max_depth': 6, 'subsample': 0.8, 'colsample_bytree': 0.8, 'gamma': 0.1, 'scale_pos_weight': 1.0, 'eval_metric': 'auc', 'tree_method': 'gpu_hist'}
+2025-05-19 14:49:03 - INFO - [train.py:253] - Distribuciones de parámetros para RandomizedSearch ('xgb') cargadas: {'n_estimators': <scipy.stats._distn_infrastructure.rv_discrete_frozen object at 0x74547f5e1b20>, 'learning_rate': <scipy.stats._distn_infrastructure.rv_continuous_frozen object at 0x74547f24ba10>, 'max_depth': <scipy.stats._distn_infrastructure.rv_discrete_frozen object at 0x74547f24ba70>, 'subsample': <scipy.stats._distn_infrastructure.rv_continuous_frozen object at 0x74547f24be00>, 'colsample_bytree': <scipy.stats._distn_infrastructure.rv_continuous_frozen object at 0x74547f24be60>, 'gamma': <scipy.stats._distn_infrastructure.rv_continuous_frozen object at 0x74547f27c380>, 'scale_pos_weight': [1.0], 'tree_method': ['gpu_hist']}
+2025-05-19 14:49:03 - INFO - [train.py:306] - Configuración detectada para usar GPU con XGBoost (tree_method='gpu_hist').
+2025-05-19 14:49:03 - INFO - [train.py:317] - Paralelización configurada para usar -1 jobs (CPUs). (-1 = todos)
+2025-05-19 14:49:03 - WARNING - [train.py:325] - SMOTE está activado (use_smote = True). Parámetros de balanceo del modelo (class_weight/scale_pos_weight) serán ignorados o deben ser None/1.0.
+2025-05-19 14:49:03 - INFO - [train.py:327] - RandomizedSearchCV está HABILITADO con n_iter=20.
+2025-05-19 14:49:03 - INFO - [train.py:329] - Early Stopping está configurado con 10 rondas (aplicable a XGB/LGBM).
+2025-05-19 14:49:03 - INFO - [train.py:342] - Configuración final combinada para 'xgb': {'model_type': 'xgb', 'random_state': 42, 'cv_folds': 3, 'n_jobs': -1, 'use_smote': True, 'use_gridsearch': False, 'use_randomsearch': True, 'n_iter': 20, 'classification_threshold': 0.5, 'target_col': 'label', 'n_estimators': 150, 'learning_rate': 0.1, 'max_depth': 6, 'subsample': 0.8, 'colsample_bytree': 0.8, 'gamma': 0.1, 'scale_pos_weight': 1.0, 'eval_metric': 'auc', 'tree_method': 'gpu_hist', 'param_dist': {'n_estimators': <scipy.stats._distn_infrastructure.rv_discrete_frozen object at 0x74547f5e1b20>, 'learning_rate': <scipy.stats._distn_infrastructure.rv_continuous_frozen object at 0x74547f24ba10>, 'max_depth': <scipy.stats._distn_infrastructure.rv_discrete_frozen object at 0x74547f24ba70>, 'subsample': <scipy.stats._distn_infrastructure.rv_continuous_frozen object at 0x74547f24be00>, 'colsample_bytree': <scipy.stats._distn_infrastructure.rv_continuous_frozen object at 0x74547f24be60>, 'gamma': <scipy.stats._distn_infrastructure.rv_continuous_frozen object at 0x74547f27c380>, 'scale_pos_weight': [1.0], 'tree_method': ['gpu_hist']}, 'csv_path': '../output/combined_valid_data.csv', 'imsi_column_name': 'c_imsi', 'timestamp_column_name': 'c_timestamp', 'required_columns': 'c_imsi, c_timestamp, label', 'imsi_length': 15, 'timestamp_format': None, 'remove_invalid_rows': True, 'remove_duplicates': True, 'duplicate_subset_columns': None, 'experiment_name': 'FraudDetection_{model_type}_Optimized_v5.7_SMOTE_GPU', 'register_models': True, 'thresholds_to_test': [0.3, 0.4, 0.5, 0.6], 'early_stopping_rounds': 10, 'smote_sampling_strategy': 'auto'}
+2025-05-19 14:49:03 - INFO - [train.py:1221] - Nombre del experimento MLflow: FraudDetection_XGB_Optimized_v5.7_SMOTE_GPU
+2025-05-19 14:49:03 - INFO - [train.py:1225] - Experimento 'FraudDetection_XGB_Optimized_v5.7_SMOTE_GPU' no encontrado. Creando...
+2025-05-19 14:49:03 - INFO - [train.py:1227] - Experimento 'FraudDetection_XGB_Optimized_v5.7_SMOTE_GPU' creado.
+2025-05-19 14:49:03 - INFO - [train.py:1231] - Experimento MLflow activo: 'FraudDetection_XGB_Optimized_v5.7_SMOTE_GPU'
+2025-05-19 14:49:03 - ERROR - [train.py:357] - Archivo CSV no encontrado en: ../output/combined_valid_data.csv
+2025-05-19 14:49:03 - INFO - [train.py:1240] - Carga de datos completada en 0.00 seg.
+2025-05-19 14:49:03 - CRITICAL - [train.py:1241] - Fallo al cargar datos. Abortando.
+2025-05-19 15:19:24 - INFO - [train.py:1195] - === Inicio del script de entrenamiento (5.8.9 - Corregido NameError en preprocess) ===
+2025-05-19 15:19:24 - WARNING - [train.py:1203] - La ruta base para MLflow URI no existe: /home/evelym/Lab/VelyFirewall/scripts/mlruns. MLflow intentará crearla.
+2025-05-19 15:19:24 - INFO - [train.py:1207] - MLflow tracking URI establecida en: file:///home/evelym/Lab/VelyFirewall/scripts/mlruns
+2025-05-19 15:19:24 - INFO - [train.py:237] - Parámetros comunes cargados: {'random_state': 42, 'cv_folds': 3, 'n_jobs': -1, 'use_smote': True, 'use_gridsearch': False, 'use_randomsearch': True, 'n_iter': 20, 'classification_threshold': 0.5, 'target_col': 'label'}
+2025-05-19 15:19:24 - INFO - [train.py:244] - Parámetros específicos para 'xgb' cargados: {'n_estimators': 150, 'learning_rate': 0.1, 'max_depth': 6, 'subsample': 0.8, 'colsample_bytree': 0.8, 'gamma': 0.1, 'scale_pos_weight': 1.0, 'eval_metric': 'auc', 'tree_method': 'gpu_hist'}
+2025-05-19 15:19:24 - INFO - [train.py:253] - Distribuciones de parámetros para RandomizedSearch ('xgb') cargadas: {'n_estimators': <scipy.stats._distn_infrastructure.rv_discrete_frozen object at 0x70f4235a7c80>, 'learning_rate': <scipy.stats._distn_infrastructure.rv_continuous_frozen object at 0x70f4235439b0>, 'max_depth': <scipy.stats._distn_infrastructure.rv_discrete_frozen object at 0x70f423543950>, 'subsample': <scipy.stats._distn_infrastructure.rv_continuous_frozen object at 0x70f423543d70>, 'colsample_bytree': <scipy.stats._distn_infrastructure.rv_continuous_frozen object at 0x70f423543dd0>, 'gamma': <scipy.stats._distn_infrastructure.rv_continuous_frozen object at 0x70f4233782f0>, 'scale_pos_weight': [1.0], 'tree_method': ['gpu_hist']}
+2025-05-19 15:19:24 - INFO - [train.py:306] - Configuración detectada para usar GPU con XGBoost (tree_method='gpu_hist').
+2025-05-19 15:19:24 - INFO - [train.py:317] - Paralelización configurada para usar -1 jobs (CPUs). (-1 = todos)
+2025-05-19 15:19:24 - WARNING - [train.py:325] - SMOTE está activado (use_smote = True). Parámetros de balanceo del modelo (class_weight/scale_pos_weight) serán ignorados o deben ser None/1.0.
+2025-05-19 15:19:24 - INFO - [train.py:327] - RandomizedSearchCV está HABILITADO con n_iter=20.
+2025-05-19 15:19:24 - INFO - [train.py:329] - Early Stopping está configurado con 10 rondas (aplicable a XGB/LGBM).
+2025-05-19 15:19:24 - INFO - [train.py:342] - Configuración final combinada para 'xgb': {'model_type': 'xgb', 'random_state': 42, 'cv_folds': 3, 'n_jobs': -1, 'use_smote': True, 'use_gridsearch': False, 'use_randomsearch': True, 'n_iter': 20, 'classification_threshold': 0.5, 'target_col': 'label', 'n_estimators': 150, 'learning_rate': 0.1, 'max_depth': 6, 'subsample': 0.8, 'colsample_bytree': 0.8, 'gamma': 0.1, 'scale_pos_weight': 1.0, 'eval_metric': 'auc', 'tree_method': 'gpu_hist', 'param_dist': {'n_estimators': <scipy.stats._distn_infrastructure.rv_discrete_frozen object at 0x70f4235a7c80>, 'learning_rate': <scipy.stats._distn_infrastructure.rv_continuous_frozen object at 0x70f4235439b0>, 'max_depth': <scipy.stats._distn_infrastructure.rv_discrete_frozen object at 0x70f423543950>, 'subsample': <scipy.stats._distn_infrastructure.rv_continuous_frozen object at 0x70f423543d70>, 'colsample_bytree': <scipy.stats._distn_infrastructure.rv_continuous_frozen object at 0x70f423543dd0>, 'gamma': <scipy.stats._distn_infrastructure.rv_continuous_frozen object at 0x70f4233782f0>, 'scale_pos_weight': [1.0], 'tree_method': ['gpu_hist']}, 'csv_path': '../output/combined_valid_data.csv', 'imsi_column_name': 'c_imsi', 'timestamp_column_name': 'c_timestamp', 'required_columns': 'c_imsi, c_timestamp, label', 'imsi_length': 15, 'timestamp_format': None, 'remove_invalid_rows': True, 'remove_duplicates': True, 'duplicate_subset_columns': None, 'experiment_name': 'FraudDetection_{model_type}_Optimized_v5.7_SMOTE_GPU', 'register_models': True, 'thresholds_to_test': [0.3, 0.4, 0.5, 0.6], 'early_stopping_rounds': 10, 'smote_sampling_strategy': 'auto'}
+2025-05-19 15:19:24 - INFO - [train.py:1219] - Nombre del experimento MLflow: FraudDetection_XGB_Optimized_v5.7_SMOTE_GPU
+2025-05-19 15:19:24 - INFO - [train.py:1223] - Experimento 'FraudDetection_XGB_Optimized_v5.7_SMOTE_GPU' no encontrado. Creando...
+2025-05-19 15:19:24 - INFO - [train.py:1225] - Experimento 'FraudDetection_XGB_Optimized_v5.7_SMOTE_GPU' creado.
+2025-05-19 15:19:24 - INFO - [train.py:1229] - Experimento MLflow activo: 'FraudDetection_XGB_Optimized_v5.7_SMOTE_GPU'
+2025-05-19 15:19:24 - ERROR - [train.py:357] - Archivo CSV no encontrado en: ../output/combined_valid_data.csv
+2025-05-19 15:19:24 - INFO - [train.py:1238] - Carga de datos completada en 0.00 seg.
+2025-05-19 15:19:24 - CRITICAL - [train.py:1239] - Fallo al cargar datos. Abortando.
+2025-05-19 15:27:29 - INFO - [train.py:1195] - === Inicio del script de entrenamiento (5.8.9 - Corregido NameError en preprocess) ===
+2025-05-19 15:27:29 - INFO - [train.py:1207] - MLflow tracking URI establecida en: file:///home/evelym/Lab/VelyFirewall/scripts/mlruns
+2025-05-19 15:27:29 - INFO - [train.py:237] - Parámetros comunes cargados: {'random_state': 42, 'cv_folds': 3, 'n_jobs': -1, 'use_smote': True, 'use_gridsearch': False, 'use_randomsearch': True, 'n_iter': 20, 'classification_threshold': 0.5, 'target_col': 'label'}
+2025-05-19 15:27:29 - INFO - [train.py:244] - Parámetros específicos para 'xgb' cargados: {'n_estimators': 150, 'learning_rate': 0.1, 'max_depth': 6, 'subsample': 0.8, 'colsample_bytree': 0.8, 'gamma': 0.1, 'scale_pos_weight': 1.0, 'eval_metric': 'auc', 'tree_method': 'gpu_hist'}
+2025-05-19 15:27:29 - INFO - [train.py:253] - Distribuciones de parámetros para RandomizedSearch ('xgb') cargadas: {'n_estimators': <scipy.stats._distn_infrastructure.rv_discrete_frozen object at 0x760174646fc0>, 'learning_rate': <scipy.stats._distn_infrastructure.rv_continuous_frozen object at 0x7601746473b0>, 'max_depth': <scipy.stats._distn_infrastructure.rv_discrete_frozen object at 0x760174647410>, 'subsample': <scipy.stats._distn_infrastructure.rv_continuous_frozen object at 0x7601746477a0>, 'colsample_bytree': <scipy.stats._distn_infrastructure.rv_continuous_frozen object at 0x7601746478f0>, 'gamma': <scipy.stats._distn_infrastructure.rv_continuous_frozen object at 0x7601746479e0>, 'scale_pos_weight': [1.0], 'tree_method': ['gpu_hist']}
+2025-05-19 15:27:29 - INFO - [train.py:306] - Configuración detectada para usar GPU con XGBoost (tree_method='gpu_hist').
+2025-05-19 15:27:29 - INFO - [train.py:317] - Paralelización configurada para usar -1 jobs (CPUs). (-1 = todos)
+2025-05-19 15:27:29 - WARNING - [train.py:325] - SMOTE está activado (use_smote = True). Parámetros de balanceo del modelo (class_weight/scale_pos_weight) serán ignorados o deben ser None/1.0.
+2025-05-19 15:27:29 - INFO - [train.py:327] - RandomizedSearchCV está HABILITADO con n_iter=20.
+2025-05-19 15:27:29 - INFO - [train.py:329] - Early Stopping está configurado con 10 rondas (aplicable a XGB/LGBM).
+2025-05-19 15:27:29 - INFO - [train.py:342] - Configuración final combinada para 'xgb': {'model_type': 'xgb', 'random_state': 42, 'cv_folds': 3, 'n_jobs': -1, 'use_smote': True, 'use_gridsearch': False, 'use_randomsearch': True, 'n_iter': 20, 'classification_threshold': 0.5, 'target_col': 'label', 'n_estimators': 150, 'learning_rate': 0.1, 'max_depth': 6, 'subsample': 0.8, 'colsample_bytree': 0.8, 'gamma': 0.1, 'scale_pos_weight': 1.0, 'eval_metric': 'auc', 'tree_method': 'gpu_hist', 'param_dist': {'n_estimators': <scipy.stats._distn_infrastructure.rv_discrete_frozen object at 0x760174646fc0>, 'learning_rate': <scipy.stats._distn_infrastructure.rv_continuous_frozen object at 0x7601746473b0>, 'max_depth': <scipy.stats._distn_infrastructure.rv_discrete_frozen object at 0x760174647410>, 'subsample': <scipy.stats._distn_infrastructure.rv_continuous_frozen object at 0x7601746477a0>, 'colsample_bytree': <scipy.stats._distn_infrastructure.rv_continuous_frozen object at 0x7601746478f0>, 'gamma': <scipy.stats._distn_infrastructure.rv_continuous_frozen object at 0x7601746479e0>, 'scale_pos_weight': [1.0], 'tree_method': ['gpu_hist']}, 'csv_path': '/home/evelym/Lab/VelyFirewall/data/synthetic_dataset_v4_adjusted.csv', 'imsi_column_name': 'c_imsi', 'timestamp_column_name': 'c_timestamp', 'required_columns': 'c_imsi, c_timestamp, label', 'imsi_length': 15, 'timestamp_format': None, 'remove_invalid_rows': True, 'remove_duplicates': True, 'duplicate_subset_columns': None, 'experiment_name': 'FraudDetection_{model_type}_Optimized_v5.7_SMOTE_GPU', 'register_models': True, 'thresholds_to_test': [0.3, 0.4, 0.5, 0.6], 'early_stopping_rounds': 10, 'smote_sampling_strategy': 'auto'}
+2025-05-19 15:27:29 - INFO - [train.py:1219] - Nombre del experimento MLflow: FraudDetection_XGB_Optimized_v5.7_SMOTE_GPU
+2025-05-19 15:27:29 - INFO - [train.py:1227] - Experimento 'FraudDetection_XGB_Optimized_v5.7_SMOTE_GPU' ya existe (ID: 226989231919815073).
+2025-05-19 15:27:29 - INFO - [train.py:1229] - Experimento MLflow activo: 'FraudDetection_XGB_Optimized_v5.7_SMOTE_GPU'
+2025-05-19 15:27:29 - INFO - [train.py:371] - Separador detectado para CSV: ','
+2025-05-19 15:27:29 - INFO - [train.py:380] - Datos cargados desde synthetic_dataset_v4_adjusted.csv: shape=(10352, 50), memoria=4.64 MB
+2025-05-19 15:27:29 - INFO - [train.py:1238] - Carga de datos completada en 0.12 seg.
+2025-05-19 15:27:29 - INFO - [train.py:398] - Preprocesando DataFrame...
+2025-05-19 15:27:29 - INFO - [train.py:412] - Encontradas 45 columnas de features (prefijo 'f_').
+2025-05-19 15:27:29 - WARNING - [train.py:420] - Se encontraron NaNs en 1 columnas de features: ['f_one_cggt_multi_cdgt_psi'].
+2025-05-19 15:27:29 - INFO - [train.py:434] - NaNs en 1 columnas numéricas imputados usando la estrategia 'mean'.
+2025-05-19 15:27:29 - INFO - [train.py:455] - Todas las features ya eran numéricas inicialmente.
+2025-05-19 15:27:29 - INFO - [train.py:478] - Todas las features convertidas a tipos numéricos.
+2025-05-19 15:27:29 - INFO - [train.py:512] - Target 'label' convertido a entero.
+2025-05-19 15:27:29 - INFO - [train.py:524] - Preprocesamiento finalizado. X shape=(10352, 45), y shape=(10352,)
+2025-05-19 15:27:29 - INFO - [train.py:1244] - Preprocesamiento completado en 0.07 seg.
+2025-05-19 15:27:29 - INFO - [train.py:1270] - Dividiendo datos: 80.0% train, 20.0% holdout (Estratificado: True)
+2025-05-19 15:27:29 - INFO - [train.py:1271] - División completada en 0.02 seg:
+2025-05-19 15:27:29 - INFO - [train.py:1272] -   Train Original: X=(8281, 45), y=(8281,). Clases: [7023 1258]
+2025-05-19 15:27:29 - INFO - [train.py:1273] -   Holdout:        X=(2071, 45), y=(2071,). Clases: [1756  315]
+2025-05-19 15:27:29 - INFO - [train.py:1285] - Aplicando SMOTE al conjunto de entrenamiento...
+2025-05-19 15:27:29 - INFO - [train.py:1287] - Usando SMOTE sampling_strategy: auto
+2025-05-19 15:27:29 - WARNING - [train.py:1304] - Versión de SMOTE no acepta 'n_jobs'. Ejecutando secuencialmente.
+2025-05-19 15:27:29 - INFO - [train.py:1323] - SMOTE aplicado en 0.22 seg.
+2025-05-19 15:27:29 - INFO - [train.py:1324] -   Train después de SMOTE: X=(14046, 45), y=(14046,). Clases: [7023 7023]
+2025-05-19 15:27:29 - INFO - [train.py:534] - Creando instancia base del modelo tipo: xgb
+2025-05-19 15:27:29 - INFO - [train.py:596] - SMOTE activado, configurando balanceo interno de XGB a None/1.0.
+2025-05-19 15:27:29 - INFO - [train.py:609] - Early stopping configurado para XGBoost, asegurando eval_metric='auc' en constructor.
+2025-05-19 15:27:29 - INFO - [train.py:628] - Parámetros finales para instancia XGB: {'colsample_bytree': 0.8, 'early_stopping_rounds': 10, 'eval_metric': 'auc', 'gamma': 0.1, 'learning_rate': 0.1, 'max_depth': 6, 'n_estimators': 150, 'random_state': 42, 'scale_pos_weight': 1.0, 'subsample': 0.8, 'tree_method': 'gpu_hist', 'n_jobs': -1, 'use_label_encoder': False, 'verbosity': 0}
+2025-05-19 15:27:29 - INFO - [train.py:1342] - Instancia base modelo creada en 0.00 seg.
+2025-05-19 15:27:29 - INFO - [train.py:784] - --- Iniciando Entrenamiento y Evaluación: XGB ---
+2025-05-19 15:27:29 - INFO - [train.py:785] - Optimización con RandomizedSearchCV: Sí (n_iter=20)
+2025-05-19 15:27:29 - INFO - [train.py:789] - Early Stopping Configurado: Sí (rondas=10)
+2025-05-19 15:27:29 - INFO - [train.py:793] - Umbrales a probar en Holdout: [0.3, 0.4, 0.5, 0.6]
+2025-05-19 15:27:29 - INFO - [train.py:839] - MLflow Run ID: b3f25429aa0544b7a3c3fdec28e4fbe1 (Experimento: 'FraudDetection_XGB_Optimized_v5.7_SMOTE_GPU')
+2025-05-19 15:27:29 - INFO - [train.py:869] - Iniciando RandomizedSearchCV para XGB...
+2025-05-19 15:27:29 - INFO - [train.py:898] - Aplicando parámetros fijos al estimador base para RS: {'tree_method': 'gpu_hist', 'eval_metric': 'auc', 'early_stopping_rounds': 10}
+2025-05-19 15:27:29 - INFO - [train.py:918] - Preparando eval_set para ES (10 rondas) dentro de RS (XGB).
+2025-05-19 15:27:29 - INFO - [train.py:926] - Creado eval_set interno para ES en RS: 2107 muestras.
+2025-05-19 15:27:29 - INFO - [train.py:946] - Configured 'eval_set' and 'verbose=False' for XGBoost in RandomizedSearchCV fit_params. Early stopping handled by model init.
+2025-05-19 15:27:30 - INFO - [train.py:959] - Iniciando RS.fit() en -1 jobs (pasando fit_params: [eval_set, verbose])...
+2025-05-19 15:27:34 - ERROR - [train.py:987] - Error durante RandomizedSearchCV: [15:27:32] /workspace/src/tree/updater_gpu_hist.cu:847: Check failed: ctx_->Ordinal() >= 0 (-1 vs. 0) : Must have at least one device
+Stack trace:
+  [bt] (0) /home/evelym/Lab/scapy-env/lib/python3.12/site-packages/xgboost/lib/libxgboost.so(+0x2a6ebc) [0x739a8dea6ebc]
+  [bt] (1) /home/evelym/Lab/scapy-env/lib/python3.12/site-packages/xgboost/lib/libxgboost.so(+0xfd7bf4) [0x739a8ebd7bf4]
+  [bt] (2) /home/evelym/Lab/scapy-env/lib/python3.12/site-packages/xgboost/lib/libxgboost.so(+0xfdf946) [0x739a8ebdf946]
+  [bt] (3) /home/evelym/Lab/scapy-env/lib/python3.12/site-packages/xgboost/lib/libxgboost.so(+0x63b5e2) [0x739a8e23b5e2]
+  [bt] (4) /home/evelym/Lab/scapy-env/lib/python3.12/site-packages/xgboost/lib/libxgboost.so(+0x63ca3d) [0x739a8e23ca3d]
+  [bt] (5) /home/evelym/Lab/scapy-env/lib/python3.12/site-packages/xgboost/lib/libxgboost.so(+0x68d36e) [0x739a8e28d36e]
+  [bt] (6) /home/evelym/Lab/scapy-env/lib/python3.12/site-packages/xgboost/lib/libxgboost.so(XGBoosterUpdateOneIter+0x77) [0x739a8ddb6f97]
+  [bt] (7) /lib/x86_64-linux-gnu/libffi.so.8(+0x7b16) [0x739ac0821b16]
+  [bt] (8) /lib/x86_64-linux-gnu/libffi.so.8(+0x43ef) [0x739ac081e3ef]
+
+
+joblib.externals.loky.process_executor._RemoteTraceback: 
+"""
+Traceback (most recent call last):
+  File "/home/evelym/Lab/scapy-env/lib/python3.12/site-packages/joblib/externals/loky/process_executor.py", line 490, in _process_worker
+    r = call_item()
+        ^^^^^^^^^^^
+  File "/home/evelym/Lab/scapy-env/lib/python3.12/site-packages/joblib/externals/loky/process_executor.py", line 291, in __call__
+    return self.fn(*self.args, **self.kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/evelym/Lab/scapy-env/lib/python3.12/site-packages/joblib/parallel.py", line 606, in __call__
+    return [func(*args, **kwargs) for func, args, kwargs in self.items]
+            ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/evelym/Lab/scapy-env/lib/python3.12/site-packages/sklearn/utils/parallel.py", line 139, in __call__
+    return self.function(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/evelym/Lab/scapy-env/lib/python3.12/site-packages/sklearn/model_selection/_validation.py", line 866, in _fit_and_score
+    estimator.fit(X_train, y_train, **fit_params)
+  File "/home/evelym/Lab/scapy-env/lib/python3.12/site-packages/xgboost/core.py", line 729, in inner_f
+    return func(**kwargs)
+           ^^^^^^^^^^^^^^
+  File "/home/evelym/Lab/scapy-env/lib/python3.12/site-packages/xgboost/sklearn.py", line 1682, in fit
+    self._Booster = train(
+                    ^^^^^^
+  File "/home/evelym/Lab/scapy-env/lib/python3.12/site-packages/xgboost/core.py", line 729, in inner_f
+    return func(**kwargs)
+           ^^^^^^^^^^^^^^
+  File "/home/evelym/Lab/scapy-env/lib/python3.12/site-packages/xgboost/training.py", line 183, in train
+    bst.update(dtrain, iteration=i, fobj=obj)
+  File "/home/evelym/Lab/scapy-env/lib/python3.12/site-packages/xgboost/core.py", line 2246, in update
+    _check_call(
+  File "/home/evelym/Lab/scapy-env/lib/python3.12/site-packages/xgboost/core.py", line 310, in _check_call
+    raise XGBoostError(py_str(_LIB.XGBGetLastError()))
+xgboost.core.XGBoostError: [15:27:32] /workspace/src/tree/updater_gpu_hist.cu:847: Check failed: ctx_->Ordinal() >= 0 (-1 vs. 0) : Must have at least one device
+Stack trace:
+  [bt] (0) /home/evelym/Lab/scapy-env/lib/python3.12/site-packages/xgboost/lib/libxgboost.so(+0x2a6ebc) [0x739a8dea6ebc]
+  [bt] (1) /home/evelym/Lab/scapy-env/lib/python3.12/site-packages/xgboost/lib/libxgboost.so(+0xfd7bf4) [0x739a8ebd7bf4]
+  [bt] (2) /home/evelym/Lab/scapy-env/lib/python3.12/site-packages/xgboost/lib/libxgboost.so(+0xfdf946) [0x739a8ebdf946]
+  [bt] (3) /home/evelym/Lab/scapy-env/lib/python3.12/site-packages/xgboost/lib/libxgboost.so(+0x63b5e2) [0x739a8e23b5e2]
+  [bt] (4) /home/evelym/Lab/scapy-env/lib/python3.12/site-packages/xgboost/lib/libxgboost.so(+0x63ca3d) [0x739a8e23ca3d]
+  [bt] (5) /home/evelym/Lab/scapy-env/lib/python3.12/site-packages/xgboost/lib/libxgboost.so(+0x68d36e) [0x739a8e28d36e]
+  [bt] (6) /home/evelym/Lab/scapy-env/lib/python3.12/site-packages/xgboost/lib/libxgboost.so(XGBoosterUpdateOneIter+0x77) [0x739a8ddb6f97]
+  [bt] (7) /lib/x86_64-linux-gnu/libffi.so.8(+0x7b16) [0x739ac0821b16]
+  [bt] (8) /lib/x86_64-linux-gnu/libffi.so.8(+0x43ef) [0x739ac081e3ef]
+
+
+"""
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/evelym/Lab/VelyFirewall/scripts/train.py", line 965, in evaluate_model
+    search_cv.fit(X_train, y_train, **fit_params_rs)
+  File "/home/evelym/Lab/scapy-env/lib/python3.12/site-packages/sklearn/base.py", line 1389, in wrapper
+    return fit_method(estimator, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/evelym/Lab/scapy-env/lib/python3.12/site-packages/sklearn/model_selection/_search.py", line 1024, in fit
+    self._run_search(evaluate_candidates)
+  File "/home/evelym/Lab/scapy-env/lib/python3.12/site-packages/sklearn/model_selection/_search.py", line 1951, in _run_search
+    evaluate_candidates(
+  File "/home/evelym/Lab/scapy-env/lib/python3.12/site-packages/sklearn/model_selection/_search.py", line 970, in evaluate_candidates
+    out = parallel(
+          ^^^^^^^^^
+  File "/home/evelym/Lab/scapy-env/lib/python3.12/site-packages/sklearn/utils/parallel.py", line 77, in __call__
+    return super().__call__(iterable_with_config)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/evelym/Lab/scapy-env/lib/python3.12/site-packages/joblib/parallel.py", line 2071, in __call__
+    return output if self.return_generator else list(output)
+                                                ^^^^^^^^^^^^
+  File "/home/evelym/Lab/scapy-env/lib/python3.12/site-packages/joblib/parallel.py", line 1681, in _get_outputs
+    yield from self._retrieve()
+  File "/home/evelym/Lab/scapy-env/lib/python3.12/site-packages/joblib/parallel.py", line 1783, in _retrieve
+    self._raise_error_fast()
+  File "/home/evelym/Lab/scapy-env/lib/python3.12/site-packages/joblib/parallel.py", line 1858, in _raise_error_fast
+    error_job.get_result(self.timeout)
+  File "/home/evelym/Lab/scapy-env/lib/python3.12/site-packages/joblib/parallel.py", line 757, in get_result
+    return self._return_or_raise()
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/evelym/Lab/scapy-env/lib/python3.12/site-packages/joblib/parallel.py", line 772, in _return_or_raise
+    raise self._result
+xgboost.core.XGBoostError: [15:27:32] /workspace/src/tree/updater_gpu_hist.cu:847: Check failed: ctx_->Ordinal() >= 0 (-1 vs. 0) : Must have at least one device
+Stack trace:
+  [bt] (0) /home/evelym/Lab/scapy-env/lib/python3.12/site-packages/xgboost/lib/libxgboost.so(+0x2a6ebc) [0x739a8dea6ebc]
+  [bt] (1) /home/evelym/Lab/scapy-env/lib/python3.12/site-packages/xgboost/lib/libxgboost.so(+0xfd7bf4) [0x739a8ebd7bf4]
+  [bt] (2) /home/evelym/Lab/scapy-env/lib/python3.12/site-packages/xgboost/lib/libxgboost.so(+0xfdf946) [0x739a8ebdf946]
+  [bt] (3) /home/evelym/Lab/scapy-env/lib/python3.12/site-packages/xgboost/lib/libxgboost.so(+0x63b5e2) [0x739a8e23b5e2]
+  [bt] (4) /home/evelym/Lab/scapy-env/lib/python3.12/site-packages/xgboost/lib/libxgboost.so(+0x63ca3d) [0x739a8e23ca3d]
+  [bt] (5) /home/evelym/Lab/scapy-env/lib/python3.12/site-packages/xgboost/lib/libxgboost.so(+0x68d36e) [0x739a8e28d36e]
+  [bt] (6) /home/evelym/Lab/scapy-env/lib/python3.12/site-packages/xgboost/lib/libxgboost.so(XGBoosterUpdateOneIter+0x77) [0x739a8ddb6f97]
+  [bt] (7) /lib/x86_64-linux-gnu/libffi.so.8(+0x7b16) [0x739ac0821b16]
+  [bt] (8) /lib/x86_64-linux-gnu/libffi.so.8(+0x43ef) [0x739ac081e3ef]
+
+
+
+2025-05-19 15:27:34 - INFO - [train.py:1352] - Fase de Entrenamiento y Evaluación completada en 5.35 seg.
+2025-05-19 15:27:34 - INFO - [train.py:1357] - --- Resumen Final del Script (5.8.9 - Corregido NameError en preprocess) ---
+2025-05-19 15:27:34 - INFO - [train.py:1360] - Estado Final: Fallido
+2025-05-19 15:27:34 - INFO - [train.py:1361] - Modelo Probado: XGB
+2025-05-19 15:27:34 - WARNING - [train.py:1375] - El entrenamiento no fue exitoso, no se intentará recuperar info detallada del run.
+2025-05-19 15:27:34 - INFO - [train.py:1388] - Optimización Configurada: RandomSearch (n_iter=20)
+2025-05-19 15:27:34 - INFO - [train.py:1389] - Early Stopping Configurado: Sí (Rondas=10)
+2025-05-19 15:27:34 - INFO - [train.py:1391] -   - ES Intentado en RandomizedSearch: No/Error/No Aplicable
+2025-05-19 15:27:34 - INFO - [train.py:1393] - SMOTE Configurado/Aplicado: True (strategy=auto)
+2025-05-19 15:27:34 - INFO - [train.py:1394] - Uso de GPU Configurado: Sí
+2025-05-19 15:27:34 - INFO - [train.py:1395] - Paralelización CPU (n_jobs): -1
+2025-05-19 15:27:34 - WARNING - [train.py:1412] - Proceso finalizado con fallos. Modelo no generado/evaluado correctamente.
+2025-05-19 15:27:34 - WARNING - [train.py:1413] - Revisa logs anteriores para identificar la causa.
+2025-05-19 15:27:34 - INFO - [train.py:1414] - Run ID (si se inició): b3f25429aa0544b7a3c3fdec28e4fbe1 (FALLIDO)
+2025-05-19 15:27:34 - INFO - [train.py:1417] - Duración total del script: 5.80 segundos
+2025-05-19 15:27:34 - INFO - [train.py:1418] - === Fin del script de entrenamiento ===
+2025-05-19 15:33:18 - INFO - [train.py:1195] - === Inicio del script de entrenamiento (5.8.9 - Corregido NameError en preprocess) ===
+2025-05-19 15:33:18 - INFO - [train.py:1207] - MLflow tracking URI establecida en: file:///home/evelym/Lab/VelyFirewall/scripts/mlruns
+2025-05-19 15:33:18 - INFO - [train.py:237] - Parámetros comunes cargados: {'random_state': 42, 'cv_folds': 3, 'n_jobs': -1, 'use_smote': True, 'use_gridsearch': False, 'use_randomsearch': True, 'n_iter': 20, 'classification_threshold': 0.5, 'target_col': 'label'}
+2025-05-19 15:33:18 - INFO - [train.py:244] - Parámetros específicos para 'xgb' cargados: {'n_estimators': 150, 'learning_rate': 0.1, 'max_depth': 6, 'subsample': 0.8, 'colsample_bytree': 0.8, 'gamma': 0.1, 'scale_pos_weight': 1.0, 'eval_metric': 'auc', 'tree_method': 'hist'}
+2025-05-19 15:33:18 - INFO - [train.py:253] - Distribuciones de parámetros para RandomizedSearch ('xgb') cargadas: {'n_estimators': <scipy.stats._distn_infrastructure.rv_discrete_frozen object at 0x7857be816fc0>, 'learning_rate': <scipy.stats._distn_infrastructure.rv_continuous_frozen object at 0x7857be8173e0>, 'max_depth': <scipy.stats._distn_infrastructure.rv_discrete_frozen object at 0x7857be817440>, 'subsample': <scipy.stats._distn_infrastructure.rv_continuous_frozen object at 0x7857be8177d0>, 'colsample_bytree': <scipy.stats._distn_infrastructure.rv_continuous_frozen object at 0x7857be817920>, 'gamma': <scipy.stats._distn_infrastructure.rv_continuous_frozen object at 0x7857be817a10>, 'scale_pos_weight': [1.0], 'tree_method': ['gpu_hist']}
+2025-05-19 15:33:18 - INFO - [train.py:314] - Entrenamiento de XGB configurado para usar CPU.
+2025-05-19 15:33:18 - INFO - [train.py:317] - Paralelización configurada para usar -1 jobs (CPUs). (-1 = todos)
+2025-05-19 15:33:18 - WARNING - [train.py:325] - SMOTE está activado (use_smote = True). Parámetros de balanceo del modelo (class_weight/scale_pos_weight) serán ignorados o deben ser None/1.0.
+2025-05-19 15:33:18 - INFO - [train.py:327] - RandomizedSearchCV está HABILITADO con n_iter=20.
+2025-05-19 15:33:18 - INFO - [train.py:329] - Early Stopping está configurado con 10 rondas (aplicable a XGB/LGBM).
+2025-05-19 15:33:18 - INFO - [train.py:342] - Configuración final combinada para 'xgb': {'model_type': 'xgb', 'random_state': 42, 'cv_folds': 3, 'n_jobs': -1, 'use_smote': True, 'use_gridsearch': False, 'use_randomsearch': True, 'n_iter': 20, 'classification_threshold': 0.5, 'target_col': 'label', 'n_estimators': 150, 'learning_rate': 0.1, 'max_depth': 6, 'subsample': 0.8, 'colsample_bytree': 0.8, 'gamma': 0.1, 'scale_pos_weight': 1.0, 'eval_metric': 'auc', 'tree_method': 'hist', 'param_dist': {'n_estimators': <scipy.stats._distn_infrastructure.rv_discrete_frozen object at 0x7857be816fc0>, 'learning_rate': <scipy.stats._distn_infrastructure.rv_continuous_frozen object at 0x7857be8173e0>, 'max_depth': <scipy.stats._distn_infrastructure.rv_discrete_frozen object at 0x7857be817440>, 'subsample': <scipy.stats._distn_infrastructure.rv_continuous_frozen object at 0x7857be8177d0>, 'colsample_bytree': <scipy.stats._distn_infrastructure.rv_continuous_frozen object at 0x7857be817920>, 'gamma': <scipy.stats._distn_infrastructure.rv_continuous_frozen object at 0x7857be817a10>, 'scale_pos_weight': [1.0], 'tree_method': ['gpu_hist']}, 'csv_path': '/home/evelym/Lab/VelyFirewall/data/synthetic_dataset_v4_adjusted.csv', 'imsi_column_name': 'c_imsi', 'timestamp_column_name': 'c_timestamp', 'required_columns': 'c_imsi, c_timestamp, label', 'imsi_length': 15, 'timestamp_format': None, 'remove_invalid_rows': True, 'remove_duplicates': True, 'duplicate_subset_columns': None, 'experiment_name': 'FraudDetection_{model_type}_Optimized_v5.7_SMOTE_GPU', 'register_models': True, 'thresholds_to_test': [0.3, 0.4, 0.5, 0.6], 'early_stopping_rounds': 10, 'smote_sampling_strategy': 'auto'}
+2025-05-19 15:33:18 - INFO - [train.py:1219] - Nombre del experimento MLflow: FraudDetection_XGB_Optimized_v5.7_SMOTE_GPU
+2025-05-19 15:33:18 - INFO - [train.py:1227] - Experimento 'FraudDetection_XGB_Optimized_v5.7_SMOTE_GPU' ya existe (ID: 226989231919815073).
+2025-05-19 15:33:18 - INFO - [train.py:1229] - Experimento MLflow activo: 'FraudDetection_XGB_Optimized_v5.7_SMOTE_GPU'
+2025-05-19 15:33:18 - INFO - [train.py:371] - Separador detectado para CSV: ','
+2025-05-19 15:33:18 - INFO - [train.py:380] - Datos cargados desde synthetic_dataset_v4_adjusted.csv: shape=(10352, 50), memoria=4.64 MB
+2025-05-19 15:33:18 - INFO - [train.py:1238] - Carga de datos completada en 0.11 seg.
+2025-05-19 15:33:18 - INFO - [train.py:398] - Preprocesando DataFrame...
+2025-05-19 15:33:18 - INFO - [train.py:412] - Encontradas 45 columnas de features (prefijo 'f_').
+2025-05-19 15:33:18 - WARNING - [train.py:420] - Se encontraron NaNs en 1 columnas de features: ['f_one_cggt_multi_cdgt_psi'].
+2025-05-19 15:33:18 - INFO - [train.py:434] - NaNs en 1 columnas numéricas imputados usando la estrategia 'mean'.
+2025-05-19 15:33:18 - INFO - [train.py:455] - Todas las features ya eran numéricas inicialmente.
+2025-05-19 15:33:18 - INFO - [train.py:478] - Todas las features convertidas a tipos numéricos.
+2025-05-19 15:33:18 - INFO - [train.py:512] - Target 'label' convertido a entero.
+2025-05-19 15:33:18 - INFO - [train.py:524] - Preprocesamiento finalizado. X shape=(10352, 45), y shape=(10352,)
+2025-05-19 15:33:18 - INFO - [train.py:1244] - Preprocesamiento completado en 0.02 seg.
+2025-05-19 15:33:18 - INFO - [train.py:1270] - Dividiendo datos: 80.0% train, 20.0% holdout (Estratificado: True)
+2025-05-19 15:33:18 - INFO - [train.py:1271] - División completada en 0.01 seg:
+2025-05-19 15:33:18 - INFO - [train.py:1272] -   Train Original: X=(8281, 45), y=(8281,). Clases: [7023 1258]
+2025-05-19 15:33:18 - INFO - [train.py:1273] -   Holdout:        X=(2071, 45), y=(2071,). Clases: [1756  315]
+2025-05-19 15:33:18 - INFO - [train.py:1285] - Aplicando SMOTE al conjunto de entrenamiento...
+2025-05-19 15:33:18 - INFO - [train.py:1287] - Usando SMOTE sampling_strategy: auto
+2025-05-19 15:33:18 - WARNING - [train.py:1304] - Versión de SMOTE no acepta 'n_jobs'. Ejecutando secuencialmente.
+2025-05-19 15:33:18 - INFO - [train.py:1323] - SMOTE aplicado en 0.14 seg.
+2025-05-19 15:33:18 - INFO - [train.py:1324] -   Train después de SMOTE: X=(14046, 45), y=(14046,). Clases: [7023 7023]
+2025-05-19 15:33:18 - INFO - [train.py:534] - Creando instancia base del modelo tipo: xgb
+2025-05-19 15:33:18 - INFO - [train.py:596] - SMOTE activado, configurando balanceo interno de XGB a None/1.0.
+2025-05-19 15:33:18 - INFO - [train.py:609] - Early stopping configurado para XGBoost, asegurando eval_metric='auc' en constructor.
+2025-05-19 15:33:18 - INFO - [train.py:628] - Parámetros finales para instancia XGB: {'colsample_bytree': 0.8, 'early_stopping_rounds': 10, 'eval_metric': 'auc', 'gamma': 0.1, 'learning_rate': 0.1, 'max_depth': 6, 'n_estimators': 150, 'random_state': 42, 'scale_pos_weight': 1.0, 'subsample': 0.8, 'tree_method': 'hist', 'n_jobs': -1, 'use_label_encoder': False, 'verbosity': 0}
+2025-05-19 15:33:18 - INFO - [train.py:1342] - Instancia base modelo creada en 0.00 seg.
+2025-05-19 15:33:18 - INFO - [train.py:784] - --- Iniciando Entrenamiento y Evaluación: XGB ---
+2025-05-19 15:33:18 - INFO - [train.py:785] - Optimización con RandomizedSearchCV: Sí (n_iter=20)
+2025-05-19 15:33:18 - INFO - [train.py:789] - Early Stopping Configurado: Sí (rondas=10)
+2025-05-19 15:33:18 - INFO - [train.py:793] - Umbrales a probar en Holdout: [0.3, 0.4, 0.5, 0.6]
+2025-05-19 15:33:18 - INFO - [train.py:839] - MLflow Run ID: 11a7efcca3924b92bfeac18819210366 (Experimento: 'FraudDetection_XGB_Optimized_v5.7_SMOTE_GPU')
+2025-05-19 15:33:18 - INFO - [train.py:869] - Iniciando RandomizedSearchCV para XGB...
+2025-05-19 15:33:18 - INFO - [train.py:898] - Aplicando parámetros fijos al estimador base para RS: {'eval_metric': 'auc', 'early_stopping_rounds': 10}
+2025-05-19 15:33:18 - INFO - [train.py:918] - Preparando eval_set para ES (10 rondas) dentro de RS (XGB).
+2025-05-19 15:33:18 - INFO - [train.py:926] - Creado eval_set interno para ES en RS: 2107 muestras.
+2025-05-19 15:33:18 - INFO - [train.py:946] - Configured 'eval_set' and 'verbose=False' for XGBoost in RandomizedSearchCV fit_params. Early stopping handled by model init.
+2025-05-19 15:33:18 - INFO - [train.py:959] - Iniciando RS.fit() en -1 jobs (pasando fit_params: [eval_set, verbose])...
+2025-05-19 15:33:23 - ERROR - [train.py:987] - Error durante RandomizedSearchCV: [15:33:20] /workspace/src/tree/updater_gpu_hist.cu:847: Check failed: ctx_->Ordinal() >= 0 (-1 vs. 0) : Must have at least one device
+Stack trace:
+  [bt] (0) /home/evelym/Lab/scapy-env/lib/python3.12/site-packages/xgboost/lib/libxgboost.so(+0x2a6ebc) [0x75bdf42a6ebc]
+  [bt] (1) /home/evelym/Lab/scapy-env/lib/python3.12/site-packages/xgboost/lib/libxgboost.so(+0xfd7bf4) [0x75bdf4fd7bf4]
+  [bt] (2) /home/evelym/Lab/scapy-env/lib/python3.12/site-packages/xgboost/lib/libxgboost.so(+0xfdf946) [0x75bdf4fdf946]
+  [bt] (3) /home/evelym/Lab/scapy-env/lib/python3.12/site-packages/xgboost/lib/libxgboost.so(+0x63b5e2) [0x75bdf463b5e2]
+  [bt] (4) /home/evelym/Lab/scapy-env/lib/python3.12/site-packages/xgboost/lib/libxgboost.so(+0x63ca3d) [0x75bdf463ca3d]
+  [bt] (5) /home/evelym/Lab/scapy-env/lib/python3.12/site-packages/xgboost/lib/libxgboost.so(+0x68d36e) [0x75bdf468d36e]
+  [bt] (6) /home/evelym/Lab/scapy-env/lib/python3.12/site-packages/xgboost/lib/libxgboost.so(XGBoosterUpdateOneIter+0x77) [0x75bdf41b6f97]
+  [bt] (7) /lib/x86_64-linux-gnu/libffi.so.8(+0x7b16) [0x75be25bfbb16]
+  [bt] (8) /lib/x86_64-linux-gnu/libffi.so.8(+0x43ef) [0x75be25bf83ef]
+
+
+joblib.externals.loky.process_executor._RemoteTraceback: 
+"""
+Traceback (most recent call last):
+  File "/home/evelym/Lab/scapy-env/lib/python3.12/site-packages/joblib/externals/loky/process_executor.py", line 490, in _process_worker
+    r = call_item()
+        ^^^^^^^^^^^
+  File "/home/evelym/Lab/scapy-env/lib/python3.12/site-packages/joblib/externals/loky/process_executor.py", line 291, in __call__
+    return self.fn(*self.args, **self.kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/evelym/Lab/scapy-env/lib/python3.12/site-packages/joblib/parallel.py", line 606, in __call__
+    return [func(*args, **kwargs) for func, args, kwargs in self.items]
+            ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/evelym/Lab/scapy-env/lib/python3.12/site-packages/sklearn/utils/parallel.py", line 139, in __call__
+    return self.function(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/evelym/Lab/scapy-env/lib/python3.12/site-packages/sklearn/model_selection/_validation.py", line 866, in _fit_and_score
+    estimator.fit(X_train, y_train, **fit_params)
+  File "/home/evelym/Lab/scapy-env/lib/python3.12/site-packages/xgboost/core.py", line 729, in inner_f
+    return func(**kwargs)
+           ^^^^^^^^^^^^^^
+  File "/home/evelym/Lab/scapy-env/lib/python3.12/site-packages/xgboost/sklearn.py", line 1682, in fit
+    self._Booster = train(
+                    ^^^^^^
+  File "/home/evelym/Lab/scapy-env/lib/python3.12/site-packages/xgboost/core.py", line 729, in inner_f
+    return func(**kwargs)
+           ^^^^^^^^^^^^^^
+  File "/home/evelym/Lab/scapy-env/lib/python3.12/site-packages/xgboost/training.py", line 183, in train
+    bst.update(dtrain, iteration=i, fobj=obj)
+  File "/home/evelym/Lab/scapy-env/lib/python3.12/site-packages/xgboost/core.py", line 2246, in update
+    _check_call(
+  File "/home/evelym/Lab/scapy-env/lib/python3.12/site-packages/xgboost/core.py", line 310, in _check_call
+    raise XGBoostError(py_str(_LIB.XGBGetLastError()))
+xgboost.core.XGBoostError: [15:33:20] /workspace/src/tree/updater_gpu_hist.cu:847: Check failed: ctx_->Ordinal() >= 0 (-1 vs. 0) : Must have at least one device
+Stack trace:
+  [bt] (0) /home/evelym/Lab/scapy-env/lib/python3.12/site-packages/xgboost/lib/libxgboost.so(+0x2a6ebc) [0x75bdf42a6ebc]
+  [bt] (1) /home/evelym/Lab/scapy-env/lib/python3.12/site-packages/xgboost/lib/libxgboost.so(+0xfd7bf4) [0x75bdf4fd7bf4]
+  [bt] (2) /home/evelym/Lab/scapy-env/lib/python3.12/site-packages/xgboost/lib/libxgboost.so(+0xfdf946) [0x75bdf4fdf946]
+  [bt] (3) /home/evelym/Lab/scapy-env/lib/python3.12/site-packages/xgboost/lib/libxgboost.so(+0x63b5e2) [0x75bdf463b5e2]
+  [bt] (4) /home/evelym/Lab/scapy-env/lib/python3.12/site-packages/xgboost/lib/libxgboost.so(+0x63ca3d) [0x75bdf463ca3d]
+  [bt] (5) /home/evelym/Lab/scapy-env/lib/python3.12/site-packages/xgboost/lib/libxgboost.so(+0x68d36e) [0x75bdf468d36e]
+  [bt] (6) /home/evelym/Lab/scapy-env/lib/python3.12/site-packages/xgboost/lib/libxgboost.so(XGBoosterUpdateOneIter+0x77) [0x75bdf41b6f97]
+  [bt] (7) /lib/x86_64-linux-gnu/libffi.so.8(+0x7b16) [0x75be25bfbb16]
+  [bt] (8) /lib/x86_64-linux-gnu/libffi.so.8(+0x43ef) [0x75be25bf83ef]
+
+
+"""
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/evelym/Lab/VelyFirewall/scripts/train.py", line 965, in evaluate_model
+    search_cv.fit(X_train, y_train, **fit_params_rs)
+  File "/home/evelym/Lab/scapy-env/lib/python3.12/site-packages/sklearn/base.py", line 1389, in wrapper
+    return fit_method(estimator, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/evelym/Lab/scapy-env/lib/python3.12/site-packages/sklearn/model_selection/_search.py", line 1024, in fit
+    self._run_search(evaluate_candidates)
+  File "/home/evelym/Lab/scapy-env/lib/python3.12/site-packages/sklearn/model_selection/_search.py", line 1951, in _run_search
+    evaluate_candidates(
+  File "/home/evelym/Lab/scapy-env/lib/python3.12/site-packages/sklearn/model_selection/_search.py", line 970, in evaluate_candidates
+    out = parallel(
+          ^^^^^^^^^
+  File "/home/evelym/Lab/scapy-env/lib/python3.12/site-packages/sklearn/utils/parallel.py", line 77, in __call__
+    return super().__call__(iterable_with_config)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/evelym/Lab/scapy-env/lib/python3.12/site-packages/joblib/parallel.py", line 2071, in __call__
+    return output if self.return_generator else list(output)
+                                                ^^^^^^^^^^^^
+  File "/home/evelym/Lab/scapy-env/lib/python3.12/site-packages/joblib/parallel.py", line 1681, in _get_outputs
+    yield from self._retrieve()
+  File "/home/evelym/Lab/scapy-env/lib/python3.12/site-packages/joblib/parallel.py", line 1783, in _retrieve
+    self._raise_error_fast()
+  File "/home/evelym/Lab/scapy-env/lib/python3.12/site-packages/joblib/parallel.py", line 1858, in _raise_error_fast
+    error_job.get_result(self.timeout)
+  File "/home/evelym/Lab/scapy-env/lib/python3.12/site-packages/joblib/parallel.py", line 757, in get_result
+    return self._return_or_raise()
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/evelym/Lab/scapy-env/lib/python3.12/site-packages/joblib/parallel.py", line 772, in _return_or_raise
+    raise self._result
+xgboost.core.XGBoostError: [15:33:20] /workspace/src/tree/updater_gpu_hist.cu:847: Check failed: ctx_->Ordinal() >= 0 (-1 vs. 0) : Must have at least one device
+Stack trace:
+  [bt] (0) /home/evelym/Lab/scapy-env/lib/python3.12/site-packages/xgboost/lib/libxgboost.so(+0x2a6ebc) [0x75bdf42a6ebc]
+  [bt] (1) /home/evelym/Lab/scapy-env/lib/python3.12/site-packages/xgboost/lib/libxgboost.so(+0xfd7bf4) [0x75bdf4fd7bf4]
+  [bt] (2) /home/evelym/Lab/scapy-env/lib/python3.12/site-packages/xgboost/lib/libxgboost.so(+0xfdf946) [0x75bdf4fdf946]
+  [bt] (3) /home/evelym/Lab/scapy-env/lib/python3.12/site-packages/xgboost/lib/libxgboost.so(+0x63b5e2) [0x75bdf463b5e2]
+  [bt] (4) /home/evelym/Lab/scapy-env/lib/python3.12/site-packages/xgboost/lib/libxgboost.so(+0x63ca3d) [0x75bdf463ca3d]
+  [bt] (5) /home/evelym/Lab/scapy-env/lib/python3.12/site-packages/xgboost/lib/libxgboost.so(+0x68d36e) [0x75bdf468d36e]
+  [bt] (6) /home/evelym/Lab/scapy-env/lib/python3.12/site-packages/xgboost/lib/libxgboost.so(XGBoosterUpdateOneIter+0x77) [0x75bdf41b6f97]
+  [bt] (7) /lib/x86_64-linux-gnu/libffi.so.8(+0x7b16) [0x75be25bfbb16]
+  [bt] (8) /lib/x86_64-linux-gnu/libffi.so.8(+0x43ef) [0x75be25bf83ef]
+
+
+
+2025-05-19 15:33:23 - INFO - [train.py:1352] - Fase de Entrenamiento y Evaluación completada en 4.58 seg.
+2025-05-19 15:33:23 - INFO - [train.py:1357] - --- Resumen Final del Script (5.8.9 - Corregido NameError en preprocess) ---
+2025-05-19 15:33:23 - INFO - [train.py:1360] - Estado Final: Fallido
+2025-05-19 15:33:23 - INFO - [train.py:1361] - Modelo Probado: XGB
+2025-05-19 15:33:23 - WARNING - [train.py:1375] - El entrenamiento no fue exitoso, no se intentará recuperar info detallada del run.
+2025-05-19 15:33:23 - INFO - [train.py:1388] - Optimización Configurada: RandomSearch (n_iter=20)
+2025-05-19 15:33:23 - INFO - [train.py:1389] - Early Stopping Configurado: Sí (Rondas=10)
+2025-05-19 15:33:23 - INFO - [train.py:1391] -   - ES Intentado en RandomizedSearch: No/Error/No Aplicable
+2025-05-19 15:33:23 - INFO - [train.py:1393] - SMOTE Configurado/Aplicado: True (strategy=auto)
+2025-05-19 15:33:23 - INFO - [train.py:1394] - Uso de GPU Configurado: No
+2025-05-19 15:33:23 - INFO - [train.py:1395] - Paralelización CPU (n_jobs): -1
+2025-05-19 15:33:23 - WARNING - [train.py:1412] - Proceso finalizado con fallos. Modelo no generado/evaluado correctamente.
+2025-05-19 15:33:23 - WARNING - [train.py:1413] - Revisa logs anteriores para identificar la causa.
+2025-05-19 15:33:23 - INFO - [train.py:1414] - Run ID (si se inició): 11a7efcca3924b92bfeac18819210366 (FALLIDO)
+2025-05-19 15:33:23 - INFO - [train.py:1417] - Duración total del script: 4.89 segundos
+2025-05-19 15:33:23 - INFO - [train.py:1418] - === Fin del script de entrenamiento ===
+2025-05-19 15:41:38 - INFO - [train.py:1195] - === Inicio del script de entrenamiento (5.8.9 - Corregido NameError en preprocess) ===
+2025-05-19 15:41:38 - INFO - [train.py:1207] - MLflow tracking URI establecida en: file:///home/evelym/Lab/VelyFirewall/scripts/mlruns
+2025-05-19 15:41:38 - INFO - [train.py:237] - Parámetros comunes cargados: {'random_state': 42, 'cv_folds': 3, 'n_jobs': -1, 'use_smote': True, 'use_gridsearch': False, 'use_randomsearch': True, 'n_iter': 20, 'classification_threshold': 0.5, 'target_col': 'label'}
+2025-05-19 15:41:38 - INFO - [train.py:244] - Parámetros específicos para 'xgb' cargados: {'n_estimators': 150, 'learning_rate': 0.1, 'max_depth': 6, 'subsample': 0.8, 'colsample_bytree': 0.8, 'gamma': 0.1, 'scale_pos_weight': 1.0, 'eval_metric': 'auc', 'tree_method': "['hist']"}
+2025-05-19 15:41:38 - INFO - [train.py:253] - Distribuciones de parámetros para RandomizedSearch ('xgb') cargadas: {'n_estimators': <scipy.stats._distn_infrastructure.rv_discrete_frozen object at 0x7722ddcd1a90>, 'learning_rate': <scipy.stats._distn_infrastructure.rv_continuous_frozen object at 0x7722ddb879b0>, 'max_depth': <scipy.stats._distn_infrastructure.rv_discrete_frozen object at 0x7722ddb87a10>, 'subsample': <scipy.stats._distn_infrastructure.rv_continuous_frozen object at 0x7722ddb87d40>, 'colsample_bytree': <scipy.stats._distn_infrastructure.rv_continuous_frozen object at 0x7722ddb87da0>, 'gamma': <scipy.stats._distn_infrastructure.rv_continuous_frozen object at 0x7722ddbb0170>, 'scale_pos_weight': [1.0], 'tree_method': ['gpu_hist']}
+2025-05-19 15:41:38 - INFO - [train.py:314] - Entrenamiento de XGB configurado para usar CPU.
+2025-05-19 15:41:38 - INFO - [train.py:317] - Paralelización configurada para usar -1 jobs (CPUs). (-1 = todos)
+2025-05-19 15:41:38 - WARNING - [train.py:325] - SMOTE está activado (use_smote = True). Parámetros de balanceo del modelo (class_weight/scale_pos_weight) serán ignorados o deben ser None/1.0.
+2025-05-19 15:41:38 - INFO - [train.py:327] - RandomizedSearchCV está HABILITADO con n_iter=20.
+2025-05-19 15:41:38 - INFO - [train.py:329] - Early Stopping está configurado con 10 rondas (aplicable a XGB/LGBM).
+2025-05-19 15:41:38 - INFO - [train.py:342] - Configuración final combinada para 'xgb': {'model_type': 'xgb', 'random_state': 42, 'cv_folds': 3, 'n_jobs': -1, 'use_smote': True, 'use_gridsearch': False, 'use_randomsearch': True, 'n_iter': 20, 'classification_threshold': 0.5, 'target_col': 'label', 'n_estimators': 150, 'learning_rate': 0.1, 'max_depth': 6, 'subsample': 0.8, 'colsample_bytree': 0.8, 'gamma': 0.1, 'scale_pos_weight': 1.0, 'eval_metric': 'auc', 'tree_method': "['hist']", 'param_dist': {'n_estimators': <scipy.stats._distn_infrastructure.rv_discrete_frozen object at 0x7722ddcd1a90>, 'learning_rate': <scipy.stats._distn_infrastructure.rv_continuous_frozen object at 0x7722ddb879b0>, 'max_depth': <scipy.stats._distn_infrastructure.rv_discrete_frozen object at 0x7722ddb87a10>, 'subsample': <scipy.stats._distn_infrastructure.rv_continuous_frozen object at 0x7722ddb87d40>, 'colsample_bytree': <scipy.stats._distn_infrastructure.rv_continuous_frozen object at 0x7722ddb87da0>, 'gamma': <scipy.stats._distn_infrastructure.rv_continuous_frozen object at 0x7722ddbb0170>, 'scale_pos_weight': [1.0], 'tree_method': ['gpu_hist']}, 'csv_path': '/home/evelym/Lab/VelyFirewall/data/synthetic_dataset_v4_adjusted.csv', 'imsi_column_name': 'c_imsi', 'timestamp_column_name': 'c_timestamp', 'required_columns': 'c_imsi, c_timestamp, label', 'imsi_length': 15, 'timestamp_format': None, 'remove_invalid_rows': True, 'remove_duplicates': True, 'duplicate_subset_columns': None, 'experiment_name': 'FraudDetection_{model_type}_Optimized_v5.7_SMOTE_GPU', 'register_models': True, 'thresholds_to_test': [0.3, 0.4, 0.5, 0.6], 'early_stopping_rounds': 10, 'smote_sampling_strategy': 'auto'}
+2025-05-19 15:41:38 - INFO - [train.py:1219] - Nombre del experimento MLflow: FraudDetection_XGB_Optimized_v5.7_SMOTE_GPU
+2025-05-19 15:41:38 - INFO - [train.py:1227] - Experimento 'FraudDetection_XGB_Optimized_v5.7_SMOTE_GPU' ya existe (ID: 226989231919815073).
+2025-05-19 15:41:38 - INFO - [train.py:1229] - Experimento MLflow activo: 'FraudDetection_XGB_Optimized_v5.7_SMOTE_GPU'
+2025-05-19 15:41:38 - INFO - [train.py:371] - Separador detectado para CSV: ','
+2025-05-19 15:41:38 - INFO - [train.py:380] - Datos cargados desde synthetic_dataset_v4_adjusted.csv: shape=(10352, 50), memoria=4.64 MB
+2025-05-19 15:41:38 - INFO - [train.py:1238] - Carga de datos completada en 0.08 seg.
+2025-05-19 15:41:38 - INFO - [train.py:398] - Preprocesando DataFrame...
+2025-05-19 15:41:38 - INFO - [train.py:412] - Encontradas 45 columnas de features (prefijo 'f_').
+2025-05-19 15:41:38 - WARNING - [train.py:420] - Se encontraron NaNs en 1 columnas de features: ['f_one_cggt_multi_cdgt_psi'].
+2025-05-19 15:41:38 - INFO - [train.py:434] - NaNs en 1 columnas numéricas imputados usando la estrategia 'mean'.
+2025-05-19 15:41:38 - INFO - [train.py:455] - Todas las features ya eran numéricas inicialmente.
+2025-05-19 15:41:38 - INFO - [train.py:478] - Todas las features convertidas a tipos numéricos.
+2025-05-19 15:41:38 - INFO - [train.py:512] - Target 'label' convertido a entero.
+2025-05-19 15:41:38 - INFO - [train.py:524] - Preprocesamiento finalizado. X shape=(10352, 45), y shape=(10352,)
+2025-05-19 15:41:38 - INFO - [train.py:1244] - Preprocesamiento completado en 0.01 seg.
+2025-05-19 15:41:38 - INFO - [train.py:1270] - Dividiendo datos: 80.0% train, 20.0% holdout (Estratificado: True)
+2025-05-19 15:41:38 - INFO - [train.py:1271] - División completada en 0.01 seg:
+2025-05-19 15:41:38 - INFO - [train.py:1272] -   Train Original: X=(8281, 45), y=(8281,). Clases: [7023 1258]
+2025-05-19 15:41:38 - INFO - [train.py:1273] -   Holdout:        X=(2071, 45), y=(2071,). Clases: [1756  315]
+2025-05-19 15:41:38 - INFO - [train.py:1285] - Aplicando SMOTE al conjunto de entrenamiento...
+2025-05-19 15:41:38 - INFO - [train.py:1287] - Usando SMOTE sampling_strategy: auto
+2025-05-19 15:41:38 - WARNING - [train.py:1304] - Versión de SMOTE no acepta 'n_jobs'. Ejecutando secuencialmente.
+2025-05-19 15:41:38 - INFO - [train.py:1323] - SMOTE aplicado en 0.09 seg.
+2025-05-19 15:41:38 - INFO - [train.py:1324] -   Train después de SMOTE: X=(14046, 45), y=(14046,). Clases: [7023 7023]
+2025-05-19 15:41:38 - INFO - [train.py:534] - Creando instancia base del modelo tipo: xgb
+2025-05-19 15:41:38 - INFO - [train.py:596] - SMOTE activado, configurando balanceo interno de XGB a None/1.0.
+2025-05-19 15:41:38 - INFO - [train.py:609] - Early stopping configurado para XGBoost, asegurando eval_metric='auc' en constructor.
+2025-05-19 15:41:38 - INFO - [train.py:628] - Parámetros finales para instancia XGB: {'colsample_bytree': 0.8, 'early_stopping_rounds': 10, 'eval_metric': 'auc', 'gamma': 0.1, 'learning_rate': 0.1, 'max_depth': 6, 'n_estimators': 150, 'random_state': 42, 'scale_pos_weight': 1.0, 'subsample': 0.8, 'tree_method': "['hist']", 'n_jobs': -1, 'use_label_encoder': False, 'verbosity': 0}
+2025-05-19 15:41:38 - INFO - [train.py:1342] - Instancia base modelo creada en 0.00 seg.
+2025-05-19 15:41:38 - INFO - [train.py:784] - --- Iniciando Entrenamiento y Evaluación: XGB ---
+2025-05-19 15:41:38 - INFO - [train.py:785] - Optimización con RandomizedSearchCV: Sí (n_iter=20)
+2025-05-19 15:41:38 - INFO - [train.py:789] - Early Stopping Configurado: Sí (rondas=10)
+2025-05-19 15:41:38 - INFO - [train.py:793] - Umbrales a probar en Holdout: [0.3, 0.4, 0.5, 0.6]
+2025-05-19 15:41:38 - INFO - [train.py:839] - MLflow Run ID: 83b658c88c584f068f064ddb19db2f1d (Experimento: 'FraudDetection_XGB_Optimized_v5.7_SMOTE_GPU')
+2025-05-19 15:41:38 - INFO - [train.py:869] - Iniciando RandomizedSearchCV para XGB...
+2025-05-19 15:41:38 - INFO - [train.py:898] - Aplicando parámetros fijos al estimador base para RS: {'eval_metric': 'auc', 'early_stopping_rounds': 10}
+2025-05-19 15:41:38 - INFO - [train.py:918] - Preparando eval_set para ES (10 rondas) dentro de RS (XGB).
+2025-05-19 15:41:38 - INFO - [train.py:926] - Creado eval_set interno para ES en RS: 2107 muestras.
+2025-05-19 15:41:38 - INFO - [train.py:946] - Configured 'eval_set' and 'verbose=False' for XGBoost in RandomizedSearchCV fit_params. Early stopping handled by model init.
+2025-05-19 15:41:38 - INFO - [train.py:959] - Iniciando RS.fit() en -1 jobs (pasando fit_params: [eval_set, verbose])...
+2025-05-19 15:41:42 - ERROR - [train.py:987] - Error durante RandomizedSearchCV: [15:41:40] /workspace/src/tree/updater_gpu_hist.cu:847: Check failed: ctx_->Ordinal() >= 0 (-1 vs. 0) : Must have at least one device
+Stack trace:
+  [bt] (0) /home/evelym/Lab/scapy-env/lib/python3.12/site-packages/xgboost/lib/libxgboost.so(+0x2a6ebc) [0x73ec982a6ebc]
+  [bt] (1) /home/evelym/Lab/scapy-env/lib/python3.12/site-packages/xgboost/lib/libxgboost.so(+0xfd7bf4) [0x73ec98fd7bf4]
+  [bt] (2) /home/evelym/Lab/scapy-env/lib/python3.12/site-packages/xgboost/lib/libxgboost.so(+0xfdf946) [0x73ec98fdf946]
+  [bt] (3) /home/evelym/Lab/scapy-env/lib/python3.12/site-packages/xgboost/lib/libxgboost.so(+0x63b5e2) [0x73ec9863b5e2]
+  [bt] (4) /home/evelym/Lab/scapy-env/lib/python3.12/site-packages/xgboost/lib/libxgboost.so(+0x63ca3d) [0x73ec9863ca3d]
+  [bt] (5) /home/evelym/Lab/scapy-env/lib/python3.12/site-packages/xgboost/lib/libxgboost.so(+0x68d36e) [0x73ec9868d36e]
+  [bt] (6) /home/evelym/Lab/scapy-env/lib/python3.12/site-packages/xgboost/lib/libxgboost.so(XGBoosterUpdateOneIter+0x77) [0x73ec981b6f97]
+  [bt] (7) /lib/x86_64-linux-gnu/libffi.so.8(+0x7b16) [0x73ecc9e20b16]
+  [bt] (8) /lib/x86_64-linux-gnu/libffi.so.8(+0x43ef) [0x73ecc9e1d3ef]
+
+
+joblib.externals.loky.process_executor._RemoteTraceback: 
+"""
+Traceback (most recent call last):
+  File "/home/evelym/Lab/scapy-env/lib/python3.12/site-packages/joblib/externals/loky/process_executor.py", line 490, in _process_worker
+    r = call_item()
+        ^^^^^^^^^^^
+  File "/home/evelym/Lab/scapy-env/lib/python3.12/site-packages/joblib/externals/loky/process_executor.py", line 291, in __call__
+    return self.fn(*self.args, **self.kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/evelym/Lab/scapy-env/lib/python3.12/site-packages/joblib/parallel.py", line 606, in __call__
+    return [func(*args, **kwargs) for func, args, kwargs in self.items]
+            ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/evelym/Lab/scapy-env/lib/python3.12/site-packages/sklearn/utils/parallel.py", line 139, in __call__
+    return self.function(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/evelym/Lab/scapy-env/lib/python3.12/site-packages/sklearn/model_selection/_validation.py", line 866, in _fit_and_score
+    estimator.fit(X_train, y_train, **fit_params)
+  File "/home/evelym/Lab/scapy-env/lib/python3.12/site-packages/xgboost/core.py", line 729, in inner_f
+    return func(**kwargs)
+           ^^^^^^^^^^^^^^
+  File "/home/evelym/Lab/scapy-env/lib/python3.12/site-packages/xgboost/sklearn.py", line 1682, in fit
+    self._Booster = train(
+                    ^^^^^^
+  File "/home/evelym/Lab/scapy-env/lib/python3.12/site-packages/xgboost/core.py", line 729, in inner_f
+    return func(**kwargs)
+           ^^^^^^^^^^^^^^
+  File "/home/evelym/Lab/scapy-env/lib/python3.12/site-packages/xgboost/training.py", line 183, in train
+    bst.update(dtrain, iteration=i, fobj=obj)
+  File "/home/evelym/Lab/scapy-env/lib/python3.12/site-packages/xgboost/core.py", line 2246, in update
+    _check_call(
+  File "/home/evelym/Lab/scapy-env/lib/python3.12/site-packages/xgboost/core.py", line 310, in _check_call
+    raise XGBoostError(py_str(_LIB.XGBGetLastError()))
+xgboost.core.XGBoostError: [15:41:40] /workspace/src/tree/updater_gpu_hist.cu:847: Check failed: ctx_->Ordinal() >= 0 (-1 vs. 0) : Must have at least one device
+Stack trace:
+  [bt] (0) /home/evelym/Lab/scapy-env/lib/python3.12/site-packages/xgboost/lib/libxgboost.so(+0x2a6ebc) [0x73ec982a6ebc]
+  [bt] (1) /home/evelym/Lab/scapy-env/lib/python3.12/site-packages/xgboost/lib/libxgboost.so(+0xfd7bf4) [0x73ec98fd7bf4]
+  [bt] (2) /home/evelym/Lab/scapy-env/lib/python3.12/site-packages/xgboost/lib/libxgboost.so(+0xfdf946) [0x73ec98fdf946]
+  [bt] (3) /home/evelym/Lab/scapy-env/lib/python3.12/site-packages/xgboost/lib/libxgboost.so(+0x63b5e2) [0x73ec9863b5e2]
+  [bt] (4) /home/evelym/Lab/scapy-env/lib/python3.12/site-packages/xgboost/lib/libxgboost.so(+0x63ca3d) [0x73ec9863ca3d]
+  [bt] (5) /home/evelym/Lab/scapy-env/lib/python3.12/site-packages/xgboost/lib/libxgboost.so(+0x68d36e) [0x73ec9868d36e]
+  [bt] (6) /home/evelym/Lab/scapy-env/lib/python3.12/site-packages/xgboost/lib/libxgboost.so(XGBoosterUpdateOneIter+0x77) [0x73ec981b6f97]
+  [bt] (7) /lib/x86_64-linux-gnu/libffi.so.8(+0x7b16) [0x73ecc9e20b16]
+  [bt] (8) /lib/x86_64-linux-gnu/libffi.so.8(+0x43ef) [0x73ecc9e1d3ef]
+
+
+"""
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/evelym/Lab/VelyFirewall/scripts/train.py", line 965, in evaluate_model
+    search_cv.fit(X_train, y_train, **fit_params_rs)
+  File "/home/evelym/Lab/scapy-env/lib/python3.12/site-packages/sklearn/base.py", line 1389, in wrapper
+    return fit_method(estimator, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/evelym/Lab/scapy-env/lib/python3.12/site-packages/sklearn/model_selection/_search.py", line 1024, in fit
+    self._run_search(evaluate_candidates)
+  File "/home/evelym/Lab/scapy-env/lib/python3.12/site-packages/sklearn/model_selection/_search.py", line 1951, in _run_search
+    evaluate_candidates(
+  File "/home/evelym/Lab/scapy-env/lib/python3.12/site-packages/sklearn/model_selection/_search.py", line 970, in evaluate_candidates
+    out = parallel(
+          ^^^^^^^^^
+  File "/home/evelym/Lab/scapy-env/lib/python3.12/site-packages/sklearn/utils/parallel.py", line 77, in __call__
+    return super().__call__(iterable_with_config)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/evelym/Lab/scapy-env/lib/python3.12/site-packages/joblib/parallel.py", line 2071, in __call__
+    return output if self.return_generator else list(output)
+                                                ^^^^^^^^^^^^
+  File "/home/evelym/Lab/scapy-env/lib/python3.12/site-packages/joblib/parallel.py", line 1681, in _get_outputs
+    yield from self._retrieve()
+  File "/home/evelym/Lab/scapy-env/lib/python3.12/site-packages/joblib/parallel.py", line 1783, in _retrieve
+    self._raise_error_fast()
+  File "/home/evelym/Lab/scapy-env/lib/python3.12/site-packages/joblib/parallel.py", line 1858, in _raise_error_fast
+    error_job.get_result(self.timeout)
+  File "/home/evelym/Lab/scapy-env/lib/python3.12/site-packages/joblib/parallel.py", line 757, in get_result
+    return self._return_or_raise()
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/evelym/Lab/scapy-env/lib/python3.12/site-packages/joblib/parallel.py", line 772, in _return_or_raise
+    raise self._result
+xgboost.core.XGBoostError: [15:41:40] /workspace/src/tree/updater_gpu_hist.cu:847: Check failed: ctx_->Ordinal() >= 0 (-1 vs. 0) : Must have at least one device
+Stack trace:
+  [bt] (0) /home/evelym/Lab/scapy-env/lib/python3.12/site-packages/xgboost/lib/libxgboost.so(+0x2a6ebc) [0x73ec982a6ebc]
+  [bt] (1) /home/evelym/Lab/scapy-env/lib/python3.12/site-packages/xgboost/lib/libxgboost.so(+0xfd7bf4) [0x73ec98fd7bf4]
+  [bt] (2) /home/evelym/Lab/scapy-env/lib/python3.12/site-packages/xgboost/lib/libxgboost.so(+0xfdf946) [0x73ec98fdf946]
+  [bt] (3) /home/evelym/Lab/scapy-env/lib/python3.12/site-packages/xgboost/lib/libxgboost.so(+0x63b5e2) [0x73ec9863b5e2]
+  [bt] (4) /home/evelym/Lab/scapy-env/lib/python3.12/site-packages/xgboost/lib/libxgboost.so(+0x63ca3d) [0x73ec9863ca3d]
+  [bt] (5) /home/evelym/Lab/scapy-env/lib/python3.12/site-packages/xgboost/lib/libxgboost.so(+0x68d36e) [0x73ec9868d36e]
+  [bt] (6) /home/evelym/Lab/scapy-env/lib/python3.12/site-packages/xgboost/lib/libxgboost.so(XGBoosterUpdateOneIter+0x77) [0x73ec981b6f97]
+  [bt] (7) /lib/x86_64-linux-gnu/libffi.so.8(+0x7b16) [0x73ecc9e20b16]
+  [bt] (8) /lib/x86_64-linux-gnu/libffi.so.8(+0x43ef) [0x73ecc9e1d3ef]
+
+
+
+2025-05-19 15:41:42 - INFO - [train.py:1352] - Fase de Entrenamiento y Evaluación completada en 4.16 seg.
+2025-05-19 15:41:42 - INFO - [train.py:1357] - --- Resumen Final del Script (5.8.9 - Corregido NameError en preprocess) ---
+2025-05-19 15:41:42 - INFO - [train.py:1360] - Estado Final: Fallido
+2025-05-19 15:41:42 - INFO - [train.py:1361] - Modelo Probado: XGB
+2025-05-19 15:41:42 - WARNING - [train.py:1375] - El entrenamiento no fue exitoso, no se intentará recuperar info detallada del run.
+2025-05-19 15:41:42 - INFO - [train.py:1388] - Optimización Configurada: RandomSearch (n_iter=20)
+2025-05-19 15:41:42 - INFO - [train.py:1389] - Early Stopping Configurado: Sí (Rondas=10)
+2025-05-19 15:41:42 - INFO - [train.py:1391] -   - ES Intentado en RandomizedSearch: No/Error/No Aplicable
+2025-05-19 15:41:42 - INFO - [train.py:1393] - SMOTE Configurado/Aplicado: True (strategy=auto)
+2025-05-19 15:41:42 - INFO - [train.py:1394] - Uso de GPU Configurado: No
+2025-05-19 15:41:42 - INFO - [train.py:1395] - Paralelización CPU (n_jobs): -1
+2025-05-19 15:41:42 - WARNING - [train.py:1412] - Proceso finalizado con fallos. Modelo no generado/evaluado correctamente.
+2025-05-19 15:41:42 - WARNING - [train.py:1413] - Revisa logs anteriores para identificar la causa.
+2025-05-19 15:41:42 - INFO - [train.py:1414] - Run ID (si se inició): 83b658c88c584f068f064ddb19db2f1d (FALLIDO)
+2025-05-19 15:41:42 - INFO - [train.py:1417] - Duración total del script: 4.37 segundos
+2025-05-19 15:41:42 - INFO - [train.py:1418] - === Fin del script de entrenamiento ===
+2025-05-19 15:49:58 - INFO - [train.py:1195] - === Inicio del script de entrenamiento (5.8.9 - Corregido NameError en preprocess) ===
+2025-05-19 15:49:58 - INFO - [train.py:1207] - MLflow tracking URI establecida en: file:///home/evelym/Lab/VelyFirewall/scripts/mlruns
+2025-05-19 15:49:58 - INFO - [train.py:237] - Parámetros comunes cargados: {'random_state': 42, 'cv_folds': 3, 'n_jobs': -1, 'use_smote': True, 'use_gridsearch': False, 'use_randomsearch': True, 'n_iter': 20, 'classification_threshold': 0.5, 'target_col': 'label'}
+2025-05-19 15:49:58 - INFO - [train.py:244] - Parámetros específicos para 'xgb' cargados: {'n_estimators': 150, 'learning_rate': 0.1, 'max_depth': 6, 'subsample': 0.8, 'colsample_bytree': 0.8, 'gamma': 0.1, 'scale_pos_weight': 1.0, 'eval_metric': 'auc', 'tree_method': 'hist'}
+2025-05-19 15:49:58 - WARNING - [train.py:182] - Error parseando estructura '[hist]' con literal_eval: malformed node or string on line 1: <ast.Name object at 0x7b2d30073050>. Tratando como string.
+2025-05-19 15:49:58 - INFO - [train.py:253] - Distribuciones de parámetros para RandomizedSearch ('xgb') cargadas: {'n_estimators': <scipy.stats._distn_infrastructure.rv_discrete_frozen object at 0x7b2d3024f470>, 'learning_rate': <scipy.stats._distn_infrastructure.rv_continuous_frozen object at 0x7b2d3024f830>, 'max_depth': <scipy.stats._distn_infrastructure.rv_discrete_frozen object at 0x7b2d3024f890>, 'subsample': <scipy.stats._distn_infrastructure.rv_continuous_frozen object at 0x7b2d3024fc20>, 'colsample_bytree': <scipy.stats._distn_infrastructure.rv_continuous_frozen object at 0x7b2d3024fc80>, 'gamma': <scipy.stats._distn_infrastructure.rv_continuous_frozen object at 0x7b2d3007c080>, 'scale_pos_weight': [1.0], 'tree_method': '[hist]'}
+2025-05-19 15:49:58 - INFO - [train.py:314] - Entrenamiento de XGB configurado para usar CPU.
+2025-05-19 15:49:58 - INFO - [train.py:317] - Paralelización configurada para usar -1 jobs (CPUs). (-1 = todos)
+2025-05-19 15:49:58 - WARNING - [train.py:325] - SMOTE está activado (use_smote = True). Parámetros de balanceo del modelo (class_weight/scale_pos_weight) serán ignorados o deben ser None/1.0.
+2025-05-19 15:49:58 - INFO - [train.py:327] - RandomizedSearchCV está HABILITADO con n_iter=20.
+2025-05-19 15:49:58 - INFO - [train.py:329] - Early Stopping está configurado con 10 rondas (aplicable a XGB/LGBM).
+2025-05-19 15:49:58 - INFO - [train.py:342] - Configuración final combinada para 'xgb': {'model_type': 'xgb', 'random_state': 42, 'cv_folds': 3, 'n_jobs': -1, 'use_smote': True, 'use_gridsearch': False, 'use_randomsearch': True, 'n_iter': 20, 'classification_threshold': 0.5, 'target_col': 'label', 'n_estimators': 150, 'learning_rate': 0.1, 'max_depth': 6, 'subsample': 0.8, 'colsample_bytree': 0.8, 'gamma': 0.1, 'scale_pos_weight': 1.0, 'eval_metric': 'auc', 'tree_method': 'hist', 'param_dist': {'n_estimators': <scipy.stats._distn_infrastructure.rv_discrete_frozen object at 0x7b2d3024f470>, 'learning_rate': <scipy.stats._distn_infrastructure.rv_continuous_frozen object at 0x7b2d3024f830>, 'max_depth': <scipy.stats._distn_infrastructure.rv_discrete_frozen object at 0x7b2d3024f890>, 'subsample': <scipy.stats._distn_infrastructure.rv_continuous_frozen object at 0x7b2d3024fc20>, 'colsample_bytree': <scipy.stats._distn_infrastructure.rv_continuous_frozen object at 0x7b2d3024fc80>, 'gamma': <scipy.stats._distn_infrastructure.rv_continuous_frozen object at 0x7b2d3007c080>, 'scale_pos_weight': [1.0], 'tree_method': '[hist]'}, 'csv_path': '/home/evelym/Lab/VelyFirewall/data/synthetic_dataset_v4_adjusted.csv', 'imsi_column_name': 'c_imsi', 'timestamp_column_name': 'c_timestamp', 'required_columns': 'c_imsi, c_timestamp, label', 'imsi_length': 15, 'timestamp_format': None, 'remove_invalid_rows': True, 'remove_duplicates': True, 'duplicate_subset_columns': None, 'experiment_name': 'FraudDetection_{model_type}_Optimized_v5.7_SMOTE_CPU', 'register_models': True, 'thresholds_to_test': [0.3, 0.4, 0.5, 0.6], 'early_stopping_rounds': 10, 'smote_sampling_strategy': 'auto'}
+2025-05-19 15:49:58 - INFO - [train.py:1219] - Nombre del experimento MLflow: FraudDetection_XGB_Optimized_v5.7_SMOTE_CPU
+2025-05-19 15:49:58 - INFO - [train.py:1223] - Experimento 'FraudDetection_XGB_Optimized_v5.7_SMOTE_CPU' no encontrado. Creando...
+2025-05-19 15:49:58 - INFO - [train.py:1225] - Experimento 'FraudDetection_XGB_Optimized_v5.7_SMOTE_CPU' creado.
+2025-05-19 15:49:58 - INFO - [train.py:1229] - Experimento MLflow activo: 'FraudDetection_XGB_Optimized_v5.7_SMOTE_CPU'
+2025-05-19 15:49:58 - INFO - [train.py:371] - Separador detectado para CSV: ','
+2025-05-19 15:49:58 - INFO - [train.py:380] - Datos cargados desde synthetic_dataset_v4_adjusted.csv: shape=(10352, 50), memoria=4.64 MB
+2025-05-19 15:49:58 - INFO - [train.py:1238] - Carga de datos completada en 0.08 seg.
+2025-05-19 15:49:58 - INFO - [train.py:398] - Preprocesando DataFrame...
+2025-05-19 15:49:58 - INFO - [train.py:412] - Encontradas 45 columnas de features (prefijo 'f_').
+2025-05-19 15:49:58 - WARNING - [train.py:420] - Se encontraron NaNs en 1 columnas de features: ['f_one_cggt_multi_cdgt_psi'].
+2025-05-19 15:49:58 - INFO - [train.py:434] - NaNs en 1 columnas numéricas imputados usando la estrategia 'mean'.
+2025-05-19 15:49:58 - INFO - [train.py:455] - Todas las features ya eran numéricas inicialmente.
+2025-05-19 15:49:58 - INFO - [train.py:478] - Todas las features convertidas a tipos numéricos.
+2025-05-19 15:49:58 - INFO - [train.py:512] - Target 'label' convertido a entero.
+2025-05-19 15:49:58 - INFO - [train.py:524] - Preprocesamiento finalizado. X shape=(10352, 45), y shape=(10352,)
+2025-05-19 15:49:58 - INFO - [train.py:1244] - Preprocesamiento completado en 0.01 seg.
+2025-05-19 15:49:58 - INFO - [train.py:1270] - Dividiendo datos: 80.0% train, 20.0% holdout (Estratificado: True)
+2025-05-19 15:49:58 - INFO - [train.py:1271] - División completada en 0.01 seg:
+2025-05-19 15:49:58 - INFO - [train.py:1272] -   Train Original: X=(8281, 45), y=(8281,). Clases: [7023 1258]
+2025-05-19 15:49:58 - INFO - [train.py:1273] -   Holdout:        X=(2071, 45), y=(2071,). Clases: [1756  315]
+2025-05-19 15:49:58 - INFO - [train.py:1285] - Aplicando SMOTE al conjunto de entrenamiento...
+2025-05-19 15:49:58 - INFO - [train.py:1287] - Usando SMOTE sampling_strategy: auto
+2025-05-19 15:49:58 - WARNING - [train.py:1304] - Versión de SMOTE no acepta 'n_jobs'. Ejecutando secuencialmente.
+2025-05-19 15:49:58 - INFO - [train.py:1323] - SMOTE aplicado en 0.09 seg.
+2025-05-19 15:49:58 - INFO - [train.py:1324] -   Train después de SMOTE: X=(14046, 45), y=(14046,). Clases: [7023 7023]
+2025-05-19 15:49:58 - INFO - [train.py:534] - Creando instancia base del modelo tipo: xgb
+2025-05-19 15:49:58 - INFO - [train.py:596] - SMOTE activado, configurando balanceo interno de XGB a None/1.0.
+2025-05-19 15:49:58 - INFO - [train.py:609] - Early stopping configurado para XGBoost, asegurando eval_metric='auc' en constructor.
+2025-05-19 15:49:58 - INFO - [train.py:628] - Parámetros finales para instancia XGB: {'colsample_bytree': 0.8, 'early_stopping_rounds': 10, 'eval_metric': 'auc', 'gamma': 0.1, 'learning_rate': 0.1, 'max_depth': 6, 'n_estimators': 150, 'random_state': 42, 'scale_pos_weight': 1.0, 'subsample': 0.8, 'tree_method': 'hist', 'n_jobs': -1, 'use_label_encoder': False, 'verbosity': 0}
+2025-05-19 15:49:58 - INFO - [train.py:1342] - Instancia base modelo creada en 0.00 seg.
+2025-05-19 15:49:58 - INFO - [train.py:784] - --- Iniciando Entrenamiento y Evaluación: XGB ---
+2025-05-19 15:49:58 - INFO - [train.py:785] - Optimización con RandomizedSearchCV: Sí (n_iter=20)
+2025-05-19 15:49:58 - INFO - [train.py:789] - Early Stopping Configurado: Sí (rondas=10)
+2025-05-19 15:49:58 - INFO - [train.py:793] - Umbrales a probar en Holdout: [0.3, 0.4, 0.5, 0.6]
+2025-05-19 15:49:58 - INFO - [train.py:839] - MLflow Run ID: 2394778b99ba42b6b90c6575dfd9a1cd (Experimento: 'FraudDetection_XGB_Optimized_v5.7_SMOTE_CPU')
+2025-05-19 15:49:58 - INFO - [train.py:869] - Iniciando RandomizedSearchCV para XGB...
+2025-05-19 15:49:58 - INFO - [train.py:898] - Aplicando parámetros fijos al estimador base para RS: {'eval_metric': 'auc', 'early_stopping_rounds': 10}
+2025-05-19 15:49:58 - INFO - [train.py:918] - Preparando eval_set para ES (10 rondas) dentro de RS (XGB).
+2025-05-19 15:49:58 - INFO - [train.py:926] - Creado eval_set interno para ES en RS: 2107 muestras.
+2025-05-19 15:49:58 - INFO - [train.py:946] - Configured 'eval_set' and 'verbose=False' for XGBoost in RandomizedSearchCV fit_params. Early stopping handled by model init.
+2025-05-19 15:49:58 - INFO - [train.py:959] - Iniciando RS.fit() en -1 jobs (pasando fit_params: [eval_set, verbose])...
+2025-05-19 15:50:02 - ERROR - [train.py:987] - Error durante RandomizedSearchCV: Invalid Input: 's', valid values are: {'approx', 'auto', 'exact', 'gpu_hist', 'hist'}
+joblib.externals.loky.process_executor._RemoteTraceback: 
+"""
+Traceback (most recent call last):
+  File "/home/evelym/Lab/scapy-env/lib/python3.12/site-packages/joblib/externals/loky/process_executor.py", line 490, in _process_worker
+    r = call_item()
+        ^^^^^^^^^^^
+  File "/home/evelym/Lab/scapy-env/lib/python3.12/site-packages/joblib/externals/loky/process_executor.py", line 291, in __call__
+    return self.fn(*self.args, **self.kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/evelym/Lab/scapy-env/lib/python3.12/site-packages/joblib/parallel.py", line 606, in __call__
+    return [func(*args, **kwargs) for func, args, kwargs in self.items]
+            ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/evelym/Lab/scapy-env/lib/python3.12/site-packages/sklearn/utils/parallel.py", line 139, in __call__
+    return self.function(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/evelym/Lab/scapy-env/lib/python3.12/site-packages/sklearn/model_selection/_validation.py", line 866, in _fit_and_score
+    estimator.fit(X_train, y_train, **fit_params)
+  File "/home/evelym/Lab/scapy-env/lib/python3.12/site-packages/xgboost/core.py", line 729, in inner_f
+    return func(**kwargs)
+           ^^^^^^^^^^^^^^
+  File "/home/evelym/Lab/scapy-env/lib/python3.12/site-packages/xgboost/sklearn.py", line 1682, in fit
+    self._Booster = train(
+                    ^^^^^^
+  File "/home/evelym/Lab/scapy-env/lib/python3.12/site-packages/xgboost/core.py", line 729, in inner_f
+    return func(**kwargs)
+           ^^^^^^^^^^^^^^
+  File "/home/evelym/Lab/scapy-env/lib/python3.12/site-packages/xgboost/training.py", line 178, in train
+    bst = cb_container.before_training(bst)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/evelym/Lab/scapy-env/lib/python3.12/site-packages/xgboost/callback.py", line 185, in before_training
+    model = c.before_training(model=model)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/evelym/Lab/scapy-env/lib/python3.12/site-packages/xgboost/callback.py", line 386, in before_training
+    self.starting_round = model.num_boosted_rounds()
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/evelym/Lab/scapy-env/lib/python3.12/site-packages/xgboost/core.py", line 2913, in num_boosted_rounds
+    _check_call(_LIB.XGBoosterBoostedRounds(self.handle, ctypes.byref(rounds)))
+  File "/home/evelym/Lab/scapy-env/lib/python3.12/site-packages/xgboost/core.py", line 310, in _check_call
+    raise XGBoostError(py_str(_LIB.XGBGetLastError()))
+xgboost.core.XGBoostError: Invalid Input: 's', valid values are: {'approx', 'auto', 'exact', 'gpu_hist', 'hist'}
+"""
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/evelym/Lab/VelyFirewall/scripts/train.py", line 965, in evaluate_model
+    search_cv.fit(X_train, y_train, **fit_params_rs)
+  File "/home/evelym/Lab/scapy-env/lib/python3.12/site-packages/sklearn/base.py", line 1389, in wrapper
+    return fit_method(estimator, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/evelym/Lab/scapy-env/lib/python3.12/site-packages/sklearn/model_selection/_search.py", line 1024, in fit
+    self._run_search(evaluate_candidates)
+  File "/home/evelym/Lab/scapy-env/lib/python3.12/site-packages/sklearn/model_selection/_search.py", line 1951, in _run_search
+    evaluate_candidates(
+  File "/home/evelym/Lab/scapy-env/lib/python3.12/site-packages/sklearn/model_selection/_search.py", line 970, in evaluate_candidates
+    out = parallel(
+          ^^^^^^^^^
+  File "/home/evelym/Lab/scapy-env/lib/python3.12/site-packages/sklearn/utils/parallel.py", line 77, in __call__
+    return super().__call__(iterable_with_config)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/evelym/Lab/scapy-env/lib/python3.12/site-packages/joblib/parallel.py", line 2071, in __call__
+    return output if self.return_generator else list(output)
+                                                ^^^^^^^^^^^^
+  File "/home/evelym/Lab/scapy-env/lib/python3.12/site-packages/joblib/parallel.py", line 1681, in _get_outputs
+    yield from self._retrieve()
+  File "/home/evelym/Lab/scapy-env/lib/python3.12/site-packages/joblib/parallel.py", line 1783, in _retrieve
+    self._raise_error_fast()
+  File "/home/evelym/Lab/scapy-env/lib/python3.12/site-packages/joblib/parallel.py", line 1858, in _raise_error_fast
+    error_job.get_result(self.timeout)
+  File "/home/evelym/Lab/scapy-env/lib/python3.12/site-packages/joblib/parallel.py", line 757, in get_result
+    return self._return_or_raise()
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/evelym/Lab/scapy-env/lib/python3.12/site-packages/joblib/parallel.py", line 772, in _return_or_raise
+    raise self._result
+xgboost.core.XGBoostError: Invalid Input: 's', valid values are: {'approx', 'auto', 'exact', 'gpu_hist', 'hist'}
+
+2025-05-19 15:50:02 - INFO - [train.py:1352] - Fase de Entrenamiento y Evaluación completada en 4.56 seg.
+2025-05-19 15:50:02 - INFO - [train.py:1357] - --- Resumen Final del Script (5.8.9 - Corregido NameError en preprocess) ---
+2025-05-19 15:50:02 - INFO - [train.py:1360] - Estado Final: Fallido
+2025-05-19 15:50:02 - INFO - [train.py:1361] - Modelo Probado: XGB
+2025-05-19 15:50:02 - WARNING - [train.py:1375] - El entrenamiento no fue exitoso, no se intentará recuperar info detallada del run.
+2025-05-19 15:50:02 - INFO - [train.py:1388] - Optimización Configurada: RandomSearch (n_iter=20)
+2025-05-19 15:50:02 - INFO - [train.py:1389] - Early Stopping Configurado: Sí (Rondas=10)
+2025-05-19 15:50:02 - INFO - [train.py:1391] -   - ES Intentado en RandomizedSearch: No/Error/No Aplicable
+2025-05-19 15:50:02 - INFO - [train.py:1393] - SMOTE Configurado/Aplicado: True (strategy=auto)
+2025-05-19 15:50:02 - INFO - [train.py:1394] - Uso de GPU Configurado: No
+2025-05-19 15:50:02 - INFO - [train.py:1395] - Paralelización CPU (n_jobs): -1
+2025-05-19 15:50:02 - WARNING - [train.py:1412] - Proceso finalizado con fallos. Modelo no generado/evaluado correctamente.
+2025-05-19 15:50:02 - WARNING - [train.py:1413] - Revisa logs anteriores para identificar la causa.
+2025-05-19 15:50:02 - INFO - [train.py:1414] - Run ID (si se inició): 2394778b99ba42b6b90c6575dfd9a1cd (FALLIDO)
+2025-05-19 15:50:02 - INFO - [train.py:1417] - Duración total del script: 4.78 segundos
+2025-05-19 15:50:02 - INFO - [train.py:1418] - === Fin del script de entrenamiento ===
+2025-05-19 15:54:51 - INFO - [train.py:1195] - === Inicio del script de entrenamiento (5.8.9 - Corregido NameError en preprocess) ===
+2025-05-19 15:54:51 - INFO - [train.py:1207] - MLflow tracking URI establecida en: file:///home/evelym/Lab/VelyFirewall/scripts/mlruns
+2025-05-19 15:54:51 - INFO - [train.py:237] - Parámetros comunes cargados: {'random_state': 42, 'cv_folds': 3, 'n_jobs': -1, 'use_smote': True, 'use_gridsearch': False, 'use_randomsearch': True, 'n_iter': 20, 'classification_threshold': 0.5, 'target_col': 'label'}
+2025-05-19 15:54:51 - INFO - [train.py:244] - Parámetros específicos para 'xgb' cargados: {'n_estimators': 150, 'learning_rate': 0.1, 'max_depth': 6, 'subsample': 0.8, 'colsample_bytree': 0.8, 'gamma': 0.1, 'scale_pos_weight': 1.0, 'eval_metric': 'auc', 'tree_method': 'hist'}
+2025-05-19 15:54:51 - WARNING - [train.py:182] - Error parseando estructura '[hist]' con literal_eval: malformed node or string on line 1: <ast.Name object at 0x72d793086a10>. Tratando como string.
+2025-05-19 15:54:51 - INFO - [train.py:253] - Distribuciones de parámetros para RandomizedSearch ('xgb') cargadas: {'n_estimators': <scipy.stats._distn_infrastructure.rv_discrete_frozen object at 0x72d7930673b0>, 'learning_rate': <scipy.stats._distn_infrastructure.rv_continuous_frozen object at 0x72d793067740>, 'max_depth': <scipy.stats._distn_infrastructure.rv_discrete_frozen object at 0x72d7930676e0>, 'subsample': <scipy.stats._distn_infrastructure.rv_continuous_frozen object at 0x72d793067b00>, 'colsample_bytree': <scipy.stats._distn_infrastructure.rv_continuous_frozen object at 0x72d793067b60>, 'gamma': <scipy.stats._distn_infrastructure.rv_continuous_frozen object at 0x72d793067fb0>, 'scale_pos_weight': [1.0], 'tree_method': '[hist]'}
+2025-05-19 15:54:51 - INFO - [train.py:314] - Entrenamiento de XGB configurado para usar CPU.
+2025-05-19 15:54:51 - INFO - [train.py:317] - Paralelización configurada para usar -1 jobs (CPUs). (-1 = todos)
+2025-05-19 15:54:51 - WARNING - [train.py:325] - SMOTE está activado (use_smote = True). Parámetros de balanceo del modelo (class_weight/scale_pos_weight) serán ignorados o deben ser None/1.0.
+2025-05-19 15:54:51 - INFO - [train.py:327] - RandomizedSearchCV está HABILITADO con n_iter=20.
+2025-05-19 15:54:51 - INFO - [train.py:329] - Early Stopping está configurado con 10 rondas (aplicable a XGB/LGBM).
+2025-05-19 15:54:51 - INFO - [train.py:342] - Configuración final combinada para 'xgb': {'model_type': 'xgb', 'random_state': 42, 'cv_folds': 3, 'n_jobs': -1, 'use_smote': True, 'use_gridsearch': False, 'use_randomsearch': True, 'n_iter': 20, 'classification_threshold': 0.5, 'target_col': 'label', 'n_estimators': 150, 'learning_rate': 0.1, 'max_depth': 6, 'subsample': 0.8, 'colsample_bytree': 0.8, 'gamma': 0.1, 'scale_pos_weight': 1.0, 'eval_metric': 'auc', 'tree_method': 'hist', 'param_dist': {'n_estimators': <scipy.stats._distn_infrastructure.rv_discrete_frozen object at 0x72d7930673b0>, 'learning_rate': <scipy.stats._distn_infrastructure.rv_continuous_frozen object at 0x72d793067740>, 'max_depth': <scipy.stats._distn_infrastructure.rv_discrete_frozen object at 0x72d7930676e0>, 'subsample': <scipy.stats._distn_infrastructure.rv_continuous_frozen object at 0x72d793067b00>, 'colsample_bytree': <scipy.stats._distn_infrastructure.rv_continuous_frozen object at 0x72d793067b60>, 'gamma': <scipy.stats._distn_infrastructure.rv_continuous_frozen object at 0x72d793067fb0>, 'scale_pos_weight': [1.0], 'tree_method': '[hist]'}, 'csv_path': '/home/evelym/Lab/VelyFirewall/data/synthetic_dataset_v4_adjusted.csv', 'imsi_column_name': 'c_imsi', 'timestamp_column_name': 'c_timestamp', 'required_columns': 'c_imsi, c_timestamp, label', 'imsi_length': 15, 'timestamp_format': None, 'remove_invalid_rows': True, 'remove_duplicates': True, 'duplicate_subset_columns': None, 'experiment_name': 'FraudDetection_{model_type}_Optimized_v5.7_SMOTE_CPU', 'register_models': True, 'thresholds_to_test': [0.3, 0.4, 0.5, 0.6], 'early_stopping_rounds': 10, 'smote_sampling_strategy': 'auto'}
+2025-05-19 15:54:51 - INFO - [train.py:1219] - Nombre del experimento MLflow: FraudDetection_XGB_Optimized_v5.7_SMOTE_CPU
+2025-05-19 15:54:51 - INFO - [train.py:1227] - Experimento 'FraudDetection_XGB_Optimized_v5.7_SMOTE_CPU' ya existe (ID: 233039994163730173).
+2025-05-19 15:54:51 - INFO - [train.py:1229] - Experimento MLflow activo: 'FraudDetection_XGB_Optimized_v5.7_SMOTE_CPU'
+2025-05-19 15:54:51 - INFO - [train.py:371] - Separador detectado para CSV: ','
+2025-05-19 15:54:51 - INFO - [train.py:380] - Datos cargados desde synthetic_dataset_v4_adjusted.csv: shape=(10352, 50), memoria=4.64 MB
+2025-05-19 15:54:51 - INFO - [train.py:1238] - Carga de datos completada en 0.07 seg.
+2025-05-19 15:54:51 - INFO - [train.py:398] - Preprocesando DataFrame...
+2025-05-19 15:54:51 - INFO - [train.py:412] - Encontradas 45 columnas de features (prefijo 'f_').
+2025-05-19 15:54:51 - WARNING - [train.py:420] - Se encontraron NaNs en 1 columnas de features: ['f_one_cggt_multi_cdgt_psi'].
+2025-05-19 15:54:51 - INFO - [train.py:434] - NaNs en 1 columnas numéricas imputados usando la estrategia 'mean'.
+2025-05-19 15:54:51 - INFO - [train.py:455] - Todas las features ya eran numéricas inicialmente.
+2025-05-19 15:54:51 - INFO - [train.py:478] - Todas las features convertidas a tipos numéricos.
+2025-05-19 15:54:51 - INFO - [train.py:512] - Target 'label' convertido a entero.
+2025-05-19 15:54:51 - INFO - [train.py:524] - Preprocesamiento finalizado. X shape=(10352, 45), y shape=(10352,)
+2025-05-19 15:54:51 - INFO - [train.py:1244] - Preprocesamiento completado en 0.01 seg.
+2025-05-19 15:54:51 - INFO - [train.py:1270] - Dividiendo datos: 80.0% train, 20.0% holdout (Estratificado: True)
+2025-05-19 15:54:51 - INFO - [train.py:1271] - División completada en 0.01 seg:
+2025-05-19 15:54:51 - INFO - [train.py:1272] -   Train Original: X=(8281, 45), y=(8281,). Clases: [7023 1258]
+2025-05-19 15:54:51 - INFO - [train.py:1273] -   Holdout:        X=(2071, 45), y=(2071,). Clases: [1756  315]
+2025-05-19 15:54:51 - INFO - [train.py:1285] - Aplicando SMOTE al conjunto de entrenamiento...
+2025-05-19 15:54:51 - INFO - [train.py:1287] - Usando SMOTE sampling_strategy: auto
+2025-05-19 15:54:51 - WARNING - [train.py:1304] - Versión de SMOTE no acepta 'n_jobs'. Ejecutando secuencialmente.
+2025-05-19 15:54:51 - INFO - [train.py:1323] - SMOTE aplicado en 0.12 seg.
+2025-05-19 15:54:51 - INFO - [train.py:1324] -   Train después de SMOTE: X=(14046, 45), y=(14046,). Clases: [7023 7023]
+2025-05-19 15:54:51 - INFO - [train.py:534] - Creando instancia base del modelo tipo: xgb
+2025-05-19 15:54:51 - INFO - [train.py:596] - SMOTE activado, configurando balanceo interno de XGB a None/1.0.
+2025-05-19 15:54:51 - INFO - [train.py:609] - Early stopping configurado para XGBoost, asegurando eval_metric='auc' en constructor.
+2025-05-19 15:54:51 - INFO - [train.py:628] - Parámetros finales para instancia XGB: {'colsample_bytree': 0.8, 'early_stopping_rounds': 10, 'eval_metric': 'auc', 'gamma': 0.1, 'learning_rate': 0.1, 'max_depth': 6, 'n_estimators': 150, 'random_state': 42, 'scale_pos_weight': 1.0, 'subsample': 0.8, 'tree_method': 'hist', 'n_jobs': -1, 'use_label_encoder': False, 'verbosity': 0}
+2025-05-19 15:54:51 - INFO - [train.py:1342] - Instancia base modelo creada en 0.00 seg.
+2025-05-19 15:54:51 - INFO - [train.py:784] - --- Iniciando Entrenamiento y Evaluación: XGB ---
+2025-05-19 15:54:51 - INFO - [train.py:785] - Optimización con RandomizedSearchCV: Sí (n_iter=20)
+2025-05-19 15:54:51 - INFO - [train.py:789] - Early Stopping Configurado: Sí (rondas=10)
+2025-05-19 15:54:51 - INFO - [train.py:793] - Umbrales a probar en Holdout: [0.3, 0.4, 0.5, 0.6]
+2025-05-19 15:54:51 - INFO - [train.py:839] - MLflow Run ID: d9556daf983847b6b41b0eaefb86849f (Experimento: 'FraudDetection_XGB_Optimized_v5.7_SMOTE_CPU')
+2025-05-19 15:54:51 - INFO - [train.py:869] - Iniciando RandomizedSearchCV para XGB...
+2025-05-19 15:54:51 - INFO - [train.py:898] - Aplicando parámetros fijos al estimador base para RS: {'eval_metric': 'auc', 'early_stopping_rounds': 10}
+2025-05-19 15:54:51 - INFO - [train.py:918] - Preparando eval_set para ES (10 rondas) dentro de RS (XGB).
+2025-05-19 15:54:51 - INFO - [train.py:926] - Creado eval_set interno para ES en RS: 2107 muestras.
+2025-05-19 15:54:51 - INFO - [train.py:946] - Configured 'eval_set' and 'verbose=False' for XGBoost in RandomizedSearchCV fit_params. Early stopping handled by model init.
+2025-05-19 15:54:52 - INFO - [train.py:959] - Iniciando RS.fit() en -1 jobs (pasando fit_params: [eval_set, verbose])...
+2025-05-19 15:54:56 - ERROR - [train.py:987] - Error durante RandomizedSearchCV: Invalid Input: 'i', valid values are: {'approx', 'auto', 'exact', 'gpu_hist', 'hist'}
+joblib.externals.loky.process_executor._RemoteTraceback: 
+"""
+Traceback (most recent call last):
+  File "/home/evelym/Lab/scapy-env/lib/python3.12/site-packages/joblib/externals/loky/process_executor.py", line 490, in _process_worker
+    r = call_item()
+        ^^^^^^^^^^^
+  File "/home/evelym/Lab/scapy-env/lib/python3.12/site-packages/joblib/externals/loky/process_executor.py", line 291, in __call__
+    return self.fn(*self.args, **self.kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/evelym/Lab/scapy-env/lib/python3.12/site-packages/joblib/parallel.py", line 606, in __call__
+    return [func(*args, **kwargs) for func, args, kwargs in self.items]
+            ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/evelym/Lab/scapy-env/lib/python3.12/site-packages/sklearn/utils/parallel.py", line 139, in __call__
+    return self.function(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/evelym/Lab/scapy-env/lib/python3.12/site-packages/sklearn/model_selection/_validation.py", line 866, in _fit_and_score
+    estimator.fit(X_train, y_train, **fit_params)
+  File "/home/evelym/Lab/scapy-env/lib/python3.12/site-packages/xgboost/core.py", line 729, in inner_f
+    return func(**kwargs)
+           ^^^^^^^^^^^^^^
+  File "/home/evelym/Lab/scapy-env/lib/python3.12/site-packages/xgboost/sklearn.py", line 1682, in fit
+    self._Booster = train(
+                    ^^^^^^
+  File "/home/evelym/Lab/scapy-env/lib/python3.12/site-packages/xgboost/core.py", line 729, in inner_f
+    return func(**kwargs)
+           ^^^^^^^^^^^^^^
+  File "/home/evelym/Lab/scapy-env/lib/python3.12/site-packages/xgboost/training.py", line 178, in train
+    bst = cb_container.before_training(bst)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/evelym/Lab/scapy-env/lib/python3.12/site-packages/xgboost/callback.py", line 185, in before_training
+    model = c.before_training(model=model)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/evelym/Lab/scapy-env/lib/python3.12/site-packages/xgboost/callback.py", line 386, in before_training
+    self.starting_round = model.num_boosted_rounds()
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/evelym/Lab/scapy-env/lib/python3.12/site-packages/xgboost/core.py", line 2913, in num_boosted_rounds
+    _check_call(_LIB.XGBoosterBoostedRounds(self.handle, ctypes.byref(rounds)))
+  File "/home/evelym/Lab/scapy-env/lib/python3.12/site-packages/xgboost/core.py", line 310, in _check_call
+    raise XGBoostError(py_str(_LIB.XGBGetLastError()))
+xgboost.core.XGBoostError: Invalid Input: 'i', valid values are: {'approx', 'auto', 'exact', 'gpu_hist', 'hist'}
+"""
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/evelym/Lab/VelyFirewall/scripts/train.py", line 965, in evaluate_model
+    search_cv.fit(X_train, y_train, **fit_params_rs)
+  File "/home/evelym/Lab/scapy-env/lib/python3.12/site-packages/sklearn/base.py", line 1389, in wrapper
+    return fit_method(estimator, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/evelym/Lab/scapy-env/lib/python3.12/site-packages/sklearn/model_selection/_search.py", line 1024, in fit
+    self._run_search(evaluate_candidates)
+  File "/home/evelym/Lab/scapy-env/lib/python3.12/site-packages/sklearn/model_selection/_search.py", line 1951, in _run_search
+    evaluate_candidates(
+  File "/home/evelym/Lab/scapy-env/lib/python3.12/site-packages/sklearn/model_selection/_search.py", line 970, in evaluate_candidates
+    out = parallel(
+          ^^^^^^^^^
+  File "/home/evelym/Lab/scapy-env/lib/python3.12/site-packages/sklearn/utils/parallel.py", line 77, in __call__
+    return super().__call__(iterable_with_config)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/evelym/Lab/scapy-env/lib/python3.12/site-packages/joblib/parallel.py", line 2071, in __call__
+    return output if self.return_generator else list(output)
+                                                ^^^^^^^^^^^^
+  File "/home/evelym/Lab/scapy-env/lib/python3.12/site-packages/joblib/parallel.py", line 1681, in _get_outputs
+    yield from self._retrieve()
+  File "/home/evelym/Lab/scapy-env/lib/python3.12/site-packages/joblib/parallel.py", line 1783, in _retrieve
+    self._raise_error_fast()
+  File "/home/evelym/Lab/scapy-env/lib/python3.12/site-packages/joblib/parallel.py", line 1858, in _raise_error_fast
+    error_job.get_result(self.timeout)
+  File "/home/evelym/Lab/scapy-env/lib/python3.12/site-packages/joblib/parallel.py", line 757, in get_result
+    return self._return_or_raise()
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/evelym/Lab/scapy-env/lib/python3.12/site-packages/joblib/parallel.py", line 772, in _return_or_raise
+    raise self._result
+xgboost.core.XGBoostError: Invalid Input: 'i', valid values are: {'approx', 'auto', 'exact', 'gpu_hist', 'hist'}
+
+2025-05-19 15:54:56 - INFO - [train.py:1352] - Fase de Entrenamiento y Evaluación completada en 4.56 seg.
+2025-05-19 15:54:56 - INFO - [train.py:1357] - --- Resumen Final del Script (5.8.9 - Corregido NameError en preprocess) ---
+2025-05-19 15:54:56 - INFO - [train.py:1360] - Estado Final: Fallido
+2025-05-19 15:54:56 - INFO - [train.py:1361] - Modelo Probado: XGB
+2025-05-19 15:54:56 - WARNING - [train.py:1375] - El entrenamiento no fue exitoso, no se intentará recuperar info detallada del run.
+2025-05-19 15:54:56 - INFO - [train.py:1388] - Optimización Configurada: RandomSearch (n_iter=20)
+2025-05-19 15:54:56 - INFO - [train.py:1389] - Early Stopping Configurado: Sí (Rondas=10)
+2025-05-19 15:54:56 - INFO - [train.py:1391] -   - ES Intentado en RandomizedSearch: No/Error/No Aplicable
+2025-05-19 15:54:56 - INFO - [train.py:1393] - SMOTE Configurado/Aplicado: True (strategy=auto)
+2025-05-19 15:54:56 - INFO - [train.py:1394] - Uso de GPU Configurado: No
+2025-05-19 15:54:56 - INFO - [train.py:1395] - Paralelización CPU (n_jobs): -1
+2025-05-19 15:54:56 - WARNING - [train.py:1412] - Proceso finalizado con fallos. Modelo no generado/evaluado correctamente.
+2025-05-19 15:54:56 - WARNING - [train.py:1413] - Revisa logs anteriores para identificar la causa.
+2025-05-19 15:54:56 - INFO - [train.py:1414] - Run ID (si se inició): d9556daf983847b6b41b0eaefb86849f (FALLIDO)
+2025-05-19 15:54:56 - INFO - [train.py:1417] - Duración total del script: 4.81 segundos
+2025-05-19 15:54:56 - INFO - [train.py:1418] - === Fin del script de entrenamiento ===
+2025-05-19 15:57:37 - INFO - [train.py:1195] - === Inicio del script de entrenamiento (5.8.9 - Corregido NameError en preprocess) ===
+2025-05-19 15:57:37 - INFO - [train.py:1207] - MLflow tracking URI establecida en: file:///home/evelym/Lab/VelyFirewall/scripts/mlruns
+2025-05-19 15:57:37 - INFO - [train.py:237] - Parámetros comunes cargados: {'random_state': 42, 'cv_folds': 3, 'n_jobs': -1, 'use_smote': True, 'use_gridsearch': False, 'use_randomsearch': True, 'n_iter': 20, 'classification_threshold': 0.5, 'target_col': 'label'}
+2025-05-19 15:57:37 - INFO - [train.py:244] - Parámetros específicos para 'xgb' cargados: {'n_estimators': 150, 'learning_rate': 0.1, 'max_depth': 6, 'subsample': 0.8, 'colsample_bytree': 0.8, 'gamma': 0.1, 'scale_pos_weight': 1.0, 'eval_metric': 'auc', 'tree_method': 'hist'}
+2025-05-19 15:57:37 - INFO - [train.py:253] - Distribuciones de parámetros para RandomizedSearch ('xgb') cargadas: {'n_estimators': <scipy.stats._distn_infrastructure.rv_discrete_frozen object at 0x7b06747dabd0>, 'learning_rate': <scipy.stats._distn_infrastructure.rv_continuous_frozen object at 0x7b06747dae40>, 'max_depth': <scipy.stats._distn_infrastructure.rv_discrete_frozen object at 0x7b06747daf00>, 'subsample': <scipy.stats._distn_infrastructure.rv_continuous_frozen object at 0x7b06747db200>, 'colsample_bytree': <scipy.stats._distn_infrastructure.rv_continuous_frozen object at 0x7b06747db350>, 'gamma': <scipy.stats._distn_infrastructure.rv_continuous_frozen object at 0x7b06747da2d0>, 'scale_pos_weight': [1.0], 'tree_method': ['hist', 'auto']}
+2025-05-19 15:57:37 - INFO - [train.py:314] - Entrenamiento de XGB configurado para usar CPU.
+2025-05-19 15:57:37 - INFO - [train.py:317] - Paralelización configurada para usar -1 jobs (CPUs). (-1 = todos)
+2025-05-19 15:57:37 - WARNING - [train.py:325] - SMOTE está activado (use_smote = True). Parámetros de balanceo del modelo (class_weight/scale_pos_weight) serán ignorados o deben ser None/1.0.
+2025-05-19 15:57:37 - INFO - [train.py:327] - RandomizedSearchCV está HABILITADO con n_iter=20.
+2025-05-19 15:57:37 - INFO - [train.py:329] - Early Stopping está configurado con 10 rondas (aplicable a XGB/LGBM).
+2025-05-19 15:57:37 - INFO - [train.py:342] - Configuración final combinada para 'xgb': {'model_type': 'xgb', 'random_state': 42, 'cv_folds': 3, 'n_jobs': -1, 'use_smote': True, 'use_gridsearch': False, 'use_randomsearch': True, 'n_iter': 20, 'classification_threshold': 0.5, 'target_col': 'label', 'n_estimators': 150, 'learning_rate': 0.1, 'max_depth': 6, 'subsample': 0.8, 'colsample_bytree': 0.8, 'gamma': 0.1, 'scale_pos_weight': 1.0, 'eval_metric': 'auc', 'tree_method': 'hist', 'param_dist': {'n_estimators': <scipy.stats._distn_infrastructure.rv_discrete_frozen object at 0x7b06747dabd0>, 'learning_rate': <scipy.stats._distn_infrastructure.rv_continuous_frozen object at 0x7b06747dae40>, 'max_depth': <scipy.stats._distn_infrastructure.rv_discrete_frozen object at 0x7b06747daf00>, 'subsample': <scipy.stats._distn_infrastructure.rv_continuous_frozen object at 0x7b06747db200>, 'colsample_bytree': <scipy.stats._distn_infrastructure.rv_continuous_frozen object at 0x7b06747db350>, 'gamma': <scipy.stats._distn_infrastructure.rv_continuous_frozen object at 0x7b06747da2d0>, 'scale_pos_weight': [1.0], 'tree_method': ['hist', 'auto']}, 'csv_path': '/home/evelym/Lab/VelyFirewall/data/synthetic_dataset_v4_adjusted.csv', 'imsi_column_name': 'c_imsi', 'timestamp_column_name': 'c_timestamp', 'required_columns': 'c_imsi, c_timestamp, label', 'imsi_length': 15, 'timestamp_format': None, 'remove_invalid_rows': True, 'remove_duplicates': True, 'duplicate_subset_columns': None, 'experiment_name': 'FraudDetection_{model_type}_Optimized_v5.7_SMOTE_CPU', 'register_models': True, 'thresholds_to_test': [0.3, 0.4, 0.5, 0.6], 'early_stopping_rounds': 10, 'smote_sampling_strategy': 'auto'}
+2025-05-19 15:57:37 - INFO - [train.py:1219] - Nombre del experimento MLflow: FraudDetection_XGB_Optimized_v5.7_SMOTE_CPU
+2025-05-19 15:57:37 - INFO - [train.py:1227] - Experimento 'FraudDetection_XGB_Optimized_v5.7_SMOTE_CPU' ya existe (ID: 233039994163730173).
+2025-05-19 15:57:37 - INFO - [train.py:1229] - Experimento MLflow activo: 'FraudDetection_XGB_Optimized_v5.7_SMOTE_CPU'
+2025-05-19 15:57:37 - INFO - [train.py:371] - Separador detectado para CSV: ','
+2025-05-19 15:57:37 - INFO - [train.py:380] - Datos cargados desde synthetic_dataset_v4_adjusted.csv: shape=(10352, 50), memoria=4.64 MB
+2025-05-19 15:57:37 - INFO - [train.py:1238] - Carga de datos completada en 0.08 seg.
+2025-05-19 15:57:37 - INFO - [train.py:398] - Preprocesando DataFrame...
+2025-05-19 15:57:37 - INFO - [train.py:412] - Encontradas 45 columnas de features (prefijo 'f_').
+2025-05-19 15:57:37 - WARNING - [train.py:420] - Se encontraron NaNs en 1 columnas de features: ['f_one_cggt_multi_cdgt_psi'].
+2025-05-19 15:57:37 - INFO - [train.py:434] - NaNs en 1 columnas numéricas imputados usando la estrategia 'mean'.
+2025-05-19 15:57:37 - INFO - [train.py:455] - Todas las features ya eran numéricas inicialmente.
+2025-05-19 15:57:37 - INFO - [train.py:478] - Todas las features convertidas a tipos numéricos.
+2025-05-19 15:57:37 - INFO - [train.py:512] - Target 'label' convertido a entero.
+2025-05-19 15:57:37 - INFO - [train.py:524] - Preprocesamiento finalizado. X shape=(10352, 45), y shape=(10352,)
+2025-05-19 15:57:37 - INFO - [train.py:1244] - Preprocesamiento completado en 0.01 seg.
+2025-05-19 15:57:37 - INFO - [train.py:1270] - Dividiendo datos: 80.0% train, 20.0% holdout (Estratificado: True)
+2025-05-19 15:57:37 - INFO - [train.py:1271] - División completada en 0.01 seg:
+2025-05-19 15:57:37 - INFO - [train.py:1272] -   Train Original: X=(8281, 45), y=(8281,). Clases: [7023 1258]
+2025-05-19 15:57:37 - INFO - [train.py:1273] -   Holdout:        X=(2071, 45), y=(2071,). Clases: [1756  315]
+2025-05-19 15:57:37 - INFO - [train.py:1285] - Aplicando SMOTE al conjunto de entrenamiento...
+2025-05-19 15:57:37 - INFO - [train.py:1287] - Usando SMOTE sampling_strategy: auto
+2025-05-19 15:57:37 - WARNING - [train.py:1304] - Versión de SMOTE no acepta 'n_jobs'. Ejecutando secuencialmente.
+2025-05-19 15:57:37 - INFO - [train.py:1323] - SMOTE aplicado en 0.08 seg.
+2025-05-19 15:57:37 - INFO - [train.py:1324] -   Train después de SMOTE: X=(14046, 45), y=(14046,). Clases: [7023 7023]
+2025-05-19 15:57:37 - INFO - [train.py:534] - Creando instancia base del modelo tipo: xgb
+2025-05-19 15:57:37 - INFO - [train.py:596] - SMOTE activado, configurando balanceo interno de XGB a None/1.0.
+2025-05-19 15:57:37 - INFO - [train.py:609] - Early stopping configurado para XGBoost, asegurando eval_metric='auc' en constructor.
+2025-05-19 15:57:37 - INFO - [train.py:628] - Parámetros finales para instancia XGB: {'colsample_bytree': 0.8, 'early_stopping_rounds': 10, 'eval_metric': 'auc', 'gamma': 0.1, 'learning_rate': 0.1, 'max_depth': 6, 'n_estimators': 150, 'random_state': 42, 'scale_pos_weight': 1.0, 'subsample': 0.8, 'tree_method': 'hist', 'n_jobs': -1, 'use_label_encoder': False, 'verbosity': 0}
+2025-05-19 15:57:37 - INFO - [train.py:1342] - Instancia base modelo creada en 0.00 seg.
+2025-05-19 15:57:37 - INFO - [train.py:784] - --- Iniciando Entrenamiento y Evaluación: XGB ---
+2025-05-19 15:57:37 - INFO - [train.py:785] - Optimización con RandomizedSearchCV: Sí (n_iter=20)
+2025-05-19 15:57:37 - INFO - [train.py:789] - Early Stopping Configurado: Sí (rondas=10)
+2025-05-19 15:57:37 - INFO - [train.py:793] - Umbrales a probar en Holdout: [0.3, 0.4, 0.5, 0.6]
+2025-05-19 15:57:37 - INFO - [train.py:839] - MLflow Run ID: 7ef258d0e7dd4ef68d08688c4a903728 (Experimento: 'FraudDetection_XGB_Optimized_v5.7_SMOTE_CPU')
+2025-05-19 15:57:37 - INFO - [train.py:869] - Iniciando RandomizedSearchCV para XGB...
+2025-05-19 15:57:37 - INFO - [train.py:898] - Aplicando parámetros fijos al estimador base para RS: {'eval_metric': 'auc', 'early_stopping_rounds': 10}
+2025-05-19 15:57:37 - INFO - [train.py:918] - Preparando eval_set para ES (10 rondas) dentro de RS (XGB).
+2025-05-19 15:57:37 - INFO - [train.py:926] - Creado eval_set interno para ES en RS: 2107 muestras.
+2025-05-19 15:57:37 - INFO - [train.py:946] - Configured 'eval_set' and 'verbose=False' for XGBoost in RandomizedSearchCV fit_params. Early stopping handled by model init.
+2025-05-19 15:57:38 - INFO - [train.py:959] - Iniciando RS.fit() en -1 jobs (pasando fit_params: [eval_set, verbose])...
+2025-05-19 15:57:44 - INFO - [train.py:967] - RS completado en 6.75 seg.
+2025-05-19 15:57:44 - INFO - [train.py:971] - Mejor puntuación CV (roc_auc): 0.9660
+2025-05-19 15:57:44 - INFO - [train.py:972] - Mejores parámetros encontrados por RS: {'colsample_bytree': np.float64(0.6571779905381634), 'gamma': np.float64(0.40685655293176226), 'learning_rate': np.float64(0.1915132947852186), 'max_depth': 9, 'n_estimators': 330, 'scale_pos_weight': 1.0, 'subsample': np.float64(0.7641531692142519), 'tree_method': 'hist'}
+2025-05-19 15:57:44 - INFO - [train.py:983] - Aplicando parámetros fijos al mejor modelo encontrado por RS: {'eval_metric': 'auc', 'early_stopping_rounds': 10}
+2025-05-19 15:57:44 - INFO - [train.py:1070] - Evaluando modelo final en Holdout (2071 muestras)...
+2025-05-19 15:57:45 - INFO - [train.py:687] - Curva ROC guardada y registrada: 7ef258d0e7dd4ef68d08688c4a903728_XGB_holdout_roc_curve.png
+2025-05-19 15:57:45 - INFO - [train.py:1076] - XGB Holdout AUC General: 0.8917
+2025-05-19 15:57:45 - INFO - [train.py:729] - --- Evaluando Holdout con Umbrales: [0.3, 0.4, 0.5, 0.6] ---
+2025-05-19 15:57:45 - INFO - [train.py:756] - Holdout (Th=0.30): Acc=0.9121, F1M=0.8414, Recall_1=0.8032, Precision_1=0.6783, TP=253, FP=120
+2025-05-19 15:57:46 - INFO - [train.py:756] - Holdout (Th=0.40): Acc=0.9454, F1M=0.8897, Recall_1=0.7714, Precision_1=0.8556, TP=243, FP=41
+2025-05-19 15:57:46 - INFO - [train.py:756] - Holdout (Th=0.50): Acc=0.9512, F1M=0.8986, Recall_1=0.7587, Precision_1=0.9053, TP=239, FP=25
+2025-05-19 15:57:46 - INFO - [train.py:756] - Holdout (Th=0.60): Acc=0.9532, F1M=0.9018, Recall_1=0.7556, Precision_1=0.9225, TP=238, FP=20
+2025-05-19 15:57:47 - INFO - [train.py:1101] - Evaluación Holdout completada en 2.13 seg.
+2025-05-19 15:57:47 - INFO - [train.py:1106] - Guardando y registrando el modelo final...
+2025-05-19 15:57:47 - INFO - [train.py:1114] - Modelo final usó 78 iteraciones (posiblemente por ES).
+2025-05-19 15:57:47 - INFO - [train.py:1121] - Modelo guardado localmente: /home/evelym/Lab/VelyFirewall/scripts/models/7ef258d0e7dd4ef68d08688c4a903728_XGB_model.joblib
+2025-05-19 15:57:47 - INFO - [train.py:1146] - Firma MLflow inferida.
+2025-05-19 15:57:47 - INFO - [train.py:1156] - Intentando registrar modelo como: FraudDetection_XGB_Optimized_v5.7_SMOTE_CPU
+2025-05-19 15:57:53 - INFO - [train.py:1160] - Modelo registrado en MLflow: FraudDetection_XGB_Optimized_v5.7_SMOTE_CPU
+2025-05-19 15:57:53 - INFO - [train.py:1167] - --- Entrenamiento y Evaluación XGB Finalizada ---
+2025-05-19 15:57:53 - INFO - [train.py:1352] - Fase de Entrenamiento y Evaluación completada en 15.65 seg.
+2025-05-19 15:57:53 - INFO - [train.py:1357] - --- Resumen Final del Script (5.8.9 - Corregido NameError en preprocess) ---
+2025-05-19 15:57:53 - INFO - [train.py:1360] - Estado Final: Exitoso
+2025-05-19 15:57:53 - INFO - [train.py:1361] - Modelo Probado: XGB
+2025-05-19 15:57:53 - INFO - [train.py:1370] - Recuperando información del Run ID completado: 7ef258d0e7dd4ef68d08688c4a903728
+2025-05-19 15:57:53 - INFO - [train.py:1388] - Optimización Configurada: RandomSearch (n_iter=20)
+2025-05-19 15:57:53 - INFO - [train.py:1389] - Early Stopping Configurado: Sí (Rondas=10)
+2025-05-19 15:57:53 - INFO - [train.py:1391] -   - ES Intentado en RandomizedSearch: Sí
+2025-05-19 15:57:53 - INFO - [train.py:1393] - SMOTE Configurado/Aplicado: True (strategy=auto)
+2025-05-19 15:57:53 - INFO - [train.py:1394] - Uso de GPU Configurado: No
+2025-05-19 15:57:53 - INFO - [train.py:1395] - Paralelización CPU (n_jobs): -1
+2025-05-19 15:57:53 - INFO - [train.py:1399] - Métricas Principales en Holdout (umbral=0.5):
+2025-05-19 15:57:53 - INFO - [train.py:1402] -   - ROC AUC General: 0.8917
+2025-05-19 15:57:53 - INFO - [train.py:1403] -   - Accuracy:        0.9512
+2025-05-19 15:57:53 - INFO - [train.py:1404] -   - F1 Macro:        0.8986
+2025-05-19 15:57:53 - INFO - [train.py:1405] -   - Recall Clase 1:  0.7587
+2025-05-19 15:57:53 - INFO - [train.py:1406] -   - Precision Clase 1:0.9053
+2025-05-19 15:57:53 - INFO - [train.py:1407] -   - TP / FP (Th=0.5): 239 / 25
+2025-05-19 15:57:53 - INFO - [train.py:1410] - Consulta MLflow UI para detalles completos (Run ID: 7ef258d0e7dd4ef68d08688c4a903728).
+2025-05-19 15:57:53 - INFO - [train.py:1417] - Duración total del script: 15.86 segundos
+2025-05-19 15:57:53 - INFO - [train.py:1418] - === Fin del script de entrenamiento ===
+2025-05-21 14:46:44 - INFO - [train.py:1195] - === Inicio del script de entrenamiento (5.8.9 - Corregido NameError en preprocess) ===
+2025-05-21 14:46:44 - INFO - [train.py:1207] - MLflow tracking URI establecida en: file:///home/evelym/Lab/VelyFirewall/scripts/mlruns
+2025-05-21 14:46:44 - INFO - [train.py:237] - Parámetros comunes cargados: {'random_state': 42, 'cv_folds': 3, 'n_jobs': -1, 'use_smote': True, 'use_gridsearch': False, 'use_randomsearch': True, 'n_iter': 20, 'classification_threshold': 0.5, 'target_col': 'label'}
+2025-05-21 14:46:44 - INFO - [train.py:244] - Parámetros específicos para 'xgb' cargados: {'n_estimators': 150, 'learning_rate': 0.1, 'max_depth': 6, 'subsample': 0.8, 'colsample_bytree': 0.8, 'gamma': 0.1, 'scale_pos_weight': 1.0, 'eval_metric': 'auc', 'tree_method': 'hist'}
+2025-05-21 14:46:44 - INFO - [train.py:253] - Distribuciones de parámetros para RandomizedSearch ('xgb') cargadas: {'n_estimators': <scipy.stats._distn_infrastructure.rv_discrete_frozen object at 0x7c6323b4dee0>, 'learning_rate': <scipy.stats._distn_infrastructure.rv_continuous_frozen object at 0x7c6323b4e210>, 'max_depth': <scipy.stats._distn_infrastructure.rv_discrete_frozen object at 0x7c6323b4e270>, 'subsample': <scipy.stats._distn_infrastructure.rv_continuous_frozen object at 0x7c6323b4e600>, 'colsample_bytree': <scipy.stats._distn_infrastructure.rv_continuous_frozen object at 0x7c6323b4e750>, 'gamma': <scipy.stats._distn_infrastructure.rv_continuous_frozen object at 0x7c6323b4e840>, 'scale_pos_weight': [1.0], 'tree_method': ['hist', 'auto']}
+2025-05-21 14:46:44 - INFO - [train.py:314] - Entrenamiento de XGB configurado para usar CPU.
+2025-05-21 14:46:44 - INFO - [train.py:317] - Paralelización configurada para usar -1 jobs (CPUs). (-1 = todos)
+2025-05-21 14:46:44 - WARNING - [train.py:325] - SMOTE está activado (use_smote = True). Parámetros de balanceo del modelo (class_weight/scale_pos_weight) serán ignorados o deben ser None/1.0.
+2025-05-21 14:46:44 - INFO - [train.py:327] - RandomizedSearchCV está HABILITADO con n_iter=20.
+2025-05-21 14:46:44 - INFO - [train.py:329] - Early Stopping está configurado con 10 rondas (aplicable a XGB/LGBM).
+2025-05-21 14:46:44 - INFO - [train.py:342] - Configuración final combinada para 'xgb': {'model_type': 'xgb', 'random_state': 42, 'cv_folds': 3, 'n_jobs': -1, 'use_smote': True, 'use_gridsearch': False, 'use_randomsearch': True, 'n_iter': 20, 'classification_threshold': 0.5, 'target_col': 'label', 'n_estimators': 150, 'learning_rate': 0.1, 'max_depth': 6, 'subsample': 0.8, 'colsample_bytree': 0.8, 'gamma': 0.1, 'scale_pos_weight': 1.0, 'eval_metric': 'auc', 'tree_method': 'hist', 'param_dist': {'n_estimators': <scipy.stats._distn_infrastructure.rv_discrete_frozen object at 0x7c6323b4dee0>, 'learning_rate': <scipy.stats._distn_infrastructure.rv_continuous_frozen object at 0x7c6323b4e210>, 'max_depth': <scipy.stats._distn_infrastructure.rv_discrete_frozen object at 0x7c6323b4e270>, 'subsample': <scipy.stats._distn_infrastructure.rv_continuous_frozen object at 0x7c6323b4e600>, 'colsample_bytree': <scipy.stats._distn_infrastructure.rv_continuous_frozen object at 0x7c6323b4e750>, 'gamma': <scipy.stats._distn_infrastructure.rv_continuous_frozen object at 0x7c6323b4e840>, 'scale_pos_weight': [1.0], 'tree_method': ['hist', 'auto']}, 'csv_path': '/home/evelym/Lab/VelyFirewall/data/sip_dataset.csv', 'imsi_column_name': 'c_imsi', 'timestamp_column_name': 'c_timestamp', 'required_columns': 'c_imsi, c_timestamp, label', 'imsi_length': 15, 'timestamp_format': None, 'remove_invalid_rows': True, 'remove_duplicates': True, 'duplicate_subset_columns': None, 'experiment_name': 'FraudDetection_{model_type}_Optimized_v5.7_SMOTE_CPU', 'register_models': True, 'thresholds_to_test': [0.3, 0.4, 0.5, 0.6], 'early_stopping_rounds': 10, 'smote_sampling_strategy': 'auto'}
+2025-05-21 14:46:44 - INFO - [train.py:1219] - Nombre del experimento MLflow: FraudDetection_XGB_Optimized_v5.7_SMOTE_CPU
+2025-05-21 14:46:44 - INFO - [train.py:1227] - Experimento 'FraudDetection_XGB_Optimized_v5.7_SMOTE_CPU' ya existe (ID: 233039994163730173).
+2025-05-21 14:46:44 - INFO - [train.py:1229] - Experimento MLflow activo: 'FraudDetection_XGB_Optimized_v5.7_SMOTE_CPU'
+2025-05-21 14:46:44 - INFO - [train.py:371] - Separador detectado para CSV: ','
+2025-05-21 14:46:44 - INFO - [train.py:380] - Datos cargados desde sip_dataset.csv: shape=(1000, 12), memoria=0.58 MB
+2025-05-21 14:46:44 - INFO - [train.py:1238] - Carga de datos completada en 0.03 seg.
+2025-05-21 14:46:44 - INFO - [train.py:398] - Preprocesando DataFrame...
+2025-05-21 14:46:44 - CRITICAL - [train.py:410] - No se encontraron columnas 'f_*' para usar como features.
+2025-05-21 14:46:44 - INFO - [train.py:1244] - Preprocesamiento completado en 0.00 seg.
+2025-05-21 14:46:44 - CRITICAL - [train.py:1247] - Fallo en preprocesamiento. Abortando.
+2025-05-21 14:49:53 - INFO - [train.py:1195] - === Inicio del script de entrenamiento (5.8.9 - Corregido NameError en preprocess) ===
+2025-05-21 14:49:53 - INFO - [train.py:1207] - MLflow tracking URI establecida en: file:///home/evelym/Lab/VelyFirewall/scripts/mlruns
+2025-05-21 14:49:53 - INFO - [train.py:237] - Parámetros comunes cargados: {'random_state': 42, 'cv_folds': 3, 'n_jobs': -1, 'use_smote': True, 'use_gridsearch': False, 'use_randomsearch': True, 'n_iter': 20, 'classification_threshold': 0.5, 'target_col': 'label'}
+2025-05-21 14:49:53 - INFO - [train.py:244] - Parámetros específicos para 'xgb' cargados: {'n_estimators': 150, 'learning_rate': 0.1, 'max_depth': 6, 'subsample': 0.8, 'colsample_bytree': 0.8, 'gamma': 0.1, 'scale_pos_weight': 1.0, 'eval_metric': 'auc', 'tree_method': 'hist'}
+2025-05-21 14:49:53 - INFO - [train.py:253] - Distribuciones de parámetros para RandomizedSearch ('xgb') cargadas: {'n_estimators': <scipy.stats._distn_infrastructure.rv_discrete_frozen object at 0x777c89c76120>, 'learning_rate': <scipy.stats._distn_infrastructure.rv_continuous_frozen object at 0x777c89c76480>, 'max_depth': <scipy.stats._distn_infrastructure.rv_discrete_frozen object at 0x777c89c763c0>, 'subsample': <scipy.stats._distn_infrastructure.rv_continuous_frozen object at 0x777c89c76840>, 'colsample_bytree': <scipy.stats._distn_infrastructure.rv_continuous_frozen object at 0x777c89c76990>, 'gamma': <scipy.stats._distn_infrastructure.rv_continuous_frozen object at 0x777c89c76a80>, 'scale_pos_weight': [1.0], 'tree_method': ['hist', 'auto']}
+2025-05-21 14:49:53 - INFO - [train.py:314] - Entrenamiento de XGB configurado para usar CPU.
+2025-05-21 14:49:53 - INFO - [train.py:317] - Paralelización configurada para usar -1 jobs (CPUs). (-1 = todos)
+2025-05-21 14:49:53 - WARNING - [train.py:325] - SMOTE está activado (use_smote = True). Parámetros de balanceo del modelo (class_weight/scale_pos_weight) serán ignorados o deben ser None/1.0.
+2025-05-21 14:49:53 - INFO - [train.py:327] - RandomizedSearchCV está HABILITADO con n_iter=20.
+2025-05-21 14:49:53 - INFO - [train.py:329] - Early Stopping está configurado con 10 rondas (aplicable a XGB/LGBM).
+2025-05-21 14:49:53 - INFO - [train.py:342] - Configuración final combinada para 'xgb': {'model_type': 'xgb', 'random_state': 42, 'cv_folds': 3, 'n_jobs': -1, 'use_smote': True, 'use_gridsearch': False, 'use_randomsearch': True, 'n_iter': 20, 'classification_threshold': 0.5, 'target_col': 'label', 'n_estimators': 150, 'learning_rate': 0.1, 'max_depth': 6, 'subsample': 0.8, 'colsample_bytree': 0.8, 'gamma': 0.1, 'scale_pos_weight': 1.0, 'eval_metric': 'auc', 'tree_method': 'hist', 'param_dist': {'n_estimators': <scipy.stats._distn_infrastructure.rv_discrete_frozen object at 0x777c89c76120>, 'learning_rate': <scipy.stats._distn_infrastructure.rv_continuous_frozen object at 0x777c89c76480>, 'max_depth': <scipy.stats._distn_infrastructure.rv_discrete_frozen object at 0x777c89c763c0>, 'subsample': <scipy.stats._distn_infrastructure.rv_continuous_frozen object at 0x777c89c76840>, 'colsample_bytree': <scipy.stats._distn_infrastructure.rv_continuous_frozen object at 0x777c89c76990>, 'gamma': <scipy.stats._distn_infrastructure.rv_continuous_frozen object at 0x777c89c76a80>, 'scale_pos_weight': [1.0], 'tree_method': ['hist', 'auto']}, 'csv_path': '/home/evelym/Lab/VelyFirewall/scripts/output/combined_valid_data.csv', 'imsi_column_name': 'c_imsi', 'timestamp_column_name': 'c_timestamp', 'required_columns': 'c_imsi, c_timestamp, label', 'imsi_length': 15, 'timestamp_format': None, 'remove_invalid_rows': True, 'remove_duplicates': True, 'duplicate_subset_columns': None, 'experiment_name': 'FraudDetection_{model_type}_Optimized_v5.7_SMOTE_CPU', 'register_models': True, 'thresholds_to_test': [0.3, 0.4, 0.5, 0.6], 'early_stopping_rounds': 10, 'smote_sampling_strategy': 'auto'}
+2025-05-21 14:49:53 - INFO - [train.py:1219] - Nombre del experimento MLflow: FraudDetection_XGB_Optimized_v5.7_SMOTE_CPU
+2025-05-21 14:49:53 - INFO - [train.py:1227] - Experimento 'FraudDetection_XGB_Optimized_v5.7_SMOTE_CPU' ya existe (ID: 233039994163730173).
+2025-05-21 14:49:53 - INFO - [train.py:1229] - Experimento MLflow activo: 'FraudDetection_XGB_Optimized_v5.7_SMOTE_CPU'
+2025-05-21 14:49:53 - INFO - [train.py:371] - Separador detectado para CSV: ','
+2025-05-21 14:49:53 - INFO - [train.py:380] - Datos cargados desde combined_valid_data.csv: shape=(908, 12), memoria=0.52 MB
+2025-05-21 14:49:53 - INFO - [train.py:1238] - Carga de datos completada en 0.02 seg.
+2025-05-21 14:49:53 - INFO - [train.py:398] - Preprocesando DataFrame...
+2025-05-21 14:49:53 - CRITICAL - [train.py:410] - No se encontraron columnas 'f_*' para usar como features.
+2025-05-21 14:49:53 - INFO - [train.py:1244] - Preprocesamiento completado en 0.00 seg.
+2025-05-21 14:49:53 - CRITICAL - [train.py:1247] - Fallo en preprocesamiento. Abortando.
+2025-05-21 15:12:32 - INFO - [train.py:1195] - === Inicio del script de entrenamiento (5.8.9 - Corregido NameError en preprocess) ===
+2025-05-21 15:12:32 - INFO - [train.py:1207] - MLflow tracking URI establecida en: file:///home/evelym/Lab/VelyFirewall/scripts/mlruns
+2025-05-21 15:12:32 - INFO - [train.py:237] - Parámetros comunes cargados: {'random_state': 42, 'cv_folds': 3, 'n_jobs': -1, 'use_smote': True, 'use_gridsearch': False, 'use_randomsearch': True, 'n_iter': 20, 'classification_threshold': 0.5, 'target_col': 'label'}
+2025-05-21 15:12:32 - INFO - [train.py:244] - Parámetros específicos para 'xgb' cargados: {'n_estimators': 150, 'learning_rate': 0.1, 'max_depth': 6, 'subsample': 0.8, 'colsample_bytree': 0.8, 'gamma': 0.1, 'scale_pos_weight': 1.0, 'eval_metric': 'auc', 'tree_method': 'hist'}
+2025-05-21 15:12:32 - INFO - [train.py:253] - Distribuciones de parámetros para RandomizedSearch ('xgb') cargadas: {'n_estimators': <scipy.stats._distn_infrastructure.rv_discrete_frozen object at 0x7f3a8cf7a150>, 'learning_rate': <scipy.stats._distn_infrastructure.rv_continuous_frozen object at 0x7f3a8cf7a5d0>, 'max_depth': <scipy.stats._distn_infrastructure.rv_discrete_frozen object at 0x7f3a8cf7a6c0>, 'subsample': <scipy.stats._distn_infrastructure.rv_continuous_frozen object at 0x7f3a8cf7a9c0>, 'colsample_bytree': <scipy.stats._distn_infrastructure.rv_continuous_frozen object at 0x7f3a8cf7ab10>, 'gamma': <scipy.stats._distn_infrastructure.rv_continuous_frozen object at 0x7f3a8cf7ac00>, 'scale_pos_weight': [1.0], 'tree_method': ['hist', 'auto']}
+2025-05-21 15:12:32 - INFO - [train.py:314] - Entrenamiento de XGB configurado para usar CPU.
+2025-05-21 15:12:32 - INFO - [train.py:317] - Paralelización configurada para usar -1 jobs (CPUs). (-1 = todos)
+2025-05-21 15:12:32 - WARNING - [train.py:325] - SMOTE está activado (use_smote = True). Parámetros de balanceo del modelo (class_weight/scale_pos_weight) serán ignorados o deben ser None/1.0.
+2025-05-21 15:12:32 - INFO - [train.py:327] - RandomizedSearchCV está HABILITADO con n_iter=20.
+2025-05-21 15:12:32 - INFO - [train.py:329] - Early Stopping está configurado con 10 rondas (aplicable a XGB/LGBM).
+2025-05-21 15:12:32 - INFO - [train.py:342] - Configuración final combinada para 'xgb': {'model_type': 'xgb', 'random_state': 42, 'cv_folds': 3, 'n_jobs': -1, 'use_smote': True, 'use_gridsearch': False, 'use_randomsearch': True, 'n_iter': 20, 'classification_threshold': 0.5, 'target_col': 'label', 'n_estimators': 150, 'learning_rate': 0.1, 'max_depth': 6, 'subsample': 0.8, 'colsample_bytree': 0.8, 'gamma': 0.1, 'scale_pos_weight': 1.0, 'eval_metric': 'auc', 'tree_method': 'hist', 'param_dist': {'n_estimators': <scipy.stats._distn_infrastructure.rv_discrete_frozen object at 0x7f3a8cf7a150>, 'learning_rate': <scipy.stats._distn_infrastructure.rv_continuous_frozen object at 0x7f3a8cf7a5d0>, 'max_depth': <scipy.stats._distn_infrastructure.rv_discrete_frozen object at 0x7f3a8cf7a6c0>, 'subsample': <scipy.stats._distn_infrastructure.rv_continuous_frozen object at 0x7f3a8cf7a9c0>, 'colsample_bytree': <scipy.stats._distn_infrastructure.rv_continuous_frozen object at 0x7f3a8cf7ab10>, 'gamma': <scipy.stats._distn_infrastructure.rv_continuous_frozen object at 0x7f3a8cf7ac00>, 'scale_pos_weight': [1.0], 'tree_method': ['hist', 'auto']}, 'csv_path': '/home/evelym/Lab/VelyFirewall/scripts/output/combined_valid_data.csv', 'imsi_column_name': 'c_imsi', 'timestamp_column_name': 'c_timestamp', 'required_columns': 'c_imsi, c_timestamp, label', 'imsi_length': 15, 'timestamp_format': None, 'remove_invalid_rows': True, 'remove_duplicates': True, 'duplicate_subset_columns': None, 'experiment_name': 'FraudDetection_{model_type}_Optimized_v5.7_SMOTE_CPU', 'register_models': True, 'thresholds_to_test': [0.3, 0.4, 0.5, 0.6], 'early_stopping_rounds': 10, 'smote_sampling_strategy': 'auto'}
+2025-05-21 15:12:32 - INFO - [train.py:1219] - Nombre del experimento MLflow: FraudDetection_XGB_Optimized_v5.7_SMOTE_CPU
+2025-05-21 15:12:32 - INFO - [train.py:1227] - Experimento 'FraudDetection_XGB_Optimized_v5.7_SMOTE_CPU' ya existe (ID: 233039994163730173).
+2025-05-21 15:12:32 - INFO - [train.py:1229] - Experimento MLflow activo: 'FraudDetection_XGB_Optimized_v5.7_SMOTE_CPU'
+2025-05-21 15:12:32 - INFO - [train.py:371] - Separador detectado para CSV: ','
+2025-05-21 15:12:32 - INFO - [train.py:380] - Datos cargados desde combined_valid_data.csv: shape=(908, 12), memoria=0.52 MB
+2025-05-21 15:12:32 - INFO - [train.py:1238] - Carga de datos completada en 0.02 seg.
+2025-05-21 15:12:32 - INFO - [train.py:398] - Preprocesando DataFrame...
+2025-05-21 15:12:32 - CRITICAL - [train.py:410] - No se encontraron columnas 'f_*' para usar como features.
+2025-05-21 15:12:32 - INFO - [train.py:1244] - Preprocesamiento completado en 0.00 seg.
+2025-05-21 15:12:32 - CRITICAL - [train.py:1247] - Fallo en preprocesamiento. Abortando.
+2025-05-21 15:18:37 - INFO - [train.py:1195] - === Inicio del script de entrenamiento (5.8.9 - Corregido NameError en preprocess) ===
+2025-05-21 15:18:37 - INFO - [train.py:1207] - MLflow tracking URI establecida en: file:///home/evelym/Lab/VelyFirewall/scripts/mlruns
+2025-05-21 15:18:37 - INFO - [train.py:237] - Parámetros comunes cargados: {'random_state': 42, 'cv_folds': 3, 'n_jobs': -1, 'use_smote': True, 'use_gridsearch': False, 'use_randomsearch': True, 'n_iter': 20, 'classification_threshold': 0.5, 'target_col': 'label'}
+2025-05-21 15:18:37 - INFO - [train.py:244] - Parámetros específicos para 'xgb' cargados: {'n_estimators': 150, 'learning_rate': 0.1, 'max_depth': 6, 'subsample': 0.8, 'colsample_bytree': 0.8, 'gamma': 0.1, 'scale_pos_weight': 1.0, 'eval_metric': 'auc', 'tree_method': 'hist'}
+2025-05-21 15:18:37 - INFO - [train.py:253] - Distribuciones de parámetros para RandomizedSearch ('xgb') cargadas: {'n_estimators': <scipy.stats._distn_infrastructure.rv_discrete_frozen object at 0x75560fd52000>, 'learning_rate': <scipy.stats._distn_infrastructure.rv_continuous_frozen object at 0x75560fd52330>, 'max_depth': <scipy.stats._distn_infrastructure.rv_discrete_frozen object at 0x75560fd523c0>, 'subsample': <scipy.stats._distn_infrastructure.rv_continuous_frozen object at 0x75560fd526c0>, 'colsample_bytree': <scipy.stats._distn_infrastructure.rv_continuous_frozen object at 0x75560fd52810>, 'gamma': <scipy.stats._distn_infrastructure.rv_continuous_frozen object at 0x75560fd52900>, 'scale_pos_weight': [1.0], 'tree_method': ['hist', 'auto']}
+2025-05-21 15:18:37 - INFO - [train.py:314] - Entrenamiento de XGB configurado para usar CPU.
+2025-05-21 15:18:37 - INFO - [train.py:317] - Paralelización configurada para usar -1 jobs (CPUs). (-1 = todos)
+2025-05-21 15:18:37 - WARNING - [train.py:325] - SMOTE está activado (use_smote = True). Parámetros de balanceo del modelo (class_weight/scale_pos_weight) serán ignorados o deben ser None/1.0.
+2025-05-21 15:18:37 - INFO - [train.py:327] - RandomizedSearchCV está HABILITADO con n_iter=20.
+2025-05-21 15:18:37 - INFO - [train.py:329] - Early Stopping está configurado con 10 rondas (aplicable a XGB/LGBM).
+2025-05-21 15:18:37 - INFO - [train.py:342] - Configuración final combinada para 'xgb': {'model_type': 'xgb', 'random_state': 42, 'cv_folds': 3, 'n_jobs': -1, 'use_smote': True, 'use_gridsearch': False, 'use_randomsearch': True, 'n_iter': 20, 'classification_threshold': 0.5, 'target_col': 'label', 'n_estimators': 150, 'learning_rate': 0.1, 'max_depth': 6, 'subsample': 0.8, 'colsample_bytree': 0.8, 'gamma': 0.1, 'scale_pos_weight': 1.0, 'eval_metric': 'auc', 'tree_method': 'hist', 'param_dist': {'n_estimators': <scipy.stats._distn_infrastructure.rv_discrete_frozen object at 0x75560fd52000>, 'learning_rate': <scipy.stats._distn_infrastructure.rv_continuous_frozen object at 0x75560fd52330>, 'max_depth': <scipy.stats._distn_infrastructure.rv_discrete_frozen object at 0x75560fd523c0>, 'subsample': <scipy.stats._distn_infrastructure.rv_continuous_frozen object at 0x75560fd526c0>, 'colsample_bytree': <scipy.stats._distn_infrastructure.rv_continuous_frozen object at 0x75560fd52810>, 'gamma': <scipy.stats._distn_infrastructure.rv_continuous_frozen object at 0x75560fd52900>, 'scale_pos_weight': [1.0], 'tree_method': ['hist', 'auto']}, 'csv_path': '/home/evelym/Lab/VelyFirewall/data/sip_dataset.csv', 'imsi_column_name': 'c_imsi', 'timestamp_column_name': 'c_timestamp', 'required_columns': 'c_imsi, c_timestamp, label', 'imsi_length': 15, 'timestamp_format': None, 'remove_invalid_rows': True, 'remove_duplicates': True, 'duplicate_subset_columns': None, 'experiment_name': 'FraudDetection_{model_type}_Optimized_v5.7_SMOTE_CPU', 'register_models': True, 'thresholds_to_test': [0.3, 0.4, 0.5, 0.6], 'early_stopping_rounds': 10, 'smote_sampling_strategy': 'auto'}
+2025-05-21 15:18:37 - INFO - [train.py:1219] - Nombre del experimento MLflow: FraudDetection_XGB_Optimized_v5.7_SMOTE_CPU
+2025-05-21 15:18:37 - INFO - [train.py:1227] - Experimento 'FraudDetection_XGB_Optimized_v5.7_SMOTE_CPU' ya existe (ID: 233039994163730173).
+2025-05-21 15:18:37 - INFO - [train.py:1229] - Experimento MLflow activo: 'FraudDetection_XGB_Optimized_v5.7_SMOTE_CPU'
+2025-05-21 15:18:37 - INFO - [train.py:371] - Separador detectado para CSV: ','
+2025-05-21 15:18:37 - INFO - [train.py:380] - Datos cargados desde sip_dataset.csv: shape=(1000, 12), memoria=0.58 MB
+2025-05-21 15:18:37 - INFO - [train.py:1238] - Carga de datos completada en 0.01 seg.
+2025-05-21 15:18:37 - INFO - [train.py:398] - Preprocesando DataFrame...
+2025-05-21 15:18:37 - CRITICAL - [train.py:410] - No se encontraron columnas 'f_*' para usar como features.
+2025-05-21 15:18:37 - INFO - [train.py:1244] - Preprocesamiento completado en 0.00 seg.
+2025-05-21 15:18:37 - CRITICAL - [train.py:1247] - Fallo en preprocesamiento. Abortando.
+2025-05-21 15:38:53 - INFO - [train.py:237] - Parámetros comunes cargados: {'random_state': 42, 'cv_folds': 3, 'n_jobs': -1, 'use_smote': True, 'use_gridsearch': False, 'use_randomsearch': True, 'n_iter': 20, 'classification_threshold': 0.5, 'target_col': 'label'}
+2025-05-21 15:38:53 - INFO - [train.py:244] - Parámetros específicos para 'xgb' cargados: {'n_estimators': 150, 'learning_rate': 0.1, 'max_depth': 6, 'subsample': 0.8, 'colsample_bytree': 0.8, 'gamma': 0.1, 'scale_pos_weight': 1.0, 'eval_metric': 'auc', 'tree_method': 'hist'}
+2025-05-21 15:38:53 - INFO - [train.py:253] - Distribuciones de parámetros para RandomizedSearch ('xgb') cargadas: {'n_estimators': <scipy.stats._distn_infrastructure.rv_discrete_frozen object at 0x7dd896c1d6d0>, 'learning_rate': <scipy.stats._distn_infrastructure.rv_continuous_frozen object at 0x7dd896c1d8e0>, 'max_depth': <scipy.stats._distn_infrastructure.rv_discrete_frozen object at 0x7dd896c1d9a0>, 'subsample': <scipy.stats._distn_infrastructure.rv_continuous_frozen object at 0x7dd896c1dca0>, 'colsample_bytree': <scipy.stats._distn_infrastructure.rv_continuous_frozen object at 0x7dd896c1ddf0>, 'gamma': <scipy.stats._distn_infrastructure.rv_continuous_frozen object at 0x7dd896c1dee0>, 'scale_pos_weight': [1.0], 'tree_method': ['hist', 'auto']}
+2025-05-21 15:38:53 - INFO - [train.py:314] - Entrenamiento de XGB configurado para usar CPU.
+2025-05-21 15:38:53 - INFO - [train.py:317] - Paralelización configurada para usar -1 jobs (CPUs). (-1 = todos)
+2025-05-21 15:38:53 - WARNING - [train.py:325] - SMOTE está activado (use_smote = True). Parámetros de balanceo del modelo (class_weight/scale_pos_weight) serán ignorados o deben ser None/1.0.
+2025-05-21 15:38:53 - INFO - [train.py:327] - RandomizedSearchCV está HABILITADO con n_iter=20.
+2025-05-21 15:38:53 - INFO - [train.py:329] - Early Stopping está configurado con 10 rondas (aplicable a XGB/LGBM).
+2025-05-21 15:38:53 - INFO - [train.py:342] - Configuración final combinada para 'xgb': {'model_type': 'xgb', 'random_state': 42, 'cv_folds': 3, 'n_jobs': -1, 'use_smote': True, 'use_gridsearch': False, 'use_randomsearch': True, 'n_iter': 20, 'classification_threshold': 0.5, 'target_col': 'label', 'n_estimators': 150, 'learning_rate': 0.1, 'max_depth': 6, 'subsample': 0.8, 'colsample_bytree': 0.8, 'gamma': 0.1, 'scale_pos_weight': 1.0, 'eval_metric': 'auc', 'tree_method': 'hist', 'param_dist': {'n_estimators': <scipy.stats._distn_infrastructure.rv_discrete_frozen object at 0x7dd896c1d6d0>, 'learning_rate': <scipy.stats._distn_infrastructure.rv_continuous_frozen object at 0x7dd896c1d8e0>, 'max_depth': <scipy.stats._distn_infrastructure.rv_discrete_frozen object at 0x7dd896c1d9a0>, 'subsample': <scipy.stats._distn_infrastructure.rv_continuous_frozen object at 0x7dd896c1dca0>, 'colsample_bytree': <scipy.stats._distn_infrastructure.rv_continuous_frozen object at 0x7dd896c1ddf0>, 'gamma': <scipy.stats._distn_infrastructure.rv_continuous_frozen object at 0x7dd896c1dee0>, 'scale_pos_weight': [1.0], 'tree_method': ['hist', 'auto']}, 'csv_path': '/home/evelym/Lab/VelyFirewall/data/sip_dataset.csv', 'imsi_column_name': 'c_imsi', 'timestamp_column_name': 'c_timestamp', 'required_columns': 'c_imsi, c_timestamp, label', 'imsi_length': 15, 'timestamp_format': None, 'remove_invalid_rows': True, 'remove_duplicates': True, 'duplicate_subset_columns': None, 'experiment_name': 'FraudDetection_{model_type}_Optimized_v5.7_SMOTE_CPU', 'register_models': True, 'thresholds_to_test': [0.3, 0.4, 0.5, 0.6], 'early_stopping_rounds': 10, 'smote_sampling_strategy': 'auto'}
+2025-05-21 15:38:53 - ERROR - [train.py:357] - Archivo CSV no encontrado en: /home/evelym/Lab/VelyFirewall/scripts/sip_dataset.csv

@@ -1,0 +1,72 @@
+artifact_path: model
+flavors:
+  python_function:
+    env:
+      conda: conda.yaml
+      virtualenv: python_env.yaml
+    loader_module: mlflow.sklearn
+    model_path: model.pkl
+    predict_fn: predict
+    python_version: 3.12.3
+  sklearn:
+    code: null
+    pickled_model: model.pkl
+    serialization_format: cloudpickle
+    sklearn_version: 1.6.1
+is_signature_from_type_hint: false
+mlflow_version: 2.22.0
+model_size_bytes: 247603
+model_uuid: 67b6faefc0e14c00aa701731e7f6e1fa
+prompts: null
+run_id: 7ef258d0e7dd4ef68d08688c4a903728
+saved_input_example_info:
+  artifact_path: input_example.json
+  serving_input_path: serving_input_example.json
+  type: json_object
+signature:
+  inputs: '[{"type": "double", "name": "f_c_ossn_others", "required": true}, {"type":
+    "double", "name": "f_same_cggt_is_gmlc_oc", "required": true}, {"type": "double",
+    "name": "f_same_cggt_is_gmlc_ossn", "required": true}, {"type": "double", "name":
+    "f_same_cggt_is_hlr_oc", "required": true}, {"type": "double", "name": "f_same_cggt_is_hlr_ossn",
+    "required": true}, {"type": "long", "name": "f_count_ok_cl_between2lu", "required":
+    true}, {"type": "long", "name": "f_count_ok_psi_between2lu", "required": true},
+    {"type": "double", "name": "f_velocity_greater_than_1000", "required": true},
+    {"type": "long", "name": "f_count_unloop_country_last_x_hours_ul", "required":
+    true}, {"type": "long", "name": "f_count_gap_ok_sai_and_all_lu", "required": true},
+    {"type": "long", "name": "f_count_ok_dsd_between2lu", "required": true}, {"type":
+    "long", "name": "f_count_ok_fwsm_mo_between2lu", "required": true}, {"type": "long",
+    "name": "f_count_ok_fwsm_mt_between2lu", "required": true}, {"type": "long", "name":
+    "f_count_ok_fwsm_report_between2lu", "required": true}, {"type": "long", "name":
+    "f_count_ok_fwsm_submit_between2lu", "required": true}, {"type": "long", "name":
+    "f_count_ok_isd_between2lu", "required": true}, {"type": "long", "name": "f_count_ok_prn_between2lu",
+    "required": true}, {"type": "long", "name": "f_count_ok_purge_ms_between2lu",
+    "required": true}, {"type": "long", "name": "f_count_ok_sai_between2lu", "required":
+    true}, {"type": "long", "name": "f_count_ok_si_between2lu", "required": true},
+    {"type": "long", "name": "f_count_ok_sri_between2lu", "required": true}, {"type":
+    "long", "name": "f_count_ok_srism_between2lu", "required": true}, {"type": "long",
+    "name": "f_count_ok_ul_between2lu", "required": true}, {"type": "long", "name":
+    "f_count_ok_ulgprs_between2lu", "required": true}, {"type": "long", "name": "f_count_ok_ussd_between2lu",
+    "required": true}, {"type": "double", "name": "f_frequent_ok_cl_between2lu", "required":
+    true}, {"type": "double", "name": "f_frequent_ok_psi_between2lu", "required":
+    true}, {"type": "double", "name": "f_frequent_ok_dsd_between2lu", "required":
+    true}, {"type": "double", "name": "f_frequent_ok_fwsm_mo_between2lu", "required":
+    true}, {"type": "double", "name": "f_frequent_ok_fwsm_mt_between2lu", "required":
+    true}, {"type": "double", "name": "f_frequent_ok_fwsm_report_between2lu", "required":
+    true}, {"type": "double", "name": "f_frequent_ok_fwsm_submit_between2lu", "required":
+    true}, {"type": "double", "name": "f_frequent_ok_isd_between2lu", "required":
+    true}, {"type": "double", "name": "f_frequent_ok_prn_between2lu", "required":
+    true}, {"type": "double", "name": "f_frequent_ok_purge_ms_between2lu", "required":
+    true}, {"type": "double", "name": "f_frequent_ok_sai_between2lu", "required":
+    true}, {"type": "double", "name": "f_frequent_ok_si_between2lu", "required": true},
+    {"type": "double", "name": "f_frequent_ok_sri_between2lu", "required": true},
+    {"type": "double", "name": "f_frequent_ok_srism_between2lu", "required": true},
+    {"type": "double", "name": "f_frequent_ok_ul_between2lu", "required": true}, {"type":
+    "double", "name": "f_frequent_ok_ulgprs_between2lu", "required": true}, {"type":
+    "double", "name": "f_frequent_ok_ussd_between2lu", "required": true}, {"type":
+    "double", "name": "f_ratio_cl_psi", "required": true}, {"type": "double", "name":
+    "f_high_activity_5min", "required": true}, {"type": "double", "name": "f_one_cggt_multi_cdgt_psi",
+    "required": true}]'
+  outputs: '[{"type": "tensor", "tensor-spec": {"dtype": "int64", "shape": [-1]}}]'
+  params: null
+type_hint_from_example: false
+utc_time_created: '2025-05-19 19:57:47.065240'

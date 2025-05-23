@@ -1,0 +1,1 @@
+{'n_estimators': 'rv_discrete_frozen', 'learning_rate': 'rv_continuous_frozen', 'max_depth': 'rv_discrete_frozen', 'subsample': 'rv_continuous_frozen', 'colsample_bytree': 'rv_continuous_frozen', 'gamma': 'rv_continuous_frozen', 'scale_pos_weight': 'list', 'tree_method': 'list'}

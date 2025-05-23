@@ -1,0 +1,14 @@
+aliases: []
+creation_timestamp: 1747684673414
+current_stage: None
+description: null
+last_updated_timestamp: 1747684673414
+name: FraudDetection_XGB_Optimized_v5.7_SMOTE_CPU
+run_id: 7ef258d0e7dd4ef68d08688c4a903728
+run_link: null
+source: file:///home/evelym/Lab/VelyFirewall/scripts/mlruns/233039994163730173/7ef258d0e7dd4ef68d08688c4a903728/artifacts/model
+status: READY
+status_message: null
+storage_location: file:///home/evelym/Lab/VelyFirewall/scripts/mlruns/233039994163730173/7ef258d0e7dd4ef68d08688c4a903728/artifacts/model
+user_id: null
+version: 1

@@ -1,0 +1,15 @@
+artifact_uri: file:///home/evelym/Lab/VelyFirewall/scripts/mlruns/226989231919815073/11a7efcca3924b92bfeac18819210366/artifacts
+end_time: 1747683203003
+entry_point_name: ''
+experiment_id: '226989231919815073'
+lifecycle_stage: active
+run_id: 11a7efcca3924b92bfeac18819210366
+run_name: XGB_Run_20250519_153318
+run_uuid: 11a7efcca3924b92bfeac18819210366
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1747683198545
+status: 3
+tags: []
+user_id: root

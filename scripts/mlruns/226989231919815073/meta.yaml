@@ -1,0 +1,6 @@
+artifact_location: file:///home/evelym/Lab/VelyFirewall/scripts/mlruns/226989231919815073
+creation_time: 1747682364422
+experiment_id: '226989231919815073'
+last_update_time: 1747682364422
+lifecycle_stage: active
+name: FraudDetection_XGB_Optimized_v5.7_SMOTE_GPU

@@ -1,11 +1,9 @@
 import json
 import csv
-import requests
 import os
 
 LOG_PATH = "logs/eve.json"
 CSV_PATH = "data/salida_sip.csv"
-API_BLOCK_URL = "http://localhost:5000/block"
 
 # Verifica que el archivo JSON exista
 if not os.path.exists(LOG_PATH):
@@ -35,14 +33,7 @@ with open(CSV_PATH, "w", newline="") as f_csv, open(LOG_PATH, "r") as f_json:
         if alert:
             label = 1
             alert_msg = alert.get("signature", "SIP Alert")
-            try:
-                response = requests.post(API_BLOCK_URL, json={"ip": src_ip})
-                if response.status_code == 200:
-                    print(f"[+] IP bloqueada: {src_ip}")
-                else:
-                    print(f"[!] Falló el bloqueo de {src_ip}: {response.status_code}")
-            except Exception as e:
-                print(f"[!] Error al contactar API: {e}")
+            print(f"[!] Tráfico anómalo detectado: {alert_msg} | IP: {src_ip}")
         else:
             label = 0
             alert_msg = ""
@@ -57,4 +48,3 @@ try:
     print(f"[✔] Contenido de {LOG_PATH} limpiado para próxima ejecución.")
 except Exception as e:
     print(f"[!] Error al limpiar {LOG_PATH}: {e}")
-

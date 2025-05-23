@@ -10,17 +10,21 @@ touch "$PROCESSED_LOG"
 echo "📡 Buscando archivos .csv en: $WATCH_DIR"
 echo "🧾 Enviando a Kafka – Topic: $TOPIC"
 
-# Buscar archivos .csv no enviados
 nuevos_csv=0
 for file in "$WATCH_DIR"/*.csv; do
     if [[ -f "$file" && ! $(grep -Fx "$file" "$PROCESSED_LOG") ]]; then
         echo "🚀 Enviando $file..."
-        cat "$file" | docker exec -i "$CONTAINER_NAME" /usr/bin/kafka-console-producer \
-            --broker-list localhost:9092 \
-            --topic "$TOPIC"
-        echo "$file" >> "$PROCESSED_LOG"
-        echo "✅ CSV enviado: $file"
-        nuevos_csv=$((nuevos_csv + 1))
+        # Enviar el CSV completo como un solo mensaje usando docker exec
+        docker exec -i "$CONTAINER_NAME" bash -c \
+            "cat < /dev/stdin | /usr/bin/kafka-console-producer --broker-list localhost:9092 --topic $TOPIC" < "$file"
+        
+        if [ $? -eq 0 ]; then
+            echo "$file" >> "$PROCESSED_LOG"
+            echo "✅ CSV enviado: $file"
+            nuevos_csv=$((nuevos_csv + 1))
+        else
+            echo "❌ Error al enviar $file"
+        fi
     fi
 done
 
@@ -31,4 +35,3 @@ else
 fi
 
 echo "🛑 Proceso finalizado."
-

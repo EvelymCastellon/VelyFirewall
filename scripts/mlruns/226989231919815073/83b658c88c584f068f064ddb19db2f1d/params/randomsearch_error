@@ -1,0 +1,12 @@
+[15:41:40] /workspace/src/tree/updater_gpu_hist.cu:847: Check failed: ctx_->Ordinal() >= 0 (-1 vs. 0) : Must have at least one device
+Stack trace:
+  [bt] (0) /home/evelym/Lab/scapy-env/lib/python3.12/site-packages/xgboost/lib/libxgboost.so(+0x2a6ebc) [0x73ec982a6ebc]
+  [bt] (1) /home/evelym/Lab/scapy-env/lib/python3.12/site-packages/xgboost/lib/libxgboost.so(+0xfd7bf4) [0x73ec98fd7bf4]
+  [bt] (2) /home/evelym/Lab/scapy-env/lib/python3.12/site-packages/xgboost/lib/libxgboost.so(+0xfdf946) [0x73ec98fdf946]
+  [bt] (3) /home/evelym/Lab/scapy-env/lib/python3.12/site-packages/xgboost/lib/libxgboost.so(+0x63b5e2) [0x73ec9863b5e2]
+  [bt] (4) /home/evelym/Lab/scapy-env/lib/python3.12/site-packages/xgboost/lib/libxgboost.so(+0x63ca3d) [0x73ec9863ca3d]
+  [bt] (5) /home/evelym/Lab/scapy-env/lib/python3.12/site-packages/xgboost/lib/libxgboost.so(+0x68d36e) [0x73ec9868d36e]
+  [bt] (6) /home/evelym/Lab/scapy-env/lib/python3.12/site-packages/xgboost/lib/libxgboost.so(XGBoosterUpdateOneIter+0x77) [0x73ec981b6f97]
+  [bt] (7) /lib/x86_64-linux-gnu/libffi.so.8(+0x7b16) [0x73ecc9e20b16]
+  [bt] (8) /lib/x86_64-linux-gnu/libffi.so.8(+0x43ef) [0x73ecc9e1d3ef]
+

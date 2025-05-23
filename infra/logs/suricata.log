@@ -1026,3 +1026,1189 @@
 [96 - Suricata-Main] 2025-05-08 20:03:34 Notice: suricata: Signal Received.  Stopping engine.
 [96 - Suricata-Main] 2025-05-08 20:03:35 Info: suricata: time elapsed 10.916s
 [96 - Suricata-Main] 2025-05-08 20:03:36 Notice: device: eno2: packets: 207, drops: 0 (0.00%), invalid chksum: 0
+[1 - Suricata-Main] 2025-05-20 15:30:09 Notice: suricata: This is Suricata version 7.0.10 RELEASE running in SYSTEM mode
+[1 - Suricata-Main] 2025-05-20 15:30:09 Info: cpu: CPUs/cores online: 32
+[1 - Suricata-Main] 2025-05-20 15:30:09 Info: suricata: Setting engine mode to IDS mode by default
+[1 - Suricata-Main] 2025-05-20 15:30:10 Info: suricata: No 'host-mode': suricata is in IDS mode, using default setting 'sniffer-only'
+[1 - Suricata-Main] 2025-05-20 15:30:10 Info: logopenfile: fast output device (regular) initialized: fast.log
+[1 - Suricata-Main] 2025-05-20 15:30:10 Info: logopenfile: eve-log output device (regular) initialized: eve.json
+[1 - Suricata-Main] 2025-05-20 15:30:10 Warning: counters: stats are enabled but no loggers are active
+[1 - Suricata-Main] 2025-05-20 15:30:10 Info: detect: 1 rule files processed. 4 rules successfully loaded, 0 rules failed, 0
+[1 - Suricata-Main] 2025-05-20 15:30:10 Info: threshold-config: Threshold config parsed: 0 rule(s) found
+[1 - Suricata-Main] 2025-05-20 15:30:10 Info: detect: 4 signatures processed. 0 are IP-only rules, 4 are inspecting packet payload, 0 inspect application layer, 0 are decoder event only
+[1 - Suricata-Main] 2025-05-20 15:30:10 Warning: af-packet: eno2: AF_PACKET tpacket-v3 is recommended for non-inline operation
+[1 - Suricata-Main] 2025-05-20 15:30:10 Info: runmodes: eno2: creating 32 threads
+[1 - Suricata-Main] 2025-05-20 15:30:11 Notice: threads: Threads created -> W: 32 FM: 1 FR: 1   Engine started.
+[1 - Suricata-Main] 2025-05-20 19:05:23 Notice: suricata: Signal Received.  Stopping engine.
+[1 - Suricata-Main] 2025-05-20 19:05:23 Info: suricata: time elapsed 12913.125s
+[1 - Suricata-Main] 2025-05-20 19:05:24 Notice: device: eno2: packets: 8891762, drops: 1024 (0.01%), invalid chksum: 0
+[1 - Suricata-Main] 2025-05-20 19:05:31 Notice: suricata: This is Suricata version 7.0.10 RELEASE running in SYSTEM mode
+[1 - Suricata-Main] 2025-05-20 19:05:31 Info: cpu: CPUs/cores online: 32
+[1 - Suricata-Main] 2025-05-20 19:05:31 Info: suricata: Setting engine mode to IDS mode by default
+[1 - Suricata-Main] 2025-05-20 19:05:31 Info: suricata: No 'host-mode': suricata is in IDS mode, using default setting 'sniffer-only'
+[1 - Suricata-Main] 2025-05-20 19:05:31 Info: logopenfile: fast output device (regular) initialized: fast.log
+[1 - Suricata-Main] 2025-05-20 19:05:31 Info: logopenfile: eve-log output device (regular) initialized: eve.json
+[1 - Suricata-Main] 2025-05-20 19:05:31 Warning: counters: stats are enabled but no loggers are active
+[1 - Suricata-Main] 2025-05-20 19:05:31 Info: detect: 1 rule files processed. 4 rules successfully loaded, 0 rules failed, 0
+[1 - Suricata-Main] 2025-05-20 19:05:31 Info: threshold-config: Threshold config parsed: 0 rule(s) found
+[1 - Suricata-Main] 2025-05-20 19:05:31 Info: detect: 4 signatures processed. 0 are IP-only rules, 4 are inspecting packet payload, 0 inspect application layer, 0 are decoder event only
+[1 - Suricata-Main] 2025-05-20 19:05:31 Warning: af-packet: eno2: AF_PACKET tpacket-v3 is recommended for non-inline operation
+[1 - Suricata-Main] 2025-05-20 19:05:31 Info: runmodes: eno2: creating 32 threads
+[1 - Suricata-Main] 2025-05-20 19:05:33 Notice: threads: Threads created -> W: 32 FM: 1 FR: 1   Engine started.
+[1 - Suricata-Main] 2025-05-20 19:15:34 Notice: suricata: Signal Received.  Stopping engine.
+[1 - Suricata-Main] 2025-05-20 19:15:35 Info: suricata: time elapsed 603.283s
+[1 - Suricata-Main] 2025-05-20 19:15:36 Notice: device: eno2: packets: 360640, drops: 1590 (0.44%), invalid chksum: 0
+[1 - Suricata-Main] 2025-05-20 19:15:41 Notice: suricata: This is Suricata version 7.0.10 RELEASE running in SYSTEM mode
+[1 - Suricata-Main] 2025-05-20 19:15:41 Info: cpu: CPUs/cores online: 32
+[1 - Suricata-Main] 2025-05-20 19:15:41 Info: suricata: Setting engine mode to IDS mode by default
+[1 - Suricata-Main] 2025-05-20 19:15:41 Info: suricata: No 'host-mode': suricata is in IDS mode, using default setting 'sniffer-only'
+[1 - Suricata-Main] 2025-05-20 19:15:41 Info: logopenfile: fast output device (regular) initialized: fast.log
+[1 - Suricata-Main] 2025-05-20 19:15:41 Info: logopenfile: eve-log output device (regular) initialized: eve.json
+[1 - Suricata-Main] 2025-05-20 19:15:41 Warning: counters: stats are enabled but no loggers are active
+[1 - Suricata-Main] 2025-05-20 19:15:41 Info: detect: 1 rule files processed. 4 rules successfully loaded, 0 rules failed, 0
+[1 - Suricata-Main] 2025-05-20 19:15:41 Info: threshold-config: Threshold config parsed: 0 rule(s) found
+[1 - Suricata-Main] 2025-05-20 19:15:41 Info: detect: 4 signatures processed. 0 are IP-only rules, 4 are inspecting packet payload, 0 inspect application layer, 0 are decoder event only
+[1 - Suricata-Main] 2025-05-20 19:15:41 Warning: af-packet: eno2: AF_PACKET tpacket-v3 is recommended for non-inline operation
+[1 - Suricata-Main] 2025-05-20 19:15:41 Info: runmodes: eno2: creating 32 threads
+[1 - Suricata-Main] 2025-05-20 19:15:43 Notice: threads: Threads created -> W: 32 FM: 1 FR: 1   Engine started.
+[56 - Suricata-Main] 2025-05-20 20:28:29 Notice: suricata: This is Suricata version 7.0.10 RELEASE running in SYSTEM mode
+[56 - Suricata-Main] 2025-05-20 20:28:29 Info: cpu: CPUs/cores online: 32
+[56 - Suricata-Main] 2025-05-20 20:28:29 Info: suricata: Setting engine mode to IDS mode by default
+[56 - Suricata-Main] 2025-05-20 20:28:29 Info: suricata: No 'host-mode': suricata is in IDS mode, using default setting 'sniffer-only'
+[56 - Suricata-Main] 2025-05-20 20:28:29 Info: logopenfile: fast output device (regular) initialized: fast.log
+[56 - Suricata-Main] 2025-05-20 20:28:29 Info: logopenfile: eve-log output device (regular) initialized: eve.json
+[56 - Suricata-Main] 2025-05-20 20:28:29 Warning: counters: stats are enabled but no loggers are active
+[56 - Suricata-Main] 2025-05-20 20:28:29 Info: detect: 1 rule files processed. 4 rules successfully loaded, 0 rules failed, 0
+[56 - Suricata-Main] 2025-05-20 20:28:29 Info: threshold-config: Threshold config parsed: 0 rule(s) found
+[56 - Suricata-Main] 2025-05-20 20:28:29 Info: detect: 4 signatures processed. 0 are IP-only rules, 4 are inspecting packet payload, 0 inspect application layer, 0 are decoder event only
+[56 - Suricata-Main] 2025-05-20 20:28:29 Error: af-packet: fanout not supported by kernel: Kernel too old or cluster-id 99 already in use.
+[56 - Suricata-Main] 2025-05-20 20:28:29 Warning: af-packet: eno2: AF_PACKET tpacket-v3 is recommended for non-inline operation
+[56 - Suricata-Main] 2025-05-20 20:28:29 Info: runmodes: eno2: creating 1 thread
+[57 - W#01-eno2] 2025-05-20 20:28:29 Info: ioctl: eno2: MTU 1500
+[56 - Suricata-Main] 2025-05-20 20:28:29 Notice: threads: Threads created -> W: 1 FM: 1 FR: 1   Engine started.
+[56 - Suricata-Main] 2025-05-20 20:28:39 Notice: suricata: Signal Received.  Stopping engine.
+[56 - Suricata-Main] 2025-05-20 20:28:39 Info: suricata: time elapsed 9.932s
+[56 - Suricata-Main] 2025-05-20 20:28:40 Notice: device: eno2: packets: 4599, drops: 0 (0.00%), invalid chksum: 0
+[66 - Suricata-Main] 2025-05-20 20:33:12 Notice: suricata: This is Suricata version 7.0.10 RELEASE running in SYSTEM mode
+[66 - Suricata-Main] 2025-05-20 20:33:12 Info: cpu: CPUs/cores online: 32
+[66 - Suricata-Main] 2025-05-20 20:33:12 Info: suricata: Setting engine mode to IDS mode by default
+[66 - Suricata-Main] 2025-05-20 20:33:12 Info: suricata: No 'host-mode': suricata is in IDS mode, using default setting 'sniffer-only'
+[66 - Suricata-Main] 2025-05-20 20:33:12 Info: logopenfile: fast output device (regular) initialized: fast.log
+[66 - Suricata-Main] 2025-05-20 20:33:12 Info: logopenfile: eve-log output device (regular) initialized: eve.json
+[66 - Suricata-Main] 2025-05-20 20:33:12 Warning: counters: stats are enabled but no loggers are active
+[66 - Suricata-Main] 2025-05-20 20:33:12 Info: detect: 1 rule files processed. 4 rules successfully loaded, 0 rules failed, 0
+[66 - Suricata-Main] 2025-05-20 20:33:12 Info: threshold-config: Threshold config parsed: 0 rule(s) found
+[66 - Suricata-Main] 2025-05-20 20:33:12 Info: detect: 4 signatures processed. 0 are IP-only rules, 4 are inspecting packet payload, 0 inspect application layer, 0 are decoder event only
+[66 - Suricata-Main] 2025-05-20 20:33:12 Error: af-packet: fanout not supported by kernel: Kernel too old or cluster-id 99 already in use.
+[66 - Suricata-Main] 2025-05-20 20:33:12 Warning: af-packet: eno2: AF_PACKET tpacket-v3 is recommended for non-inline operation
+[66 - Suricata-Main] 2025-05-20 20:33:12 Info: runmodes: eno2: creating 1 thread
+[67 - W#01-eno2] 2025-05-20 20:33:12 Info: ioctl: eno2: MTU 1500
+[66 - Suricata-Main] 2025-05-20 20:33:12 Notice: threads: Threads created -> W: 1 FM: 1 FR: 1   Engine started.
+[66 - Suricata-Main] 2025-05-20 20:33:22 Notice: suricata: Signal Received.  Stopping engine.
+[66 - Suricata-Main] 2025-05-20 20:33:23 Info: suricata: time elapsed 10.909s
+[66 - Suricata-Main] 2025-05-20 20:33:24 Notice: device: eno2: packets: 5346, drops: 0 (0.00%), invalid chksum: 0
+[1 - Suricata-Main] 2025-05-20 20:44:23 Notice: suricata: Signal Received.  Stopping engine.
+[1 - Suricata-Main] 2025-05-20 20:44:23 Info: suricata: time elapsed 5322.205s
+[1 - Suricata-Main] 2025-05-20 20:44:25 Notice: device: eno2: packets: 3042383, drops: 2151 (0.07%), invalid chksum: 0
+[1 - Suricata-Main] 2025-05-21 14:46:11 Notice: suricata: This is Suricata version 7.0.10 RELEASE running in SYSTEM mode
+[1 - Suricata-Main] 2025-05-21 14:46:11 Info: cpu: CPUs/cores online: 32
+[1 - Suricata-Main] 2025-05-21 14:46:11 Info: suricata: Setting engine mode to IDS mode by default
+[1 - Suricata-Main] 2025-05-21 14:46:12 Info: suricata: No 'host-mode': suricata is in IDS mode, using default setting 'sniffer-only'
+[1 - Suricata-Main] 2025-05-21 14:46:12 Info: logopenfile: fast output device (regular) initialized: fast.log
+[1 - Suricata-Main] 2025-05-21 14:46:12 Info: logopenfile: eve-log output device (regular) initialized: eve.json
+[1 - Suricata-Main] 2025-05-21 14:46:12 Warning: counters: stats are enabled but no loggers are active
+[1 - Suricata-Main] 2025-05-21 14:46:12 Info: detect: 1 rule files processed. 4 rules successfully loaded, 0 rules failed, 0
+[1 - Suricata-Main] 2025-05-21 14:46:12 Info: threshold-config: Threshold config parsed: 0 rule(s) found
+[1 - Suricata-Main] 2025-05-21 14:46:12 Info: detect: 4 signatures processed. 0 are IP-only rules, 4 are inspecting packet payload, 0 inspect application layer, 0 are decoder event only
+[1 - Suricata-Main] 2025-05-21 14:46:12 Warning: af-packet: eno2: AF_PACKET tpacket-v3 is recommended for non-inline operation
+[1 - Suricata-Main] 2025-05-21 14:46:12 Info: runmodes: eno2: creating 32 threads
+[1 - Suricata-Main] 2025-05-21 14:46:13 Notice: threads: Threads created -> W: 32 FM: 1 FR: 1   Engine started.
+[55 - Suricata-Main] 2025-05-21 14:53:23 Notice: suricata: This is Suricata version 7.0.10 RELEASE running in SYSTEM mode
+[55 - Suricata-Main] 2025-05-21 14:53:23 Info: cpu: CPUs/cores online: 32
+[55 - Suricata-Main] 2025-05-21 14:53:23 Info: suricata: Setting engine mode to IDS mode by default
+[55 - Suricata-Main] 2025-05-21 14:53:23 Info: suricata: No 'host-mode': suricata is in IDS mode, using default setting 'sniffer-only'
+[55 - Suricata-Main] 2025-05-21 14:53:23 Info: logopenfile: fast output device (regular) initialized: fast.log
+[55 - Suricata-Main] 2025-05-21 14:53:23 Info: logopenfile: eve-log output device (regular) initialized: eve.json
+[55 - Suricata-Main] 2025-05-21 14:53:23 Warning: counters: stats are enabled but no loggers are active
+[55 - Suricata-Main] 2025-05-21 14:53:23 Info: detect: 1 rule files processed. 4 rules successfully loaded, 0 rules failed, 0
+[55 - Suricata-Main] 2025-05-21 14:53:23 Info: threshold-config: Threshold config parsed: 0 rule(s) found
+[55 - Suricata-Main] 2025-05-21 14:53:23 Info: detect: 4 signatures processed. 0 are IP-only rules, 4 are inspecting packet payload, 0 inspect application layer, 0 are decoder event only
+[55 - Suricata-Main] 2025-05-21 14:53:23 Error: af-packet: fanout not supported by kernel: Kernel too old or cluster-id 99 already in use.
+[55 - Suricata-Main] 2025-05-21 14:53:23 Warning: af-packet: eno2: AF_PACKET tpacket-v3 is recommended for non-inline operation
+[55 - Suricata-Main] 2025-05-21 14:53:23 Info: runmodes: eno2: creating 1 thread
+[56 - W#01-eno2] 2025-05-21 14:53:23 Info: ioctl: eno2: MTU 1500
+[55 - Suricata-Main] 2025-05-21 14:53:24 Notice: threads: Threads created -> W: 1 FM: 1 FR: 1   Engine started.
+[55 - Suricata-Main] 2025-05-21 14:53:33 Notice: suricata: Signal Received.  Stopping engine.
+[55 - Suricata-Main] 2025-05-21 14:53:34 Info: suricata: time elapsed 10.911s
+[55 - Suricata-Main] 2025-05-21 14:53:35 Notice: device: eno2: packets: 98, drops: 0 (0.00%), invalid chksum: 0
+[65 - Suricata-Main] 2025-05-21 14:55:29 Notice: suricata: This is Suricata version 7.0.10 RELEASE running in SYSTEM mode
+[65 - Suricata-Main] 2025-05-21 14:55:29 Info: cpu: CPUs/cores online: 32
+[65 - Suricata-Main] 2025-05-21 14:55:29 Info: suricata: Setting engine mode to IDS mode by default
+[65 - Suricata-Main] 2025-05-21 14:55:29 Info: suricata: No 'host-mode': suricata is in IDS mode, using default setting 'sniffer-only'
+[65 - Suricata-Main] 2025-05-21 14:55:29 Info: logopenfile: fast output device (regular) initialized: fast.log
+[65 - Suricata-Main] 2025-05-21 14:55:29 Info: logopenfile: eve-log output device (regular) initialized: eve.json
+[65 - Suricata-Main] 2025-05-21 14:55:29 Warning: counters: stats are enabled but no loggers are active
+[65 - Suricata-Main] 2025-05-21 14:55:29 Info: detect: 1 rule files processed. 4 rules successfully loaded, 0 rules failed, 0
+[65 - Suricata-Main] 2025-05-21 14:55:29 Info: threshold-config: Threshold config parsed: 0 rule(s) found
+[65 - Suricata-Main] 2025-05-21 14:55:29 Info: detect: 4 signatures processed. 0 are IP-only rules, 4 are inspecting packet payload, 0 inspect application layer, 0 are decoder event only
+[65 - Suricata-Main] 2025-05-21 14:55:29 Error: af-packet: fanout not supported by kernel: Kernel too old or cluster-id 99 already in use.
+[65 - Suricata-Main] 2025-05-21 14:55:29 Warning: af-packet: eno2: AF_PACKET tpacket-v3 is recommended for non-inline operation
+[65 - Suricata-Main] 2025-05-21 14:55:29 Info: runmodes: eno2: creating 1 thread
+[66 - W#01-eno2] 2025-05-21 14:55:29 Info: ioctl: eno2: MTU 1500
+[65 - Suricata-Main] 2025-05-21 14:55:29 Notice: threads: Threads created -> W: 1 FM: 1 FR: 1   Engine started.
+[65 - Suricata-Main] 2025-05-21 14:55:49 Notice: suricata: Signal Received.  Stopping engine.
+[65 - Suricata-Main] 2025-05-21 14:55:49 Info: suricata: time elapsed 20.787s
+[65 - Suricata-Main] 2025-05-21 14:55:50 Notice: device: eno2: packets: 496, drops: 0 (0.00%), invalid chksum: 0
+[75 - Suricata-Main] 2025-05-21 14:58:37 Notice: suricata: This is Suricata version 7.0.10 RELEASE running in SYSTEM mode
+[75 - Suricata-Main] 2025-05-21 14:58:37 Info: cpu: CPUs/cores online: 32
+[75 - Suricata-Main] 2025-05-21 14:58:37 Info: suricata: Setting engine mode to IDS mode by default
+[75 - Suricata-Main] 2025-05-21 14:58:37 Info: suricata: No 'host-mode': suricata is in IDS mode, using default setting 'sniffer-only'
+[75 - Suricata-Main] 2025-05-21 14:58:37 Info: logopenfile: fast output device (regular) initialized: fast.log
+[75 - Suricata-Main] 2025-05-21 14:58:37 Info: logopenfile: eve-log output device (regular) initialized: eve.json
+[75 - Suricata-Main] 2025-05-21 14:58:37 Warning: counters: stats are enabled but no loggers are active
+[75 - Suricata-Main] 2025-05-21 14:58:37 Info: detect: 1 rule files processed. 4 rules successfully loaded, 0 rules failed, 0
+[75 - Suricata-Main] 2025-05-21 14:58:37 Info: threshold-config: Threshold config parsed: 0 rule(s) found
+[75 - Suricata-Main] 2025-05-21 14:58:37 Info: detect: 4 signatures processed. 0 are IP-only rules, 4 are inspecting packet payload, 0 inspect application layer, 0 are decoder event only
+[75 - Suricata-Main] 2025-05-21 14:58:37 Error: af-packet: fanout not supported by kernel: Kernel too old or cluster-id 99 already in use.
+[75 - Suricata-Main] 2025-05-21 14:58:37 Warning: af-packet: eno2: AF_PACKET tpacket-v3 is recommended for non-inline operation
+[75 - Suricata-Main] 2025-05-21 14:58:37 Info: runmodes: eno2: creating 1 thread
+[76 - W#01-eno2] 2025-05-21 14:58:37 Info: ioctl: eno2: MTU 1500
+[75 - Suricata-Main] 2025-05-21 14:58:37 Notice: threads: Threads created -> W: 1 FM: 1 FR: 1   Engine started.
+[75 - Suricata-Main] 2025-05-21 14:58:47 Notice: suricata: Signal Received.  Stopping engine.
+[75 - Suricata-Main] 2025-05-21 14:58:48 Info: suricata: time elapsed 10.921s
+[75 - Suricata-Main] 2025-05-21 14:58:49 Notice: device: eno2: packets: 447, drops: 0 (0.00%), invalid chksum: 0
+[1 - Suricata-Main] 2025-05-21 15:52:41 Notice: suricata: This is Suricata version 7.0.10 RELEASE running in SYSTEM mode
+[1 - Suricata-Main] 2025-05-21 15:52:41 Info: cpu: CPUs/cores online: 32
+[1 - Suricata-Main] 2025-05-21 15:52:41 Info: suricata: Setting engine mode to IDS mode by default
+[1 - Suricata-Main] 2025-05-21 15:52:41 Info: suricata: No 'host-mode': suricata is in IDS mode, using default setting 'sniffer-only'
+[1 - Suricata-Main] 2025-05-21 15:52:41 Info: logopenfile: fast output device (regular) initialized: fast.log
+[1 - Suricata-Main] 2025-05-21 15:52:41 Info: logopenfile: eve-log output device (regular) initialized: eve.json
+[1 - Suricata-Main] 2025-05-21 15:52:41 Warning: counters: stats are enabled but no loggers are active
+[1 - Suricata-Main] 2025-05-21 15:52:41 Error: detect-parse: Signature missing required value "sid".
+[1 - Suricata-Main] 2025-05-21 15:52:41 Error: detect: error parsing signature "alert sip any any -> any any (" from file /etc/suricata/rules/custom-sip.rules at line 5
+[1 - Suricata-Main] 2025-05-21 15:52:41 Error: detect-parse: no rule options.
+[1 - Suricata-Main] 2025-05-21 15:52:41 Error: detect: error parsing signature ")" from file /etc/suricata/rules/custom-sip.rules at line 11
+[1 - Suricata-Main] 2025-05-21 15:52:41 Error: detect-parse: Signature missing required value "sid".
+[1 - Suricata-Main] 2025-05-21 15:52:41 Error: detect: error parsing signature "alert sip any any -> any any (" from file /etc/suricata/rules/custom-sip.rules at line 13
+[1 - Suricata-Main] 2025-05-21 15:52:41 Error: detect-parse: no rule options.
+[1 - Suricata-Main] 2025-05-21 15:52:41 Error: detect: error parsing signature ")" from file /etc/suricata/rules/custom-sip.rules at line 19
+[1 - Suricata-Main] 2025-05-21 15:52:41 Error: detect-parse: Signature missing required value "sid".
+[1 - Suricata-Main] 2025-05-21 15:52:41 Error: detect: error parsing signature "alert sip any any -> any any (" from file /etc/suricata/rules/custom-sip.rules at line 21
+[1 - Suricata-Main] 2025-05-21 15:52:41 Error: detect-parse: no rule options.
+[1 - Suricata-Main] 2025-05-21 15:52:41 Error: detect: error parsing signature ")" from file /etc/suricata/rules/custom-sip.rules at line 27
+[1 - Suricata-Main] 2025-05-21 15:52:41 Error: detect-parse: Signature missing required value "sid".
+[1 - Suricata-Main] 2025-05-21 15:52:41 Error: detect: error parsing signature "alert sip any any -> any any (" from file /etc/suricata/rules/custom-sip.rules at line 29
+[1 - Suricata-Main] 2025-05-21 15:52:41 Error: detect-parse: no rule options.
+[1 - Suricata-Main] 2025-05-21 15:52:41 Error: detect: error parsing signature ")" from file /etc/suricata/rules/custom-sip.rules at line 35
+[1 - Suricata-Main] 2025-05-21 15:52:41 Error: detect-parse: Signature missing required value "sid".
+[1 - Suricata-Main] 2025-05-21 15:52:41 Error: detect: error parsing signature "alert sip any any -> any any (" from file /etc/suricata/rules/custom-sip.rules at line 42
+[1 - Suricata-Main] 2025-05-21 15:52:41 Error: detect-parse: no rule options.
+[1 - Suricata-Main] 2025-05-21 15:52:41 Error: detect: error parsing signature ")" from file /etc/suricata/rules/custom-sip.rules at line 48
+[1 - Suricata-Main] 2025-05-21 15:52:41 Error: detect-parse: Signature missing required value "sid".
+[1 - Suricata-Main] 2025-05-21 15:52:41 Error: detect: error parsing signature "alert sip any any -> any any (" from file /etc/suricata/rules/custom-sip.rules at line 51
+[1 - Suricata-Main] 2025-05-21 15:52:41 Error: detect-parse: no rule options.
+[1 - Suricata-Main] 2025-05-21 15:52:41 Error: detect: error parsing signature ")" from file /etc/suricata/rules/custom-sip.rules at line 57
+[1 - Suricata-Main] 2025-05-21 15:52:41 Error: detect-parse: Signature missing required value "sid".
+[1 - Suricata-Main] 2025-05-21 15:52:41 Error: detect: error parsing signature "alert sip any any -> any any (" from file /etc/suricata/rules/custom-sip.rules at line 60
+[1 - Suricata-Main] 2025-05-21 15:52:41 Error: detect-parse: no rule options.
+[1 - Suricata-Main] 2025-05-21 15:52:41 Error: detect: error parsing signature ")" from file /etc/suricata/rules/custom-sip.rules at line 66
+[1 - Suricata-Main] 2025-05-21 15:52:41 Error: detect-parse: Signature missing required value "sid".
+[1 - Suricata-Main] 2025-05-21 15:52:41 Error: detect: error parsing signature "alert sip any any -> any any (" from file /etc/suricata/rules/custom-sip.rules at line 69
+[1 - Suricata-Main] 2025-05-21 15:52:41 Error: detect-parse: no rule options.
+[1 - Suricata-Main] 2025-05-21 15:52:41 Error: detect: error parsing signature ")" from file /etc/suricata/rules/custom-sip.rules at line 75
+[1 - Suricata-Main] 2025-05-21 15:52:41 Error: detect-parse: Signature missing required value "sid".
+[1 - Suricata-Main] 2025-05-21 15:52:41 Error: detect: error parsing signature "alert sip any any -> any any (" from file /etc/suricata/rules/custom-sip.rules at line 78
+[1 - Suricata-Main] 2025-05-21 15:52:41 Error: detect-parse: no rule options.
+[1 - Suricata-Main] 2025-05-21 15:52:41 Error: detect: error parsing signature ")" from file /etc/suricata/rules/custom-sip.rules at line 84
+[1 - Suricata-Main] 2025-05-21 15:52:41 Error: detect-parse: Signature missing required value "sid".
+[1 - Suricata-Main] 2025-05-21 15:52:41 Error: detect: error parsing signature "alert sip any any -> any any (" from file /etc/suricata/rules/custom-sip.rules at line 87
+[1 - Suricata-Main] 2025-05-21 15:52:41 Error: detect-parse: no rule options.
+[1 - Suricata-Main] 2025-05-21 15:52:41 Error: detect: error parsing signature ")" from file /etc/suricata/rules/custom-sip.rules at line 95
+[1 - Suricata-Main] 2025-05-21 15:52:41 Error: detect-parse: Signature missing required value "sid".
+[1 - Suricata-Main] 2025-05-21 15:52:41 Error: detect: error parsing signature "alert sip any any -> any any (" from file /etc/suricata/rules/custom-sip.rules at line 98
+[1 - Suricata-Main] 2025-05-21 15:52:41 Error: detect-parse: no rule options.
+[1 - Suricata-Main] 2025-05-21 15:52:41 Error: detect: error parsing signature ")" from file /etc/suricata/rules/custom-sip.rules at line 105
+[1 - Suricata-Main] 2025-05-21 15:52:41 Error: detect-parse: Signature missing required value "sid".
+[1 - Suricata-Main] 2025-05-21 15:52:41 Error: detect: error parsing signature "alert sip any any -> any any (" from file /etc/suricata/rules/custom-sip.rules at line 108
+[1 - Suricata-Main] 2025-05-21 15:52:41 Error: detect-parse: no rule options.
+[1 - Suricata-Main] 2025-05-21 15:52:41 Error: detect: error parsing signature ")" from file /etc/suricata/rules/custom-sip.rules at line 114
+[1 - Suricata-Main] 2025-05-21 15:52:41 Error: detect-parse: Signature missing required value "sid".
+[1 - Suricata-Main] 2025-05-21 15:52:41 Error: detect: error parsing signature "alert sip any any -> any any (" from file /etc/suricata/rules/custom-sip.rules at line 117
+[1 - Suricata-Main] 2025-05-21 15:52:41 Error: detect-parse: no rule options.
+[1 - Suricata-Main] 2025-05-21 15:52:41 Error: detect: error parsing signature ")" from file /etc/suricata/rules/custom-sip.rules at line 124
+[1 - Suricata-Main] 2025-05-21 15:52:41 Error: detect-parse: Signature missing required value "sid".
+[1 - Suricata-Main] 2025-05-21 15:52:41 Error: detect: error parsing signature "alert sip any any -> any any (" from file /etc/suricata/rules/custom-sip.rules at line 127
+[1 - Suricata-Main] 2025-05-21 15:52:41 Error: detect-parse: no rule options.
+[1 - Suricata-Main] 2025-05-21 15:52:41 Error: detect: error parsing signature ")" from file /etc/suricata/rules/custom-sip.rules at line 133
+[1 - Suricata-Main] 2025-05-21 15:52:41 Warning: detect: 1 rule files specified, but no rules were loaded!
+[1 - Suricata-Main] 2025-05-21 15:52:41 Info: threshold-config: Threshold config parsed: 0 rule(s) found
+[1 - Suricata-Main] 2025-05-21 15:52:41 Info: detect: 0 signatures processed. 0 are IP-only rules, 0 are inspecting packet payload, 0 inspect application layer, 0 are decoder event only
+[1 - Suricata-Main] 2025-05-21 15:52:41 Warning: af-packet: eno2: AF_PACKET tpacket-v3 is recommended for non-inline operation
+[1 - Suricata-Main] 2025-05-21 15:52:41 Info: runmodes: eno2: creating 32 threads
+[1 - Suricata-Main] 2025-05-21 15:52:42 Notice: threads: Threads created -> W: 32 FM: 1 FR: 1   Engine started.
+[56 - Suricata-Main] 2025-05-21 15:52:47 Notice: suricata: This is Suricata version 7.0.10 RELEASE running in SYSTEM mode
+[56 - Suricata-Main] 2025-05-21 15:52:47 Info: cpu: CPUs/cores online: 32
+[56 - Suricata-Main] 2025-05-21 15:52:47 Info: suricata: Setting engine mode to IDS mode by default
+[56 - Suricata-Main] 2025-05-21 15:52:47 Info: suricata: No 'host-mode': suricata is in IDS mode, using default setting 'sniffer-only'
+[56 - Suricata-Main] 2025-05-21 15:52:47 Info: logopenfile: fast output device (regular) initialized: fast.log
+[56 - Suricata-Main] 2025-05-21 15:52:47 Info: logopenfile: eve-log output device (regular) initialized: eve.json
+[56 - Suricata-Main] 2025-05-21 15:52:47 Warning: counters: stats are enabled but no loggers are active
+[56 - Suricata-Main] 2025-05-21 15:52:47 Error: detect-parse: Signature missing required value "sid".
+[56 - Suricata-Main] 2025-05-21 15:52:47 Error: detect: error parsing signature "alert sip any any -> any any (" from file /etc/suricata/rules/custom-sip.rules at line 5
+[56 - Suricata-Main] 2025-05-21 15:52:47 Error: detect-parse: no rule options.
+[56 - Suricata-Main] 2025-05-21 15:52:47 Error: detect: error parsing signature ")" from file /etc/suricata/rules/custom-sip.rules at line 11
+[56 - Suricata-Main] 2025-05-21 15:52:47 Error: detect-parse: Signature missing required value "sid".
+[56 - Suricata-Main] 2025-05-21 15:52:47 Error: detect: error parsing signature "alert sip any any -> any any (" from file /etc/suricata/rules/custom-sip.rules at line 13
+[56 - Suricata-Main] 2025-05-21 15:52:47 Error: detect-parse: no rule options.
+[56 - Suricata-Main] 2025-05-21 15:52:47 Error: detect: error parsing signature ")" from file /etc/suricata/rules/custom-sip.rules at line 19
+[56 - Suricata-Main] 2025-05-21 15:52:47 Error: detect-parse: Signature missing required value "sid".
+[56 - Suricata-Main] 2025-05-21 15:52:47 Error: detect: error parsing signature "alert sip any any -> any any (" from file /etc/suricata/rules/custom-sip.rules at line 21
+[56 - Suricata-Main] 2025-05-21 15:52:47 Error: detect-parse: no rule options.
+[56 - Suricata-Main] 2025-05-21 15:52:47 Error: detect: error parsing signature ")" from file /etc/suricata/rules/custom-sip.rules at line 27
+[56 - Suricata-Main] 2025-05-21 15:52:47 Error: detect-parse: Signature missing required value "sid".
+[56 - Suricata-Main] 2025-05-21 15:52:47 Error: detect: error parsing signature "alert sip any any -> any any (" from file /etc/suricata/rules/custom-sip.rules at line 29
+[56 - Suricata-Main] 2025-05-21 15:52:47 Error: detect-parse: no rule options.
+[56 - Suricata-Main] 2025-05-21 15:52:47 Error: detect: error parsing signature ")" from file /etc/suricata/rules/custom-sip.rules at line 35
+[56 - Suricata-Main] 2025-05-21 15:52:47 Error: detect-parse: Signature missing required value "sid".
+[56 - Suricata-Main] 2025-05-21 15:52:47 Error: detect: error parsing signature "alert sip any any -> any any (" from file /etc/suricata/rules/custom-sip.rules at line 42
+[56 - Suricata-Main] 2025-05-21 15:52:47 Error: detect-parse: no rule options.
+[56 - Suricata-Main] 2025-05-21 15:52:47 Error: detect: error parsing signature ")" from file /etc/suricata/rules/custom-sip.rules at line 48
+[56 - Suricata-Main] 2025-05-21 15:52:47 Error: detect-parse: Signature missing required value "sid".
+[56 - Suricata-Main] 2025-05-21 15:52:47 Error: detect: error parsing signature "alert sip any any -> any any (" from file /etc/suricata/rules/custom-sip.rules at line 51
+[56 - Suricata-Main] 2025-05-21 15:52:47 Error: detect-parse: no rule options.
+[56 - Suricata-Main] 2025-05-21 15:52:47 Error: detect: error parsing signature ")" from file /etc/suricata/rules/custom-sip.rules at line 57
+[56 - Suricata-Main] 2025-05-21 15:52:47 Error: detect-parse: Signature missing required value "sid".
+[56 - Suricata-Main] 2025-05-21 15:52:47 Error: detect: error parsing signature "alert sip any any -> any any (" from file /etc/suricata/rules/custom-sip.rules at line 60
+[56 - Suricata-Main] 2025-05-21 15:52:47 Error: detect-parse: no rule options.
+[56 - Suricata-Main] 2025-05-21 15:52:47 Error: detect: error parsing signature ")" from file /etc/suricata/rules/custom-sip.rules at line 66
+[56 - Suricata-Main] 2025-05-21 15:52:47 Error: detect-parse: Signature missing required value "sid".
+[56 - Suricata-Main] 2025-05-21 15:52:47 Error: detect: error parsing signature "alert sip any any -> any any (" from file /etc/suricata/rules/custom-sip.rules at line 69
+[56 - Suricata-Main] 2025-05-21 15:52:47 Error: detect-parse: no rule options.
+[56 - Suricata-Main] 2025-05-21 15:52:47 Error: detect: error parsing signature ")" from file /etc/suricata/rules/custom-sip.rules at line 75
+[56 - Suricata-Main] 2025-05-21 15:52:47 Error: detect-parse: Signature missing required value "sid".
+[56 - Suricata-Main] 2025-05-21 15:52:47 Error: detect: error parsing signature "alert sip any any -> any any (" from file /etc/suricata/rules/custom-sip.rules at line 78
+[56 - Suricata-Main] 2025-05-21 15:52:47 Error: detect-parse: no rule options.
+[56 - Suricata-Main] 2025-05-21 15:52:47 Error: detect: error parsing signature ")" from file /etc/suricata/rules/custom-sip.rules at line 84
+[56 - Suricata-Main] 2025-05-21 15:52:47 Error: detect-parse: Signature missing required value "sid".
+[56 - Suricata-Main] 2025-05-21 15:52:47 Error: detect: error parsing signature "alert sip any any -> any any (" from file /etc/suricata/rules/custom-sip.rules at line 87
+[56 - Suricata-Main] 2025-05-21 15:52:47 Error: detect-parse: no rule options.
+[56 - Suricata-Main] 2025-05-21 15:52:47 Error: detect: error parsing signature ")" from file /etc/suricata/rules/custom-sip.rules at line 95
+[56 - Suricata-Main] 2025-05-21 15:52:47 Error: detect-parse: Signature missing required value "sid".
+[56 - Suricata-Main] 2025-05-21 15:52:47 Error: detect: error parsing signature "alert sip any any -> any any (" from file /etc/suricata/rules/custom-sip.rules at line 98
+[56 - Suricata-Main] 2025-05-21 15:52:47 Error: detect-parse: no rule options.
+[56 - Suricata-Main] 2025-05-21 15:52:47 Error: detect: error parsing signature ")" from file /etc/suricata/rules/custom-sip.rules at line 105
+[56 - Suricata-Main] 2025-05-21 15:52:47 Error: detect-parse: Signature missing required value "sid".
+[56 - Suricata-Main] 2025-05-21 15:52:47 Error: detect: error parsing signature "alert sip any any -> any any (" from file /etc/suricata/rules/custom-sip.rules at line 108
+[56 - Suricata-Main] 2025-05-21 15:52:47 Error: detect-parse: no rule options.
+[56 - Suricata-Main] 2025-05-21 15:52:47 Error: detect: error parsing signature ")" from file /etc/suricata/rules/custom-sip.rules at line 114
+[56 - Suricata-Main] 2025-05-21 15:52:47 Error: detect-parse: Signature missing required value "sid".
+[56 - Suricata-Main] 2025-05-21 15:52:47 Error: detect: error parsing signature "alert sip any any -> any any (" from file /etc/suricata/rules/custom-sip.rules at line 117
+[56 - Suricata-Main] 2025-05-21 15:52:47 Error: detect-parse: no rule options.
+[56 - Suricata-Main] 2025-05-21 15:52:47 Error: detect: error parsing signature ")" from file /etc/suricata/rules/custom-sip.rules at line 124
+[56 - Suricata-Main] 2025-05-21 15:52:47 Error: detect-parse: Signature missing required value "sid".
+[56 - Suricata-Main] 2025-05-21 15:52:47 Error: detect: error parsing signature "alert sip any any -> any any (" from file /etc/suricata/rules/custom-sip.rules at line 127
+[56 - Suricata-Main] 2025-05-21 15:52:47 Error: detect-parse: no rule options.
+[56 - Suricata-Main] 2025-05-21 15:52:47 Error: detect: error parsing signature ")" from file /etc/suricata/rules/custom-sip.rules at line 133
+[56 - Suricata-Main] 2025-05-21 15:52:47 Warning: detect: 1 rule files specified, but no rules were loaded!
+[56 - Suricata-Main] 2025-05-21 15:52:47 Info: threshold-config: Threshold config parsed: 0 rule(s) found
+[56 - Suricata-Main] 2025-05-21 15:52:47 Info: detect: 0 signatures processed. 0 are IP-only rules, 0 are inspecting packet payload, 0 inspect application layer, 0 are decoder event only
+[56 - Suricata-Main] 2025-05-21 15:52:47 Error: af-packet: fanout not supported by kernel: Kernel too old or cluster-id 99 already in use.
+[56 - Suricata-Main] 2025-05-21 15:52:47 Warning: af-packet: eno2: AF_PACKET tpacket-v3 is recommended for non-inline operation
+[56 - Suricata-Main] 2025-05-21 15:52:47 Info: runmodes: eno2: creating 1 thread
+[57 - W#01-eno2] 2025-05-21 15:52:47 Info: ioctl: eno2: MTU 1500
+[56 - Suricata-Main] 2025-05-21 15:52:47 Notice: threads: Threads created -> W: 1 FM: 1 FR: 1   Engine started.
+[56 - Suricata-Main] 2025-05-21 15:52:57 Notice: suricata: Signal Received.  Stopping engine.
+[56 - Suricata-Main] 2025-05-21 15:52:58 Info: suricata: time elapsed 10.920s
+[56 - Suricata-Main] 2025-05-21 15:52:59 Notice: device: eno2: packets: 103, drops: 0 (0.00%), invalid chksum: 0
+[66 - Suricata-Main] 2025-05-21 15:53:31 Notice: suricata: This is Suricata version 7.0.10 RELEASE running in SYSTEM mode
+[66 - Suricata-Main] 2025-05-21 15:53:31 Info: cpu: CPUs/cores online: 32
+[66 - Suricata-Main] 2025-05-21 15:53:31 Info: suricata: Setting engine mode to IDS mode by default
+[66 - Suricata-Main] 2025-05-21 15:53:31 Info: suricata: No 'host-mode': suricata is in IDS mode, using default setting 'sniffer-only'
+[66 - Suricata-Main] 2025-05-21 15:53:31 Info: logopenfile: fast output device (regular) initialized: fast.log
+[66 - Suricata-Main] 2025-05-21 15:53:31 Info: logopenfile: eve-log output device (regular) initialized: eve.json
+[66 - Suricata-Main] 2025-05-21 15:53:31 Warning: counters: stats are enabled but no loggers are active
+[66 - Suricata-Main] 2025-05-21 15:53:31 Error: detect-parse: Signature missing required value "sid".
+[66 - Suricata-Main] 2025-05-21 15:53:31 Error: detect: error parsing signature "alert sip any any -> any any (" from file /etc/suricata/rules/custom-sip.rules at line 5
+[66 - Suricata-Main] 2025-05-21 15:53:31 Error: detect-parse: no rule options.
+[66 - Suricata-Main] 2025-05-21 15:53:31 Error: detect: error parsing signature ")" from file /etc/suricata/rules/custom-sip.rules at line 11
+[66 - Suricata-Main] 2025-05-21 15:53:31 Error: detect-parse: Signature missing required value "sid".
+[66 - Suricata-Main] 2025-05-21 15:53:31 Error: detect: error parsing signature "alert sip any any -> any any (" from file /etc/suricata/rules/custom-sip.rules at line 13
+[66 - Suricata-Main] 2025-05-21 15:53:31 Error: detect-parse: no rule options.
+[66 - Suricata-Main] 2025-05-21 15:53:31 Error: detect: error parsing signature ")" from file /etc/suricata/rules/custom-sip.rules at line 19
+[66 - Suricata-Main] 2025-05-21 15:53:31 Error: detect-parse: Signature missing required value "sid".
+[66 - Suricata-Main] 2025-05-21 15:53:31 Error: detect: error parsing signature "alert sip any any -> any any (" from file /etc/suricata/rules/custom-sip.rules at line 21
+[66 - Suricata-Main] 2025-05-21 15:53:31 Error: detect-parse: no rule options.
+[66 - Suricata-Main] 2025-05-21 15:53:31 Error: detect: error parsing signature ")" from file /etc/suricata/rules/custom-sip.rules at line 27
+[66 - Suricata-Main] 2025-05-21 15:53:31 Error: detect-parse: Signature missing required value "sid".
+[66 - Suricata-Main] 2025-05-21 15:53:31 Error: detect: error parsing signature "alert sip any any -> any any (" from file /etc/suricata/rules/custom-sip.rules at line 29
+[66 - Suricata-Main] 2025-05-21 15:53:31 Error: detect-parse: no rule options.
+[66 - Suricata-Main] 2025-05-21 15:53:31 Error: detect: error parsing signature ")" from file /etc/suricata/rules/custom-sip.rules at line 35
+[66 - Suricata-Main] 2025-05-21 15:53:31 Error: detect-parse: Signature missing required value "sid".
+[66 - Suricata-Main] 2025-05-21 15:53:31 Error: detect: error parsing signature "alert sip any any -> any any (" from file /etc/suricata/rules/custom-sip.rules at line 42
+[66 - Suricata-Main] 2025-05-21 15:53:31 Error: detect-parse: no rule options.
+[66 - Suricata-Main] 2025-05-21 15:53:31 Error: detect: error parsing signature ")" from file /etc/suricata/rules/custom-sip.rules at line 48
+[66 - Suricata-Main] 2025-05-21 15:53:31 Error: detect-parse: Signature missing required value "sid".
+[66 - Suricata-Main] 2025-05-21 15:53:31 Error: detect: error parsing signature "alert sip any any -> any any (" from file /etc/suricata/rules/custom-sip.rules at line 51
+[66 - Suricata-Main] 2025-05-21 15:53:31 Error: detect-parse: no rule options.
+[66 - Suricata-Main] 2025-05-21 15:53:31 Error: detect: error parsing signature ")" from file /etc/suricata/rules/custom-sip.rules at line 57
+[66 - Suricata-Main] 2025-05-21 15:53:31 Error: detect-parse: Signature missing required value "sid".
+[66 - Suricata-Main] 2025-05-21 15:53:31 Error: detect: error parsing signature "alert sip any any -> any any (" from file /etc/suricata/rules/custom-sip.rules at line 60
+[66 - Suricata-Main] 2025-05-21 15:53:31 Error: detect-parse: no rule options.
+[66 - Suricata-Main] 2025-05-21 15:53:31 Error: detect: error parsing signature ")" from file /etc/suricata/rules/custom-sip.rules at line 66
+[66 - Suricata-Main] 2025-05-21 15:53:31 Error: detect-parse: Signature missing required value "sid".
+[66 - Suricata-Main] 2025-05-21 15:53:31 Error: detect: error parsing signature "alert sip any any -> any any (" from file /etc/suricata/rules/custom-sip.rules at line 69
+[66 - Suricata-Main] 2025-05-21 15:53:31 Error: detect-parse: no rule options.
+[66 - Suricata-Main] 2025-05-21 15:53:31 Error: detect: error parsing signature ")" from file /etc/suricata/rules/custom-sip.rules at line 75
+[66 - Suricata-Main] 2025-05-21 15:53:31 Error: detect-parse: Signature missing required value "sid".
+[66 - Suricata-Main] 2025-05-21 15:53:31 Error: detect: error parsing signature "alert sip any any -> any any (" from file /etc/suricata/rules/custom-sip.rules at line 78
+[66 - Suricata-Main] 2025-05-21 15:53:31 Error: detect-parse: no rule options.
+[66 - Suricata-Main] 2025-05-21 15:53:31 Error: detect: error parsing signature ")" from file /etc/suricata/rules/custom-sip.rules at line 84
+[66 - Suricata-Main] 2025-05-21 15:53:31 Error: detect-parse: Signature missing required value "sid".
+[66 - Suricata-Main] 2025-05-21 15:53:31 Error: detect: error parsing signature "alert sip any any -> any any (" from file /etc/suricata/rules/custom-sip.rules at line 87
+[66 - Suricata-Main] 2025-05-21 15:53:31 Error: detect-parse: no rule options.
+[66 - Suricata-Main] 2025-05-21 15:53:31 Error: detect: error parsing signature ")" from file /etc/suricata/rules/custom-sip.rules at line 95
+[66 - Suricata-Main] 2025-05-21 15:53:31 Error: detect-parse: Signature missing required value "sid".
+[66 - Suricata-Main] 2025-05-21 15:53:31 Error: detect: error parsing signature "alert sip any any -> any any (" from file /etc/suricata/rules/custom-sip.rules at line 98
+[66 - Suricata-Main] 2025-05-21 15:53:31 Error: detect-parse: no rule options.
+[66 - Suricata-Main] 2025-05-21 15:53:31 Error: detect: error parsing signature ")" from file /etc/suricata/rules/custom-sip.rules at line 105
+[66 - Suricata-Main] 2025-05-21 15:53:31 Error: detect-parse: Signature missing required value "sid".
+[66 - Suricata-Main] 2025-05-21 15:53:31 Error: detect: error parsing signature "alert sip any any -> any any (" from file /etc/suricata/rules/custom-sip.rules at line 108
+[66 - Suricata-Main] 2025-05-21 15:53:31 Error: detect-parse: no rule options.
+[66 - Suricata-Main] 2025-05-21 15:53:31 Error: detect: error parsing signature ")" from file /etc/suricata/rules/custom-sip.rules at line 114
+[66 - Suricata-Main] 2025-05-21 15:53:31 Error: detect-parse: Signature missing required value "sid".
+[66 - Suricata-Main] 2025-05-21 15:53:31 Error: detect: error parsing signature "alert sip any any -> any any (" from file /etc/suricata/rules/custom-sip.rules at line 117
+[66 - Suricata-Main] 2025-05-21 15:53:31 Error: detect-parse: no rule options.
+[66 - Suricata-Main] 2025-05-21 15:53:31 Error: detect: error parsing signature ")" from file /etc/suricata/rules/custom-sip.rules at line 124
+[66 - Suricata-Main] 2025-05-21 15:53:31 Error: detect-parse: Signature missing required value "sid".
+[66 - Suricata-Main] 2025-05-21 15:53:31 Error: detect: error parsing signature "alert sip any any -> any any (" from file /etc/suricata/rules/custom-sip.rules at line 127
+[66 - Suricata-Main] 2025-05-21 15:53:31 Error: detect-parse: no rule options.
+[66 - Suricata-Main] 2025-05-21 15:53:31 Error: detect: error parsing signature ")" from file /etc/suricata/rules/custom-sip.rules at line 133
+[66 - Suricata-Main] 2025-05-21 15:53:31 Warning: detect: 1 rule files specified, but no rules were loaded!
+[66 - Suricata-Main] 2025-05-21 15:53:31 Info: threshold-config: Threshold config parsed: 0 rule(s) found
+[66 - Suricata-Main] 2025-05-21 15:53:31 Info: detect: 0 signatures processed. 0 are IP-only rules, 0 are inspecting packet payload, 0 inspect application layer, 0 are decoder event only
+[66 - Suricata-Main] 2025-05-21 15:53:31 Error: af-packet: fanout not supported by kernel: Kernel too old or cluster-id 99 already in use.
+[66 - Suricata-Main] 2025-05-21 15:53:31 Warning: af-packet: eno2: AF_PACKET tpacket-v3 is recommended for non-inline operation
+[66 - Suricata-Main] 2025-05-21 15:53:31 Info: runmodes: eno2: creating 1 thread
+[67 - W#01-eno2] 2025-05-21 15:53:31 Info: ioctl: eno2: MTU 1500
+[66 - Suricata-Main] 2025-05-21 15:53:31 Notice: threads: Threads created -> W: 1 FM: 1 FR: 1   Engine started.
+[66 - Suricata-Main] 2025-05-21 15:53:51 Notice: suricata: Signal Received.  Stopping engine.
+[66 - Suricata-Main] 2025-05-21 15:53:51 Info: suricata: time elapsed 20.777s
+[66 - Suricata-Main] 2025-05-21 15:53:52 Notice: device: eno2: packets: 210, drops: 0 (0.00%), invalid chksum: 0
+[1 - Suricata-Main] 2025-05-21 15:56:03 Notice: suricata: Signal Received.  Stopping engine.
+[1 - Suricata-Main] 2025-05-21 15:56:03 Info: suricata: time elapsed 201.660s
+[1 - Suricata-Main] 2025-05-21 15:56:04 Notice: device: eno2: packets: 6191, drops: 0 (0.00%), invalid chksum: 0
+[1 - Suricata-Main] 2025-05-21 15:56:11 Notice: suricata: This is Suricata version 7.0.10 RELEASE running in SYSTEM mode
+[1 - Suricata-Main] 2025-05-21 15:56:11 Info: cpu: CPUs/cores online: 32
+[1 - Suricata-Main] 2025-05-21 15:56:11 Info: suricata: Setting engine mode to IDS mode by default
+[1 - Suricata-Main] 2025-05-21 15:56:11 Info: suricata: No 'host-mode': suricata is in IDS mode, using default setting 'sniffer-only'
+[1 - Suricata-Main] 2025-05-21 15:56:11 Info: logopenfile: fast output device (regular) initialized: fast.log
+[1 - Suricata-Main] 2025-05-21 15:56:11 Info: logopenfile: eve-log output device (regular) initialized: eve.json
+[1 - Suricata-Main] 2025-05-21 15:56:11 Warning: counters: stats are enabled but no loggers are active
+[1 - Suricata-Main] 2025-05-21 15:56:11 Error: detect-parse: Signature missing required value "sid".
+[1 - Suricata-Main] 2025-05-21 15:56:11 Error: detect: error parsing signature "alert sip any any -> any any (" from file /etc/suricata/rules/custom-sip.rules at line 5
+[1 - Suricata-Main] 2025-05-21 15:56:11 Error: detect-parse: no rule options.
+[1 - Suricata-Main] 2025-05-21 15:56:11 Error: detect: error parsing signature ")" from file /etc/suricata/rules/custom-sip.rules at line 11
+[1 - Suricata-Main] 2025-05-21 15:56:11 Error: detect-parse: Signature missing required value "sid".
+[1 - Suricata-Main] 2025-05-21 15:56:11 Error: detect: error parsing signature "alert sip any any -> any any (" from file /etc/suricata/rules/custom-sip.rules at line 13
+[1 - Suricata-Main] 2025-05-21 15:56:11 Error: detect-parse: no rule options.
+[1 - Suricata-Main] 2025-05-21 15:56:11 Error: detect: error parsing signature ")" from file /etc/suricata/rules/custom-sip.rules at line 19
+[1 - Suricata-Main] 2025-05-21 15:56:11 Error: detect-parse: Signature missing required value "sid".
+[1 - Suricata-Main] 2025-05-21 15:56:11 Error: detect: error parsing signature "alert sip any any -> any any (" from file /etc/suricata/rules/custom-sip.rules at line 21
+[1 - Suricata-Main] 2025-05-21 15:56:11 Error: detect-parse: no rule options.
+[1 - Suricata-Main] 2025-05-21 15:56:11 Error: detect: error parsing signature ")" from file /etc/suricata/rules/custom-sip.rules at line 27
+[1 - Suricata-Main] 2025-05-21 15:56:11 Error: detect-parse: Signature missing required value "sid".
+[1 - Suricata-Main] 2025-05-21 15:56:11 Error: detect: error parsing signature "alert sip any any -> any any (" from file /etc/suricata/rules/custom-sip.rules at line 29
+[1 - Suricata-Main] 2025-05-21 15:56:11 Error: detect-parse: no rule options.
+[1 - Suricata-Main] 2025-05-21 15:56:11 Error: detect: error parsing signature ")" from file /etc/suricata/rules/custom-sip.rules at line 35
+[1 - Suricata-Main] 2025-05-21 15:56:11 Error: detect-parse: Signature missing required value "sid".
+[1 - Suricata-Main] 2025-05-21 15:56:11 Error: detect: error parsing signature "alert sip any any -> any any (" from file /etc/suricata/rules/custom-sip.rules at line 42
+[1 - Suricata-Main] 2025-05-21 15:56:11 Error: detect-parse: no rule options.
+[1 - Suricata-Main] 2025-05-21 15:56:11 Error: detect: error parsing signature ")" from file /etc/suricata/rules/custom-sip.rules at line 48
+[1 - Suricata-Main] 2025-05-21 15:56:11 Error: detect-parse: Signature missing required value "sid".
+[1 - Suricata-Main] 2025-05-21 15:56:11 Error: detect: error parsing signature "alert sip any any -> any any (" from file /etc/suricata/rules/custom-sip.rules at line 51
+[1 - Suricata-Main] 2025-05-21 15:56:11 Error: detect-parse: no rule options.
+[1 - Suricata-Main] 2025-05-21 15:56:11 Error: detect: error parsing signature ")" from file /etc/suricata/rules/custom-sip.rules at line 57
+[1 - Suricata-Main] 2025-05-21 15:56:11 Error: detect-parse: Signature missing required value "sid".
+[1 - Suricata-Main] 2025-05-21 15:56:11 Error: detect: error parsing signature "alert sip any any -> any any (" from file /etc/suricata/rules/custom-sip.rules at line 60
+[1 - Suricata-Main] 2025-05-21 15:56:11 Error: detect-parse: no rule options.
+[1 - Suricata-Main] 2025-05-21 15:56:11 Error: detect: error parsing signature ")" from file /etc/suricata/rules/custom-sip.rules at line 66
+[1 - Suricata-Main] 2025-05-21 15:56:11 Error: detect-parse: Signature missing required value "sid".
+[1 - Suricata-Main] 2025-05-21 15:56:11 Error: detect: error parsing signature "alert sip any any -> any any (" from file /etc/suricata/rules/custom-sip.rules at line 69
+[1 - Suricata-Main] 2025-05-21 15:56:11 Error: detect-parse: no rule options.
+[1 - Suricata-Main] 2025-05-21 15:56:11 Error: detect: error parsing signature ")" from file /etc/suricata/rules/custom-sip.rules at line 75
+[1 - Suricata-Main] 2025-05-21 15:56:11 Error: detect-parse: Signature missing required value "sid".
+[1 - Suricata-Main] 2025-05-21 15:56:11 Error: detect: error parsing signature "alert sip any any -> any any (" from file /etc/suricata/rules/custom-sip.rules at line 78
+[1 - Suricata-Main] 2025-05-21 15:56:11 Error: detect-parse: no rule options.
+[1 - Suricata-Main] 2025-05-21 15:56:11 Error: detect: error parsing signature ")" from file /etc/suricata/rules/custom-sip.rules at line 84
+[1 - Suricata-Main] 2025-05-21 15:56:11 Error: detect-parse: Signature missing required value "sid".
+[1 - Suricata-Main] 2025-05-21 15:56:11 Error: detect: error parsing signature "alert sip any any -> any any (" from file /etc/suricata/rules/custom-sip.rules at line 87
+[1 - Suricata-Main] 2025-05-21 15:56:11 Error: detect-parse: no rule options.
+[1 - Suricata-Main] 2025-05-21 15:56:11 Error: detect: error parsing signature ")" from file /etc/suricata/rules/custom-sip.rules at line 95
+[1 - Suricata-Main] 2025-05-21 15:56:11 Error: detect-parse: Signature missing required value "sid".
+[1 - Suricata-Main] 2025-05-21 15:56:11 Error: detect: error parsing signature "alert sip any any -> any any (" from file /etc/suricata/rules/custom-sip.rules at line 98
+[1 - Suricata-Main] 2025-05-21 15:56:11 Error: detect-parse: no rule options.
+[1 - Suricata-Main] 2025-05-21 15:56:11 Error: detect: error parsing signature ")" from file /etc/suricata/rules/custom-sip.rules at line 105
+[1 - Suricata-Main] 2025-05-21 15:56:11 Error: detect-parse: Signature missing required value "sid".
+[1 - Suricata-Main] 2025-05-21 15:56:11 Error: detect: error parsing signature "alert sip any any -> any any (" from file /etc/suricata/rules/custom-sip.rules at line 108
+[1 - Suricata-Main] 2025-05-21 15:56:11 Error: detect-parse: no rule options.
+[1 - Suricata-Main] 2025-05-21 15:56:11 Error: detect: error parsing signature ")" from file /etc/suricata/rules/custom-sip.rules at line 114
+[1 - Suricata-Main] 2025-05-21 15:56:11 Error: detect-parse: Signature missing required value "sid".
+[1 - Suricata-Main] 2025-05-21 15:56:11 Error: detect: error parsing signature "alert sip any any -> any any (" from file /etc/suricata/rules/custom-sip.rules at line 117
+[1 - Suricata-Main] 2025-05-21 15:56:11 Error: detect-parse: no rule options.
+[1 - Suricata-Main] 2025-05-21 15:56:11 Error: detect: error parsing signature ")" from file /etc/suricata/rules/custom-sip.rules at line 124
+[1 - Suricata-Main] 2025-05-21 15:56:11 Error: detect-parse: Signature missing required value "sid".
+[1 - Suricata-Main] 2025-05-21 15:56:11 Error: detect: error parsing signature "alert sip any any -> any any (" from file /etc/suricata/rules/custom-sip.rules at line 127
+[1 - Suricata-Main] 2025-05-21 15:56:11 Error: detect-parse: no rule options.
+[1 - Suricata-Main] 2025-05-21 15:56:11 Error: detect: error parsing signature ")" from file /etc/suricata/rules/custom-sip.rules at line 133
+[1 - Suricata-Main] 2025-05-21 15:56:11 Warning: detect: 1 rule files specified, but no rules were loaded!
+[1 - Suricata-Main] 2025-05-21 15:56:11 Info: threshold-config: Threshold config parsed: 0 rule(s) found
+[1 - Suricata-Main] 2025-05-21 15:56:11 Info: detect: 0 signatures processed. 0 are IP-only rules, 0 are inspecting packet payload, 0 inspect application layer, 0 are decoder event only
+[1 - Suricata-Main] 2025-05-21 15:56:11 Warning: af-packet: eno2: AF_PACKET tpacket-v3 is recommended for non-inline operation
+[1 - Suricata-Main] 2025-05-21 15:56:11 Info: runmodes: eno2: creating 32 threads
+[1 - Suricata-Main] 2025-05-21 15:56:12 Notice: threads: Threads created -> W: 32 FM: 1 FR: 1   Engine started.
+[56 - Suricata-Main] 2025-05-21 15:56:38 Notice: suricata: This is Suricata version 7.0.10 RELEASE running in SYSTEM mode
+[56 - Suricata-Main] 2025-05-21 15:56:38 Info: cpu: CPUs/cores online: 32
+[56 - Suricata-Main] 2025-05-21 15:56:38 Info: suricata: Setting engine mode to IDS mode by default
+[56 - Suricata-Main] 2025-05-21 15:56:38 Info: suricata: No 'host-mode': suricata is in IDS mode, using default setting 'sniffer-only'
+[56 - Suricata-Main] 2025-05-21 15:56:38 Info: logopenfile: fast output device (regular) initialized: fast.log
+[56 - Suricata-Main] 2025-05-21 15:56:38 Info: logopenfile: eve-log output device (regular) initialized: eve.json
+[56 - Suricata-Main] 2025-05-21 15:56:38 Warning: counters: stats are enabled but no loggers are active
+[56 - Suricata-Main] 2025-05-21 15:56:38 Error: detect-parse: Signature missing required value "sid".
+[56 - Suricata-Main] 2025-05-21 15:56:38 Error: detect: error parsing signature "alert sip any any -> any any (" from file /etc/suricata/rules/custom-sip.rules at line 5
+[56 - Suricata-Main] 2025-05-21 15:56:38 Error: detect-parse: no rule options.
+[56 - Suricata-Main] 2025-05-21 15:56:38 Error: detect: error parsing signature ")" from file /etc/suricata/rules/custom-sip.rules at line 11
+[56 - Suricata-Main] 2025-05-21 15:56:38 Error: detect-parse: Signature missing required value "sid".
+[56 - Suricata-Main] 2025-05-21 15:56:38 Error: detect: error parsing signature "alert sip any any -> any any (" from file /etc/suricata/rules/custom-sip.rules at line 13
+[56 - Suricata-Main] 2025-05-21 15:56:38 Error: detect-parse: no rule options.
+[56 - Suricata-Main] 2025-05-21 15:56:38 Error: detect: error parsing signature ")" from file /etc/suricata/rules/custom-sip.rules at line 19
+[56 - Suricata-Main] 2025-05-21 15:56:38 Error: detect-parse: Signature missing required value "sid".
+[56 - Suricata-Main] 2025-05-21 15:56:38 Error: detect: error parsing signature "alert sip any any -> any any (" from file /etc/suricata/rules/custom-sip.rules at line 21
+[56 - Suricata-Main] 2025-05-21 15:56:38 Error: detect-parse: no rule options.
+[56 - Suricata-Main] 2025-05-21 15:56:38 Error: detect: error parsing signature ")" from file /etc/suricata/rules/custom-sip.rules at line 27
+[56 - Suricata-Main] 2025-05-21 15:56:38 Error: detect-parse: Signature missing required value "sid".
+[56 - Suricata-Main] 2025-05-21 15:56:38 Error: detect: error parsing signature "alert sip any any -> any any (" from file /etc/suricata/rules/custom-sip.rules at line 29
+[56 - Suricata-Main] 2025-05-21 15:56:38 Error: detect-parse: no rule options.
+[56 - Suricata-Main] 2025-05-21 15:56:38 Error: detect: error parsing signature ")" from file /etc/suricata/rules/custom-sip.rules at line 35
+[56 - Suricata-Main] 2025-05-21 15:56:38 Error: detect-parse: Signature missing required value "sid".
+[56 - Suricata-Main] 2025-05-21 15:56:38 Error: detect: error parsing signature "alert sip any any -> any any (" from file /etc/suricata/rules/custom-sip.rules at line 42
+[56 - Suricata-Main] 2025-05-21 15:56:38 Error: detect-parse: no rule options.
+[56 - Suricata-Main] 2025-05-21 15:56:38 Error: detect: error parsing signature ")" from file /etc/suricata/rules/custom-sip.rules at line 48
+[56 - Suricata-Main] 2025-05-21 15:56:38 Error: detect-parse: Signature missing required value "sid".
+[56 - Suricata-Main] 2025-05-21 15:56:38 Error: detect: error parsing signature "alert sip any any -> any any (" from file /etc/suricata/rules/custom-sip.rules at line 51
+[56 - Suricata-Main] 2025-05-21 15:56:38 Error: detect-parse: no rule options.
+[56 - Suricata-Main] 2025-05-21 15:56:38 Error: detect: error parsing signature ")" from file /etc/suricata/rules/custom-sip.rules at line 57
+[56 - Suricata-Main] 2025-05-21 15:56:38 Error: detect-parse: Signature missing required value "sid".
+[56 - Suricata-Main] 2025-05-21 15:56:38 Error: detect: error parsing signature "alert sip any any -> any any (" from file /etc/suricata/rules/custom-sip.rules at line 60
+[56 - Suricata-Main] 2025-05-21 15:56:38 Error: detect-parse: no rule options.
+[56 - Suricata-Main] 2025-05-21 15:56:38 Error: detect: error parsing signature ")" from file /etc/suricata/rules/custom-sip.rules at line 66
+[56 - Suricata-Main] 2025-05-21 15:56:38 Error: detect-parse: Signature missing required value "sid".
+[56 - Suricata-Main] 2025-05-21 15:56:38 Error: detect: error parsing signature "alert sip any any -> any any (" from file /etc/suricata/rules/custom-sip.rules at line 69
+[56 - Suricata-Main] 2025-05-21 15:56:38 Error: detect-parse: no rule options.
+[56 - Suricata-Main] 2025-05-21 15:56:38 Error: detect: error parsing signature ")" from file /etc/suricata/rules/custom-sip.rules at line 75
+[56 - Suricata-Main] 2025-05-21 15:56:38 Error: detect-parse: Signature missing required value "sid".
+[56 - Suricata-Main] 2025-05-21 15:56:38 Error: detect: error parsing signature "alert sip any any -> any any (" from file /etc/suricata/rules/custom-sip.rules at line 78
+[56 - Suricata-Main] 2025-05-21 15:56:38 Error: detect-parse: no rule options.
+[56 - Suricata-Main] 2025-05-21 15:56:38 Error: detect: error parsing signature ")" from file /etc/suricata/rules/custom-sip.rules at line 84
+[56 - Suricata-Main] 2025-05-21 15:56:38 Error: detect-parse: Signature missing required value "sid".
+[56 - Suricata-Main] 2025-05-21 15:56:38 Error: detect: error parsing signature "alert sip any any -> any any (" from file /etc/suricata/rules/custom-sip.rules at line 87
+[56 - Suricata-Main] 2025-05-21 15:56:38 Error: detect-parse: no rule options.
+[56 - Suricata-Main] 2025-05-21 15:56:38 Error: detect: error parsing signature ")" from file /etc/suricata/rules/custom-sip.rules at line 95
+[56 - Suricata-Main] 2025-05-21 15:56:38 Error: detect-parse: Signature missing required value "sid".
+[56 - Suricata-Main] 2025-05-21 15:56:38 Error: detect: error parsing signature "alert sip any any -> any any (" from file /etc/suricata/rules/custom-sip.rules at line 98
+[56 - Suricata-Main] 2025-05-21 15:56:38 Error: detect-parse: no rule options.
+[56 - Suricata-Main] 2025-05-21 15:56:38 Error: detect: error parsing signature ")" from file /etc/suricata/rules/custom-sip.rules at line 105
+[56 - Suricata-Main] 2025-05-21 15:56:38 Error: detect-parse: Signature missing required value "sid".
+[56 - Suricata-Main] 2025-05-21 15:56:38 Error: detect: error parsing signature "alert sip any any -> any any (" from file /etc/suricata/rules/custom-sip.rules at line 108
+[56 - Suricata-Main] 2025-05-21 15:56:38 Error: detect-parse: no rule options.
+[56 - Suricata-Main] 2025-05-21 15:56:38 Error: detect: error parsing signature ")" from file /etc/suricata/rules/custom-sip.rules at line 114
+[56 - Suricata-Main] 2025-05-21 15:56:38 Error: detect-parse: Signature missing required value "sid".
+[56 - Suricata-Main] 2025-05-21 15:56:38 Error: detect: error parsing signature "alert sip any any -> any any (" from file /etc/suricata/rules/custom-sip.rules at line 117
+[56 - Suricata-Main] 2025-05-21 15:56:38 Error: detect-parse: no rule options.
+[56 - Suricata-Main] 2025-05-21 15:56:38 Error: detect: error parsing signature ")" from file /etc/suricata/rules/custom-sip.rules at line 124
+[56 - Suricata-Main] 2025-05-21 15:56:38 Error: detect-parse: Signature missing required value "sid".
+[56 - Suricata-Main] 2025-05-21 15:56:38 Error: detect: error parsing signature "alert sip any any -> any any (" from file /etc/suricata/rules/custom-sip.rules at line 127
+[56 - Suricata-Main] 2025-05-21 15:56:38 Error: detect-parse: no rule options.
+[56 - Suricata-Main] 2025-05-21 15:56:38 Error: detect: error parsing signature ")" from file /etc/suricata/rules/custom-sip.rules at line 133
+[56 - Suricata-Main] 2025-05-21 15:56:38 Warning: detect: 1 rule files specified, but no rules were loaded!
+[56 - Suricata-Main] 2025-05-21 15:56:38 Info: threshold-config: Threshold config parsed: 0 rule(s) found
+[56 - Suricata-Main] 2025-05-21 15:56:38 Info: detect: 0 signatures processed. 0 are IP-only rules, 0 are inspecting packet payload, 0 inspect application layer, 0 are decoder event only
+[56 - Suricata-Main] 2025-05-21 15:56:38 Error: af-packet: fanout not supported by kernel: Kernel too old or cluster-id 99 already in use.
+[56 - Suricata-Main] 2025-05-21 15:56:38 Warning: af-packet: eno2: AF_PACKET tpacket-v3 is recommended for non-inline operation
+[56 - Suricata-Main] 2025-05-21 15:56:38 Info: runmodes: eno2: creating 1 thread
+[57 - W#01-eno2] 2025-05-21 15:56:38 Info: ioctl: eno2: MTU 1500
+[56 - Suricata-Main] 2025-05-21 15:56:38 Notice: threads: Threads created -> W: 1 FM: 1 FR: 1   Engine started.
+[56 - Suricata-Main] 2025-05-21 15:56:58 Notice: suricata: Signal Received.  Stopping engine.
+[56 - Suricata-Main] 2025-05-21 15:56:58 Info: suricata: time elapsed 20.785s
+[56 - Suricata-Main] 2025-05-21 15:56:59 Notice: device: eno2: packets: 206, drops: 0 (0.00%), invalid chksum: 0
+[67 - Suricata-Main] 2025-05-21 15:57:55 Notice: suricata: This is Suricata version 7.0.10 RELEASE running in SYSTEM mode
+[67 - Suricata-Main] 2025-05-21 15:57:55 Info: cpu: CPUs/cores online: 32
+[67 - Suricata-Main] 2025-05-21 15:57:55 Info: suricata: Setting engine mode to IDS mode by default
+[67 - Suricata-Main] 2025-05-21 15:57:55 Info: suricata: No 'host-mode': suricata is in IDS mode, using default setting 'sniffer-only'
+[67 - Suricata-Main] 2025-05-21 15:57:55 Info: logopenfile: fast output device (regular) initialized: fast.log
+[67 - Suricata-Main] 2025-05-21 15:57:55 Info: logopenfile: eve-log output device (regular) initialized: eve.json
+[67 - Suricata-Main] 2025-05-21 15:57:55 Warning: counters: stats are enabled but no loggers are active
+[67 - Suricata-Main] 2025-05-21 15:57:55 Error: detect-parse: Signature missing required value "sid".
+[67 - Suricata-Main] 2025-05-21 15:57:55 Error: detect: error parsing signature "alert sip any any -> any any (" from file /etc/suricata/rules/custom-sip.rules at line 5
+[67 - Suricata-Main] 2025-05-21 15:57:55 Error: detect-parse: no rule options.
+[67 - Suricata-Main] 2025-05-21 15:57:55 Error: detect: error parsing signature ")" from file /etc/suricata/rules/custom-sip.rules at line 11
+[67 - Suricata-Main] 2025-05-21 15:57:55 Error: detect-parse: Signature missing required value "sid".
+[67 - Suricata-Main] 2025-05-21 15:57:55 Error: detect: error parsing signature "alert sip any any -> any any (" from file /etc/suricata/rules/custom-sip.rules at line 13
+[67 - Suricata-Main] 2025-05-21 15:57:55 Error: detect-parse: no rule options.
+[67 - Suricata-Main] 2025-05-21 15:57:55 Error: detect: error parsing signature ")" from file /etc/suricata/rules/custom-sip.rules at line 19
+[67 - Suricata-Main] 2025-05-21 15:57:55 Error: detect-parse: Signature missing required value "sid".
+[67 - Suricata-Main] 2025-05-21 15:57:55 Error: detect: error parsing signature "alert sip any any -> any any (" from file /etc/suricata/rules/custom-sip.rules at line 21
+[67 - Suricata-Main] 2025-05-21 15:57:55 Error: detect-parse: no rule options.
+[67 - Suricata-Main] 2025-05-21 15:57:55 Error: detect: error parsing signature ")" from file /etc/suricata/rules/custom-sip.rules at line 27
+[67 - Suricata-Main] 2025-05-21 15:57:55 Error: detect-parse: Signature missing required value "sid".
+[67 - Suricata-Main] 2025-05-21 15:57:55 Error: detect: error parsing signature "alert sip any any -> any any (" from file /etc/suricata/rules/custom-sip.rules at line 29
+[67 - Suricata-Main] 2025-05-21 15:57:55 Error: detect-parse: no rule options.
+[67 - Suricata-Main] 2025-05-21 15:57:55 Error: detect: error parsing signature ")" from file /etc/suricata/rules/custom-sip.rules at line 35
+[67 - Suricata-Main] 2025-05-21 15:57:55 Error: detect-parse: Signature missing required value "sid".
+[67 - Suricata-Main] 2025-05-21 15:57:55 Error: detect: error parsing signature "alert sip any any -> any any (" from file /etc/suricata/rules/custom-sip.rules at line 42
+[67 - Suricata-Main] 2025-05-21 15:57:55 Error: detect-parse: no rule options.
+[67 - Suricata-Main] 2025-05-21 15:57:55 Error: detect: error parsing signature ")" from file /etc/suricata/rules/custom-sip.rules at line 48
+[67 - Suricata-Main] 2025-05-21 15:57:55 Error: detect-parse: Signature missing required value "sid".
+[67 - Suricata-Main] 2025-05-21 15:57:55 Error: detect: error parsing signature "alert sip any any -> any any (" from file /etc/suricata/rules/custom-sip.rules at line 51
+[67 - Suricata-Main] 2025-05-21 15:57:55 Error: detect-parse: no rule options.
+[67 - Suricata-Main] 2025-05-21 15:57:55 Error: detect: error parsing signature ")" from file /etc/suricata/rules/custom-sip.rules at line 57
+[67 - Suricata-Main] 2025-05-21 15:57:55 Error: detect-parse: Signature missing required value "sid".
+[67 - Suricata-Main] 2025-05-21 15:57:55 Error: detect: error parsing signature "alert sip any any -> any any (" from file /etc/suricata/rules/custom-sip.rules at line 60
+[67 - Suricata-Main] 2025-05-21 15:57:55 Error: detect-parse: no rule options.
+[67 - Suricata-Main] 2025-05-21 15:57:55 Error: detect: error parsing signature ")" from file /etc/suricata/rules/custom-sip.rules at line 66
+[67 - Suricata-Main] 2025-05-21 15:57:55 Error: detect-parse: Signature missing required value "sid".
+[67 - Suricata-Main] 2025-05-21 15:57:55 Error: detect: error parsing signature "alert sip any any -> any any (" from file /etc/suricata/rules/custom-sip.rules at line 69
+[67 - Suricata-Main] 2025-05-21 15:57:55 Error: detect-parse: no rule options.
+[67 - Suricata-Main] 2025-05-21 15:57:55 Error: detect: error parsing signature ")" from file /etc/suricata/rules/custom-sip.rules at line 75
+[67 - Suricata-Main] 2025-05-21 15:57:55 Error: detect-parse: Signature missing required value "sid".
+[67 - Suricata-Main] 2025-05-21 15:57:55 Error: detect: error parsing signature "alert sip any any -> any any (" from file /etc/suricata/rules/custom-sip.rules at line 78
+[67 - Suricata-Main] 2025-05-21 15:57:55 Error: detect-parse: no rule options.
+[67 - Suricata-Main] 2025-05-21 15:57:55 Error: detect: error parsing signature ")" from file /etc/suricata/rules/custom-sip.rules at line 84
+[67 - Suricata-Main] 2025-05-21 15:57:55 Error: detect-parse: Signature missing required value "sid".
+[67 - Suricata-Main] 2025-05-21 15:57:55 Error: detect: error parsing signature "alert sip any any -> any any (" from file /etc/suricata/rules/custom-sip.rules at line 87
+[67 - Suricata-Main] 2025-05-21 15:57:55 Error: detect-parse: no rule options.
+[67 - Suricata-Main] 2025-05-21 15:57:55 Error: detect: error parsing signature ")" from file /etc/suricata/rules/custom-sip.rules at line 95
+[67 - Suricata-Main] 2025-05-21 15:57:55 Error: detect-parse: Signature missing required value "sid".
+[67 - Suricata-Main] 2025-05-21 15:57:55 Error: detect: error parsing signature "alert sip any any -> any any (" from file /etc/suricata/rules/custom-sip.rules at line 98
+[67 - Suricata-Main] 2025-05-21 15:57:55 Error: detect-parse: no rule options.
+[67 - Suricata-Main] 2025-05-21 15:57:55 Error: detect: error parsing signature ")" from file /etc/suricata/rules/custom-sip.rules at line 105
+[67 - Suricata-Main] 2025-05-21 15:57:55 Error: detect-parse: Signature missing required value "sid".
+[67 - Suricata-Main] 2025-05-21 15:57:55 Error: detect: error parsing signature "alert sip any any -> any any (" from file /etc/suricata/rules/custom-sip.rules at line 108
+[67 - Suricata-Main] 2025-05-21 15:57:55 Error: detect-parse: no rule options.
+[67 - Suricata-Main] 2025-05-21 15:57:55 Error: detect: error parsing signature ")" from file /etc/suricata/rules/custom-sip.rules at line 114
+[67 - Suricata-Main] 2025-05-21 15:57:55 Error: detect-parse: Signature missing required value "sid".
+[67 - Suricata-Main] 2025-05-21 15:57:55 Error: detect: error parsing signature "alert sip any any -> any any (" from file /etc/suricata/rules/custom-sip.rules at line 117
+[67 - Suricata-Main] 2025-05-21 15:57:55 Error: detect-parse: no rule options.
+[67 - Suricata-Main] 2025-05-21 15:57:55 Error: detect: error parsing signature ")" from file /etc/suricata/rules/custom-sip.rules at line 124
+[67 - Suricata-Main] 2025-05-21 15:57:55 Error: detect-parse: Signature missing required value "sid".
+[67 - Suricata-Main] 2025-05-21 15:57:55 Error: detect: error parsing signature "alert sip any any -> any any (" from file /etc/suricata/rules/custom-sip.rules at line 127
+[67 - Suricata-Main] 2025-05-21 15:57:55 Error: detect-parse: no rule options.
+[67 - Suricata-Main] 2025-05-21 15:57:55 Error: detect: error parsing signature ")" from file /etc/suricata/rules/custom-sip.rules at line 133
+[67 - Suricata-Main] 2025-05-21 15:57:55 Warning: detect: 1 rule files specified, but no rules were loaded!
+[67 - Suricata-Main] 2025-05-21 15:57:55 Info: threshold-config: Threshold config parsed: 0 rule(s) found
+[67 - Suricata-Main] 2025-05-21 15:57:55 Info: detect: 0 signatures processed. 0 are IP-only rules, 0 are inspecting packet payload, 0 inspect application layer, 0 are decoder event only
+[67 - Suricata-Main] 2025-05-21 15:57:55 Error: af-packet: fanout not supported by kernel: Kernel too old or cluster-id 99 already in use.
+[67 - Suricata-Main] 2025-05-21 15:57:55 Warning: af-packet: eno2: AF_PACKET tpacket-v3 is recommended for non-inline operation
+[67 - Suricata-Main] 2025-05-21 15:57:55 Info: runmodes: eno2: creating 1 thread
+[68 - W#01-eno2] 2025-05-21 15:57:55 Info: ioctl: eno2: MTU 1500
+[67 - Suricata-Main] 2025-05-21 15:57:55 Notice: threads: Threads created -> W: 1 FM: 1 FR: 1   Engine started.
+[67 - Suricata-Main] 2025-05-21 15:58:25 Notice: suricata: Signal Received.  Stopping engine.
+[67 - Suricata-Main] 2025-05-21 15:58:26 Info: suricata: time elapsed 30.669s
+[67 - Suricata-Main] 2025-05-21 15:58:27 Notice: device: eno2: packets: 534, drops: 0 (0.00%), invalid chksum: 0
+[77 - Suricata-Main] 2025-05-21 15:58:53 Notice: suricata: This is Suricata version 7.0.10 RELEASE running in SYSTEM mode
+[77 - Suricata-Main] 2025-05-21 15:58:53 Info: cpu: CPUs/cores online: 32
+[77 - Suricata-Main] 2025-05-21 15:58:53 Info: suricata: Setting engine mode to IDS mode by default
+[77 - Suricata-Main] 2025-05-21 15:58:53 Info: suricata: No 'host-mode': suricata is in IDS mode, using default setting 'sniffer-only'
+[77 - Suricata-Main] 2025-05-21 15:58:53 Info: logopenfile: fast output device (regular) initialized: fast.log
+[77 - Suricata-Main] 2025-05-21 15:58:53 Info: logopenfile: eve-log output device (regular) initialized: eve.json
+[77 - Suricata-Main] 2025-05-21 15:58:53 Warning: counters: stats are enabled but no loggers are active
+[77 - Suricata-Main] 2025-05-21 15:58:53 Error: detect-parse: Signature missing required value "sid".
+[77 - Suricata-Main] 2025-05-21 15:58:53 Error: detect: error parsing signature "alert sip any any -> any any (" from file /etc/suricata/rules/custom-sip.rules at line 5
+[77 - Suricata-Main] 2025-05-21 15:58:53 Error: detect-parse: no rule options.
+[77 - Suricata-Main] 2025-05-21 15:58:53 Error: detect: error parsing signature ")" from file /etc/suricata/rules/custom-sip.rules at line 11
+[77 - Suricata-Main] 2025-05-21 15:58:53 Error: detect-parse: Signature missing required value "sid".
+[77 - Suricata-Main] 2025-05-21 15:58:53 Error: detect: error parsing signature "alert sip any any -> any any (" from file /etc/suricata/rules/custom-sip.rules at line 13
+[77 - Suricata-Main] 2025-05-21 15:58:53 Error: detect-parse: no rule options.
+[77 - Suricata-Main] 2025-05-21 15:58:53 Error: detect: error parsing signature ")" from file /etc/suricata/rules/custom-sip.rules at line 19
+[77 - Suricata-Main] 2025-05-21 15:58:53 Error: detect-parse: Signature missing required value "sid".
+[77 - Suricata-Main] 2025-05-21 15:58:53 Error: detect: error parsing signature "alert sip any any -> any any (" from file /etc/suricata/rules/custom-sip.rules at line 21
+[77 - Suricata-Main] 2025-05-21 15:58:53 Error: detect-parse: no rule options.
+[77 - Suricata-Main] 2025-05-21 15:58:53 Error: detect: error parsing signature ")" from file /etc/suricata/rules/custom-sip.rules at line 27
+[77 - Suricata-Main] 2025-05-21 15:58:53 Error: detect-parse: Signature missing required value "sid".
+[77 - Suricata-Main] 2025-05-21 15:58:53 Error: detect: error parsing signature "alert sip any any -> any any (" from file /etc/suricata/rules/custom-sip.rules at line 29
+[77 - Suricata-Main] 2025-05-21 15:58:53 Error: detect-parse: no rule options.
+[77 - Suricata-Main] 2025-05-21 15:58:53 Error: detect: error parsing signature ")" from file /etc/suricata/rules/custom-sip.rules at line 35
+[77 - Suricata-Main] 2025-05-21 15:58:53 Error: detect-parse: Signature missing required value "sid".
+[77 - Suricata-Main] 2025-05-21 15:58:53 Error: detect: error parsing signature "alert sip any any -> any any (" from file /etc/suricata/rules/custom-sip.rules at line 42
+[77 - Suricata-Main] 2025-05-21 15:58:53 Error: detect-parse: no rule options.
+[77 - Suricata-Main] 2025-05-21 15:58:53 Error: detect: error parsing signature ")" from file /etc/suricata/rules/custom-sip.rules at line 48
+[77 - Suricata-Main] 2025-05-21 15:58:53 Error: detect-parse: Signature missing required value "sid".
+[77 - Suricata-Main] 2025-05-21 15:58:53 Error: detect: error parsing signature "alert sip any any -> any any (" from file /etc/suricata/rules/custom-sip.rules at line 51
+[77 - Suricata-Main] 2025-05-21 15:58:53 Error: detect-parse: no rule options.
+[77 - Suricata-Main] 2025-05-21 15:58:53 Error: detect: error parsing signature ")" from file /etc/suricata/rules/custom-sip.rules at line 57
+[77 - Suricata-Main] 2025-05-21 15:58:53 Error: detect-parse: Signature missing required value "sid".
+[77 - Suricata-Main] 2025-05-21 15:58:53 Error: detect: error parsing signature "alert sip any any -> any any (" from file /etc/suricata/rules/custom-sip.rules at line 60
+[77 - Suricata-Main] 2025-05-21 15:58:53 Error: detect-parse: no rule options.
+[77 - Suricata-Main] 2025-05-21 15:58:53 Error: detect: error parsing signature ")" from file /etc/suricata/rules/custom-sip.rules at line 66
+[77 - Suricata-Main] 2025-05-21 15:58:53 Error: detect-parse: Signature missing required value "sid".
+[77 - Suricata-Main] 2025-05-21 15:58:53 Error: detect: error parsing signature "alert sip any any -> any any (" from file /etc/suricata/rules/custom-sip.rules at line 69
+[77 - Suricata-Main] 2025-05-21 15:58:53 Error: detect-parse: no rule options.
+[77 - Suricata-Main] 2025-05-21 15:58:53 Error: detect: error parsing signature ")" from file /etc/suricata/rules/custom-sip.rules at line 75
+[77 - Suricata-Main] 2025-05-21 15:58:53 Error: detect-parse: Signature missing required value "sid".
+[77 - Suricata-Main] 2025-05-21 15:58:53 Error: detect: error parsing signature "alert sip any any -> any any (" from file /etc/suricata/rules/custom-sip.rules at line 78
+[77 - Suricata-Main] 2025-05-21 15:58:53 Error: detect-parse: no rule options.
+[77 - Suricata-Main] 2025-05-21 15:58:53 Error: detect: error parsing signature ")" from file /etc/suricata/rules/custom-sip.rules at line 84
+[77 - Suricata-Main] 2025-05-21 15:58:53 Error: detect-parse: Signature missing required value "sid".
+[77 - Suricata-Main] 2025-05-21 15:58:53 Error: detect: error parsing signature "alert sip any any -> any any (" from file /etc/suricata/rules/custom-sip.rules at line 87
+[77 - Suricata-Main] 2025-05-21 15:58:53 Error: detect-parse: no rule options.
+[77 - Suricata-Main] 2025-05-21 15:58:53 Error: detect: error parsing signature ")" from file /etc/suricata/rules/custom-sip.rules at line 95
+[77 - Suricata-Main] 2025-05-21 15:58:53 Error: detect-parse: Signature missing required value "sid".
+[77 - Suricata-Main] 2025-05-21 15:58:53 Error: detect: error parsing signature "alert sip any any -> any any (" from file /etc/suricata/rules/custom-sip.rules at line 98
+[77 - Suricata-Main] 2025-05-21 15:58:53 Error: detect-parse: no rule options.
+[77 - Suricata-Main] 2025-05-21 15:58:53 Error: detect: error parsing signature ")" from file /etc/suricata/rules/custom-sip.rules at line 105
+[77 - Suricata-Main] 2025-05-21 15:58:53 Error: detect-parse: Signature missing required value "sid".
+[77 - Suricata-Main] 2025-05-21 15:58:53 Error: detect: error parsing signature "alert sip any any -> any any (" from file /etc/suricata/rules/custom-sip.rules at line 108
+[77 - Suricata-Main] 2025-05-21 15:58:53 Error: detect-parse: no rule options.
+[77 - Suricata-Main] 2025-05-21 15:58:53 Error: detect: error parsing signature ")" from file /etc/suricata/rules/custom-sip.rules at line 114
+[77 - Suricata-Main] 2025-05-21 15:58:53 Error: detect-parse: Signature missing required value "sid".
+[77 - Suricata-Main] 2025-05-21 15:58:53 Error: detect: error parsing signature "alert sip any any -> any any (" from file /etc/suricata/rules/custom-sip.rules at line 117
+[77 - Suricata-Main] 2025-05-21 15:58:53 Error: detect-parse: no rule options.
+[77 - Suricata-Main] 2025-05-21 15:58:53 Error: detect: error parsing signature ")" from file /etc/suricata/rules/custom-sip.rules at line 124
+[77 - Suricata-Main] 2025-05-21 15:58:53 Error: detect-parse: Signature missing required value "sid".
+[77 - Suricata-Main] 2025-05-21 15:58:53 Error: detect: error parsing signature "alert sip any any -> any any (" from file /etc/suricata/rules/custom-sip.rules at line 127
+[77 - Suricata-Main] 2025-05-21 15:58:53 Error: detect-parse: no rule options.
+[77 - Suricata-Main] 2025-05-21 15:58:53 Error: detect: error parsing signature ")" from file /etc/suricata/rules/custom-sip.rules at line 133
+[77 - Suricata-Main] 2025-05-21 15:58:53 Warning: detect: 1 rule files specified, but no rules were loaded!
+[77 - Suricata-Main] 2025-05-21 15:58:53 Info: threshold-config: Threshold config parsed: 0 rule(s) found
+[77 - Suricata-Main] 2025-05-21 15:58:53 Info: detect: 0 signatures processed. 0 are IP-only rules, 0 are inspecting packet payload, 0 inspect application layer, 0 are decoder event only
+[77 - Suricata-Main] 2025-05-21 15:58:53 Error: af-packet: fanout not supported by kernel: Kernel too old or cluster-id 99 already in use.
+[77 - Suricata-Main] 2025-05-21 15:58:53 Warning: af-packet: eno2: AF_PACKET tpacket-v3 is recommended for non-inline operation
+[77 - Suricata-Main] 2025-05-21 15:58:53 Info: runmodes: eno2: creating 1 thread
+[78 - W#01-eno2] 2025-05-21 15:58:53 Info: ioctl: eno2: MTU 1500
+[77 - Suricata-Main] 2025-05-21 15:58:53 Notice: threads: Threads created -> W: 1 FM: 1 FR: 1   Engine started.
+[77 - Suricata-Main] 2025-05-21 15:59:23 Notice: suricata: Signal Received.  Stopping engine.
+[77 - Suricata-Main] 2025-05-21 15:59:23 Info: suricata: time elapsed 30.664s
+[77 - Suricata-Main] 2025-05-21 15:59:25 Notice: device: eno2: packets: 261, drops: 0 (0.00%), invalid chksum: 0
+[1 - Suricata-Main] 2025-05-21 16:02:33 Notice: suricata: Signal Received.  Stopping engine.
+[1 - Suricata-Main] 2025-05-21 16:02:34 Info: suricata: time elapsed 383.308s
+[1 - Suricata-Main] 2025-05-21 16:02:35 Notice: device: eno2: packets: 6662, drops: 129 (1.94%), invalid chksum: 0
+[1 - Suricata-Main] 2025-05-21 16:02:40 Notice: suricata: This is Suricata version 7.0.10 RELEASE running in SYSTEM mode
+[1 - Suricata-Main] 2025-05-21 16:02:40 Info: cpu: CPUs/cores online: 32
+[1 - Suricata-Main] 2025-05-21 16:02:40 Info: suricata: Setting engine mode to IDS mode by default
+[1 - Suricata-Main] 2025-05-21 16:02:40 Info: suricata: No 'host-mode': suricata is in IDS mode, using default setting 'sniffer-only'
+[1 - Suricata-Main] 2025-05-21 16:02:40 Info: logopenfile: fast output device (regular) initialized: fast.log
+[1 - Suricata-Main] 2025-05-21 16:02:40 Info: logopenfile: eve-log output device (regular) initialized: eve.json
+[1 - Suricata-Main] 2025-05-21 16:02:40 Warning: counters: stats are enabled but no loggers are active
+[1 - Suricata-Main] 2025-05-21 16:02:40 Info: detect: 1 rule files processed. 4 rules successfully loaded, 0 rules failed, 0
+[1 - Suricata-Main] 2025-05-21 16:02:40 Info: threshold-config: Threshold config parsed: 0 rule(s) found
+[1 - Suricata-Main] 2025-05-21 16:02:40 Info: detect: 4 signatures processed. 0 are IP-only rules, 4 are inspecting packet payload, 0 inspect application layer, 0 are decoder event only
+[1 - Suricata-Main] 2025-05-21 16:02:40 Warning: af-packet: eno2: AF_PACKET tpacket-v3 is recommended for non-inline operation
+[1 - Suricata-Main] 2025-05-21 16:02:40 Info: runmodes: eno2: creating 32 threads
+[1 - Suricata-Main] 2025-05-21 16:02:41 Notice: threads: Threads created -> W: 32 FM: 1 FR: 1   Engine started.
+[56 - Suricata-Main] 2025-05-21 16:03:10 Notice: suricata: This is Suricata version 7.0.10 RELEASE running in SYSTEM mode
+[56 - Suricata-Main] 2025-05-21 16:03:10 Info: cpu: CPUs/cores online: 32
+[56 - Suricata-Main] 2025-05-21 16:03:10 Info: suricata: Setting engine mode to IDS mode by default
+[56 - Suricata-Main] 2025-05-21 16:03:10 Info: suricata: No 'host-mode': suricata is in IDS mode, using default setting 'sniffer-only'
+[56 - Suricata-Main] 2025-05-21 16:03:10 Info: logopenfile: fast output device (regular) initialized: fast.log
+[56 - Suricata-Main] 2025-05-21 16:03:10 Info: logopenfile: eve-log output device (regular) initialized: eve.json
+[56 - Suricata-Main] 2025-05-21 16:03:10 Warning: counters: stats are enabled but no loggers are active
+[56 - Suricata-Main] 2025-05-21 16:03:10 Info: detect: 1 rule files processed. 4 rules successfully loaded, 0 rules failed, 0
+[56 - Suricata-Main] 2025-05-21 16:03:10 Info: threshold-config: Threshold config parsed: 0 rule(s) found
+[56 - Suricata-Main] 2025-05-21 16:03:10 Info: detect: 4 signatures processed. 0 are IP-only rules, 4 are inspecting packet payload, 0 inspect application layer, 0 are decoder event only
+[56 - Suricata-Main] 2025-05-21 16:03:10 Error: af-packet: fanout not supported by kernel: Kernel too old or cluster-id 99 already in use.
+[56 - Suricata-Main] 2025-05-21 16:03:10 Warning: af-packet: eno2: AF_PACKET tpacket-v3 is recommended for non-inline operation
+[56 - Suricata-Main] 2025-05-21 16:03:10 Info: runmodes: eno2: creating 1 thread
+[57 - W#01-eno2] 2025-05-21 16:03:10 Info: ioctl: eno2: MTU 1500
+[56 - Suricata-Main] 2025-05-21 16:03:10 Notice: threads: Threads created -> W: 1 FM: 1 FR: 1   Engine started.
+[56 - Suricata-Main] 2025-05-21 16:03:40 Notice: suricata: Signal Received.  Stopping engine.
+[56 - Suricata-Main] 2025-05-21 16:03:41 Info: suricata: time elapsed 30.680s
+[56 - Suricata-Main] 2025-05-21 16:03:42 Notice: device: eno2: packets: 294, drops: 0 (0.00%), invalid chksum: 0
+[1 - Suricata-Main] 2025-05-21 16:06:40 Notice: suricata: Signal Received.  Stopping engine.
+[1 - Suricata-Main] 2025-05-21 16:06:41 Info: suricata: time elapsed 240.912s
+[1 - Suricata-Main] 2025-05-21 16:06:42 Notice: device: eno2: packets: 7497, drops: 22 (0.29%), invalid chksum: 0
+[1 - Suricata-Main] 2025-05-21 16:06:43 Notice: suricata: This is Suricata version 7.0.10 RELEASE running in SYSTEM mode
+[1 - Suricata-Main] 2025-05-21 16:06:43 Info: cpu: CPUs/cores online: 32
+[1 - Suricata-Main] 2025-05-21 16:06:43 Info: suricata: Setting engine mode to IDS mode by default
+[1 - Suricata-Main] 2025-05-21 16:06:43 Info: suricata: No 'host-mode': suricata is in IDS mode, using default setting 'sniffer-only'
+[1 - Suricata-Main] 2025-05-21 16:06:43 Info: logopenfile: fast output device (regular) initialized: fast.log
+[1 - Suricata-Main] 2025-05-21 16:06:43 Info: logopenfile: eve-log output device (regular) initialized: eve.json
+[1 - Suricata-Main] 2025-05-21 16:06:43 Warning: counters: stats are enabled but no loggers are active
+[1 - Suricata-Main] 2025-05-21 16:06:43 Info: detect: 1 rule files processed. 4 rules successfully loaded, 0 rules failed, 0
+[1 - Suricata-Main] 2025-05-21 16:06:43 Info: threshold-config: Threshold config parsed: 0 rule(s) found
+[1 - Suricata-Main] 2025-05-21 16:06:43 Info: detect: 4 signatures processed. 0 are IP-only rules, 4 are inspecting packet payload, 0 inspect application layer, 0 are decoder event only
+[1 - Suricata-Main] 2025-05-21 16:06:43 Warning: af-packet: eno2: AF_PACKET tpacket-v3 is recommended for non-inline operation
+[1 - Suricata-Main] 2025-05-21 16:06:43 Info: runmodes: eno2: creating 32 threads
+[1 - Suricata-Main] 2025-05-21 16:06:44 Notice: threads: Threads created -> W: 32 FM: 1 FR: 1   Engine started.
+[56 - Suricata-Main] 2025-05-21 16:07:17 Notice: suricata: This is Suricata version 7.0.10 RELEASE running in SYSTEM mode
+[56 - Suricata-Main] 2025-05-21 16:07:17 Info: cpu: CPUs/cores online: 32
+[56 - Suricata-Main] 2025-05-21 16:07:17 Info: suricata: Setting engine mode to IDS mode by default
+[56 - Suricata-Main] 2025-05-21 16:07:17 Info: suricata: No 'host-mode': suricata is in IDS mode, using default setting 'sniffer-only'
+[56 - Suricata-Main] 2025-05-21 16:07:17 Info: logopenfile: fast output device (regular) initialized: fast.log
+[56 - Suricata-Main] 2025-05-21 16:07:17 Info: logopenfile: eve-log output device (regular) initialized: eve.json
+[56 - Suricata-Main] 2025-05-21 16:07:17 Warning: counters: stats are enabled but no loggers are active
+[56 - Suricata-Main] 2025-05-21 16:07:17 Info: detect: 1 rule files processed. 4 rules successfully loaded, 0 rules failed, 0
+[56 - Suricata-Main] 2025-05-21 16:07:17 Info: threshold-config: Threshold config parsed: 0 rule(s) found
+[56 - Suricata-Main] 2025-05-21 16:07:17 Info: detect: 4 signatures processed. 0 are IP-only rules, 4 are inspecting packet payload, 0 inspect application layer, 0 are decoder event only
+[56 - Suricata-Main] 2025-05-21 16:07:17 Error: af-packet: fanout not supported by kernel: Kernel too old or cluster-id 99 already in use.
+[56 - Suricata-Main] 2025-05-21 16:07:17 Warning: af-packet: eno2: AF_PACKET tpacket-v3 is recommended for non-inline operation
+[56 - Suricata-Main] 2025-05-21 16:07:17 Info: runmodes: eno2: creating 1 thread
+[57 - W#01-eno2] 2025-05-21 16:07:17 Info: ioctl: eno2: MTU 1500
+[56 - Suricata-Main] 2025-05-21 16:07:17 Notice: threads: Threads created -> W: 1 FM: 1 FR: 1   Engine started.
+[56 - Suricata-Main] 2025-05-21 16:07:37 Notice: suricata: Signal Received.  Stopping engine.
+[56 - Suricata-Main] 2025-05-21 16:07:38 Info: suricata: time elapsed 20.783s
+[56 - Suricata-Main] 2025-05-21 16:07:39 Notice: device: eno2: packets: 203, drops: 0 (0.00%), invalid chksum: 0
+[1 - Suricata-Main] 2025-05-21 16:09:34 Notice: suricata: Signal Received.  Stopping engine.
+[1 - Suricata-Main] 2025-05-21 16:09:35 Info: suricata: time elapsed 172.155s
+[1 - Suricata-Main] 2025-05-21 16:09:37 Notice: device: eno2: packets: 6269, drops: 0 (0.00%), invalid chksum: 0
+[1 - Suricata-Main] 2025-05-21 16:09:38 Notice: suricata: This is Suricata version 7.0.10 RELEASE running in SYSTEM mode
+[1 - Suricata-Main] 2025-05-21 16:09:38 Info: cpu: CPUs/cores online: 32
+[1 - Suricata-Main] 2025-05-21 16:09:38 Info: suricata: Setting engine mode to IDS mode by default
+[1 - Suricata-Main] 2025-05-21 16:09:38 Info: suricata: No 'host-mode': suricata is in IDS mode, using default setting 'sniffer-only'
+[1 - Suricata-Main] 2025-05-21 16:09:38 Info: logopenfile: fast output device (regular) initialized: fast.log
+[1 - Suricata-Main] 2025-05-21 16:09:38 Info: logopenfile: eve-log output device (regular) initialized: eve.json
+[1 - Suricata-Main] 2025-05-21 16:09:38 Warning: counters: stats are enabled but no loggers are active
+[1 - Suricata-Main] 2025-05-21 16:09:38 Error: detect-parse: Signature missing required value "sid".
+[1 - Suricata-Main] 2025-05-21 16:09:38 Error: detect: error parsing signature "alert sip any any -> any any (" from file /etc/suricata/rules/custom-sip.rules at line 5
+[1 - Suricata-Main] 2025-05-21 16:09:38 Error: detect-parse: no rule options.
+[1 - Suricata-Main] 2025-05-21 16:09:38 Error: detect: error parsing signature ")" from file /etc/suricata/rules/custom-sip.rules at line 11
+[1 - Suricata-Main] 2025-05-21 16:09:38 Error: detect-parse: Signature missing required value "sid".
+[1 - Suricata-Main] 2025-05-21 16:09:38 Error: detect: error parsing signature "alert sip any any -> any any (" from file /etc/suricata/rules/custom-sip.rules at line 13
+[1 - Suricata-Main] 2025-05-21 16:09:38 Error: detect-parse: no rule options.
+[1 - Suricata-Main] 2025-05-21 16:09:38 Error: detect: error parsing signature ")" from file /etc/suricata/rules/custom-sip.rules at line 19
+[1 - Suricata-Main] 2025-05-21 16:09:38 Error: detect-parse: Signature missing required value "sid".
+[1 - Suricata-Main] 2025-05-21 16:09:38 Error: detect: error parsing signature "alert sip any any -> any any (" from file /etc/suricata/rules/custom-sip.rules at line 21
+[1 - Suricata-Main] 2025-05-21 16:09:38 Error: detect-parse: no rule options.
+[1 - Suricata-Main] 2025-05-21 16:09:38 Error: detect: error parsing signature ")" from file /etc/suricata/rules/custom-sip.rules at line 27
+[1 - Suricata-Main] 2025-05-21 16:09:38 Error: detect-parse: Signature missing required value "sid".
+[1 - Suricata-Main] 2025-05-21 16:09:38 Error: detect: error parsing signature "alert sip any any -> any any (" from file /etc/suricata/rules/custom-sip.rules at line 29
+[1 - Suricata-Main] 2025-05-21 16:09:38 Error: detect-parse: no rule options.
+[1 - Suricata-Main] 2025-05-21 16:09:38 Error: detect: error parsing signature ")" from file /etc/suricata/rules/custom-sip.rules at line 35
+[1 - Suricata-Main] 2025-05-21 16:09:38 Error: detect-parse: Signature missing required value "sid".
+[1 - Suricata-Main] 2025-05-21 16:09:38 Error: detect: error parsing signature "alert sip any any -> any any (" from file /etc/suricata/rules/custom-sip.rules at line 42
+[1 - Suricata-Main] 2025-05-21 16:09:38 Error: detect-parse: no rule options.
+[1 - Suricata-Main] 2025-05-21 16:09:38 Error: detect: error parsing signature ")" from file /etc/suricata/rules/custom-sip.rules at line 48
+[1 - Suricata-Main] 2025-05-21 16:09:38 Error: detect-parse: Signature missing required value "sid".
+[1 - Suricata-Main] 2025-05-21 16:09:38 Error: detect: error parsing signature "alert sip any any -> any any (" from file /etc/suricata/rules/custom-sip.rules at line 51
+[1 - Suricata-Main] 2025-05-21 16:09:38 Error: detect-parse: no rule options.
+[1 - Suricata-Main] 2025-05-21 16:09:38 Error: detect: error parsing signature ")" from file /etc/suricata/rules/custom-sip.rules at line 57
+[1 - Suricata-Main] 2025-05-21 16:09:38 Error: detect-parse: Signature missing required value "sid".
+[1 - Suricata-Main] 2025-05-21 16:09:38 Error: detect: error parsing signature "alert sip any any -> any any (" from file /etc/suricata/rules/custom-sip.rules at line 60
+[1 - Suricata-Main] 2025-05-21 16:09:38 Error: detect-parse: no rule options.
+[1 - Suricata-Main] 2025-05-21 16:09:38 Error: detect: error parsing signature ")" from file /etc/suricata/rules/custom-sip.rules at line 66
+[1 - Suricata-Main] 2025-05-21 16:09:38 Error: detect-parse: Signature missing required value "sid".
+[1 - Suricata-Main] 2025-05-21 16:09:38 Error: detect: error parsing signature "alert sip any any -> any any (" from file /etc/suricata/rules/custom-sip.rules at line 69
+[1 - Suricata-Main] 2025-05-21 16:09:38 Error: detect-parse: no rule options.
+[1 - Suricata-Main] 2025-05-21 16:09:38 Error: detect: error parsing signature ")" from file /etc/suricata/rules/custom-sip.rules at line 75
+[1 - Suricata-Main] 2025-05-21 16:09:38 Error: detect-parse: Signature missing required value "sid".
+[1 - Suricata-Main] 2025-05-21 16:09:38 Error: detect: error parsing signature "alert sip any any -> any any (" from file /etc/suricata/rules/custom-sip.rules at line 78
+[1 - Suricata-Main] 2025-05-21 16:09:38 Error: detect-parse: no rule options.
+[1 - Suricata-Main] 2025-05-21 16:09:38 Error: detect: error parsing signature ")" from file /etc/suricata/rules/custom-sip.rules at line 84
+[1 - Suricata-Main] 2025-05-21 16:09:38 Error: detect-parse: Signature missing required value "sid".
+[1 - Suricata-Main] 2025-05-21 16:09:38 Error: detect: error parsing signature "alert sip any any -> any any (" from file /etc/suricata/rules/custom-sip.rules at line 87
+[1 - Suricata-Main] 2025-05-21 16:09:38 Error: detect-parse: no rule options.
+[1 - Suricata-Main] 2025-05-21 16:09:38 Error: detect: error parsing signature ")" from file /etc/suricata/rules/custom-sip.rules at line 95
+[1 - Suricata-Main] 2025-05-21 16:09:38 Error: detect-parse: Signature missing required value "sid".
+[1 - Suricata-Main] 2025-05-21 16:09:38 Error: detect: error parsing signature "alert sip any any -> any any (" from file /etc/suricata/rules/custom-sip.rules at line 98
+[1 - Suricata-Main] 2025-05-21 16:09:38 Error: detect-parse: no rule options.
+[1 - Suricata-Main] 2025-05-21 16:09:38 Error: detect: error parsing signature ")" from file /etc/suricata/rules/custom-sip.rules at line 105
+[1 - Suricata-Main] 2025-05-21 16:09:38 Error: detect-parse: Signature missing required value "sid".
+[1 - Suricata-Main] 2025-05-21 16:09:38 Error: detect: error parsing signature "alert sip any any -> any any (" from file /etc/suricata/rules/custom-sip.rules at line 108
+[1 - Suricata-Main] 2025-05-21 16:09:38 Error: detect-parse: no rule options.
+[1 - Suricata-Main] 2025-05-21 16:09:38 Error: detect: error parsing signature ")" from file /etc/suricata/rules/custom-sip.rules at line 114
+[1 - Suricata-Main] 2025-05-21 16:09:38 Error: detect-parse: Signature missing required value "sid".
+[1 - Suricata-Main] 2025-05-21 16:09:38 Error: detect: error parsing signature "alert sip any any -> any any (" from file /etc/suricata/rules/custom-sip.rules at line 117
+[1 - Suricata-Main] 2025-05-21 16:09:38 Error: detect-parse: no rule options.
+[1 - Suricata-Main] 2025-05-21 16:09:38 Error: detect: error parsing signature ")" from file /etc/suricata/rules/custom-sip.rules at line 124
+[1 - Suricata-Main] 2025-05-21 16:09:38 Error: detect-parse: Signature missing required value "sid".
+[1 - Suricata-Main] 2025-05-21 16:09:38 Error: detect: error parsing signature "alert sip any any -> any any (" from file /etc/suricata/rules/custom-sip.rules at line 127
+[1 - Suricata-Main] 2025-05-21 16:09:38 Error: detect-parse: no rule options.
+[1 - Suricata-Main] 2025-05-21 16:09:38 Error: detect: error parsing signature ")" from file /etc/suricata/rules/custom-sip.rules at line 133
+[1 - Suricata-Main] 2025-05-21 16:09:38 Warning: detect: 1 rule files specified, but no rules were loaded!
+[1 - Suricata-Main] 2025-05-21 16:09:38 Info: threshold-config: Threshold config parsed: 0 rule(s) found
+[1 - Suricata-Main] 2025-05-21 16:09:38 Info: detect: 0 signatures processed. 0 are IP-only rules, 0 are inspecting packet payload, 0 inspect application layer, 0 are decoder event only
+[1 - Suricata-Main] 2025-05-21 16:09:38 Warning: af-packet: eno2: AF_PACKET tpacket-v3 is recommended for non-inline operation
+[1 - Suricata-Main] 2025-05-21 16:09:38 Info: runmodes: eno2: creating 32 threads
+[1 - Suricata-Main] 2025-05-21 16:09:39 Notice: threads: Threads created -> W: 32 FM: 1 FR: 1   Engine started.
+[56 - Suricata-Main] 2025-05-21 16:09:58 Notice: suricata: This is Suricata version 7.0.10 RELEASE running in SYSTEM mode
+[56 - Suricata-Main] 2025-05-21 16:09:58 Info: cpu: CPUs/cores online: 32
+[56 - Suricata-Main] 2025-05-21 16:09:58 Info: suricata: Setting engine mode to IDS mode by default
+[56 - Suricata-Main] 2025-05-21 16:09:58 Info: suricata: No 'host-mode': suricata is in IDS mode, using default setting 'sniffer-only'
+[56 - Suricata-Main] 2025-05-21 16:09:58 Info: logopenfile: fast output device (regular) initialized: fast.log
+[56 - Suricata-Main] 2025-05-21 16:09:58 Info: logopenfile: eve-log output device (regular) initialized: eve.json
+[56 - Suricata-Main] 2025-05-21 16:09:58 Warning: counters: stats are enabled but no loggers are active
+[56 - Suricata-Main] 2025-05-21 16:09:58 Error: detect-parse: Signature missing required value "sid".
+[56 - Suricata-Main] 2025-05-21 16:09:58 Error: detect: error parsing signature "alert sip any any -> any any (" from file /etc/suricata/rules/custom-sip.rules at line 5
+[56 - Suricata-Main] 2025-05-21 16:09:58 Error: detect-parse: no rule options.
+[56 - Suricata-Main] 2025-05-21 16:09:58 Error: detect: error parsing signature ")" from file /etc/suricata/rules/custom-sip.rules at line 11
+[56 - Suricata-Main] 2025-05-21 16:09:58 Error: detect-parse: Signature missing required value "sid".
+[56 - Suricata-Main] 2025-05-21 16:09:58 Error: detect: error parsing signature "alert sip any any -> any any (" from file /etc/suricata/rules/custom-sip.rules at line 13
+[56 - Suricata-Main] 2025-05-21 16:09:58 Error: detect-parse: no rule options.
+[56 - Suricata-Main] 2025-05-21 16:09:58 Error: detect: error parsing signature ")" from file /etc/suricata/rules/custom-sip.rules at line 19
+[56 - Suricata-Main] 2025-05-21 16:09:58 Error: detect-parse: Signature missing required value "sid".
+[56 - Suricata-Main] 2025-05-21 16:09:58 Error: detect: error parsing signature "alert sip any any -> any any (" from file /etc/suricata/rules/custom-sip.rules at line 21
+[56 - Suricata-Main] 2025-05-21 16:09:58 Error: detect-parse: no rule options.
+[56 - Suricata-Main] 2025-05-21 16:09:58 Error: detect: error parsing signature ")" from file /etc/suricata/rules/custom-sip.rules at line 27
+[56 - Suricata-Main] 2025-05-21 16:09:58 Error: detect-parse: Signature missing required value "sid".
+[56 - Suricata-Main] 2025-05-21 16:09:58 Error: detect: error parsing signature "alert sip any any -> any any (" from file /etc/suricata/rules/custom-sip.rules at line 29
+[56 - Suricata-Main] 2025-05-21 16:09:58 Error: detect-parse: no rule options.
+[56 - Suricata-Main] 2025-05-21 16:09:58 Error: detect: error parsing signature ")" from file /etc/suricata/rules/custom-sip.rules at line 35
+[56 - Suricata-Main] 2025-05-21 16:09:58 Error: detect-parse: Signature missing required value "sid".
+[56 - Suricata-Main] 2025-05-21 16:09:58 Error: detect: error parsing signature "alert sip any any -> any any (" from file /etc/suricata/rules/custom-sip.rules at line 42
+[56 - Suricata-Main] 2025-05-21 16:09:58 Error: detect-parse: no rule options.
+[56 - Suricata-Main] 2025-05-21 16:09:58 Error: detect: error parsing signature ")" from file /etc/suricata/rules/custom-sip.rules at line 48
+[56 - Suricata-Main] 2025-05-21 16:09:58 Error: detect-parse: Signature missing required value "sid".
+[56 - Suricata-Main] 2025-05-21 16:09:58 Error: detect: error parsing signature "alert sip any any -> any any (" from file /etc/suricata/rules/custom-sip.rules at line 51
+[56 - Suricata-Main] 2025-05-21 16:09:58 Error: detect-parse: no rule options.
+[56 - Suricata-Main] 2025-05-21 16:09:58 Error: detect: error parsing signature ")" from file /etc/suricata/rules/custom-sip.rules at line 57
+[56 - Suricata-Main] 2025-05-21 16:09:58 Error: detect-parse: Signature missing required value "sid".
+[56 - Suricata-Main] 2025-05-21 16:09:58 Error: detect: error parsing signature "alert sip any any -> any any (" from file /etc/suricata/rules/custom-sip.rules at line 60
+[56 - Suricata-Main] 2025-05-21 16:09:58 Error: detect-parse: no rule options.
+[56 - Suricata-Main] 2025-05-21 16:09:58 Error: detect: error parsing signature ")" from file /etc/suricata/rules/custom-sip.rules at line 66
+[56 - Suricata-Main] 2025-05-21 16:09:58 Error: detect-parse: Signature missing required value "sid".
+[56 - Suricata-Main] 2025-05-21 16:09:58 Error: detect: error parsing signature "alert sip any any -> any any (" from file /etc/suricata/rules/custom-sip.rules at line 69
+[56 - Suricata-Main] 2025-05-21 16:09:58 Error: detect-parse: no rule options.
+[56 - Suricata-Main] 2025-05-21 16:09:58 Error: detect: error parsing signature ")" from file /etc/suricata/rules/custom-sip.rules at line 75
+[56 - Suricata-Main] 2025-05-21 16:09:58 Error: detect-parse: Signature missing required value "sid".
+[56 - Suricata-Main] 2025-05-21 16:09:58 Error: detect: error parsing signature "alert sip any any -> any any (" from file /etc/suricata/rules/custom-sip.rules at line 78
+[56 - Suricata-Main] 2025-05-21 16:09:58 Error: detect-parse: no rule options.
+[56 - Suricata-Main] 2025-05-21 16:09:58 Error: detect: error parsing signature ")" from file /etc/suricata/rules/custom-sip.rules at line 84
+[56 - Suricata-Main] 2025-05-21 16:09:58 Error: detect-parse: Signature missing required value "sid".
+[56 - Suricata-Main] 2025-05-21 16:09:58 Error: detect: error parsing signature "alert sip any any -> any any (" from file /etc/suricata/rules/custom-sip.rules at line 87
+[56 - Suricata-Main] 2025-05-21 16:09:58 Error: detect-parse: no rule options.
+[56 - Suricata-Main] 2025-05-21 16:09:58 Error: detect: error parsing signature ")" from file /etc/suricata/rules/custom-sip.rules at line 95
+[56 - Suricata-Main] 2025-05-21 16:09:58 Error: detect-parse: Signature missing required value "sid".
+[56 - Suricata-Main] 2025-05-21 16:09:58 Error: detect: error parsing signature "alert sip any any -> any any (" from file /etc/suricata/rules/custom-sip.rules at line 98
+[56 - Suricata-Main] 2025-05-21 16:09:58 Error: detect-parse: no rule options.
+[56 - Suricata-Main] 2025-05-21 16:09:58 Error: detect: error parsing signature ")" from file /etc/suricata/rules/custom-sip.rules at line 105
+[56 - Suricata-Main] 2025-05-21 16:09:58 Error: detect-parse: Signature missing required value "sid".
+[56 - Suricata-Main] 2025-05-21 16:09:58 Error: detect: error parsing signature "alert sip any any -> any any (" from file /etc/suricata/rules/custom-sip.rules at line 108
+[56 - Suricata-Main] 2025-05-21 16:09:58 Error: detect-parse: no rule options.
+[56 - Suricata-Main] 2025-05-21 16:09:58 Error: detect: error parsing signature ")" from file /etc/suricata/rules/custom-sip.rules at line 114
+[56 - Suricata-Main] 2025-05-21 16:09:58 Error: detect-parse: Signature missing required value "sid".
+[56 - Suricata-Main] 2025-05-21 16:09:58 Error: detect: error parsing signature "alert sip any any -> any any (" from file /etc/suricata/rules/custom-sip.rules at line 117
+[56 - Suricata-Main] 2025-05-21 16:09:58 Error: detect-parse: no rule options.
+[56 - Suricata-Main] 2025-05-21 16:09:58 Error: detect: error parsing signature ")" from file /etc/suricata/rules/custom-sip.rules at line 124
+[56 - Suricata-Main] 2025-05-21 16:09:58 Error: detect-parse: Signature missing required value "sid".
+[56 - Suricata-Main] 2025-05-21 16:09:58 Error: detect: error parsing signature "alert sip any any -> any any (" from file /etc/suricata/rules/custom-sip.rules at line 127
+[56 - Suricata-Main] 2025-05-21 16:09:58 Error: detect-parse: no rule options.
+[56 - Suricata-Main] 2025-05-21 16:09:58 Error: detect: error parsing signature ")" from file /etc/suricata/rules/custom-sip.rules at line 133
+[56 - Suricata-Main] 2025-05-21 16:09:58 Warning: detect: 1 rule files specified, but no rules were loaded!
+[56 - Suricata-Main] 2025-05-21 16:09:58 Info: threshold-config: Threshold config parsed: 0 rule(s) found
+[56 - Suricata-Main] 2025-05-21 16:09:58 Info: detect: 0 signatures processed. 0 are IP-only rules, 0 are inspecting packet payload, 0 inspect application layer, 0 are decoder event only
+[56 - Suricata-Main] 2025-05-21 16:09:58 Error: af-packet: fanout not supported by kernel: Kernel too old or cluster-id 99 already in use.
+[56 - Suricata-Main] 2025-05-21 16:09:58 Warning: af-packet: eno2: AF_PACKET tpacket-v3 is recommended for non-inline operation
+[56 - Suricata-Main] 2025-05-21 16:09:58 Info: runmodes: eno2: creating 1 thread
+[57 - W#01-eno2] 2025-05-21 16:09:58 Info: ioctl: eno2: MTU 1500
+[56 - Suricata-Main] 2025-05-21 16:09:58 Notice: threads: Threads created -> W: 1 FM: 1 FR: 1   Engine started.
+[56 - Suricata-Main] 2025-05-21 16:10:28 Notice: suricata: Signal Received.  Stopping engine.
+[56 - Suricata-Main] 2025-05-21 16:10:29 Info: suricata: time elapsed 30.685s
+[56 - Suricata-Main] 2025-05-21 16:10:30 Notice: device: eno2: packets: 322, drops: 0 (0.00%), invalid chksum: 0
+[1 - Suricata-Main] 2025-05-21 16:15:07 Notice: suricata: Signal Received.  Stopping engine.
+[1 - Suricata-Main] 2025-05-21 16:15:08 Info: suricata: time elapsed 329.342s
+[1 - Suricata-Main] 2025-05-21 16:15:09 Notice: device: eno2: packets: 14799, drops: 0 (0.00%), invalid chksum: 0
+[1 - Suricata-Main] 2025-05-21 16:15:10 Notice: suricata: This is Suricata version 7.0.10 RELEASE running in SYSTEM mode
+[1 - Suricata-Main] 2025-05-21 16:15:10 Info: cpu: CPUs/cores online: 32
+[1 - Suricata-Main] 2025-05-21 16:15:10 Info: suricata: Setting engine mode to IDS mode by default
+[1 - Suricata-Main] 2025-05-21 16:15:10 Info: suricata: No 'host-mode': suricata is in IDS mode, using default setting 'sniffer-only'
+[1 - Suricata-Main] 2025-05-21 16:15:10 Info: logopenfile: fast output device (regular) initialized: fast.log
+[1 - Suricata-Main] 2025-05-21 16:15:10 Info: logopenfile: eve-log output device (regular) initialized: eve.json
+[1 - Suricata-Main] 2025-05-21 16:15:10 Warning: counters: stats are enabled but no loggers are active
+[1 - Suricata-Main] 2025-05-21 16:15:10 Info: detect: 1 rule files processed. 4 rules successfully loaded, 0 rules failed, 0
+[1 - Suricata-Main] 2025-05-21 16:15:10 Info: threshold-config: Threshold config parsed: 0 rule(s) found
+[1 - Suricata-Main] 2025-05-21 16:15:10 Info: detect: 4 signatures processed. 0 are IP-only rules, 4 are inspecting packet payload, 0 inspect application layer, 0 are decoder event only
+[1 - Suricata-Main] 2025-05-21 16:15:10 Warning: af-packet: eno2: AF_PACKET tpacket-v3 is recommended for non-inline operation
+[1 - Suricata-Main] 2025-05-21 16:15:10 Info: runmodes: eno2: creating 32 threads
+[1 - Suricata-Main] 2025-05-21 16:15:11 Notice: threads: Threads created -> W: 32 FM: 1 FR: 1   Engine started.
+[1 - Suricata-Main] 2025-05-21 16:15:17 Notice: suricata: Signal Received.  Stopping engine.
+[1 - Suricata-Main] 2025-05-21 16:15:17 Info: suricata: time elapsed 7.162s
+[1 - Suricata-Main] 2025-05-21 16:15:18 Notice: device: eno2: packets: 151, drops: 0 (0.00%), invalid chksum: 0
+[1 - Suricata-Main] 2025-05-21 16:15:20 Notice: suricata: This is Suricata version 7.0.10 RELEASE running in SYSTEM mode
+[1 - Suricata-Main] 2025-05-21 16:15:20 Info: cpu: CPUs/cores online: 32
+[1 - Suricata-Main] 2025-05-21 16:15:20 Info: suricata: Setting engine mode to IDS mode by default
+[1 - Suricata-Main] 2025-05-21 16:15:20 Info: suricata: No 'host-mode': suricata is in IDS mode, using default setting 'sniffer-only'
+[1 - Suricata-Main] 2025-05-21 16:15:20 Info: logopenfile: fast output device (regular) initialized: fast.log
+[1 - Suricata-Main] 2025-05-21 16:15:20 Info: logopenfile: eve-log output device (regular) initialized: eve.json
+[1 - Suricata-Main] 2025-05-21 16:15:20 Warning: counters: stats are enabled but no loggers are active
+[1 - Suricata-Main] 2025-05-21 16:15:20 Info: detect: 1 rule files processed. 4 rules successfully loaded, 0 rules failed, 0
+[1 - Suricata-Main] 2025-05-21 16:15:20 Info: threshold-config: Threshold config parsed: 0 rule(s) found
+[1 - Suricata-Main] 2025-05-21 16:15:20 Info: detect: 4 signatures processed. 0 are IP-only rules, 4 are inspecting packet payload, 0 inspect application layer, 0 are decoder event only
+[1 - Suricata-Main] 2025-05-21 16:15:20 Warning: af-packet: eno2: AF_PACKET tpacket-v3 is recommended for non-inline operation
+[1 - Suricata-Main] 2025-05-21 16:15:20 Info: runmodes: eno2: creating 32 threads
+[1 - Suricata-Main] 2025-05-21 16:15:21 Notice: threads: Threads created -> W: 32 FM: 1 FR: 1   Engine started.
+[57 - Suricata-Main] 2025-05-21 16:16:41 Notice: suricata: This is Suricata version 7.0.10 RELEASE running in SYSTEM mode
+[57 - Suricata-Main] 2025-05-21 16:16:41 Info: cpu: CPUs/cores online: 32
+[57 - Suricata-Main] 2025-05-21 16:16:41 Info: suricata: Setting engine mode to IDS mode by default
+[57 - Suricata-Main] 2025-05-21 16:16:41 Info: suricata: No 'host-mode': suricata is in IDS mode, using default setting 'sniffer-only'
+[57 - Suricata-Main] 2025-05-21 16:16:41 Info: logopenfile: fast output device (regular) initialized: fast.log
+[57 - Suricata-Main] 2025-05-21 16:16:41 Info: logopenfile: eve-log output device (regular) initialized: eve.json
+[57 - Suricata-Main] 2025-05-21 16:16:41 Warning: counters: stats are enabled but no loggers are active
+[57 - Suricata-Main] 2025-05-21 16:16:41 Info: detect: 1 rule files processed. 4 rules successfully loaded, 0 rules failed, 0
+[57 - Suricata-Main] 2025-05-21 16:16:41 Info: threshold-config: Threshold config parsed: 0 rule(s) found
+[57 - Suricata-Main] 2025-05-21 16:16:41 Info: detect: 4 signatures processed. 0 are IP-only rules, 4 are inspecting packet payload, 0 inspect application layer, 0 are decoder event only
+[57 - Suricata-Main] 2025-05-21 16:16:41 Error: af-packet: fanout not supported by kernel: Kernel too old or cluster-id 99 already in use.
+[57 - Suricata-Main] 2025-05-21 16:16:41 Warning: af-packet: eno2: AF_PACKET tpacket-v3 is recommended for non-inline operation
+[57 - Suricata-Main] 2025-05-21 16:16:41 Info: runmodes: eno2: creating 1 thread
+[58 - W#01-eno2] 2025-05-21 16:16:41 Info: ioctl: eno2: MTU 1500
+[57 - Suricata-Main] 2025-05-21 16:16:41 Notice: threads: Threads created -> W: 1 FM: 1 FR: 1   Engine started.
+[57 - Suricata-Main] 2025-05-21 16:17:01 Notice: suricata: Signal Received.  Stopping engine.
+[57 - Suricata-Main] 2025-05-21 16:17:02 Info: suricata: time elapsed 20.794s
+[57 - Suricata-Main] 2025-05-21 16:17:03 Notice: device: eno2: packets: 325, drops: 0 (0.00%), invalid chksum: 0
+[67 - Suricata-Main] 2025-05-21 16:18:04 Notice: suricata: This is Suricata version 7.0.10 RELEASE running in SYSTEM mode
+[67 - Suricata-Main] 2025-05-21 16:18:04 Info: cpu: CPUs/cores online: 32
+[67 - Suricata-Main] 2025-05-21 16:18:04 Info: suricata: Setting engine mode to IDS mode by default
+[67 - Suricata-Main] 2025-05-21 16:18:04 Info: suricata: No 'host-mode': suricata is in IDS mode, using default setting 'sniffer-only'
+[67 - Suricata-Main] 2025-05-21 16:18:04 Info: logopenfile: fast output device (regular) initialized: fast.log
+[67 - Suricata-Main] 2025-05-21 16:18:04 Info: logopenfile: eve-log output device (regular) initialized: eve.json
+[67 - Suricata-Main] 2025-05-21 16:18:04 Warning: counters: stats are enabled but no loggers are active
+[67 - Suricata-Main] 2025-05-21 16:18:04 Info: detect: 1 rule files processed. 4 rules successfully loaded, 0 rules failed, 0
+[67 - Suricata-Main] 2025-05-21 16:18:04 Info: threshold-config: Threshold config parsed: 0 rule(s) found
+[67 - Suricata-Main] 2025-05-21 16:18:04 Info: detect: 4 signatures processed. 0 are IP-only rules, 4 are inspecting packet payload, 0 inspect application layer, 0 are decoder event only
+[67 - Suricata-Main] 2025-05-21 16:18:04 Error: af-packet: fanout not supported by kernel: Kernel too old or cluster-id 99 already in use.
+[67 - Suricata-Main] 2025-05-21 16:18:04 Warning: af-packet: eno2: AF_PACKET tpacket-v3 is recommended for non-inline operation
+[67 - Suricata-Main] 2025-05-21 16:18:04 Info: runmodes: eno2: creating 1 thread
+[68 - W#01-eno2] 2025-05-21 16:18:04 Info: ioctl: eno2: MTU 1500
+[67 - Suricata-Main] 2025-05-21 16:18:04 Notice: threads: Threads created -> W: 1 FM: 1 FR: 1   Engine started.
+[67 - Suricata-Main] 2025-05-21 16:18:24 Notice: suricata: Signal Received.  Stopping engine.
+[67 - Suricata-Main] 2025-05-21 16:18:25 Info: suricata: time elapsed 20.790s
+[67 - Suricata-Main] 2025-05-21 16:18:26 Notice: device: eno2: packets: 389, drops: 0 (0.00%), invalid chksum: 0
+[77 - Suricata-Main] 2025-05-21 16:19:11 Notice: suricata: This is Suricata version 7.0.10 RELEASE running in SYSTEM mode
+[77 - Suricata-Main] 2025-05-21 16:19:11 Info: cpu: CPUs/cores online: 32
+[77 - Suricata-Main] 2025-05-21 16:19:11 Info: suricata: Setting engine mode to IDS mode by default
+[77 - Suricata-Main] 2025-05-21 16:19:11 Info: suricata: No 'host-mode': suricata is in IDS mode, using default setting 'sniffer-only'
+[77 - Suricata-Main] 2025-05-21 16:19:11 Info: logopenfile: fast output device (regular) initialized: fast.log
+[77 - Suricata-Main] 2025-05-21 16:19:11 Info: logopenfile: eve-log output device (regular) initialized: eve.json
+[77 - Suricata-Main] 2025-05-21 16:19:11 Warning: counters: stats are enabled but no loggers are active
+[77 - Suricata-Main] 2025-05-21 16:19:11 Info: detect: 1 rule files processed. 4 rules successfully loaded, 0 rules failed, 0
+[77 - Suricata-Main] 2025-05-21 16:19:11 Info: threshold-config: Threshold config parsed: 0 rule(s) found
+[77 - Suricata-Main] 2025-05-21 16:19:11 Info: detect: 4 signatures processed. 0 are IP-only rules, 4 are inspecting packet payload, 0 inspect application layer, 0 are decoder event only
+[77 - Suricata-Main] 2025-05-21 16:19:11 Error: af-packet: fanout not supported by kernel: Kernel too old or cluster-id 99 already in use.
+[77 - Suricata-Main] 2025-05-21 16:19:11 Warning: af-packet: eno2: AF_PACKET tpacket-v3 is recommended for non-inline operation
+[77 - Suricata-Main] 2025-05-21 16:19:11 Info: runmodes: eno2: creating 1 thread
+[78 - W#01-eno2] 2025-05-21 16:19:11 Info: ioctl: eno2: MTU 1500
+[77 - Suricata-Main] 2025-05-21 16:19:11 Notice: threads: Threads created -> W: 1 FM: 1 FR: 1   Engine started.
+[77 - Suricata-Main] 2025-05-21 16:19:41 Notice: suricata: Signal Received.  Stopping engine.
+[77 - Suricata-Main] 2025-05-21 16:19:41 Info: suricata: time elapsed 30.664s
+[77 - Suricata-Main] 2025-05-21 16:19:42 Notice: device: eno2: packets: 392, drops: 0 (0.00%), invalid chksum: 0
+[1 - Suricata-Main] 2025-05-21 16:21:01 Notice: suricata: Signal Received.  Stopping engine.
+[1 - Suricata-Main] 2025-05-21 16:21:01 Info: suricata: time elapsed 341.044s
+[1 - Suricata-Main] 2025-05-21 16:21:02 Notice: device: eno2: packets: 5856, drops: 0 (0.00%), invalid chksum: 0
+[1 - Suricata-Main] 2025-05-21 16:21:24 Notice: suricata: This is Suricata version 7.0.10 RELEASE running in SYSTEM mode
+[1 - Suricata-Main] 2025-05-21 16:21:24 Info: cpu: CPUs/cores online: 32
+[1 - Suricata-Main] 2025-05-21 16:21:24 Info: suricata: Setting engine mode to IDS mode by default
+[1 - Suricata-Main] 2025-05-21 16:21:24 Info: suricata: No 'host-mode': suricata is in IDS mode, using default setting 'sniffer-only'
+[1 - Suricata-Main] 2025-05-21 16:21:24 Info: logopenfile: fast output device (regular) initialized: fast.log
+[1 - Suricata-Main] 2025-05-21 16:21:24 Info: logopenfile: eve-log output device (regular) initialized: eve.json
+[1 - Suricata-Main] 2025-05-21 16:21:24 Warning: counters: stats are enabled but no loggers are active
+[1 - Suricata-Main] 2025-05-21 16:21:24 Info: detect: 1 rule files processed. 4 rules successfully loaded, 0 rules failed, 0
+[1 - Suricata-Main] 2025-05-21 16:21:24 Info: threshold-config: Threshold config parsed: 0 rule(s) found
+[1 - Suricata-Main] 2025-05-21 16:21:24 Info: detect: 4 signatures processed. 0 are IP-only rules, 4 are inspecting packet payload, 0 inspect application layer, 0 are decoder event only
+[1 - Suricata-Main] 2025-05-21 16:21:24 Warning: af-packet: eno2: AF_PACKET tpacket-v3 is recommended for non-inline operation
+[1 - Suricata-Main] 2025-05-21 16:21:24 Info: runmodes: eno2: creating 32 threads
+[1 - Suricata-Main] 2025-05-21 16:21:25 Notice: threads: Threads created -> W: 32 FM: 1 FR: 1   Engine started.
+[1 - Suricata-Main] 2025-05-21 16:21:36 Notice: suricata: Signal Received.  Stopping engine.
+[1 - Suricata-Main] 2025-05-21 16:21:37 Info: suricata: time elapsed 13.072s
+[1 - Suricata-Main] 2025-05-21 16:21:38 Notice: device: eno2: packets: 286, drops: 0 (0.00%), invalid chksum: 0
+[1 - Suricata-Main] 2025-05-21 16:21:39 Notice: suricata: This is Suricata version 7.0.10 RELEASE running in SYSTEM mode
+[1 - Suricata-Main] 2025-05-21 16:21:39 Info: cpu: CPUs/cores online: 32
+[1 - Suricata-Main] 2025-05-21 16:21:39 Info: suricata: Setting engine mode to IDS mode by default
+[1 - Suricata-Main] 2025-05-21 16:21:39 Info: suricata: No 'host-mode': suricata is in IDS mode, using default setting 'sniffer-only'
+[1 - Suricata-Main] 2025-05-21 16:21:40 Info: logopenfile: fast output device (regular) initialized: fast.log
+[1 - Suricata-Main] 2025-05-21 16:21:40 Info: logopenfile: eve-log output device (regular) initialized: eve.json
+[1 - Suricata-Main] 2025-05-21 16:21:40 Warning: counters: stats are enabled but no loggers are active
+[1 - Suricata-Main] 2025-05-21 16:21:40 Info: detect: 1 rule files processed. 4 rules successfully loaded, 0 rules failed, 0
+[1 - Suricata-Main] 2025-05-21 16:21:40 Info: threshold-config: Threshold config parsed: 0 rule(s) found
+[1 - Suricata-Main] 2025-05-21 16:21:40 Info: detect: 4 signatures processed. 0 are IP-only rules, 4 are inspecting packet payload, 0 inspect application layer, 0 are decoder event only
+[1 - Suricata-Main] 2025-05-21 16:21:40 Warning: af-packet: eno2: AF_PACKET tpacket-v3 is recommended for non-inline operation
+[1 - Suricata-Main] 2025-05-21 16:21:40 Info: runmodes: eno2: creating 32 threads
+[1 - Suricata-Main] 2025-05-21 16:21:41 Notice: threads: Threads created -> W: 32 FM: 1 FR: 1   Engine started.
+[56 - Suricata-Main] 2025-05-21 16:21:59 Notice: suricata: This is Suricata version 7.0.10 RELEASE running in SYSTEM mode
+[56 - Suricata-Main] 2025-05-21 16:21:59 Info: cpu: CPUs/cores online: 32
+[56 - Suricata-Main] 2025-05-21 16:21:59 Info: suricata: Setting engine mode to IDS mode by default
+[56 - Suricata-Main] 2025-05-21 16:21:59 Info: suricata: No 'host-mode': suricata is in IDS mode, using default setting 'sniffer-only'
+[56 - Suricata-Main] 2025-05-21 16:21:59 Info: logopenfile: fast output device (regular) initialized: fast.log
+[56 - Suricata-Main] 2025-05-21 16:21:59 Info: logopenfile: eve-log output device (regular) initialized: eve.json
+[56 - Suricata-Main] 2025-05-21 16:21:59 Warning: counters: stats are enabled but no loggers are active
+[56 - Suricata-Main] 2025-05-21 16:21:59 Info: detect: 1 rule files processed. 4 rules successfully loaded, 0 rules failed, 0
+[56 - Suricata-Main] 2025-05-21 16:21:59 Info: threshold-config: Threshold config parsed: 0 rule(s) found
+[56 - Suricata-Main] 2025-05-21 16:21:59 Info: detect: 4 signatures processed. 0 are IP-only rules, 4 are inspecting packet payload, 0 inspect application layer, 0 are decoder event only
+[56 - Suricata-Main] 2025-05-21 16:21:59 Error: af-packet: fanout not supported by kernel: Kernel too old or cluster-id 99 already in use.
+[56 - Suricata-Main] 2025-05-21 16:21:59 Warning: af-packet: eno2: AF_PACKET tpacket-v3 is recommended for non-inline operation
+[56 - Suricata-Main] 2025-05-21 16:21:59 Info: runmodes: eno2: creating 1 thread
+[57 - W#01-eno2] 2025-05-21 16:21:59 Info: ioctl: eno2: MTU 1500
+[56 - Suricata-Main] 2025-05-21 16:21:59 Notice: threads: Threads created -> W: 1 FM: 1 FR: 1   Engine started.
+[56 - Suricata-Main] 2025-05-21 16:22:29 Notice: suricata: Signal Received.  Stopping engine.
+[56 - Suricata-Main] 2025-05-21 16:22:30 Info: suricata: time elapsed 30.678s
+[56 - Suricata-Main] 2025-05-21 16:22:31 Notice: device: eno2: packets: 1686, drops: 0 (0.00%), invalid chksum: 0
+[66 - Suricata-Main] 2025-05-21 16:23:39 Notice: suricata: This is Suricata version 7.0.10 RELEASE running in SYSTEM mode
+[66 - Suricata-Main] 2025-05-21 16:23:39 Info: cpu: CPUs/cores online: 32
+[66 - Suricata-Main] 2025-05-21 16:23:39 Info: suricata: Setting engine mode to IDS mode by default
+[66 - Suricata-Main] 2025-05-21 16:23:39 Info: suricata: No 'host-mode': suricata is in IDS mode, using default setting 'sniffer-only'
+[66 - Suricata-Main] 2025-05-21 16:23:39 Info: logopenfile: fast output device (regular) initialized: fast.log
+[66 - Suricata-Main] 2025-05-21 16:23:39 Info: logopenfile: eve-log output device (regular) initialized: eve.json
+[66 - Suricata-Main] 2025-05-21 16:23:39 Warning: counters: stats are enabled but no loggers are active
+[66 - Suricata-Main] 2025-05-21 16:23:39 Info: detect: 1 rule files processed. 4 rules successfully loaded, 0 rules failed, 0
+[66 - Suricata-Main] 2025-05-21 16:23:39 Info: threshold-config: Threshold config parsed: 0 rule(s) found
+[66 - Suricata-Main] 2025-05-21 16:23:39 Info: detect: 4 signatures processed. 0 are IP-only rules, 4 are inspecting packet payload, 0 inspect application layer, 0 are decoder event only
+[66 - Suricata-Main] 2025-05-21 16:23:40 Error: af-packet: fanout not supported by kernel: Kernel too old or cluster-id 99 already in use.
+[66 - Suricata-Main] 2025-05-21 16:23:40 Warning: af-packet: eno2: AF_PACKET tpacket-v3 is recommended for non-inline operation
+[66 - Suricata-Main] 2025-05-21 16:23:40 Info: runmodes: eno2: creating 1 thread
+[67 - W#01-eno2] 2025-05-21 16:23:40 Info: ioctl: eno2: MTU 1500
+[66 - Suricata-Main] 2025-05-21 16:23:40 Notice: threads: Threads created -> W: 1 FM: 1 FR: 1   Engine started.
+[66 - Suricata-Main] 2025-05-21 16:23:59 Notice: suricata: Signal Received.  Stopping engine.
+[66 - Suricata-Main] 2025-05-21 16:24:00 Info: suricata: time elapsed 20.798s
+[66 - Suricata-Main] 2025-05-21 16:24:01 Notice: device: eno2: packets: 201, drops: 0 (0.00%), invalid chksum: 0
+[76 - Suricata-Main] 2025-05-21 16:27:59 Notice: suricata: This is Suricata version 7.0.10 RELEASE running in SYSTEM mode
+[76 - Suricata-Main] 2025-05-21 16:27:59 Info: cpu: CPUs/cores online: 32
+[76 - Suricata-Main] 2025-05-21 16:27:59 Info: suricata: Setting engine mode to IDS mode by default
+[76 - Suricata-Main] 2025-05-21 16:27:59 Info: suricata: No 'host-mode': suricata is in IDS mode, using default setting 'sniffer-only'
+[76 - Suricata-Main] 2025-05-21 16:27:59 Info: logopenfile: fast output device (regular) initialized: fast.log
+[76 - Suricata-Main] 2025-05-21 16:27:59 Info: logopenfile: eve-log output device (regular) initialized: eve.json
+[76 - Suricata-Main] 2025-05-21 16:27:59 Warning: counters: stats are enabled but no loggers are active
+[76 - Suricata-Main] 2025-05-21 16:27:59 Info: detect: 1 rule files processed. 4 rules successfully loaded, 0 rules failed, 0
+[76 - Suricata-Main] 2025-05-21 16:27:59 Info: threshold-config: Threshold config parsed: 0 rule(s) found
+[76 - Suricata-Main] 2025-05-21 16:27:59 Info: detect: 4 signatures processed. 0 are IP-only rules, 4 are inspecting packet payload, 0 inspect application layer, 0 are decoder event only
+[76 - Suricata-Main] 2025-05-21 16:27:59 Error: af-packet: fanout not supported by kernel: Kernel too old or cluster-id 99 already in use.
+[76 - Suricata-Main] 2025-05-21 16:27:59 Warning: af-packet: eno2: AF_PACKET tpacket-v3 is recommended for non-inline operation
+[76 - Suricata-Main] 2025-05-21 16:27:59 Info: runmodes: eno2: creating 1 thread
+[77 - W#01-eno2] 2025-05-21 16:27:59 Info: ioctl: eno2: MTU 1500
+[76 - Suricata-Main] 2025-05-21 16:27:59 Notice: threads: Threads created -> W: 1 FM: 1 FR: 1   Engine started.
+[76 - Suricata-Main] 2025-05-21 16:29:29 Notice: suricata: Signal Received.  Stopping engine.
+[76 - Suricata-Main] 2025-05-21 16:29:30 Info: suricata: time elapsed 90.931s
+[76 - Suricata-Main] 2025-05-21 16:29:31 Notice: device: eno2: packets: 3499, drops: 0 (0.00%), invalid chksum: 0
+[86 - Suricata-Main] 2025-05-21 16:31:54 Notice: suricata: This is Suricata version 7.0.10 RELEASE running in SYSTEM mode
+[86 - Suricata-Main] 2025-05-21 16:31:54 Info: cpu: CPUs/cores online: 32
+[86 - Suricata-Main] 2025-05-21 16:31:54 Info: suricata: Setting engine mode to IDS mode by default
+[86 - Suricata-Main] 2025-05-21 16:31:54 Info: suricata: No 'host-mode': suricata is in IDS mode, using default setting 'sniffer-only'
+[86 - Suricata-Main] 2025-05-21 16:31:54 Info: logopenfile: fast output device (regular) initialized: fast.log
+[86 - Suricata-Main] 2025-05-21 16:31:54 Info: logopenfile: eve-log output device (regular) initialized: eve.json
+[86 - Suricata-Main] 2025-05-21 16:31:54 Warning: counters: stats are enabled but no loggers are active
+[86 - Suricata-Main] 2025-05-21 16:31:54 Info: detect: 1 rule files processed. 4 rules successfully loaded, 0 rules failed, 0
+[86 - Suricata-Main] 2025-05-21 16:31:54 Info: threshold-config: Threshold config parsed: 0 rule(s) found
+[86 - Suricata-Main] 2025-05-21 16:31:54 Info: detect: 4 signatures processed. 0 are IP-only rules, 4 are inspecting packet payload, 0 inspect application layer, 0 are decoder event only
+[86 - Suricata-Main] 2025-05-21 16:31:54 Error: af-packet: fanout not supported by kernel: Kernel too old or cluster-id 99 already in use.
+[86 - Suricata-Main] 2025-05-21 16:31:54 Warning: af-packet: eno2: AF_PACKET tpacket-v3 is recommended for non-inline operation
+[86 - Suricata-Main] 2025-05-21 16:31:54 Info: runmodes: eno2: creating 1 thread
+[87 - W#01-eno2] 2025-05-21 16:31:54 Info: ioctl: eno2: MTU 1500
+[86 - Suricata-Main] 2025-05-21 16:31:55 Notice: threads: Threads created -> W: 1 FM: 1 FR: 1   Engine started.
+[86 - Suricata-Main] 2025-05-21 16:33:34 Notice: suricata: Signal Received.  Stopping engine.
+[86 - Suricata-Main] 2025-05-21 16:33:35 Info: suricata: time elapsed 100.827s
+[86 - Suricata-Main] 2025-05-21 16:33:36 Notice: device: eno2: packets: 5276, drops: 0 (0.00%), invalid chksum: 0
+[1 - Suricata-Main] 2025-05-21 21:01:46 Notice: suricata: This is Suricata version 7.0.10 RELEASE running in SYSTEM mode
+[1 - Suricata-Main] 2025-05-21 21:01:46 Info: cpu: CPUs/cores online: 32
+[1 - Suricata-Main] 2025-05-21 21:01:46 Info: suricata: Setting engine mode to IDS mode by default
+[1 - Suricata-Main] 2025-05-21 21:01:46 Info: suricata: No 'host-mode': suricata is in IDS mode, using default setting 'sniffer-only'
+[1 - Suricata-Main] 2025-05-21 21:01:46 Info: logopenfile: fast output device (regular) initialized: fast.log
+[1 - Suricata-Main] 2025-05-21 21:01:46 Info: logopenfile: eve-log output device (regular) initialized: eve.json
+[1 - Suricata-Main] 2025-05-21 21:01:46 Warning: counters: stats are enabled but no loggers are active
+[1 - Suricata-Main] 2025-05-21 21:01:46 Info: detect: 1 rule files processed. 4 rules successfully loaded, 0 rules failed, 0
+[1 - Suricata-Main] 2025-05-21 21:01:46 Info: threshold-config: Threshold config parsed: 0 rule(s) found
+[1 - Suricata-Main] 2025-05-21 21:01:46 Info: detect: 4 signatures processed. 0 are IP-only rules, 4 are inspecting packet payload, 0 inspect application layer, 0 are decoder event only
+[1 - Suricata-Main] 2025-05-21 21:01:46 Warning: af-packet: eno2: AF_PACKET tpacket-v3 is recommended for non-inline operation
+[1 - Suricata-Main] 2025-05-21 21:01:46 Info: runmodes: eno2: creating 32 threads
+[1 - Suricata-Main] 2025-05-21 21:01:48 Notice: threads: Threads created -> W: 32 FM: 1 FR: 1   Engine started.
+[56 - Suricata-Main] 2025-05-21 21:04:13 Notice: suricata: This is Suricata version 7.0.10 RELEASE running in SYSTEM mode
+[56 - Suricata-Main] 2025-05-21 21:04:13 Info: cpu: CPUs/cores online: 32
+[56 - Suricata-Main] 2025-05-21 21:04:13 Info: suricata: Setting engine mode to IDS mode by default
+[56 - Suricata-Main] 2025-05-21 21:04:13 Info: suricata: No 'host-mode': suricata is in IDS mode, using default setting 'sniffer-only'
+[56 - Suricata-Main] 2025-05-21 21:04:13 Info: logopenfile: fast output device (regular) initialized: fast.log
+[56 - Suricata-Main] 2025-05-21 21:04:13 Info: logopenfile: eve-log output device (regular) initialized: eve.json
+[56 - Suricata-Main] 2025-05-21 21:04:13 Warning: counters: stats are enabled but no loggers are active
+[56 - Suricata-Main] 2025-05-21 21:04:13 Info: detect: 1 rule files processed. 4 rules successfully loaded, 0 rules failed, 0
+[56 - Suricata-Main] 2025-05-21 21:04:13 Info: threshold-config: Threshold config parsed: 0 rule(s) found
+[56 - Suricata-Main] 2025-05-21 21:04:13 Info: detect: 4 signatures processed. 0 are IP-only rules, 4 are inspecting packet payload, 0 inspect application layer, 0 are decoder event only
+[56 - Suricata-Main] 2025-05-21 21:04:13 Error: af-packet: fanout not supported by kernel: Kernel too old or cluster-id 99 already in use.
+[56 - Suricata-Main] 2025-05-21 21:04:13 Warning: af-packet: eno2: AF_PACKET tpacket-v3 is recommended for non-inline operation
+[56 - Suricata-Main] 2025-05-21 21:04:13 Info: runmodes: eno2: creating 1 thread
+[57 - W#01-eno2] 2025-05-21 21:04:13 Info: ioctl: eno2: MTU 1500
+[56 - Suricata-Main] 2025-05-21 21:04:13 Notice: threads: Threads created -> W: 1 FM: 1 FR: 1   Engine started.
+[56 - Suricata-Main] 2025-05-21 21:05:13 Notice: suricata: Signal Received.  Stopping engine.
+[56 - Suricata-Main] 2025-05-21 21:05:13 Info: suricata: time elapsed 60.306s
+[56 - Suricata-Main] 2025-05-21 21:05:14 Notice: device: eno2: packets: 704, drops: 0 (0.00%), invalid chksum: 0
+[66 - Suricata-Main] 2025-05-21 21:10:57 Notice: suricata: This is Suricata version 7.0.10 RELEASE running in SYSTEM mode
+[66 - Suricata-Main] 2025-05-21 21:10:57 Info: cpu: CPUs/cores online: 32
+[66 - Suricata-Main] 2025-05-21 21:10:57 Info: suricata: Setting engine mode to IDS mode by default
+[66 - Suricata-Main] 2025-05-21 21:10:57 Info: suricata: No 'host-mode': suricata is in IDS mode, using default setting 'sniffer-only'
+[66 - Suricata-Main] 2025-05-21 21:10:57 Info: logopenfile: fast output device (regular) initialized: fast.log
+[66 - Suricata-Main] 2025-05-21 21:10:57 Info: logopenfile: eve-log output device (regular) initialized: eve.json
+[66 - Suricata-Main] 2025-05-21 21:10:57 Warning: counters: stats are enabled but no loggers are active
+[66 - Suricata-Main] 2025-05-21 21:10:57 Info: detect: 1 rule files processed. 4 rules successfully loaded, 0 rules failed, 0
+[66 - Suricata-Main] 2025-05-21 21:10:57 Info: threshold-config: Threshold config parsed: 0 rule(s) found
+[66 - Suricata-Main] 2025-05-21 21:10:57 Info: detect: 4 signatures processed. 0 are IP-only rules, 4 are inspecting packet payload, 0 inspect application layer, 0 are decoder event only
+[66 - Suricata-Main] 2025-05-21 21:10:57 Error: af-packet: fanout not supported by kernel: Kernel too old or cluster-id 99 already in use.
+[66 - Suricata-Main] 2025-05-21 21:10:57 Warning: af-packet: eno2: AF_PACKET tpacket-v3 is recommended for non-inline operation
+[66 - Suricata-Main] 2025-05-21 21:10:57 Info: runmodes: eno2: creating 1 thread
+[67 - W#01-eno2] 2025-05-21 21:10:57 Info: ioctl: eno2: MTU 1500
+[66 - Suricata-Main] 2025-05-21 21:10:57 Notice: threads: Threads created -> W: 1 FM: 1 FR: 1   Engine started.
+[66 - Suricata-Main] 2025-05-21 21:11:07 Notice: suricata: Signal Received.  Stopping engine.
+[66 - Suricata-Main] 2025-05-21 21:11:08 Info: suricata: time elapsed 10.919s
+[66 - Suricata-Main] 2025-05-21 21:11:09 Notice: device: eno2: packets: 437, drops: 0 (0.00%), invalid chksum: 0
+[76 - Suricata-Main] 2025-05-21 22:46:34 Notice: suricata: This is Suricata version 7.0.10 RELEASE running in SYSTEM mode
+[76 - Suricata-Main] 2025-05-21 22:46:34 Info: cpu: CPUs/cores online: 32
+[76 - Suricata-Main] 2025-05-21 22:46:34 Info: suricata: Setting engine mode to IDS mode by default
+[76 - Suricata-Main] 2025-05-21 22:46:34 Info: suricata: No 'host-mode': suricata is in IDS mode, using default setting 'sniffer-only'
+[76 - Suricata-Main] 2025-05-21 22:46:34 Info: logopenfile: fast output device (regular) initialized: fast.log
+[76 - Suricata-Main] 2025-05-21 22:46:34 Info: logopenfile: eve-log output device (regular) initialized: eve.json
+[76 - Suricata-Main] 2025-05-21 22:46:34 Warning: counters: stats are enabled but no loggers are active
+[76 - Suricata-Main] 2025-05-21 22:46:34 Info: detect: 1 rule files processed. 4 rules successfully loaded, 0 rules failed, 0
+[76 - Suricata-Main] 2025-05-21 22:46:34 Info: threshold-config: Threshold config parsed: 0 rule(s) found
+[76 - Suricata-Main] 2025-05-21 22:46:34 Info: detect: 4 signatures processed. 0 are IP-only rules, 4 are inspecting packet payload, 0 inspect application layer, 0 are decoder event only
+[76 - Suricata-Main] 2025-05-21 22:46:34 Error: af-packet: fanout not supported by kernel: Kernel too old or cluster-id 99 already in use.
+[76 - Suricata-Main] 2025-05-21 22:46:34 Warning: af-packet: eno2: AF_PACKET tpacket-v3 is recommended for non-inline operation
+[76 - Suricata-Main] 2025-05-21 22:46:34 Info: runmodes: eno2: creating 1 thread
+[77 - W#01-eno2] 2025-05-21 22:46:34 Info: ioctl: eno2: MTU 1500
+[76 - Suricata-Main] 2025-05-21 22:46:34 Notice: threads: Threads created -> W: 1 FM: 1 FR: 1   Engine started.
+[76 - Suricata-Main] 2025-05-21 22:46:54 Notice: suricata: Signal Received.  Stopping engine.
+[76 - Suricata-Main] 2025-05-21 22:46:54 Info: suricata: time elapsed 20.804s
+[76 - Suricata-Main] 2025-05-21 22:46:55 Notice: device: eno2: packets: 259, drops: 0 (0.00%), invalid chksum: 0
+[1 - Suricata-Main] 2025-05-21 23:03:00 Notice: suricata: Signal Received.  Stopping engine.
+[1 - Suricata-Main] 2025-05-21 23:03:01 Info: suricata: time elapsed 7274.453s
+[1 - Suricata-Main] 2025-05-21 23:03:02 Notice: device: eno2: packets: 154915, drops: 114 (0.07%), invalid chksum: 0
+[1 - Suricata-Main] 2025-05-22 15:29:58 Notice: suricata: This is Suricata version 7.0.10 RELEASE running in SYSTEM mode
+[1 - Suricata-Main] 2025-05-22 15:29:58 Info: cpu: CPUs/cores online: 32
+[1 - Suricata-Main] 2025-05-22 15:29:58 Info: suricata: Setting engine mode to IDS mode by default
+[1 - Suricata-Main] 2025-05-22 15:29:58 Info: suricata: No 'host-mode': suricata is in IDS mode, using default setting 'sniffer-only'
+[1 - Suricata-Main] 2025-05-22 15:29:58 Info: logopenfile: fast output device (regular) initialized: fast.log
+[1 - Suricata-Main] 2025-05-22 15:29:58 Info: logopenfile: eve-log output device (regular) initialized: eve.json
+[1 - Suricata-Main] 2025-05-22 15:29:58 Warning: counters: stats are enabled but no loggers are active
+[1 - Suricata-Main] 2025-05-22 15:29:58 Info: detect: 1 rule files processed. 4 rules successfully loaded, 0 rules failed, 0
+[1 - Suricata-Main] 2025-05-22 15:29:58 Info: threshold-config: Threshold config parsed: 0 rule(s) found
+[1 - Suricata-Main] 2025-05-22 15:29:58 Info: detect: 4 signatures processed. 0 are IP-only rules, 4 are inspecting packet payload, 0 inspect application layer, 0 are decoder event only
+[1 - Suricata-Main] 2025-05-22 15:29:58 Warning: af-packet: eno2: AF_PACKET tpacket-v3 is recommended for non-inline operation
+[1 - Suricata-Main] 2025-05-22 15:29:58 Info: runmodes: eno2: creating 32 threads
+[1 - Suricata-Main] 2025-05-22 15:29:59 Notice: threads: Threads created -> W: 32 FM: 1 FR: 1   Engine started.
+[56 - Suricata-Main] 2025-05-22 19:28:20 Notice: suricata: This is Suricata version 7.0.10 RELEASE running in SYSTEM mode
+[56 - Suricata-Main] 2025-05-22 19:28:20 Info: cpu: CPUs/cores online: 32
+[56 - Suricata-Main] 2025-05-22 19:28:20 Info: suricata: Setting engine mode to IDS mode by default
+[56 - Suricata-Main] 2025-05-22 19:28:20 Info: suricata: No 'host-mode': suricata is in IDS mode, using default setting 'sniffer-only'
+[56 - Suricata-Main] 2025-05-22 19:28:20 Info: logopenfile: fast output device (regular) initialized: fast.log
+[56 - Suricata-Main] 2025-05-22 19:28:20 Info: logopenfile: eve-log output device (regular) initialized: eve.json
+[56 - Suricata-Main] 2025-05-22 19:28:20 Warning: counters: stats are enabled but no loggers are active
+[56 - Suricata-Main] 2025-05-22 19:28:20 Info: detect: 1 rule files processed. 4 rules successfully loaded, 0 rules failed, 0
+[56 - Suricata-Main] 2025-05-22 19:28:20 Info: threshold-config: Threshold config parsed: 0 rule(s) found
+[56 - Suricata-Main] 2025-05-22 19:28:20 Info: detect: 4 signatures processed. 0 are IP-only rules, 4 are inspecting packet payload, 0 inspect application layer, 0 are decoder event only
+[56 - Suricata-Main] 2025-05-22 19:28:20 Error: af-packet: fanout not supported by kernel: Kernel too old or cluster-id 99 already in use.
+[56 - Suricata-Main] 2025-05-22 19:28:20 Warning: af-packet: eno2: AF_PACKET tpacket-v3 is recommended for non-inline operation
+[56 - Suricata-Main] 2025-05-22 19:28:20 Info: runmodes: eno2: creating 1 thread
+[57 - W#01-eno2] 2025-05-22 19:28:21 Info: ioctl: eno2: MTU 1500
+[56 - Suricata-Main] 2025-05-22 19:28:21 Notice: threads: Threads created -> W: 1 FM: 1 FR: 1   Engine started.
+[56 - Suricata-Main] 2025-05-22 19:28:30 Notice: suricata: Signal Received.  Stopping engine.
+[56 - Suricata-Main] 2025-05-22 19:28:31 Info: suricata: time elapsed 10.915s
+[56 - Suricata-Main] 2025-05-22 19:28:32 Notice: device: eno2: packets: 112, drops: 0 (0.00%), invalid chksum: 0
+[1 - Suricata-Main] 2025-05-22 21:38:29 Notice: suricata: Signal Received.  Stopping engine.
+[1 - Suricata-Main] 2025-05-22 21:38:30 Info: suricata: time elapsed 22111.535s
+[1 - Suricata-Main] 2025-05-22 21:38:31 Notice: device: eno2: packets: 492553, drops: 147 (0.03%), invalid chksum: 0
+[1 - Suricata-Main] 2025-05-22 21:38:37 Notice: suricata: This is Suricata version 7.0.10 RELEASE running in SYSTEM mode
+[1 - Suricata-Main] 2025-05-22 21:38:37 Info: cpu: CPUs/cores online: 32
+[1 - Suricata-Main] 2025-05-22 21:38:37 Info: suricata: Setting engine mode to IDS mode by default
+[1 - Suricata-Main] 2025-05-22 21:38:37 Info: suricata: No 'host-mode': suricata is in IDS mode, using default setting 'sniffer-only'
+[1 - Suricata-Main] 2025-05-22 21:38:37 Info: logopenfile: fast output device (regular) initialized: fast.log
+[1 - Suricata-Main] 2025-05-22 21:38:37 Info: logopenfile: eve-log output device (regular) initialized: eve.json
+[1 - Suricata-Main] 2025-05-22 21:38:37 Warning: counters: stats are enabled but no loggers are active
+[1 - Suricata-Main] 2025-05-22 21:38:37 Info: detect: 1 rule files processed. 4 rules successfully loaded, 0 rules failed, 0
+[1 - Suricata-Main] 2025-05-22 21:38:37 Info: threshold-config: Threshold config parsed: 0 rule(s) found
+[1 - Suricata-Main] 2025-05-22 21:38:37 Info: detect: 4 signatures processed. 0 are IP-only rules, 4 are inspecting packet payload, 0 inspect application layer, 0 are decoder event only
+[1 - Suricata-Main] 2025-05-22 21:38:37 Warning: af-packet: eno2: AF_PACKET tpacket-v3 is recommended for non-inline operation
+[1 - Suricata-Main] 2025-05-22 21:38:37 Info: runmodes: eno2: creating 32 threads
+[1 - Suricata-Main] 2025-05-22 21:38:38 Notice: threads: Threads created -> W: 32 FM: 1 FR: 1   Engine started.
+[1 - Suricata-Main] 2025-05-22 22:21:35 Notice: suricata: Signal Received.  Stopping engine.
+[1 - Suricata-Main] 2025-05-22 22:21:36 Info: suricata: time elapsed 2579.151s
+[1 - Suricata-Main] 2025-05-22 22:21:37 Notice: device: eno2: packets: 49041, drops: 0 (0.00%), invalid chksum: 0
