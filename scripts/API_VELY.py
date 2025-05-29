@@ -8,6 +8,7 @@ from typing import List, Dict, Any
 from pydantic import BaseModel
 import joblib
 import numpy as np
+import atexit
 
 # Configuración básica de la aplicación
 app = FastAPI(title="VelyFirewall API", version="1.0.0")
@@ -20,6 +21,9 @@ logger = logging.getLogger(__name__)
 # Ruta al modelo entrenado
 MODEL_PATH = "/home/evelym/Lab/VelyFirewall/scripts/models/7ef258d0e7dd4ef68d08688c4a903728_XGB_model.joblib"
 DIRECTORIO_LOGS = "/home/evelym/Lab/VelyFirewall/logs"
+
+# Archivo para guardar la lista de archivos analizados
+ARCHIVO_ANALIZADOS = "/tmp/archivos_analizados_api.txt"
 
 # Cargar el modelo al iniciar la API
 try:
@@ -43,17 +47,48 @@ except Exception as e:
 class BlockRequest(BaseModel):
     ip: str
 
-# Función para obtener el último archivo CSV generado
-def obtener_ultimo_csv(directorio_logs: str = DIRECTORIO_LOGS) -> str:
-    """Obtiene el archivo CSV más reciente en el directorio de logs"""
+# Conjunto para mantener registro de archivos analizados
+archivos_analizados = set()
+
+# Cargar archivos analizados previos si existen
+if os.path.exists(ARCHIVO_ANALIZADOS):
     try:
-        archivos = [f for f in os.listdir(directorio_logs) if f.endswith('.csv')]
-        if not archivos:
-            raise FileNotFoundError("No se encontraron archivos CSV en el directorio de logs")
+        with open(ARCHIVO_ANALIZADOS, 'r') as f:
+            for linea in f:
+                archivo = linea.strip()
+                if archivo:  # evitar líneas vacías
+                    archivos_analizados.add(archivo)
+        logger.info(f"Cargados {len(archivos_analizados)} archivos analizados previamente")
+    except Exception as e:
+        logger.error(f"Error cargando archivos analizados: {str(e)}")
+
+# Función para guardar la lista de analizados
+def guardar_archivos_analizados():
+    try:
+        with open(ARCHIVO_ANALIZADOS, 'w') as f:
+            for archivo in archivos_analizados:
+                f.write(f"{archivo}\n")
+    except Exception as e:
+        logger.error(f"Error guardando archivos analizados: {str(e)}")
+
+# Registrar función de guardado al salir
+atexit.register(guardar_archivos_analizados)
+
+# Función para obtener el próximo archivo CSV no analizado
+def obtener_proximo_csv_no_analizado(directorio_logs: str = DIRECTORIO_LOGS) -> str:
+    """Obtiene el próximo archivo CSV no analizado en el directorio de logs"""
+    try:
+        archivos = [f for f in os.listdir(directorio_logs) 
+                   if f.endswith('.csv') and f not in archivos_analizados]
         
-        # Ordenar por fecha de modificación
+        if not archivos:
+            logger.info("No se encontraron archivos CSV nuevos para analizar")
+            return None
+        
+        # Ordenar por fecha de modificación (el más antiguo primero)
         archivos.sort(key=lambda x: os.path.getmtime(os.path.join(directorio_logs, x)))
-        return os.path.join(directorio_logs, archivos[-1])
+        return os.path.join(directorio_logs, archivos[0])
+        
     except Exception as e:
         logger.error(f"Error al buscar archivos CSV: {str(e)}")
         raise
@@ -76,7 +111,7 @@ def ip_ya_bloqueada(ip: str) -> bool:
 # Endpoint para obtener predicciones
 @app.get("/predict")
 async def predecir_ultimo_log():
-    """Endpoint para analizar el último archivo CSV de tráfico capturado"""
+    """Endpoint para analizar el próximo archivo CSV de tráfico no analizado"""
     try:
         # Verificar si la API ha terminado de inicializarse
         if (time.time() - app_start_time) < 10:
@@ -85,19 +120,42 @@ async def predecir_ultimo_log():
                 detail="API initializing, please wait"
             )
 
-        # Obtener el último archivo CSV
-        ruta_csv = obtener_ultimo_csv()
+        # Obtener el próximo archivo no analizado
+        ruta_csv = obtener_proximo_csv_no_analizado()
+        if not ruta_csv:
+            return {"resultados": [], "message": "No hay archivos nuevos para analizar"}
+        
         logger.info(f"Procesando archivo: {ruta_csv}")
         
+        # Verificar si el archivo está vacío
+        if os.path.getsize(ruta_csv) == 0:
+            logger.warning("Archivo CSV vacío encontrado. Reintentando en 5 segundos...")
+            time.sleep(5)
+            
+            # Verificar nuevamente después de esperar
+            if os.path.getsize(ruta_csv) == 0:
+                logger.warning("Archivo CSV sigue vacío después de esperar. Pasando al siguiente.")
+                # Marcar como analizado para no intentar de nuevo
+                nombre_archivo = os.path.basename(ruta_csv)
+                archivos_analizados.add(nombre_archivo)
+                guardar_archivos_analizados()
+                return {"resultados": [], "message": "Archivo vacío después de espera"}
+
         # Leer el archivo CSV
         df = pd.read_csv(ruta_csv)
         if df.empty:
-            logger.warning("Archivo CSV vacío encontrado")
-            raise HTTPException(status_code=400, detail="El archivo CSV está vacío.")
+            logger.warning("Archivo CSV vacío después de lectura")
+            nombre_archivo = os.path.basename(ruta_csv)
+            archivos_analizados.add(nombre_archivo)
+            guardar_archivos_analizados()
+            return {"resultados": [], "message": "Archivo vacío"}
 
         # Verificar columna src_ip (requerida)
         if 'src_ip' not in df.columns:
             logger.error("Columna 'src_ip' no encontrada en CSV")
+            nombre_archivo = os.path.basename(ruta_csv)
+            archivos_analizados.add(nombre_archivo)
+            guardar_archivos_analizados()
             raise HTTPException(
                 status_code=422,
                 detail="El archivo CSV no contiene la columna 'src_ip'"
@@ -151,11 +209,14 @@ async def predecir_ultimo_log():
                 logger.error(f"Error en predicción para IP {ip_origen}: {str(e)}")
                 continue
 
+        # Marcar el archivo como analizado
+        nombre_archivo = os.path.basename(ruta_csv)
+        archivos_analizados.add(nombre_archivo)
+        guardar_archivos_analizados()
+        
         if not resultados:
-            raise HTTPException(
-                status_code=422,
-                detail="No se pudo procesar ninguna fila del CSV"
-            )
+            logger.warning("No se pudo procesar ninguna fila del CSV")
+            return {"resultados": [], "message": "No se procesaron filas"}
 
         return {"resultados": resultados}
 
@@ -233,5 +294,6 @@ async def health_check():
         "uptime": round(time.time() - app_start_time, 2),
         "version": app.version,
         "model_loaded": os.path.exists(MODEL_PATH),
-        "model_type": str(type(model).__name__) if 'model' in globals() else "none"
+        "model_type": str(type(model).__name__) if 'model' in globals() else "none",
+        "archivos_analizados": len(archivos_analizados)
     }

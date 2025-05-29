@@ -10,66 +10,114 @@ INTERFAZ="eno2"
 
 PROCESAR_SIP_SCRIPT="$INFRA_DIR/procesar_logs_suricata.py"
 PCAP_TO_CSV_SCRIPT="pcap_to_csv.py"
-CAPTURAR_DIA_SS7_SCRIPT="$SCRIPTS_DIR/capturar_trafico.sh"
-ENVIAR_CSV_KAFKA_SCRIPT="enviar_csv_kafka1.sh"
+CAPTURAR_TRAFICO_SCRIPT="$SCRIPTS_DIR/capturar_trafico.sh"
+ALERT_PROCESSOR_SCRIPT="$SCRIPTS_DIR/alert_processor.py"
 
-# --- 1. Activar Docker Compose ---
-echo "Iniciando Docker Compose..."
-cd "$INFRA_DIR" || exit 1
-docker compose up -d
-echo "Docker Compose iniciado."
+# Archivo de log para depuración
+LOG_FILE="/tmp/firewall_debug.log"
+echo "==== Inicio de ejecución - PID: $$ ====" > "$LOG_FILE"
 
-# --- 2. Menú de Captura ---
-echo "¿Qué tipo de tráfico deseas capturar?"
-select PROTOCOLO in "Diameter" "SS7" "SIP" "Salir"; do
-    case $PROTOCOLO in
-        Diameter|SS7)
-            # Captura tradicional
-            echo "Ejecutando captura para $PROTOCOLO..."
-            "$CAPTURAR_DIA_SS7_SCRIPT" "$PROTOCOLO"
-            
-            # --- 3. Convertir PCAP a CSV y mover el PCAP ---
-            echo "Convirtiendo PCAP a CSV y moviendo el archivo PCAP..."
-            python3 "$SCRIPTS_DIR"/"$PCAP_TO_CSV_SCRIPT"
-            echo "Conversión a CSV y movimiento de PCAP completado."
-            
-            # --- 4. Enviar CSV a Kafka ---
-            echo "Enviando CSV a Kafka..."
-            "$SCRIPTS_DIR"/"$ENVIAR_CSV_KAFKA_SCRIPT"
-            echo "Envío a Kafka iniciado (el script se ejecuta en bucle)."
-            
-            echo "Proceso de firewall automatizado completado. El script de envío a Kafka se está ejecutando en segundo
-            plano."
-            
-            break
-            ;;
-            
-        SIP)
-            # Captura SIP
-            echo "¿Cuántos segundos deseas capturar tráfico SIP?"
-            read -p "Duración (en segundos): " DURACION
-            if ! [[ "$DURACION" =~ ^[0-9]+$ ]]; then
-                echo "Duración no válida. Usa solo números."
-                exit 1
+# --- Función de limpieza mejorada ---
+limpiar_procesos() {
+    echo "" | tee -a "$LOG_FILE"
+    echo "🛑 Capturada señal SIGINT - Deteniendo todos los procesos..." | tee -a "$LOG_FILE"
+    
+    # 1. Detener procesos hijos directos
+    echo "Deteniendo procesos hijos del PID $$..." >> "$LOG_FILE"
+    pkill -P $$ >> "$LOG_FILE" 2>&1
+    
+    # 2. Detener procesos específicos por nombre
+    echo "Deteniendo procesos por nombre..." >> "$LOG_FILE"
+    pkill -f "$CAPTURAR_TRAFICO_SCRIPT" >> "$LOG_FILE" 2>&1
+    pkill -f "$PCAP_TO_CSV_SCRIPT" >> "$LOG_FILE" 2>&1
+    pkill -f "$PROCESAR_SIP_SCRIPT" >> "$LOG_FILE" 2>&1
+    pkill -f "$ALERT_PROCESSOR_SCRIPT" >> "$LOG_FILE" 2>&1
+    pkill -f "docker exec.*suricata" >> "$LOG_FILE" 2>&1
+    
+    # 3. Detener herramientas de captura
+    echo "Deteniendo tshark y suricata..." >> "$LOG_FILE"
+    pkill -f tshark >> "$LOG_FILE" 2>&1
+    pkill -f suricata >> "$LOG_FILE" 2>&1
+    
+    # 4. Detener contenedores Docker
+    echo "Deteniendo contenedores Docker..." >> "$LOG_FILE"
+    cd "$INFRA_DIR" && docker compose down >> "$LOG_FILE" 2>&1
+    
+    # 5. Eliminar archivos CSV analizados
+    if [ -f "/tmp/archivos_analizados_api.txt" ]; then
+        echo "Eliminando archivos CSV analizados..." | tee -a "$LOG_FILE"
+        while read -r archivo; do
+            # Eliminar solo si es un archivo CSV y existe
+            if [[ "$archivo" == *.csv ]] && [ -f "$LOGS_DIR/$archivo" ]; then
+                echo "Eliminando $LOGS_DIR/$archivo" >> "$LOG_FILE"
+                rm -f "$LOGS_DIR/$archivo"
             fi
+        done < "/tmp/archivos_analizados_api.txt"
+        # Eliminar el archivo de lista
+        rm -f "/tmp/archivos_analizados_api.txt"
+        echo "✅ Archivos analizados eliminados" | tee -a "$LOG_FILE"
+    fi
+    
+    # 6. Verificación final
+    echo "🔍 Procesos residuales:" | tee -a "$LOG_FILE"
+    ps aux | grep -E 'capturar_trafico|activar_captura|tshark|suricata|python3' | grep -v grep >> "$LOG_FILE"
+    
+    echo "✅ Todos los procesos detenidos" | tee -a "$LOG_FILE"
+    exit 0
+}
 
-            echo "Capturando tráfico SIP..."
-            docker exec -d infra-suricata-1 timeout "$DURACION" suricata -i "$INTERFAZ" -c /etc/suricata/suricata.yaml -v
-            sleep "$((DURACION + 5))"
+# Registrar manejador de señales
+trap limpiar_procesos SIGINT SIGTERM
 
-            echo "Procesando logs SIP..."
-            python3 "$PROCESAR_SIP_SCRIPT"
-            echo "✅ Proceso SIP completado."
-            break
-            ;;
-            
-        Salir)
-            echo "Saliendo..."
-            exit 0
-            ;;
-            
-        *)
-            echo "Opción inválida. Intenta de nuevo."
-            ;;
-    esac
-done
+# --- Iniciar Docker ---
+echo "Iniciando Docker Compose..." | tee -a "$LOG_FILE"
+cd "$INFRA_DIR" || exit 1
+docker compose up -d >> "$LOG_FILE" 2>&1
+echo "Docker Compose iniciado." | tee -a "$LOG_FILE"
+
+# --- Preguntar duración de captura ---
+read -p "¿Cuántos segundos deseas para cada ciclo de captura? " DURACION
+if ! [[ "$DURACION" =~ ^[0-9]+$ ]]; then
+    echo "Duración no válida. Usa solo números."
+    limpiar_procesos
+fi
+
+echo "Configuración: Duración=$DURACION segundos" >> "$LOG_FILE"
+
+# --- Funciones de captura ---
+capturar_ss7() {
+    while true; do
+        echo "[$(date)] Iniciando captura SS7..." >> "$LOG_FILE"
+        "$CAPTURAR_TRAFICO_SCRIPT" "$DURACION" >> "$LOG_FILE" 2>&1
+        python3 "$SCRIPTS_DIR/$PCAP_TO_CSV_SCRIPT" >> "$LOG_FILE" 2>&1
+        echo "[$(date)] Ciclo SS7 completado" >> "$LOG_FILE"
+        sleep 1
+    done
+}
+
+capturar_sip() {
+    while true; do
+        echo "[$(date)] Iniciando captura SIP..." >> "$LOG_FILE"
+        docker exec infra-suricata-1 timeout "$DURACION" suricata -i "$INTERFAZ" -c /etc/suricata/suricata.yaml -v >> "$LOG_FILE" 2>&1
+        sleep "$((DURACION + 5))"
+        python3 "$PROCESAR_SIP_SCRIPT" >> "$LOG_FILE" 2>&1
+        echo "[$(date)] Ciclo SIP completado" >> "$LOG_FILE"
+        sleep 1
+    done
+}
+
+# --- Iniciar captura de ambos protocolos en segundo plano ---
+capturar_ss7 &
+SS7_PID=$!
+echo "🔧 Proceso SS7 iniciado con PID: $SS7_PID" | tee -a "$LOG_FILE"
+
+capturar_sip &
+SIP_PID=$!
+echo "🔧 Proceso SIP iniciado con PID: $SIP_PID" | tee -a "$LOG_FILE"
+
+# --- Ejecutar alert_processor en primer plano con espera inicial ---
+echo "🔧 Esperando $((DURACION + 5)) segundos antes de iniciar Alert Processor..." | tee -a "$LOG_FILE"
+sleep "$((DURACION + 5))"
+
+echo "🔧 Iniciando Alert Processor en primer plano..." | tee -a "$LOG_FILE"
+python3 "$ALERT_PROCESSOR_SCRIPT"
