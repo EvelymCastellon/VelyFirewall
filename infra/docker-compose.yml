@@ -16,7 +16,8 @@ services:
     environment:
       KAFKA_BROKER_ID: 1
       KAFKA_ZOOKEEPER_CONNECT: zookeeper:2181
-      KAFKA_ADVERTISED_LISTENERS: PLAINTEXT://kafka:9092  # Usar nombre del servicio
+      KAFKA_LISTENERS: PLAINTEXT://0.0.0.0:9092
+      KAFKA_ADVERTISED_LISTENERS: PLAINTEXT://localhost:9092
       KAFKA_OFFSETS_TOPIC_REPLICATION_FACTOR: 1
 
   redis:
@@ -31,7 +32,7 @@ services:
     command: -i eno2 -c /etc/suricata/suricata.yaml -v
     volumes:
       - ./suricata-config/suricata.yaml:/etc/suricata/suricata.yaml:ro
-      - ./suricata-rules:/etc/suricata/rules:ro  # Mapea la carpeta de reglas
+      - ./suricata-rules:/etc/suricata/rules:ro
       - ./logs:/var/log/suricata
     network_mode: host
     cap_add:
